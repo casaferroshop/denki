@@ -5,7 +5,7 @@ window.DENKI_COMPONENTS = {
 </div>
 <header id="main-header">
     <nav class="container">
-        <a href="{{root}}index.html" class="logo">
+        <a href="{{root}}" class="logo">
             <img src="{{root}}assets/img/logo-mobile.png" alt="Clínica Denki Logo">
         </a>
 
@@ -69,7 +69,7 @@ window.DENKI_COMPONENTS = {
     <div class="container">
         <div class="f-grid">
             <div class="f-info">
-                <a href="{{root}}index.html" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                <a href="{{root}}" class="logo" style="margin-bottom: 1.5rem; display: block;">
                     <img src="{{root}}assets/img/logo-mobile.png" alt="Clínica Denki Logo" style="height: 40px;">
                 </a>
                 <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
