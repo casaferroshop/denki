@@ -18,23 +18,5 @@
     }
   ],
   "rewrites": [],
-  "redirects": [],
-  "excludeFiles": [
-    "_v2_prototype_/**",
-    "dashboard.html",
-    "style.css",
-    ".DS_Store",
-    ".agent/**",
-    "all_hubs_content.txt",
-    "all_hubs_readable.txt",
-    "all_landings_content.txt",
-    "all_landings_readable.txt",
-    "miHome/**",
-    "MisBlogs/**",
-    "MisHubs/**",
-    "MisLandingLocales/**",
-    "MisLandings/**",
-    "Denki Reglas/**",
-    "Semrush Denki/**"
-  ]
+  "redirects": []
 }
