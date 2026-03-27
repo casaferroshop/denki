@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Especializado de Diabetes | Clínica Denki CDMX</title>
+    <meta name="description"
+        content="Atención nutricional especializada para el control de diabetes tipo 1, tipo 2 y gestacional en Del Valle, CDMX. Planes de alimentación basados en índice glucémico.">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Loader -->
+    <script src="../../assets/js/loader.js"></script>
+
+    <!-- Schema MedicalTherapy + FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalTherapy",
+      "name": "Tratamiento Nutricional para Diabetes",
+      "description": "Atención nutricional especializada para diabetes tipo 1, 2 y gestacional en Del Valle, CDMX.",
+      "relevantSpecialty": "Endocrinology, Nutrition",
+      "provider": {
+        "@type": "MedicalClinic",
+        "name": "Clínica Denki",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pilares 405",
+          "addressLocality": "Del Valle",
+          "addressRegion": "CDMX",
+          "postalCode": "03100",
+          "addressCountry": "MX"
+        }
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container">
+            <span class="read-time reveal">Atención Metabólica</span>
+            <h1 class="reveal">Control Inteligente de tu Diabetes a través de la Nutrición Clínica</h1>
+            <p class="lead reveal">Domina tus niveles de glucosa sin renunciar al sabor, con un plan basado en ciencia y
+                adaptado a tu estilo de vida.</p>
+
+            <div class="hero-image-container reveal">
+                <!-- Image Pending: hero-diabetes.webp -->
+                <div class="card-thumb" style="height: 450px; border-radius: 32px;"><span>Imagen Hero: Nutrición y
+                        Diabetes</span></div>
+            </div>
+
+            <div class="intro reveal">
+                <p>El manejo de la diabetes ha evolucionado. Ya no se trata de "prohibir todo", sino de entender cómo
+                    los carbohidratos, las fibras y las grasas interactúan con tu insulina o medicamentos.</p>
+                <p>En <strong>Clínica Denki</strong>, diseñamos planes que estabilizan tu hemoglobina glucosilada
+                    (HbA1c) y previenen complicaciones a largo plazo, enfocándonos en la <strong>flexibilidad
+                        metabólica</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Sección Beneficios -->
+        <section id="beneficios" class="section bg-light">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2>¿Por qué un enfoque clínico para tu diabetes?</h2>
+                    <p class="tagline">Control preciso para una vida plena.</p>
+                </div>
+
+                <div class="concept-grid reveal">
+                    <div class="concept-item">
+                        <h4>Control Glucémico Real</h4>
+                        <p>Reducción de picos de azúcar en sangre mediante el manejo del índice y carga glucémica.</p>
+                    </div>
+                    <div class="concept-item">
+                        <h4>Prevención de Daño Social</h4>
+                        <p>Aprendes a manejar eventos sociales y salidas a comer manteniendo tus niveles bajo control.
+                        </p>
+                    </div>
+                    <div class="concept-item">
+                        <h4>Manejo de Diabetes Gestacional</h4>
+                        <p>Soporte especializado para asegurar el crecimiento del bebé y la salud de la madre.</p>
+                    </div>
+                    <div class="concept-item">
+                        <h4>Educación en Insulina</h4>
+                        <p>Te enseñamos a contar carbohidratos y ajustar la alimentación según tu terapia de insulina.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Estrategias (Proceso) -->
+        <section id="proceso" class="section">
+            <div class="container section-grid">
+                <div class="reveal">
+                    <h2>Estrategias de Nutrición Avanzada</h2>
+                    <p>No usamos dietas de cajón. Usamos herramientas metabólicas adaptadas a ti.</p>
+                    <div class="feat-list mt-4">
+                        <div class="feat-item"><strong>Crononutrición:</strong> Ajustamos tus horarios de comida para
+                            optimizar la sensibilidad a la insulina.</div>
+                        <div class="feat-item"><strong>Manejo de la saciedad:</strong> Planes ricos en fibra y proteínas
+                            que evitan el hambre constante por hipoglucemias reactivas.</div>
+                        <div class="feat-item"><strong>Entrenamiento de Porciones:</strong> Aprenderás a visualizar tus
+                            raciones sin necesidad de pesar todo siempre.</div>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://wa.me/525550150285" class="btn btn-secondary">Consulta por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <!-- Image Pending: alimentacion-saludable-diabetes.webp -->
+                    <div class="card-thumb" style="height: 450px; border-radius: 24px;"><span>Imagen: Alimentos para
+                            Control Glucémico</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Relacionados (Interlinking) -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2>Recursos Educativos</h2>
+                    <p class="tagline">Aprende más sobre el manejo de tu condición.</p>
+                </div>
+
+                <div class="fruit-gallery">
+                    <div class="fruit-box reveal">
+                        <h3>Guía de Frutas</h3>
+                        <p>Lista completa de frutas permitidas y sus porciones sugeridas.</p>
+                        <a href="../../blog/alimentos-y-dietas/frutas-diabeticos.html"
+                            class="btn btn-secondary mt-3">Ver Guía →</a>
+                    </div>
+                    <div class="fruit-box reveal">
+                        <h3>Bajar Glucosa</h3>
+                        <p>Estrategias naturales de alimentación y ejercicio para reducir picos.</p>
+                        <a href="../../blog/alimentos-y-dietas/bajar-glucosa.html" class="btn btn-secondary mt-3">Leer
+                            Más →</a>
+                    </div>
+                    <div class="fruit-box reveal">
+                        <h3>Menú Semanal</h3>
+                        <p>Un ejemplo de cómo estructurar tus comidas de forma balanceada.</p>
+                        <a href="#" class="btn btn-secondary mt-3">Próximamente</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección FAQs -->
+        <section id="faqs" class="section">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
+                <div class="faq-grid reveal">
+                    <div class="faq-card">
+                        <h4>¿Debo dejar los carbohidratos por completo?</h4>
+                        <p>No. El cuerpo necesita glucosa para funcionar. Lo que hacemos es seleccionar los
+                            carbohidratos de mejor calidad y distribuirlos inteligentemente.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4>¿Puedo revertir la Diabetes Tipo 2?</h4>
+                        <p>Se habla de "remisión". Mediante la nutrición clínica y pérdida de grasa visceral, es posible
+                            normalizar niveles de glucosa incluso sin medicamentos en algunos casos.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4>¿Atienden diabetes tipo 1 en niños?</h4>
+                        <p>Sí, el soporte nutricional en Diabetes Tipo 1 es vital para asegurar el crecimiento normal y
+                            evitar hipoglucemias severas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="cta-block reveal"
+                    style="background: var(--primary); padding: 4rem; border-radius: 40px; text-align: center;">
+                    <h2 style="color: white; margin-bottom: 2rem;">Toma el Control de tu Salud Metabólica</h2>
+                    <p style="color: white; margin-bottom: 2rem;">No dejes que la diabetes limite tu vida. Agenda una
+                        cita hoy.</p>
+                    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://wa.me/525550150285" class="btn btn-secondary">WhatsApp Directo</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            class="btn btn-whatsapp" style="background: white; color: var(--primary);">Agenda en
+                            Doctoralia</a>
+                    </div>
+                    <p style="color: white; margin-top: 1.5rem; font-size: 0.85rem;">Consulta Presencial, en Línea y a
+                        Domicilio</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

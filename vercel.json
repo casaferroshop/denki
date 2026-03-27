@@ -1,0 +1,40 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ],
+  "rewrites": [],
+  "redirects": [],
+  "excludeFiles": [
+    "_v2_prototype_/**",
+    "dashboard.html",
+    "style.css",
+    ".DS_Store",
+    ".agent/**",
+    "all_hubs_content.txt",
+    "all_hubs_readable.txt",
+    "all_landings_content.txt",
+    "all_landings_readable.txt",
+    "miHome/**",
+    "MisBlogs/**",
+    "MisHubs/**",
+    "MisLandingLocales/**",
+    "MisLandings/**",
+    "Denki Reglas/**",
+    "Semrush Denki/**"
+  ]
+}

@@ -1,0 +1,64 @@
+<div class="maternity-banner">
+    🍼 <strong>Aviso:</strong> Clínica Denki cierra temporalmente por maternidad. Regresamos en <strong>julio 2026</strong>. Para consultas: <a href="https://wa.me/525550150285">WhatsApp</a>
+</div>
+<header id="main-header">
+    <nav class="container">
+        <a href="{{root}}index.html" class="logo">
+            <img src="{{root}}assets/img/logo-mobile.png" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+            <!-- Clinical Hubs injected dynamically here -->
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="#">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones"></ul>
+            </li>
+
+            <!-- Mobile Only: Ubicaciones Injection -->
+            <li id="mobile-ubicaciones-container" class="d-none-desktop"></li>
+
+            <li><a href="{{root}}blog/index.html">Blog</a></li>
+            <li><a href="{{root}}pages/nosotros.html">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="{{root}}nutricion-metabolica/index.html">Nutrición Metabólica</a></li>
+            <li><a href="{{root}}nutricion-cardiovascular/index.html">Nutrición Cardiovascular</a></li>
+            <li><a href="{{root}}nutricion-neurologica/index.html">Nutrición Neurológica</a></li>
+            <li><a href="{{root}}nutricion-oncologica/index.html">Nutrición Oncológica</a></li>
+            <li><a href="{{root}}nutricion-geriatrica/index.html">Nutrición Geriátrica</a></li>
+            <li><a href="{{root}}nutricion-clinica/index.html">Nutrición Clínica</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="{{root}}nutricion-clinica/disfagia/index.html">Disfagia</a></li>
+            <li><a href="{{root}}nutricion-clinica/enteral-sonda/index.html">Nutrición Enteral</a></li>
+            <li><a href="{{root}}nutricion-clinica/domicilio/index.html">Consulta a Domicilio</a></li>
+            <li><a href="{{root}}nutricion-clinica/hospitalaria/index.html">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="{{root}}ubicaciones/cdmx/index.html">CDMX</a></li>
+            <li><hr></li>
+            <li><a href="{{root}}blog/index.html">Blog</a></li>
+            <li><a href="{{root}}pages/nosotros.html">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>

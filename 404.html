@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Página no encontrada. Regresa al inicio o contáctanos para más información.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Página no encontrada | Clínica Denki">
+    <meta property="og:description" content="Página no encontrada. Regresa al inicio o contáctanos para más información.">
+    <meta property="og:url" content="https://clinicadenki.mx/404.html">
+    <meta property="og:image" content="https://clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <link rel="canonical" href="https://clinicadenki.mx/404.html">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .error-page { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 80vh; text-align: center; padding: 2rem; }
+        .error-code { font-size: clamp(5rem, 15vw, 10rem); font-weight: 700; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; }
+        .error-msg { font-size: 1.3rem; color: var(--text-muted); margin: 1.5rem 0 2.5rem; max-width: 500px; }
+        .error-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    </style>
+</head>
+<body class="has-banner">
+    <div class="maternity-banner">
+        🍼 <strong>Aviso:</strong> Clínica Denki cierra temporalmente por maternidad. Regresamos en <strong>julio 2026</strong>. Para consultas: <a href="https://wa.me/525550150285">WhatsApp</a>
+    </div>
+    <div id="scroll-progress"></div>
+    <header style="background: var(--glass-bg); backdrop-filter: blur(15px); border-bottom: 1px solid var(--glass-border); position: fixed; width: 100%; top: 36px; z-index: 1000; height: 70px;">
+        <nav class="container" style="display: flex; align-items: center; height: 100%;">
+            <a href="/" class="logo"><img src="/assets/img/logo-mobile.png" alt="Clínica Denki Logo"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="error-page">
+            <div class="error-code">404</div>
+            <h1 style="font-size: 1.8rem; margin-top: 1rem;">Página no encontrada</h1>
+            <p class="error-msg">Lo sentimos, la página que buscas no existe o fue movida. Pero estamos aquí para ayudarte.</p>
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">Ir al Inicio</a>
+                <a href="https://wa.me/525550150285" class="btn btn-whatsapp">WhatsApp</a>
+                <a href="/blog/" class="btn btn-secondary">Ver Blog</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

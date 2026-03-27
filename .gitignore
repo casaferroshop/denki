@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Development
+_v2_prototype_/
+dashboard.html
+MisBlogs/
+*.txt
+!robots.txt
+
+# Agent/IDE
+.agent/
+.claude/

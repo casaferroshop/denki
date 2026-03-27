@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clinicadenki.mx/sitemap.xml
+
+# Disallow development files
+Disallow: /_v2_prototype_/
+Disallow: /dashboard.html
+Disallow: /miHome/
+Disallow: /MisBlogs/
+Disallow: /MisHubs/
+Disallow: /MisLandings/
+Disallow: /MisLandingLocales/
+Disallow: /Denki Reglas/
+Disallow: /Semrush Denki/
