@@ -22,8 +22,8 @@ window.DENKI_COMPONENTS = {
             <!-- Mobile Only: Ubicaciones Injection -->
             <li id="mobile-ubicaciones-container" class="d-none-desktop"></li>
 
-            <li><a href="{{root}}blog/index.html">Blog</a></li>
-            <li><a href="{{root}}pages/nosotros.html">Nosotros</a></li>
+            <li><a href="{{root}}blog/">Blog</a></li>
+            <li><a href="{{root}}pages/nosotros">Nosotros</a></li>
         </ul>
 
         <!-- Action Buttons (always visible) -->
@@ -42,24 +42,24 @@ window.DENKI_COMPONENTS = {
         <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
         <ul class="mobile-nav-links">
             <li class="mobile-section-title"><strong>Especialidades</strong></li>
-            <li><a href="{{root}}nutricion-metabolica/index.html">Nutrición Metabólica</a></li>
-            <li><a href="{{root}}nutricion-cardiovascular/index.html">Nutrición Cardiovascular</a></li>
-            <li><a href="{{root}}nutricion-neurologica/index.html">Nutrición Neurológica</a></li>
-            <li><a href="{{root}}nutricion-oncologica/index.html">Nutrición Oncológica</a></li>
-            <li><a href="{{root}}nutricion-geriatrica/index.html">Nutrición Geriátrica</a></li>
-            <li><a href="{{root}}nutricion-clinica/index.html">Nutrición Clínica</a></li>
+            <li><a href="{{root}}nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="{{root}}nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="{{root}}nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="{{root}}nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="{{root}}nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="{{root}}nutricion-clinica/">Nutrición Clínica</a></li>
             <li><hr></li>
             <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
-            <li><a href="{{root}}nutricion-clinica/disfagia/index.html">Disfagia</a></li>
-            <li><a href="{{root}}nutricion-clinica/enteral-sonda/index.html">Nutrición Enteral</a></li>
-            <li><a href="{{root}}nutricion-clinica/domicilio/index.html">Consulta a Domicilio</a></li>
-            <li><a href="{{root}}nutricion-clinica/hospitalaria/index.html">Nutrición Hospitalaria</a></li>
+            <li><a href="{{root}}nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="{{root}}nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+            <li><a href="{{root}}nutricion-clinica/domicilio/">Consulta a Domicilio</a></li>
+            <li><a href="{{root}}nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
             <li><hr></li>
             <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
-            <li><a href="{{root}}ubicaciones/cdmx/index.html">CDMX</a></li>
+            <li><a href="{{root}}ubicaciones/cdmx/">CDMX</a></li>
             <li><hr></li>
-            <li><a href="{{root}}blog/index.html">Blog</a></li>
-            <li><a href="{{root}}pages/nosotros.html">Nosotros</a></li>
+            <li><a href="{{root}}blog/">Blog</a></li>
+            <li><a href="{{root}}pages/nosotros">Nosotros</a></li>
             <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
         </ul>
     </div>
@@ -81,23 +81,23 @@ window.DENKI_COMPONENTS = {
             <div>
                 <h4 class="f-title">Especialidades</h4>
                 <ul class="f-links">
-                    <li><a href="{{root}}nutricion-metabolica/index.html">Nutrición Metabólica</a></li>
-                    <li><a href="{{root}}nutricion-cardiovascular/index.html">Nutrición Cardiovascular</a></li>
-                    <li><a href="{{root}}nutricion-neurologica/index.html">Nutrición Neurológica</a></li>
-                    <li><a href="{{root}}nutricion-oncologica/index.html">Nutrición Oncológica</a></li>
-                    <li><a href="{{root}}nutricion-geriatrica/index.html">Nutrición Geriátrica</a></li>
-                    <li><a href="{{root}}nutricion-clinica/index.html">Nutrición Clínica</a></li>
+                    <li><a href="{{root}}nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="{{root}}nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="{{root}}nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="{{root}}nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="{{root}}nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="{{root}}nutricion-clinica/">Nutrición Clínica</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="f-title">Ubicaciones</h4>
                 <ul class="f-links">
-                    <li><a href="{{root}}ubicaciones/cdmx/index.html">CDMX General</a></li>
+                    <li><a href="{{root}}ubicaciones/cdmx/">CDMX General</a></li>
                 </ul>
                 <h4 class="f-title" style="margin-top: 2rem;">Recursos</h4>
                 <ul class="f-links">
-                    <li><a href="{{root}}blog/index.html">Blog de Nutrición</a></li>
-                    <li><a href="{{root}}pages/nosotros.html">Sobre Clínica Denki</a></li>
+                    <li><a href="{{root}}blog/">Blog de Nutrición</a></li>
+                    <li><a href="{{root}}pages/nosotros">Sobre Clínica Denki</a></li>
                 </ul>
             </div>
             <div>

@@ -118,12 +118,19 @@ function calculateRoot() {
     const path = window.location.pathname;
     const parts = path.split('/');
 
+    // Local dev: find LandingsDenki2 folder reference
     const rootIndex = parts.indexOf('LandingsDenki2');
     if (rootIndex !== -1) {
         const stepsUp = parts.length - rootIndex - 2;
         return "../".repeat(Math.max(0, stepsUp));
     }
 
+    // Production (Vercel): use absolute root
+    if (window.location.protocol !== 'file:') {
+        return "/";
+    }
+
+    // file:// fallback
     let cleanParts = parts.filter(p => p.length > 0);
     if (cleanParts.length > 0 && cleanParts[cleanParts.length - 1].includes('.')) {
         cleanParts.pop();
