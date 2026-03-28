@@ -85,6 +85,11 @@ body {
 .has-banner .hero {
     padding-top: calc(8rem + var(--banner-h, 36px));
 }
+@media (max-width: 600px) {
+    .has-banner .hero {
+        padding-top: calc(5.5rem + var(--banner-h, 36px));
+    }
+}
 .has-banner .error-page {
     padding-top: calc(2rem + var(--banner-h, 36px));
 }
@@ -564,8 +569,9 @@ h1 {
 
 @media (max-width: 768px) {
     .hero-image-container {
-        aspect-ratio: 4 / 3;
+        aspect-ratio: 16 / 10;
         border-radius: 20px;
+        max-height: 320px;
     }
 }
 
@@ -990,7 +996,11 @@ footer {
     .section-grid,
     .cta-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+
+    .hero .header-group {
+        margin-bottom: 1rem;
     }
 
     .concept-grid {
