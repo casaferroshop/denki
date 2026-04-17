@@ -18,5 +18,28 @@
     }
   ],
   "rewrites": [],
-  "redirects": []
+  "redirects": [
+    { "source": "/products/consulta-parkinson", "destination": "/nutricion-neurologica/parkinson/", "permanent": true },
+    { "source": "/products/consulta-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
+    { "source": "/products/consulta-diabetes", "destination": "/nutricion-metabolica/diabetes/", "permanent": true },
+    { "source": "/products/consulta-cancer", "destination": "/nutricion-oncologica/cancer/", "permanent": true },
+    { "source": "/products/consulta-infarto-cerebral", "destination": "/nutricion-neurologica/infarto-cerebral/", "permanent": true },
+    { "source": "/products/nutricion-clinica", "destination": "/nutricion-clinica/", "permanent": true },
+    { "source": "/products/nutricion-parenteral", "destination": "/nutricion-clinica/", "permanent": true },
+    { "source": "/products/nutricion-parenteral-a-domicilio", "destination": "/nutricion-clinica/domicilio/", "permanent": true },
+    { "source": "/products/alimentacion-consciente", "destination": "/nutricion-salud-mental/", "permanent": true },
+    { "source": "/products/nutricion-infantil", "destination": "/", "permanent": true },
+    { "source": "/products/consulta-en-linea", "destination": "/", "permanent": true },
+    { "source": "/collections/enfermedades", "destination": "/nutricion-neurologica/", "permanent": true },
+    { "source": "/collections/servicios-de-nutricion", "destination": "/", "permanent": true },
+    { "source": "/collections/(.*)", "destination": "/", "permanent": true },
+    { "source": "/blogs/guia-de-nutricion", "destination": "/blog/", "permanent": true },
+    { "source": "/blogs/guia-de-nutricion/como-saber-si-tienes-diabetes-sintomas-y-pruebas", "destination": "/blog/guias-nutricionales/dieta-diabetes/", "permanent": true },
+    { "source": "/blogs/guia-de-nutricion/desayunos-saludables-para-diabeticos-ideas-faciles", "destination": "/blog/guias-nutricionales/dieta-diabetes/", "permanent": true },
+    { "source": "/blogs/alzheimer/dieta-cetogenica-es-efectiva-contra-el-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
+    { "source": "/blogs/guia-de-nutricion/que-es-el-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
+    { "source": "/blogs/(.*)", "destination": "/blog/", "permanent": true },
+    { "source": "/pages/contacto", "destination": "/pages/contacto/", "permanent": true },
+    { "source": "/que-es-la-neuronutricion", "destination": "/nutricion-neurologica/", "permanent": true }
+  ]
 }
