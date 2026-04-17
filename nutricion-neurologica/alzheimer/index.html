@@ -11,8 +11,8 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nutrición para Alzheimer y Demencia en CDMX | Clínica Denki">
     <meta property="og:description" content="Atención nutricional especializada para Alzheimer y demencia en Del Valle, CDMX. Manejo de pérdida de apetito, disfagia y capacitación a cuidadores.">
-    <meta property="og:url" content="https://clinicadenki.mx/nutricion-neurologica/alzheimer/">
-    <meta property="og:image" content="https://clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
+    <meta property="og:url" content="https://www.clinicadenki.mx/nutricion-neurologica/alzheimer/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
     <meta property="og:site_name" content="Clínica Denki">
     <meta property="og:locale" content="es_MX">
     <link rel="canonical" href="https://www.clinicadenki.mx/nutricion-neurologica/alzheimer/">
@@ -23,27 +23,26 @@
     <!-- Loader -->
     <script src="../../assets/js/loader.js"></script>
 
-    <!-- Schema MedicalTherapy -->
+    <!-- Schema JSON-LD: MedicalWebPage + BreadcrumbList -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MedicalTherapy",
-      "name": "Nutrición para Alzheimer",
-      "url": "https://clinicadenki.mx/nutricion-neurologica/alzheimer",
-      "description": "Atención nutricional para personas con Alzheimer y demencia en Del Valle, CDMX. Manejo de pérdida de apetito, disfagia y desnutrición. Capacitación especializada a cuidadores.",
-      "relevantSpecialty": "Neurology, Geriatrics, Nutrition",
-      "provider": {
-        "@type": "MedicalClinic",
-        "name": "Clínica Denki",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Pilares 405",
-          "addressLocality": "Del Valle Centro",
-          "addressRegion": "CDMX",
-          "postalCode": "03100",
-          "addressCountry": "MX"
+      "@graph": [
+        {
+          "@type": "MedicalWebPage",
+          "name": "Nutrición para Alzheimer y Demencia en CDMX | Clínica Denki",
+          "url": "https://www.clinicadenki.mx/nutricion-neurologica/alzheimer/",
+          "description": "Atención nutricional especializada para Alzheimer y demencia en Del Valle, CDMX. Manejo de pérdida de apetito, disfagia y capacitación a cuidadores."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.clinicadenki.mx/" },
+            { "@type": "ListItem", "position": 2, "name": "Neurológica", "item": "https://www.clinicadenki.mx/nutricion-neurologica/" },
+            { "@type": "ListItem", "position": 3, "name": "Alzheimer" }
+          ]
         }
-      }
+      ]
     }
     </script>
 </head>
