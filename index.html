@@ -21,40 +21,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Schema JSON-LD -->
+    <!-- Schema JSON-LD (MedicalOrganization + LocalBusiness) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": [
-        "MedicalBusiness",
-        "MedicalClinic"
-      ],
+      "@type": ["MedicalOrganization", "LocalBusiness"],
       "name": "Clínica Denki",
-      "description": "Nutrición clínica especializada para condiciones metabólicas, neurológicas, geriátricas y oncológicas.",
-      "url": "https://clinicadenki.mx",
-      "telephone": "+52 55 5015 0285",
+      "description": "Clínica de nutrición clínica especializada en CDMX. Parkinson, Alzheimer, Diabetes, Oncología, Geriátrica.",
+      "url": "https://www.clinicadenki.mx/",
+      "telephone": "+525550150285",
       "email": "denkinutricion@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Pilares 405, Col. Del Valle Centro",
-        "addressLocality": "Benito Juárez",
-        "addressRegion": "Ciudad de México",
+        "streetAddress": "Heriberto Frías 1213",
+        "addressLocality": "Del Valle Centro, Benito Juárez",
+        "addressRegion": "CDMX",
         "postalCode": "03100",
         "addressCountry": "MX"
       },
-      "medicalSpecialty": [
-        "Clinical Nutrition",
-        "Metabolic Nutrition",
-        "Neurological Nutrition",
-        "Geriatric Nutrition",
-        "Oncology Nutrition"
-      ],
-      "physician": {
-        "@type": "Physician",
-        "name": "Dra. Lucy Anita Camberos Luna",
-        "honorificSuffix": "PhD",
-        "jobTitle": "Nutrióloga Clínica"
-      }
+      "geo": { "@type": "GeoCoordinates", "latitude": "19.3849", "longitude": "-99.1697" },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }],
+      "medicalSpecialty": ["Nutrition", "Neurology", "Oncology", "Geriatrics"],
+      "sameAs": ["https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"]
     }
     </script>
     <!-- Loader -->
