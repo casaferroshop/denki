@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
-  <url><loc>https://clinicadenki.mx/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
 
   <!-- Especialidades: Hubs -->
-  <url><loc>https://clinicadenki.mx/nutricion-metabolica/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-cardiovascular/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-neurologica/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-oncologica/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-geriatrica/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-clinica/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-salud-mental/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-metabolica/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-cardiovascular/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-neurologica/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-oncologica/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-geriatrica/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-clinica/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-salud-mental/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
 
   <!-- Especialidades: Sub-páginas -->
-  <url><loc>https://clinicadenki.mx/nutricion-metabolica/diabetes/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-metabolica/bajar-glucosa/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-cardiovascular/colesterol-alto/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-cardiovascular/trigliceridos-altos/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-neurologica/alzheimer/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-neurologica/parkinson/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-neurologica/infarto-cerebral/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-oncologica/cancer/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-geriatrica/adulto-mayor/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-geriatrica/sarcopenia/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-clinica/disfagia/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-clinica/domicilio/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-clinica/enteral-sonda/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/nutricion-clinica/hospitalaria/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-metabolica/diabetes/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-metabolica/bajar-glucosa/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-cardiovascular/colesterol-alto/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-cardiovascular/trigliceridos-altos/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-neurologica/alzheimer/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-neurologica/parkinson/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-neurologica/infarto-cerebral/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-oncologica/cancer/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-geriatrica/adulto-mayor/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-geriatrica/sarcopenia/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-clinica/disfagia/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-clinica/domicilio/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-clinica/enteral-sonda/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/nutricion-clinica/hospitalaria/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
 
   <!-- Ubicaciones -->
-  <url><loc>https://clinicadenki.mx/ubicaciones/cdmx/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/ubicaciones/cdmx/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
 
   <!-- Blog -->
-  <url><loc>https://clinicadenki.mx/blog/</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/blog/guias-nutricionales/dieta-diabetes/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/blog/guias-nutricionales/alimentos-bajan-colesterol/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/blog/guias-nutricionales/alimentacion-disfagia/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/blog/guias-nutricionales/alimentos-microbiota-saludable/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/blog/guias-nutricionales/alimentos-prohibidos-parkinson/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/blog/guias-nutricionales/como-prevenir-sarcopenia/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://clinicadenki.mx/blog/guias-nutricionales/alimentos-nutriologos-recomiendan-bajar-trigliceridos/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/blog/</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/blog/guias-nutricionales/dieta-diabetes/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-bajan-colesterol/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/blog/guias-nutricionales/alimentacion-disfagia/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-microbiota-saludable/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-prohibidos-parkinson/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/blog/guias-nutricionales/como-prevenir-sarcopenia/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-nutriologos-recomiendan-bajar-trigliceridos/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
 
   <!-- Páginas estáticas -->
-  <url><loc>https://clinicadenki.mx/pages/nosotros</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.clinicadenki.mx/pages/nosotros</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
 </urlset>
