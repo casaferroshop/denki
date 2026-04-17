@@ -11,8 +11,8 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nutrición para Parkinson en CDMX | Clínica Denki">
     <meta property="og:description" content="Atención nutricional especializada para Parkinson en Del Valle, CDMX. Manejo experto de disfagia, estreñimiento e interacciones con levodopa.">
-    <meta property="og:url" content="https://clinicadenki.mx/nutricion-neurologica/parkinson/">
-    <meta property="og:image" content="https://clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
+    <meta property="og:url" content="https://www.clinicadenki.mx/nutricion-neurologica/parkinson/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
     <meta property="og:site_name" content="Clínica Denki">
     <meta property="og:locale" content="es_MX">
     <link rel="canonical" href="https://www.clinicadenki.mx/nutricion-neurologica/parkinson/">
@@ -23,27 +23,26 @@
     <!-- Loader -->
     <script src="../../assets/js/loader.js"></script>
 
-    <!-- Schema MedicalTherapy -->
+    <!-- Schema JSON-LD: MedicalWebPage + BreadcrumbList -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MedicalTherapy",
-      "name": "Nutrición para Parkinson",
-      "url": "https://clinicadenki.mx/nutricion-neurologica/parkinson",
-      "description": "Atención nutricional especializada para enfermedad de Parkinson en Del Valle, CDMX. Manejo de disfagia, estreñimiento e interacciones con levodopa.",
-      "relevantSpecialty": "Neurology, Nutrition",
-      "provider": {
-        "@type": "MedicalClinic",
-        "name": "Clínica Denki",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Pilares 405",
-          "addressLocality": "Del Valle Centro",
-          "addressRegion": "CDMX",
-          "postalCode": "03100",
-          "addressCountry": "MX"
+      "@graph": [
+        {
+          "@type": "MedicalWebPage",
+          "name": "Nutrición para Parkinson en CDMX | Clínica Denki",
+          "url": "https://www.clinicadenki.mx/nutricion-neurologica/parkinson/",
+          "description": "Nutrición clínica especializada para Parkinson en CDMX. Sincronización proteína-levodopa y manejo de disfagia."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.clinicadenki.mx/" },
+            { "@type": "ListItem", "position": 2, "name": "Neurológica", "item": "https://www.clinicadenki.mx/nutricion-neurologica/" },
+            { "@type": "ListItem", "position": 3, "name": "Parkinson" }
+          ]
         }
-      }
+      ]
     }
     </script>
 </head>
