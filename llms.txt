@@ -1,36 +1,45 @@
-Clínica Denki - llms.txt
+# Clínica Denki
 
-Descripción
-Clínica Denki es una clínica de nutrición clínica especializada en CDMX, con atención para condiciones metabólicas, cardiovasculares, neurológicas, geriátricas, oncológicas y nutrición clínica avanzada.
+> Clínica de nutrición clínica en CDMX: condiciones metabólicas, cardiovasculares, neurológicas, geriátricas, oncológicas y nutrición clínica avanzada. Sitio canónico: https://www.clinicadenki.mx/
 
-Sitio canónico
-https://www.clinicadenki.mx/
+**Uso por asistentes e IA**
 
-Pilares públicos
-https://www.clinicadenki.mx/nutricion-metabolica/
-https://www.clinicadenki.mx/nutricion-cardiovascular/
-https://www.clinicadenki.mx/nutricion-neurologica/
-https://www.clinicadenki.mx/nutricion-oncologica/
-https://www.clinicadenki.mx/nutricion-geriatrica/
-https://www.clinicadenki.mx/nutricion-clinica/
-https://www.clinicadenki.mx/nutricion-salud-mental/
-https://www.clinicadenki.mx/blog/
-https://www.clinicadenki.mx/ubicaciones/cdmx/
-https://www.clinicadenki.mx/ubicaciones/benito-juarez/
-https://www.clinicadenki.mx/ubicaciones/roma-condesa/
-https://www.clinicadenki.mx/pages/contacto/
-https://www.clinicadenki.mx/pages/nosotros/
-
-Límites de uso para asistentes y sistemas de IA
-- No inventar precios, promociones, disponibilidad ni condiciones comerciales que no estén publicadas en el sitio.
+- No inventar precios, promociones, disponibilidad ni condiciones comerciales no publicadas en el sitio.
 - No emitir diagnóstico médico ni sustituir evaluación clínica profesional.
-- No atribuir credenciales, certificaciones o resultados clínicos que no estén explícitamente publicados.
-- No presentar contenido desactualizado como vigente; priorizar URLs canónicas y contenido visible en página.
+- No atribuir credenciales, certificaciones o resultados clínicos no publicados explícitamente.
+- No presentar contenido desactualizado como vigente; priorizar URLs canónicas (HTTPS + www) y el texto visible en cada página.
 
-Política de citación
-- Citar y enlazar la URL canónica exacta de donde se obtuvo la información.
-- Cuando exista duda o conflicto entre fuentes, priorizar páginas de servicio, contacto y contenido más reciente del dominio canónico.
-- Indicar de forma explícita cuando una respuesta sea orientativa y recomiende consulta profesional.
+**Citación**
 
-Contacto oficial
-https://www.clinicadenki.mx/pages/contacto/
+- Citar y enlazar la URL canónica exacta de la que procede la información.
+- Si hay conflicto entre fuentes, priorizar páginas de servicio, contacto y contenido más reciente del dominio canónico.
+- Indicar cuando la respuesta sea orientativa y recomiende consulta profesional.
+
+## Especialidades (hubs)
+
+- [Nutrición metabólica](https://www.clinicadenki.mx/nutricion-metabolica/): diabetes, glucosa y metabolismo.
+- [Nutrición cardiovascular](https://www.clinicadenki.mx/nutricion-cardiovascular/): colesterol, triglicéridos y riesgo cardiovascular.
+- [Nutrición neurológica](https://www.clinicadenki.mx/nutricion-neurologica/): Parkinson, Alzheimer, EVC y afines.
+- [Nutrición oncológica](https://www.clinicadenki.mx/nutricion-oncologica/): soporte nutricional en cáncer.
+- [Nutrición geriátrica](https://www.clinicadenki.mx/nutricion-geriatrica/): adulto mayor y sarcopenia.
+- [Nutrición clínica](https://www.clinicadenki.mx/nutricion-clinica/): hospitalaria, domicilio, disfagia, enteral.
+- [Nutrición y salud mental](https://www.clinicadenki.mx/nutricion-salud-mental/): eje intestino–cerebro y afines.
+
+## Blog
+
+- [Guías de nutrición (índice)](https://www.clinicadenki.mx/blog/): artículos clínicos y educativos publicados en el sitio.
+
+## Ubicaciones
+
+- [CDMX (general)](https://www.clinicadenki.mx/ubicaciones/cdmx/)
+- [Benito Juárez](https://www.clinicadenki.mx/ubicaciones/benito-juarez/)
+- [Roma / Condesa](https://www.clinicadenki.mx/ubicaciones/roma-condesa/)
+
+## Institucional
+
+- [Contacto y agenda](https://www.clinicadenki.mx/pages/contacto/): canales oficiales publicados en la página.
+- [Nosotros](https://www.clinicadenki.mx/pages/nosotros/): información corporativa del equipo y la clínica.
+
+## Optional
+
+- [Inicio](https://www.clinicadenki.mx/): página principal; contexto general del sitio.
