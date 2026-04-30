@@ -26,24 +26,49 @@
     <!-- Schema JSON-LD: MedicalWebPage + BreadcrumbList -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Nutrición para Parkinson en CDMX | Clínica Denki",
+      "description": "Nutrición clínica especializada para Parkinson en CDMX. Sincronización proteína-levodopa y manejo de disfagia.",
+      "url": "https://www.clinicadenki.mx/nutricion-neurologica/parkinson/"
+    },
+    {
+      "@type": "Service",
+      "name": "Nutrición para Parkinson en CDMX | Clínica Denki",
+      "description": "Nutrición clínica especializada para Parkinson en CDMX. Sincronización proteína-levodopa y manejo de disfagia.",
+      "url": "https://www.clinicadenki.mx/nutricion-neurologica/parkinson/",
+      "provider": {
+        "@type": "MedicalClinic",
+        "name": "Clínica Denki",
+        "url": "https://www.clinicadenki.mx/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
         {
-          "@type": "MedicalWebPage",
-          "name": "Nutrición para Parkinson en CDMX | Clínica Denki",
-          "url": "https://www.clinicadenki.mx/nutricion-neurologica/parkinson/",
-          "description": "Nutrición clínica especializada para Parkinson en CDMX. Sincronización proteína-levodopa y manejo de disfagia."
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.clinicadenki.mx/"
         },
         {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.clinicadenki.mx/" },
-            { "@type": "ListItem", "position": 2, "name": "Neurológica", "item": "https://www.clinicadenki.mx/nutricion-neurologica/" },
-            { "@type": "ListItem", "position": 3, "name": "Parkinson" }
-          ]
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nutricion Neurologica",
+          "item": "https://www.clinicadenki.mx/nutricion-neurologica/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Parkinson"
         }
       ]
     }
+  ]
+}
     </script>
 </head>
 
