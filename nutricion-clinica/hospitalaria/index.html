@@ -5,49 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrición Clínica Hospitalaria | Clínica Denki CDMX</title>
-    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
     <meta name="description"
         content="Servicio especializado de nutrición clínica hospitalaria en CDMX. Soporte nutricional para pacientes críticos, cirugía y oncología. Valoración en hospital.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nutrición Clínica Hospitalaria | Clínica Denki CDMX">
     <meta property="og:description" content="Servicio especializado de nutrición clínica hospitalaria en CDMX. Soporte nutricional para pacientes críticos, cirugía y oncología. Valoración en hospital.">
-    <meta property="og:url" content="https://clinicadenki.mx/nutricion-clinica/hospitalaria/">
-    <meta property="og:image" content="https://clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
+    <meta property="og:url" content="https://www.clinicadenki.mx/nutricion-clinica/hospitalaria/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
     <meta property="og:site_name" content="Clínica Denki">
     <meta property="og:locale" content="es_MX">
     <link rel="canonical" href="https://clinicadenki.mx/nutricion-clinica/hospitalaria/">
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Loader -->
-    <script src="../../assets/js/loader.js"></script>
+    <script src="/assets/js/loader.js"></script>
 
     <!-- Schema MedicalWebPage -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
       "name": "Nutrición Clínica Hospitalaria",
       "description": "Servicio especializado de nutrición clínica hospitalaria en CDMX",
-      "url": "https://clinicadenki.mx/servicios/nutricion-clinica-hospitalaria/",
-      "specialty": "Clinical Nutrition",
-      "about": {
-        "@type": "MedicalTherapy",
-        "name": "Soporte nutricional hospitalario",
-        "relevantSpecialty": "Clinical Nutrition"
-      },
+      "url": "https://www.clinicadenki.mx/nutricion-clinica/hospitalaria/"
+    },
+    {
+      "@type": "Service",
+      "name": "Nutrición Clínica Hospitalaria",
+      "description": "Servicio especializado de nutrición clínica hospitalaria en CDMX",
+      "url": "https://www.clinicadenki.mx/nutricion-clinica/hospitalaria/",
       "provider": {
         "@type": "MedicalClinic",
         "name": "Clínica Denki",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ciudad de México",
-          "addressRegion": "CDMX",
-          "addressCountry": "MX"
-        }
+        "url": "https://www.clinicadenki.mx/"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.clinicadenki.mx/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nutricion Clinica",
+          "item": "https://www.clinicadenki.mx/nutricion-clinica/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hospitalaria"
+        }
+      ]
     }
+  ]
+}
     </script>
 </head>
 
@@ -65,7 +86,7 @@
                 recuperación, reducimos complicaciones y preparamos una transición segura a casa.</p>
 
             <div class="hero-image-container reveal">
-                <img src="../../assets/img/hospitalaria/hero-hospitalaria.png"
+                <img src="/assets/img/hospitalaria/hero-hospitalaria.png"
                     alt="Nutricionista clínica brindando atención especializada en hospital"
                     class="hero-img">
             </div>
@@ -102,7 +123,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="../../assets/img/hospitalaria/transicion-hospital.png"
+                        <img src="/assets/img/hospitalaria/transicion-hospital.png"
                             alt="Preparación para el egreso hospitalario y transición nutricional"
                             style="width: 100%; height: auto; border-radius: 24px; box-shadow: var(--shadow-md);">
                     </div>
@@ -211,7 +232,7 @@
 
     <div id="footer-placeholder"></div>
 
-    <script src="../../assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

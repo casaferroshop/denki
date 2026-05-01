@@ -5,46 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrición Geriátrica en CDMX | Clínica Denki</title>
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
     <meta name="description"
         content="Atención nutricional especializada para el adulto mayor en CDMX. Manejo de sarcopenia, fragilidad y desnutrición en la vejez con enfoque clínico.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nutrición Geriátrica en CDMX | Clínica Denki">
     <meta property="og:description" content="Atención nutricional especializada para el adulto mayor en CDMX. Manejo de sarcopenia, fragilidad y desnutrición en la vejez con enfoque clínico.">
-    <meta property="og:url" content="https://clinicadenki.mx/nutricion-geriatrica/">
-    <meta property="og:image" content="https://clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
+    <meta property="og:url" content="https://www.clinicadenki.mx/nutricion-geriatrica/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
     <meta property="og:site_name" content="Clínica Denki">
     <meta property="og:locale" content="es_MX">
     <link rel="canonical" href="https://www.clinicadenki.mx/nutricion-geriatrica/">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Loader -->
-    <script src="../assets/js/loader.js"></script>
+    <script src="/assets/js/loader.js"></script>
 
     <!-- Schema MedicalSpecialty -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "MedicalSpecialty",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
       "name": "Nutrición Geriátrica",
-      "url": "https://clinicadenki.mx/nutricion-geriatrica",
       "description": "Atención nutricional especializada para el adulto mayor y manejo de la sarcopenia.",
-      "relevantSpecialty": "Geriatrics, Nutrition",
+      "url": "https://www.clinicadenki.mx/nutricion-geriatrica/"
+    },
+    {
+      "@type": "Service",
+      "name": "Nutrición Geriátrica",
+      "description": "Atención nutricional especializada para el adulto mayor y manejo de la sarcopenia.",
+      "url": "https://www.clinicadenki.mx/nutricion-geriatrica/",
       "provider": {
         "@type": "MedicalClinic",
         "name": "Clínica Denki",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Pilares 405",
-          "addressLocality": "Del Valle Centro",
-          "addressRegion": "CDMX",
-          "postalCode": "03100",
-          "addressCountry": "MX"
-        }
+        "url": "https://www.clinicadenki.mx/"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.clinicadenki.mx/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nutricion Geriatrica"
+        }
+      ]
     }
+  ]
+}
     </script>
 </head>
 
@@ -62,7 +80,7 @@
                 calidad de vida en la etapa del adulto mayor.</p>
 
             <div class="hero-image-container reveal">
-                <img src="../assets/img/geriatria/hero-geriatrica.png"
+                <img src="/assets/img/geriatria/hero-geriatrica.png"
                     alt="Nutrición clínica para un envejecimiento exitoso | Clínica Denki"
                     class="hero-img">
             </div>
@@ -90,7 +108,7 @@
                     <div class="fruit-box reveal">
                         <div class="card-thumb"
                             style="height: 180px; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
-                            <img src="../assets/img/home/especialidad-geriatrica.png" alt="Salud del Adulto Mayor"
+                            <img src="/assets/img/home/especialidad-geriatrica.png" alt="Salud del Adulto Mayor"
                                 style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <h3>Adulto Mayor</h3>
@@ -104,7 +122,7 @@
                     <div class="fruit-box reveal">
                         <div class="card-thumb"
                             style="height: 180px; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;">
-                            <img src="../assets/img/geriatria/hero-sarcopenia.png" alt="Masa Muscular"
+                            <img src="/assets/img/geriatria/hero-sarcopenia.png" alt="Masa Muscular"
                                 style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <h3>Sarcopenia</h3>
@@ -115,7 +133,7 @@
 
                     <!-- Disfagia Geriátrica -->
                     <div class="service-card reveal">
-                        <img src="../assets/img/custom/thumb-disfagia.png" alt="Nutrición para Disfagia en Adulto Mayor"
+                        <img src="/assets/img/custom/thumb-disfagia.png" alt="Nutrición para Disfagia en Adulto Mayor"
                             style="width: 100%; height: 200px; object-fit: cover; border-radius: 16px; margin-bottom: 1.5rem;">
                         <h3>Dificultad al Tragar</h3>
                         <p>Adaptación de texturas y técnicas de deglución segura para evitar desnutrición.</p>
@@ -144,7 +162,7 @@
                 <div class="reveal">
                     <!-- Ilustración Nutrición Geriátrica Hero Sección -->
                     <div class="card-thumb" style="height: 400px; border-radius: 24px; overflow: hidden;">
-                        <img src="../assets/img/custom/consulta-home.png" alt="Nutrición para Adulto Mayor"
+                        <img src="/assets/img/custom/consulta-home.png" alt="Nutrición para Adulto Mayor"
                             style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                 </div>
@@ -175,7 +193,8 @@
 
     <div id="footer-placeholder"></div>
 
-    <script src="../assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
+

@@ -8,6 +8,7 @@ dashboard.html
 MisBlogs/
 *.txt
 !robots.txt
+!llms.txt
 
 # Agent/IDE
 .agent/
