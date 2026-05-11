@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros | Clínica Denki - Nutrición Clínica Especializada</title>
+    <title>Nosotros | Clínica Denki — Equipo Médico y Política Editorial</title>
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
     <meta name="description"
-        content="Conoce a la Dra. Lucy Anita Camberos Luna y la filosofía de Clínica Denki. Nutrición clínica basada en evidencia y atención personalizada.">
+        content="Conoce al equipo de Clínica Denki, encabezado por la Dra. Lucy Anita Camberos Luna, PhD UNAM, miembro de ESPEN. Credenciales, política editorial y proceso de revisión clínica.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Nosotros | Clínica Denki - Nutrición Clínica Especializada">
-    <meta property="og:description" content="Conoce a la Dra. Lucy Anita Camberos Luna y la filosofía de Clínica Denki. Nutrición clínica basada en evidencia y atención personalizada.">
+    <meta property="og:title" content="Nosotros | Clínica Denki — Equipo Médico y Política Editorial">
+    <meta property="og:description"
+        content="Conoce al equipo de Clínica Denki, encabezado por la Dra. Lucy Anita Camberos Luna, PhD UNAM, miembro de ESPEN. Credenciales, política editorial y proceso de revisión clínica.">
     <meta property="og:url" content="https://www.clinicadenki.mx/pages/nosotros/">
     <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
     <meta property="og:site_name" content="Clínica Denki">
@@ -19,8 +20,95 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <script src="/assets/js/loader.js"></script>
+
+    <!-- Schema JSON-LD: AboutPage + Physician + BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AboutPage",
+          "@id": "https://www.clinicadenki.mx/pages/nosotros/#aboutpage",
+          "url": "https://www.clinicadenki.mx/pages/nosotros/",
+          "name": "Nosotros | Clínica Denki",
+          "description": "Equipo médico, credenciales y política editorial de Clínica Denki.",
+          "inLanguage": "es-MX",
+          "lastReviewed": "2026-05-11",
+          "reviewedBy": {
+            "@type": "Physician",
+            "name": "Dra. Lucy Anita Camberos Luna"
+          },
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "Clínica Denki",
+            "url": "https://www.clinicadenki.mx/"
+          }
+        },
+        {
+          "@type": "Physician",
+          "@id": "https://www.clinicadenki.mx/#dra-lucy-camberos",
+          "name": "Dra. Lucy Anita Camberos Luna",
+          "honorificPrefix": "Dra.",
+          "honorificSuffix": "PhD",
+          "jobTitle": "Directora Clínica · Nutrióloga Clínica de Alta Especialidad",
+          "description": "Doctora en Ciencias Biomédicas por la UNAM, 13+ años de práctica clínica en nutrición de pacientes neurológicos, metabólicos y oncológicos. Miembro de ESPEN.",
+          "url": "https://www.clinicadenki.mx/pages/nosotros/#perfil",
+          "sameAs": [
+            "https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+          ],
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidad Nacional Autónoma de México (UNAM)"
+          },
+          "memberOf": [
+            {
+              "@type": "MedicalOrganization",
+              "name": "European Society for Clinical Nutrition and Metabolism (ESPEN)"
+            }
+          ],
+          "knowsAbout": [
+            "Nutrición clínica",
+            "Nutrición oncológica",
+            "Nutrición neurológica",
+            "Nutrición geriátrica",
+            "Nutrición enteral y parenteral",
+            "Disfagia"
+          ],
+          "worksFor": {
+            "@type": "MedicalOrganization",
+            "name": "Clínica Denki",
+            "url": "https://www.clinicadenki.mx/"
+          },
+          "medicalSpecialty": [
+            "Nutrition",
+            "Oncology",
+            "Geriatric",
+            "PrimaryCare"
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://www.clinicadenki.mx/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Nosotros",
+              "item": "https://www.clinicadenki.mx/pages/nosotros/"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -28,58 +116,207 @@
     <div id="header-placeholder" data-root="../"></div>
 
     <main>
+        <!-- Hero -->
         <section class="hero-small reveal">
             <div class="container">
-                <h1>Nuestra Clínica</h1>
-                <p>Nutrición clínica de alta especialidad basada en ciencia y empatía.</p>
+                <span class="read-time" style="background: var(--primary);">Equipo Médico</span>
+                <h1>Nosotros</h1>
+                <p class="lead">Nutrición clínica de alta especialidad. Ciencia, experiencia y revisión médica
+                    documentada — no consejos de marketing.</p>
             </div>
         </section>
 
+        <!-- Misión clínica (no marketing) -->
         <section class="section">
             <div class="container section-grid">
                 <div class="reveal">
-                    <h2>Misión y Filosofía</h2>
-                    <p class="lead">Transformamos la salud a través de intervenciones nutricionales precisas.</p>
-                    <p>En Clínica Denki, creemos que la nutrición no es una dieta, sino una herramienta clínica
-                        fundamental para el tratamiento de enfermedades complejas y la mejora de la calidad de vida.</p>
+                    <h2>Quiénes somos</h2>
+                    <p class="lead">Clínica Denki es una práctica clínica de nutrición especializada
+                        ubicada en Del Valle Centro, Benito Juárez, CDMX.</p>
+                    <p>Atendemos pacientes con condiciones que requieren intervención nutricional como parte del
+                        tratamiento médico: cáncer durante quimioterapia y radioterapia, enfermedades neurológicas
+                        (Parkinson, Alzheimer, secuelas de evento vascular cerebral), condiciones metabólicas crónicas,
+                        adulto mayor con sarcopenia o riesgo de desnutrición, y pacientes hospitalarios o con soporte
+                        nutricional especial.</p>
+                    <p>No ofrecemos planes de pérdida de peso estética, ni productos milagro, ni suplementos de marca
+                        propia. Trabajamos con evidencia y en coordinación con el médico tratante del paciente.</p>
+
                     <div class="feat-list mt-4">
                         <div class="feat-item"><strong>Evidencia:</strong> Protocolos basados en guías internacionales
-                            (ESPEN, ASPEN).</div>
-                        <div class="feat-item"><strong>Humanismo:</strong> Atención centrada en el paciente y su entorno
-                            familiar.</div>
-                        <div class="feat-item"><strong>Excelencia:</strong> Formación académica continua al más alto
-                            nivel.</div>
+                            de ESPEN y ASPEN.</div>
+                        <div class="feat-item"><strong>Coordinación médica:</strong> Trabajo conjunto con oncólogos,
+                            neurólogos, geriatras y médicos internistas tratantes.</div>
+                        <div class="feat-item"><strong>Documentación:</strong> Cada paciente cuenta con historia clínica
+                            nutricional y bitácora de seguimiento.</div>
                     </div>
                 </div>
                 <div class="reveal">
-                    <img src="/assets/img/home/hero-denki.png" alt="Interior Clínica Denki"
-                        style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-xl);">
+                    <img src="/assets/img/home/hero-denki.png"
+                        alt="Consultorio de Clínica Denki en Del Valle Centro, Benito Juárez, CDMX"
+                        style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg);">
                 </div>
             </div>
         </section>
 
+        <!-- Perfil de la Dra. — EEAT central -->
         <section id="perfil" class="section bg-light">
             <div class="container section-grid">
                 <div class="reveal">
                     <h2>Dra. Lucy Anita Camberos Luna, PhD</h2>
-                    <p class="tagline">Directora Clínica y Especialista en Nutrición</p>
-                    <p>La Dra. Lucy Camberos es una de las referentes más destacadas en nutrición clínica en México, con
-                        un enfoque particular en pacientes con condiciones neurológicas y metabólicas críticas.</p>
+                    <p class="tagline">Directora Clínica · Nutrióloga Clínica de Alta Especialidad</p>
 
-                    <div class="feat-list mt-4">
-                        <div class="feat-item"><strong>Doctorado:</strong> PhD en Ciencias Biomédicas por la UNAM.</div>
-                        <div class="feat-item"><strong>Docencia:</strong> Experiencia docente de más de 10 años a nivel posgrado y licenciatura; 13+ años de práctica clínica.</div>
-                        <div class="feat-item"><strong>Certificación:</strong> Miembro activo de la European Society for
-                            Clinical Nutrition and Metabolism (ESPEN).</div>
+                    <p>Doctora en Ciencias Biomédicas por la Universidad Nacional Autónoma de México (UNAM), con más de
+                        13 años de práctica clínica enfocada en nutrición de pacientes con condiciones complejas
+                        (oncológicas, neurológicas y geriátricas) y más de 10 años de docencia en nivel licenciatura y
+                        posgrado.</p>
+
+                    <h3 style="margin-top: 2rem;">Formación académica</h3>
+                    <div class="feat-list">
+                        <div class="feat-item"><strong>Doctorado:</strong> PhD en Ciencias Biomédicas — Universidad
+                            Nacional Autónoma de México (UNAM).</div>
+                        <div class="feat-item"><strong>Licenciatura:</strong> Nutrición Clínica.</div>
+                        <div class="feat-item"><strong>Cédula profesional:</strong>
+                            <!-- TODO: La Dra. debe proporcionar el número de cédula profesional -->
+                            <em>—pendiente de actualizar—</em>.</div>
                     </div>
 
-                    <div class="cta-mini mt-4">
+                    <h3 style="margin-top: 2rem;">Afiliaciones profesionales</h3>
+                    <div class="feat-list">
+                        <div class="feat-item"><strong>ESPEN:</strong> Miembro activo de la European Society for
+                            Clinical Nutrition and Metabolism.</div>
+                    </div>
+
+                    <h3 style="margin-top: 2rem;">Áreas de especialidad clínica</h3>
+                    <div class="feat-list">
+                        <div class="feat-item"><strong>Oncológica:</strong> manejo nutricional durante quimioterapia,
+                            radioterapia y cirugía oncológica. Caquexia, mucositis, disgeusia, soporte proteico.</div>
+                        <div class="feat-item"><strong>Neurológica:</strong> Parkinson, Alzheimer, secuelas de evento
+                            vascular cerebral, disfagia neurogénica.</div>
+                        <div class="feat-item"><strong>Geriátrica:</strong> sarcopenia, prevención de desnutrición,
+                            polifarmacia y nutrición.</div>
+                        <div class="feat-item"><strong>Clínica hospitalaria:</strong> nutrición enteral, sonda
+                            nasogástrica y gastrostomía.</div>
+                    </div>
+
+                    <div class="cta-mini mt-4" style="display: flex; gap: 1rem; flex-wrap: wrap;">
                         <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
-                            class="btn btn-secondary">Ver Perfil en Doctoralia</a>
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver perfil verificado
+                            en Doctoralia</a>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="background: var(--primary);">Agendar consulta</a>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <img src="/assets/img/home/hero-clinica-denki.jpg"
+                        alt="Dra. Lucy Anita Camberos Luna, PhD UNAM, directora clínica de Clínica Denki"
+                        style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Política editorial — clave para EEAT YMYL -->
+        <section id="politica-editorial" class="section">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2>Política editorial y proceso de revisión clínica</h2>
+                    <p class="tagline">Cómo elaboramos y revisamos el contenido de salud publicado en este sitio.</p>
+                </div>
+
+                <div class="concept-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div class="concept-item">
+                        <h4>Quién escribe</h4>
+                        <p>Todo el contenido clínico es elaborado o revisado directamente por la Dra. Lucy Camberos. No
+                            publicamos contenido generado por IA sin revisión médica.</p>
+                    </div>
+                    <div class="concept-item">
+                        <h4>Fuentes</h4>
+                        <p>Citamos únicamente guías de sociedades médicas (ESPEN, ASPEN, NCCN, ADA), revistas indizadas
+                            y consensos de organismos oficiales (OMS, Secretaría de Salud, INCan).</p>
+                    </div>
+                    <div class="concept-item">
+                        <h4>Revisión periódica</h4>
+                        <p>Cada página clínica se revisa al menos una vez al año o cuando se publica nueva evidencia
+                            relevante. La fecha de revisión aparece en el encabezado de cada artículo.</p>
+                    </div>
+                    <div class="concept-item">
+                        <h4>Lo que no hacemos</h4>
+                        <p>No promovemos productos, suplementos de marca, ni dietas de moda. No prometemos cura ni
+                            sustituimos el tratamiento médico. No diagnosticamos por internet.</p>
+                    </div>
+                    <div class="concept-item">
+                        <h4>Conflictos de interés</h4>
+                        <p>No recibimos pagos de farmacéuticas ni de marcas de suplementos. Si en algún momento
+                            existiera un patrocinio, se declararía visiblemente en la página correspondiente.</p>
+                    </div>
+                    <div class="concept-item">
+                        <h4>Cómo reportar un error</h4>
+                        <p>Si detectas información imprecisa, escríbenos a
+                            <a href="mailto:denkinutricion@gmail.com">denkinutricion@gmail.com</a> indicando la URL.
+                            Las correcciones se publican en la misma página.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Instalaciones y datos clínicos -->
+        <section class="section bg-light">
+            <div class="container section-grid">
+                <div class="reveal">
+                    <h2>Instalaciones y atención</h2>
+                    <div class="feat-list">
+                        <div class="feat-item"><strong>Dirección:</strong> Pilares 405, entrada por Casa Ferro, Del
+                            Valle Centro, Benito Juárez, CDMX 03100.</div>
+                        <div class="feat-item"><strong>Modalidades:</strong> consulta presencial en clínica, consulta a
+                            domicilio en CDMX y videoconsulta para pacientes fuera de la ciudad.</div>
+                        <div class="feat-item"><strong>Población atendida:</strong> adultos y adultos mayores. Pacientes
+                            pediátricos solo en interconsulta con su médico tratante.</div>
+                        <div class="feat-item"><strong>Equipo:</strong> bioimpedancia para evaluación de composición
+                            corporal, dinamómetro de mano para fuerza de prensión, software de cálculo nutricional
+                            profesional.</div>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <h2>Contacto profesional</h2>
+                    <p>Para coordinación con otros profesionales de la salud (oncólogos, neurólogos, geriatras,
+                        médicos internistas) que requieran referir pacientes o coordinar manejo nutricional integrado:
+                    </p>
+                    <div class="feat-list mt-4">
+                        <div class="feat-item"><strong>Teléfono / WhatsApp:</strong>
+                            <a href="https://wa.me/525550150285">+52 55 5015 0285</a></div>
+                        <div class="feat-item"><strong>Correo:</strong>
+                            <a href="mailto:denkinutricion@gmail.com">denkinutricion@gmail.com</a></div>
+                        <div class="feat-item"><strong>Perfil verificado:</strong>
+                            <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                                target="_blank" rel="noopener noreferrer">Doctoralia</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA final -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-block reveal"
+                    style="background: var(--bg-pure); padding: 4rem; border-radius: 40px; text-align: center; border: 1px solid var(--primary);">
+                    <h2 style="color: var(--primary); margin-bottom: 1rem;">¿Necesitas valoración nutricional clínica?</h2>
+                    <p style="color: var(--text-main); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Si tú o un familiar viven con cáncer, una condición neurológica, sarcopenia u otra condición
+                        que requiera intervención nutricional especializada, agenda una primera consulta.</p>
+                    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="background: var(--primary);">Habla por WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin: 2rem auto; max-width: 800px;">
+            <em>Última revisión clínica de esta página: 11 de mayo de 2026 — Dra. Lucy Anita Camberos Luna, PhD.</em>
+        </p>
     </main>
 
     <div id="footer-placeholder" data-root="../"></div>
@@ -87,4 +324,3 @@
 </body>
 
 </html>
-
