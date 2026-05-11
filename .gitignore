@@ -1,15 +1,48 @@
-# OS files
+# ============================================
+# OS / Sistema
+# ============================================
 .DS_Store
 Thumbs.db
+*.swp
+*.swo
 
-# Development
+# ============================================
+# Desarrollo / Borradores / Material de trabajo
+# ============================================
 _v2_prototype_/
 dashboard.html
 MisBlogs/
+MisHubs/
+MisLandings/
+MisLandingLocales/
+Denki Reglas/
+
+# ============================================
+# Research / Datos de keywords (no van al sitio)
+# ============================================
+Semrush Denki/
+*.csv
+*.xlsx
+!sitemap.xml
+
+# ============================================
+# Archivos de texto (con excepciones del sitio)
+# ============================================
 *.txt
 !robots.txt
 !llms.txt
 
-# Agent/IDE
+# ============================================
+# Agentes / IDE
+# ============================================
 .agent/
 .claude/
+.vscode/
+.idea/
+
+# ============================================
+# Node / paquetes (por si en el futuro se usa)
+# ============================================
+node_modules/
+.env
+.env.local
