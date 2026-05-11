@@ -25,24 +25,74 @@
 
     <!-- Schema MedicalTherapy -->
     <script type="application/ld+json">
-    {
+{
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "name": "Nutrición para Disfagia",
-      "description": "Atención nutricional especializada para disfagia en Del Valle, CDMX. Planes de alimentación con texturas adaptadas según estándares IDDSI.",
-      "url": "https://www.clinicadenki.mx/nutricion-clinica/disfagia/"
+      "@type": "MedicalWebPage",
+      "@id": "https://www.clinicadenki.mx/nutricion-clinica/disfagia/#webpage",
+      "url": "https://www.clinicadenki.mx/nutricion-clinica/disfagia/",
+      "name": "Nutrición para Disfagia en CDMX | Clínica Denki",
+      "description": "Atención nutricional especializada para disfagia en Del Valle, CDMX. Planes de alimentación con texturas adaptadas según estándares IDDSI (Niveles 0-7).",
+      "inLanguage": "es-MX",
+      "lastReviewed": "2026-05-11",
+      "reviewedBy": {
+        "@type": "Physician",
+        "name": "Dra. Lucy Anita Camberos Luna",
+        "url": "https://www.clinicadenki.mx/pages/nosotros/#perfil"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Clínica Denki",
+        "url": "https://www.clinicadenki.mx/"
+      },
+      "about": {
+        "@id": "https://www.clinicadenki.mx/nutricion-clinica/disfagia/#condition"
+      }
+    },
+    {
+      "@type": "MedicalCondition",
+      "@id": "https://www.clinicadenki.mx/nutricion-clinica/disfagia/#condition",
+      "name": "Disfagia",
+      "possibleTreatment": {
+        "@type": "MedicalTherapy",
+        "name": "Intervención nutricional clínica",
+        "performedBy": {
+          "@type": "MedicalOrganization",
+          "name": "Clínica Denki",
+          "url": "https://www.clinicadenki.mx/"
+        }
+      },
+      "code": {
+        "@type": "MedicalCode",
+        "code": "R13",
+        "codingSystem": "ICD-10"
+      }
     },
     {
       "@type": "Service",
-      "name": "Nutrición para Disfagia",
-      "description": "Atención nutricional especializada para disfagia en Del Valle, CDMX. Planes de alimentación con texturas adaptadas según estándares IDDSI.",
+      "@id": "https://www.clinicadenki.mx/nutricion-clinica/disfagia/#service",
+      "serviceType": "Nutrición clínica especializada",
+      "name": "Nutrición para Disfagia en CDMX | Clínica Denki",
+      "description": "Atención nutricional especializada para disfagia en Del Valle, CDMX. Planes de alimentación con texturas adaptadas según estándares IDDSI (Niveles 0-7).",
       "url": "https://www.clinicadenki.mx/nutricion-clinica/disfagia/",
+      "areaServed": {
+        "@type": "City",
+        "name": "Ciudad de México"
+      },
       "provider": {
         "@type": "MedicalClinic",
         "name": "Clínica Denki",
-        "url": "https://www.clinicadenki.mx/"
+        "url": "https://www.clinicadenki.mx/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pilares 405, entrada por Casa Ferro",
+          "addressLocality": "Del Valle Centro, Benito Juárez",
+          "addressRegion": "CDMX",
+          "postalCode": "03100",
+          "addressCountry": "MX"
+        },
+        "telephone": "+525550150285"
       }
     },
     {
@@ -57,15 +107,48 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Nutricion Clinica",
+          "name": "Nutrición Clínica",
           "item": "https://www.clinicadenki.mx/nutricion-clinica/"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Disfagia"
+          "name": "Disfagia",
+          "item": "https://www.clinicadenki.mx/nutricion-clinica/disfagia/"
         }
       ]
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿La disfagia es reversible?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de la causa. Post-EVC es frecuente mejorar, en demencias suele ser progresiva. En ambos casos, el manejo es vital."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los purés tienen que ser insípidos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Al contrario. Con las técnicas adecuadas de Clínica Denki, la comida licuada mantiene su sabor original delicioso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si mi familiar tose al beber?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es una señal de alarma de aspiración. Requiere una evaluación inmediata de deglución y posible uso de espesantes."
+      }
     }
   ]
 }
@@ -247,6 +330,11 @@
                 </div>
             </div>
         </section>
+        <!-- Última revisión clínica (EEAT YMYL) -->
+        <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin: 2rem auto; max-width: 800px;">
+            <em>Última revisión clínica de esta página: 11 de mayo de 2026 — Dra. Lucy Anita Camberos Luna, PhD UNAM, miembro de ESPEN.
+            <a href="/pages/aviso-medico/">Ver aviso médico</a>.</em>
+        </p>
     </main>
 
     <div id="footer-placeholder"></div>
