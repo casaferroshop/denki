@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.clinicadenki.mx/</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -211,7 +211,7 @@
   <!-- Páginas estáticas (cleanUrls + trailingSlash en Vercel) -->
   <url>
     <loc>https://www.clinicadenki.mx/pages/nosotros/</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -220,5 +220,25 @@
     <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Legales (nuevas) -->
+  <url>
+    <loc>https://www.clinicadenki.mx/pages/aviso-de-privacidad/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/pages/politica-de-cookies/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/pages/aviso-medico/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

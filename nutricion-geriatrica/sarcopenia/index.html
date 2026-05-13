@@ -25,24 +25,74 @@
 
     <!-- Schema MedicalTherapy -->
     <script type="application/ld+json">
-    {
+{
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "name": "Nutrición para Sarcopenia",
-      "description": "Nutrición geriátrica especializada para sarcopenia en Del Valle, CDMX. Planes personalizados para preservar masa muscular y fuerza.",
-      "url": "https://www.clinicadenki.mx/nutricion-geriatrica/sarcopenia/"
+      "@type": "MedicalWebPage",
+      "@id": "https://www.clinicadenki.mx/nutricion-geriatrica/sarcopenia/#webpage",
+      "url": "https://www.clinicadenki.mx/nutricion-geriatrica/sarcopenia/",
+      "name": "Nutrición para Sarcopenia en CDMX | Clínica Denki",
+      "description": "Nutrición geriátrica especializada para sarcopenia en Del Valle, CDMX. Planes personalizados para preservar y recuperar masa muscular y fuerza en el adulto mayor.",
+      "inLanguage": "es-MX",
+      "lastReviewed": "2026-05-11",
+      "reviewedBy": {
+        "@type": "Physician",
+        "name": "Dra. Lucy Anita Camberos Luna",
+        "url": "https://www.clinicadenki.mx/pages/nosotros/#perfil"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Clínica Denki",
+        "url": "https://www.clinicadenki.mx/"
+      },
+      "about": {
+        "@id": "https://www.clinicadenki.mx/nutricion-geriatrica/sarcopenia/#condition"
+      }
+    },
+    {
+      "@type": "MedicalCondition",
+      "@id": "https://www.clinicadenki.mx/nutricion-geriatrica/sarcopenia/#condition",
+      "name": "Sarcopenia",
+      "possibleTreatment": {
+        "@type": "MedicalTherapy",
+        "name": "Intervención nutricional clínica",
+        "performedBy": {
+          "@type": "MedicalOrganization",
+          "name": "Clínica Denki",
+          "url": "https://www.clinicadenki.mx/"
+        }
+      },
+      "code": {
+        "@type": "MedicalCode",
+        "code": "M62.84",
+        "codingSystem": "ICD-10"
+      }
     },
     {
       "@type": "Service",
-      "name": "Nutrición para Sarcopenia",
-      "description": "Nutrición geriátrica especializada para sarcopenia en Del Valle, CDMX. Planes personalizados para preservar masa muscular y fuerza.",
+      "@id": "https://www.clinicadenki.mx/nutricion-geriatrica/sarcopenia/#service",
+      "serviceType": "Nutrición clínica especializada",
+      "name": "Nutrición para Sarcopenia en CDMX | Clínica Denki",
+      "description": "Nutrición geriátrica especializada para sarcopenia en Del Valle, CDMX. Planes personalizados para preservar y recuperar masa muscular y fuerza en el adulto mayor.",
       "url": "https://www.clinicadenki.mx/nutricion-geriatrica/sarcopenia/",
+      "areaServed": {
+        "@type": "City",
+        "name": "Ciudad de México"
+      },
       "provider": {
         "@type": "MedicalClinic",
         "name": "Clínica Denki",
-        "url": "https://www.clinicadenki.mx/"
+        "url": "https://www.clinicadenki.mx/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pilares 405, entrada por Casa Ferro",
+          "addressLocality": "Del Valle Centro, Benito Juárez",
+          "addressRegion": "CDMX",
+          "postalCode": "03100",
+          "addressCountry": "MX"
+        },
+        "telephone": "+525550150285"
       }
     },
     {
@@ -57,15 +107,48 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Nutricion Geriatrica",
+          "name": "Nutrición Geriátrica",
           "item": "https://www.clinicadenki.mx/nutricion-geriatrica/"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Sarcopenia"
+          "name": "Sarcopenia",
+          "item": "https://www.clinicadenki.mx/nutricion-geriatrica/sarcopenia/"
         }
       ]
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿A los 80 años se puede recuperar músculo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutamente. La ciencia confirma que el músculo responde al estímulo nutricional y de ejercicio a cualquier edad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los suplementos de proteína son obligatorios?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No siempre. Priorizamos alimentos reales, pero los suplementos son una gran herramienta si hay poco apetito."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si mi familiar no puede masticar carne?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Adaptamos las texturas (purés, picados) para asegurar que la proteína llegue sin riesgo de atragantamiento."
+      }
     }
   ]
 }
@@ -243,6 +326,11 @@
                 </div>
             </div>
         </section>
+        <!-- Última revisión clínica (EEAT YMYL) -->
+        <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin: 2rem auto; max-width: 800px;">
+            <em>Última revisión clínica de esta página: 11 de mayo de 2026 — Dra. Lucy Anita Camberos Luna, PhD UNAM, miembro de ESPEN.
+            <a href="/pages/aviso-medico/">Ver aviso médico</a>.</em>
+        </p>
     </main>
 
     <div id="footer-placeholder"></div>
