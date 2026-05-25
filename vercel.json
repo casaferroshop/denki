@@ -55,7 +55,7 @@
     { "source": "/products/consulta-en-linea", "destination": "/", "permanent": true },
     { "source": "/products/consulta-en-linea-1", "destination": "/", "permanent": true },
     { "source": "/products/(.*)", "has": [{ "type": "query", "key": "variant" }], "destination": "/", "permanent": true },
-    { "source": "/products/(.*)", "destination": "/", "permanent": true }
+    { "source": "/products/(.*)", "destination": "/", "permanent": true },
     { "source": "/collections/enfermedades", "destination": "/nutricion-neurologica/", "permanent": true },
     { "source": "/collections/enfermedades/", "destination": "/nutricion-neurologica/", "permanent": true },
     { "source": "/collections/servicios-de-nutricion.atom", "destination": "/blog/", "permanent": true },
