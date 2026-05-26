@@ -43,6 +43,7 @@
     { "source": "/products/consulta-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
     { "source": "/products/consulta-diabetes", "destination": "/nutricion-metabolica/diabetes/", "permanent": true },
     { "source": "/products/consulta-cancer", "destination": "/nutricion-oncologica/cancer/", "permanent": true },
+    { "source": "/products/consulta-cancer/", "destination": "/nutricion-oncologica/cancer/", "permanent": true },
     { "source": "/products/consulta-infarto-cerebral", "destination": "/nutricion-neurologica/infarto-cerebral/", "permanent": true },
     { "source": "/products/nutricion-clinica", "destination": "/nutricion-clinica/", "permanent": true },
     { "source": "/products/nutricion-parenteral", "destination": "/nutricion-clinica/", "permanent": true },
