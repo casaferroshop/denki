@@ -14,18 +14,19 @@ async function loadComponent(id, componentKey, rootPath) {
         await loadScript(rootPath + 'assets/js/components-data.js');
     }
 
-    // Hybrid Strategy
-    try {
-        // Attempt Fetch if on server
-        if (window.location.protocol !== 'file:') {
+    // Production: use components-data.js only (avoids Googlebot discovering /components/*.html via fetch)
+    // file:// preview: still fetch HTML fragments when available
+    const isLocalPreview = window.location.protocol === 'file:';
+    if (isLocalPreview) {
+        try {
             const path = componentKey === 'header' ? 'components/header.html' : 'components/footer.html';
             const response = await fetch(rootPath + path);
             if (response.ok) {
                 html = await response.text();
             }
+        } catch (err) {
+            console.warn(`Denki Loader: Fetch failed for ${componentKey}, using fallback.`);
         }
-    } catch (err) {
-        console.warn(`Denki Loader: Fetch failed for ${componentKey}, using fallback.`);
     }
 
     // Fallback if fetch failed or file://
