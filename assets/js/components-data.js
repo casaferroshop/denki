@@ -15,7 +15,7 @@ window.DENKI_COMPONENTS = {
 
             <!-- Ubicaciones: Desktop Only -->
             <li class="has-dropdown d-none-mobile">
-                <a href="#">Ubicaciones</a>
+                <a href="{{root}}ubicaciones/cdmx/">Ubicaciones</a>
                 <ul class="dropdown-menu" id="menu-ubicaciones"></ul>
             </li>
 
@@ -103,8 +103,8 @@ window.DENKI_COMPONENTS = {
             <div>
                 <h4 class="f-title">Legal</h4>
                 <ul class="f-links">
-                    <li><a href="#">Aviso de Privacidad</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="{{root}}pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="{{root}}pages/aviso-medico/">Aviso Médico</a></li>
                 </ul>
                 <div style="margin-top: 2rem;">
                     <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
