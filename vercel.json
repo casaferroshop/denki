@@ -7,28 +7,48 @@
       "status": 404,
       "dest": "/404.html"
     },
-    { "handle": "filesystem" }
+    {
+      "handle": "filesystem"
+    }
   ],
   "headers": [
     {
       "source": "/assets/js/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
-        { "key": "X-Robots-Tag", "value": "noindex" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
       ]
     },
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ],
@@ -36,75 +56,938 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "clinicadenki.mx" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "clinicadenki.mx"
+        }
+      ],
       "destination": "https://www.clinicadenki.mx/$1",
       "permanent": true
     },
-    { "source": "/products/consulta-parkinson", "has": [{ "type": "query", "key": "variant" }], "destination": "/nutricion-neurologica/parkinson/", "permanent": true },
-    { "source": "/products/consulta-alzheimer", "has": [{ "type": "query", "key": "variant" }], "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
-    { "source": "/products/consulta-diabetes", "has": [{ "type": "query", "key": "variant" }], "destination": "/nutricion-metabolica/diabetes/", "permanent": true },
-    { "source": "/products/consulta-cancer", "has": [{ "type": "query", "key": "variant" }], "destination": "/nutricion-oncologica/cancer/", "permanent": true },
-    { "source": "/products/consulta-infarto-cerebral", "has": [{ "type": "query", "key": "variant" }], "destination": "/nutricion-neurologica/infarto-cerebral/", "permanent": true },
-    { "source": "/products/nutricion-clinica", "has": [{ "type": "query", "key": "variant" }], "destination": "/nutricion-clinica/", "permanent": true },
-    { "source": "/products/nutricion-parenteral", "has": [{ "type": "query", "key": "variant" }], "destination": "/nutricion-clinica/", "permanent": true },
-    { "source": "/products/nutricion-parenteral-a-domicilio", "has": [{ "type": "query", "key": "variant" }], "destination": "/nutricion-clinica/domicilio/", "permanent": true },
-    { "source": "/products/alimentacion-consciente", "has": [{ "type": "query", "key": "variant" }], "destination": "/nutricion-salud-mental/", "permanent": true },
-    { "source": "/products/nutricion-consciente", "has": [{ "type": "query", "key": "variant" }], "destination": "/nutricion-salud-mental/", "permanent": true },
-    { "source": "/products/nutrici-n-para-diabetes", "has": [{ "type": "query", "key": "variant" }], "destination": "/nutricion-metabolica/diabetes/", "permanent": true },
-    { "source": "/products/nutricion-infantil", "has": [{ "type": "query", "key": "variant" }], "destination": "/", "permanent": true },
-    { "source": "/products/consulta-en-linea", "has": [{ "type": "query", "key": "variant" }], "destination": "/", "permanent": true },
-    { "source": "/products/consulta-en-linea-1", "has": [{ "type": "query", "key": "variant" }], "destination": "/", "permanent": true },
-    { "source": "/products/consulta-parkinson", "destination": "/nutricion-neurologica/parkinson/", "permanent": true },
-    { "source": "/products/consulta-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
-    { "source": "/products/consulta-diabetes", "destination": "/nutricion-metabolica/diabetes/", "permanent": true },
-    { "source": "/products/consulta-cancer", "destination": "/nutricion-oncologica/cancer/", "permanent": true },
-    { "source": "/products/consulta-cancer/", "destination": "/nutricion-oncologica/cancer/", "permanent": true },
-    { "source": "/products/consulta-infarto-cerebral", "destination": "/nutricion-neurologica/infarto-cerebral/", "permanent": true },
-    { "source": "/products/nutricion-clinica", "destination": "/nutricion-clinica/", "permanent": true },
-    { "source": "/products/nutricion-parenteral", "destination": "/nutricion-clinica/", "permanent": true },
-    { "source": "/products/nutricion-parenteral-a-domicilio", "destination": "/nutricion-clinica/domicilio/", "permanent": true },
-    { "source": "/products/alimentacion-consciente", "destination": "/nutricion-salud-mental/", "permanent": true },
-    { "source": "/products/nutricion-consciente", "destination": "/nutricion-salud-mental/", "permanent": true },
-    { "source": "/products/nutrici-n-para-diabetes", "destination": "/nutricion-metabolica/diabetes/", "permanent": true },
-    { "source": "/products/nutricion-infantil", "destination": "/", "permanent": true },
-    { "source": "/products/consulta-en-linea", "destination": "/", "permanent": true },
-    { "source": "/products/consulta-en-linea-1", "destination": "/", "permanent": true },
-    { "source": "/products/(.*)", "has": [{ "type": "query", "key": "variant" }], "destination": "/", "permanent": true },
-    { "source": "/products/(.*)", "destination": "/", "permanent": true },
-    { "source": "/collections/enfermedades", "destination": "/nutricion-neurologica/", "permanent": true },
-    { "source": "/collections/enfermedades/", "destination": "/nutricion-neurologica/", "permanent": true },
-    { "source": "/collections/servicios-de-nutricion.atom", "destination": "/blog/", "permanent": true },
-    { "source": "/collections/servicios-de-nutricion", "destination": "/", "permanent": true },
-    { "source": "/collections/servicios-de-nutricion/", "destination": "/", "permanent": true },
-    { "source": "/collections", "destination": "/", "permanent": true },
-    { "source": "/collections/", "destination": "/", "permanent": true },
-    { "source": "/collections/(.*)", "destination": "/", "permanent": true },
-    { "source": "/blogs/guia-de-nutricion", "destination": "/blog/", "permanent": true },
-    { "source": "/blogs/guia-de-nutricion/", "destination": "/blog/", "permanent": true },
-    { "source": "/blogs/neuronutricion", "destination": "/nutricion-neurologica/", "permanent": true },
-    { "source": "/blogs/neuronutricion/", "destination": "/nutricion-neurologica/", "permanent": true },
-    { "source": "/blogs/alzheimer/hidratacion-y-salud-cerebral-prevencion-del-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
-    { "source": "/blogs/alzheimer/reduciendo-el-riesgo-de-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
-    { "source": "/blogs/alzheimer/absorcion-de-nutrientes-en-pacientes-con-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
-    { "source": "/blogs/alzheimer/nutricion-preventiva-claves-para-retrasar-el-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
-    { "source": "/blogs/alzheimer/dieta-mind-el-menu-para-tu-cerebro-contra-el-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
-    { "source": "/blogs/noticias/vivir-con-alzheimer-mejoras-a-traves-de-la-nutricion", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
-    { "source": "/blogs/parkinson-y-nutricion-saber-mas", "destination": "/nutricion-neurologica/parkinson/", "permanent": true },
-    { "source": "/blogs/parkinson-y-nutricion-saber-mas/cafeina-y-parkinson", "destination": "/nutricion-neurologica/parkinson/", "permanent": true },
-    { "source": "/blogs/parkinson-y-nutricion-saber-mas/magnesio-y-otros-minerales-en-el-parkinson", "destination": "/nutricion-neurologica/parkinson/", "permanent": true },
-    { "source": "/blogs/parkinson-y-nutricion-saber-mas/dieta-antiinflamatoria-contra-el-parkinson", "destination": "/nutricion-neurologica/parkinson/", "permanent": true },
-    { "source": "/blogs/parkinson-y-nutricion-saber-mas/alimentos-contra-el-parkinson", "destination": "/blog/guias-nutricionales/alimentos-prohibidos-parkinson/", "permanent": true },
-    { "source": "/blogs/parkinson-y-nutricion-saber-mas/superfoods-para-el-parkinson", "destination": "/blog/guias-nutricionales/alimentos-prohibidos-parkinson/", "permanent": true },
-    { "source": "/blogs/parkinson-y-nutricion-saber-mas/suplementos-nutricionales-y-parkinson", "destination": "/nutricion-neurologica/parkinson/", "permanent": true },
-    { "source": "/blogs/noticias/estrategias-dieteticas-para-pacientes-con-parkinson", "destination": "/nutricion-neurologica/parkinson/", "permanent": true },
-    { "source": "/blogs/noticias", "destination": "/blog/", "permanent": true },
-    { "source": "/blogs/guia-de-nutricion/como-saber-si-tienes-diabetes-sintomas-y-pruebas", "destination": "/blog/guias-nutricionales/dieta-diabetes/", "permanent": true },
-    { "source": "/blogs/guia-de-nutricion/desayunos-saludables-para-diabeticos-ideas-faciles", "destination": "/blog/guias-nutricionales/dieta-diabetes/", "permanent": true },
-    { "source": "/blogs/alzheimer/dieta-cetogenica-es-efectiva-contra-el-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
-    { "source": "/blogs/guia-de-nutricion/que-es-el-alzheimer", "destination": "/nutricion-neurologica/alzheimer/", "permanent": true },
-    { "source": "/blogs/(.*)", "destination": "/blog/", "permanent": true },
-    { "source": "/pages/contact", "destination": "/pages/contacto/", "permanent": true },
-    { "source": "/pages/contacto", "destination": "/pages/contacto/", "permanent": true },
-    { "source": "/que-es-la-neuronutricion", "destination": "/nutricion-neurologica/", "permanent": true }
+    {
+      "source": "/products/consulta-parkinson",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-parkinson/",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-alzheimer",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-alzheimer/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-diabetes",
+      "destination": "/nutricion-metabolica/diabetes/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-diabetes/",
+      "destination": "/nutricion-metabolica/diabetes/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-cancer",
+      "destination": "/nutricion-oncologica/cancer/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-cancer/",
+      "destination": "/nutricion-oncologica/cancer/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-infarto-cerebral",
+      "destination": "/nutricion-neurologica/infarto-cerebral/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-infarto-cerebral/",
+      "destination": "/nutricion-neurologica/infarto-cerebral/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutricion-clinica",
+      "destination": "/nutricion-clinica/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutricion-clinica/",
+      "destination": "/nutricion-clinica/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutricion-parenteral",
+      "destination": "/nutricion-clinica/enteral-sonda/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutricion-parenteral/",
+      "destination": "/nutricion-clinica/enteral-sonda/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutricion-parenteral-a-domicilio",
+      "destination": "/nutricion-clinica/domicilio/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutricion-parenteral-a-domicilio/",
+      "destination": "/nutricion-clinica/domicilio/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/alimentacion-consciente",
+      "destination": "/nutricion-salud-mental/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/alimentacion-consciente/",
+      "destination": "/nutricion-salud-mental/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutricion-consciente",
+      "destination": "/nutricion-salud-mental/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutricion-consciente/",
+      "destination": "/nutricion-salud-mental/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutrici-n-para-diabetes",
+      "destination": "/nutricion-metabolica/diabetes/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutrici-n-para-diabetes/",
+      "destination": "/nutricion-metabolica/diabetes/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutricion-infantil",
+      "destination": "/nutricion-clinica/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/nutricion-infantil/",
+      "destination": "/nutricion-clinica/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-en-linea",
+      "destination": "/pages/contacto/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-en-linea/",
+      "destination": "/pages/contacto/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-en-linea-1",
+      "destination": "/pages/contacto/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/consulta-en-linea-1/",
+      "destination": "/pages/contacto/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/alimentos-prohibidos-para-el-parkinson-como-cuidarte-con-la-dieta/",
+      "destination": "/blog/guias-nutricionales/alimentos-prohibidos-parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/alimentos-prohibidos-para-el-parkinson-como-cuidarte-con-la-dieta",
+      "destination": "/blog/guias-nutricionales/alimentos-prohibidos-parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/dieta-antiinflamatoria-contra-el-parkinson/",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/magnesio-y-otros-minerales-en-el-parkinson/",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/dieta-antiinflamatoria-contra-el-parkinson",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/magnesio-y-otros-minerales-en-el-parkinson",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/neuronutricion-alimenta-tu-cerebro-transforma-tu-vida/",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/neuronutricion-alimenta-tu-cerebro-transforma-tu-vida",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/nutricion-oncologica-apoyo-para-pacientes-con-cancer/",
+      "destination": "/nutricion-oncologica/cancer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/nutricion-oncologica-apoyo-para-pacientes-con-cancer",
+      "destination": "/nutricion-oncologica/cancer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/suplementos-nutricionales-y-parkinson/",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/desayunos-saludables-para-diabeticos-ideas-faciles/",
+      "destination": "/blog/guias-nutricionales/dieta-diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/suplementos-nutricionales-y-parkinson",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/desayunos-saludables-para-diabeticos-ideas-faciles",
+      "destination": "/blog/guias-nutricionales/dieta-diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/como-saber-si-tienes-diabetes-sintomas-y-pruebas/",
+      "destination": "/blog/guias-nutricionales/dieta-diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/por-que-se-produce-la-diabetes-y-como-prevenirla/",
+      "destination": "/blog/guias-nutricionales/dieta-diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/como-saber-si-tienes-diabetes-sintomas-y-pruebas",
+      "destination": "/blog/guias-nutricionales/dieta-diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/por-que-se-produce-la-diabetes-y-como-prevenirla",
+      "destination": "/blog/guias-nutricionales/dieta-diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/dieta-mind-el-menu-para-tu-cerebro-contra-el-alzheimer/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/nutricion-preventiva-claves-para-retrasar-el-alzheimer/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/frutas-permitidas-y-prohibidas-para-diab-ticos/",
+      "destination": "/blog/guias-nutricionales/dieta-diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/dieta-mind-el-menu-para-tu-cerebro-contra-el-alzheimer",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/hidratacion-y-salud-cerebral-prevencion-del-alzheimer/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/nutricion-preventiva-claves-para-retrasar-el-alzheimer",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/frutas-permitidas-y-prohibidas-para-diab-ticos",
+      "destination": "/blog/guias-nutricionales/dieta-diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/hidratacion-y-salud-cerebral-prevencion-del-alzheimer",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/neuronutricion-claves-para-la-salud-cerebral/",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/conexion-intestino-y-parkinson/",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/neuronutricion-claves-para-la-salud-cerebral",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/noticias/vivir-con-alzheimer-mejoras-a-traves-de-la-nutricion/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/alimentos-contra-el-parkinson/",
+      "destination": "/blog/guias-nutricionales/alimentos-prohibidos-parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/conexion-intestino-y-parkinson",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/absorcion-de-nutrientes-en-pacientes-con-alzheimer/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/noticias/estrategias-dieteticas-para-pacientes-con-parkinson/",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/noticias/vivir-con-alzheimer-mejoras-a-traves-de-la-nutricion",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/alimentos-contra-el-parkinson",
+      "destination": "/blog/guias-nutricionales/alimentos-prohibidos-parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/superfoods-para-el-parkinson/",
+      "destination": "/blog/guias-nutricionales/alimentos-prohibidos-parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/absorcion-de-nutrientes-en-pacientes-con-alzheimer",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/noticias/estrategias-dieteticas-para-pacientes-con-parkinson",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/superfoods-para-el-parkinson",
+      "destination": "/blog/guias-nutricionales/alimentos-prohibidos-parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/dieta-cetogenica-es-efectiva-contra-el-alzheimer/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/dieta-cetogenica-es-efectiva-contra-el-alzheimer",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/infarto-cerebral-tratamiento-natural/",
+      "destination": "/nutricion-neurologica/infarto-cerebral/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/comidas-para-personas-con-alzheimer/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/infarto-cerebral-tratamiento-natural",
+      "destination": "/nutricion-neurologica/infarto-cerebral/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/azucar-y-alzheimer-entendiendo-su-conexion/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/comidas-para-personas-con-alzheimer",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/azucar-y-alzheimer-entendiendo-su-conexion",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/alcohol-y-parkinson/",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/cafeina-y-parkinson/",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/alcohol-y-parkinson",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/cafeina-y-parkinson",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/reduciendo-el-riesgo-de-alzheimer/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/reduciendo-el-riesgo-de-alzheimer",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/dieta-para-diabeticos/",
+      "destination": "/blog/guias-nutricionales/dieta-diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/neuronutricion/que-es-la-neuronutricion/",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/dieta-para-diabeticos",
+      "destination": "/blog/guias-nutricionales/dieta-diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/nutricion-consciente/",
+      "destination": "/nutricion-salud-mental/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/neuronutricion/que-es-la-neuronutricion",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/nutricion-consciente",
+      "destination": "/nutricion-salud-mental/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/que-es-el-alzheimer/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/que-es-el-alzheimer",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/noticias/5-alimentos-para-parkinson/",
+      "destination": "/blog/guias-nutricionales/alimentos-prohibidos-parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutricion-parenteral-a-domicilio/",
+      "destination": "/nutricion-clinica/domicilio/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/noticias/5-alimentos-para-parkinson",
+      "destination": "/blog/guias-nutricionales/alimentos-prohibidos-parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutricion-parenteral-a-domicilio",
+      "destination": "/nutricion-clinica/domicilio/",
+      "permanent": true
+    },
+    {
+      "source": "/collections/servicios-de-nutricion.atom/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/collections/servicios-de-nutricion.atom",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas/",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/parkinson-y-nutricion-saber-mas",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/collections/servicios-de-nutricion/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-infarto-cerebral/",
+      "destination": "/nutricion-neurologica/infarto-cerebral/",
+      "permanent": true
+    },
+    {
+      "source": "/collections/servicios-de-nutricion",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-infarto-cerebral",
+      "destination": "/nutricion-neurologica/infarto-cerebral/",
+      "permanent": true
+    },
+    {
+      "source": "/products/alimentacion-consciente/",
+      "destination": "/nutricion-salud-mental/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutrici-n-para-diabetes/",
+      "destination": "/nutricion-metabolica/diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/products/alimentacion-consciente",
+      "destination": "/nutricion-salud-mental/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutrici-n-para-diabetes",
+      "destination": "/nutricion-metabolica/diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutricion-consciente/",
+      "destination": "/nutricion-salud-mental/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutricion-parenteral/",
+      "destination": "/nutricion-clinica/enteral-sonda/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-en-linea-1/",
+      "destination": "/pages/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutricion-consciente",
+      "destination": "/nutricion-salud-mental/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutricion-parenteral",
+      "destination": "/nutricion-clinica/enteral-sonda/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-alzheimer/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-en-linea-1",
+      "destination": "/pages/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-parkinson/",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutricion-infantil/",
+      "destination": "/nutricion-clinica/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-alzheimer",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-diabetes/",
+      "destination": "/nutricion-metabolica/diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-en-linea/",
+      "destination": "/pages/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-parkinson",
+      "destination": "/nutricion-neurologica/parkinson/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutricion-clinica/",
+      "destination": "/nutricion-clinica/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutricion-infantil",
+      "destination": "/nutricion-clinica/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-diabetes",
+      "destination": "/nutricion-metabolica/diabetes/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-en-linea",
+      "destination": "/pages/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/products/nutricion-clinica",
+      "destination": "/nutricion-clinica/",
+      "permanent": true
+    },
+    {
+      "source": "/collections/enfermedades/",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-cancer/",
+      "destination": "/nutricion-oncologica/cancer/",
+      "permanent": true
+    },
+    {
+      "source": "/que-es-la-neuronutricion/",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/collections/enfermedades",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/products/consulta-cancer",
+      "destination": "/nutricion-oncologica/cancer/",
+      "permanent": true
+    },
+    {
+      "source": "/que-es-la-neuronutricion",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/guia-de-nutricion",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/neuronutricion/",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/neuronutricion",
+      "destination": "/nutricion-neurologica/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer/",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/alzheimer",
+      "destination": "/nutricion-neurologica/alzheimer/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/noticias/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/contacto/",
+      "destination": "/pages/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/noticias",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/contact/",
+      "destination": "/pages/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/contacto",
+      "destination": "/pages/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/contact",
+      "destination": "/pages/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/ubicaciones/",
+      "destination": "/ubicaciones/cdmx/",
+      "permanent": true
+    },
+    {
+      "source": "/ubicaciones",
+      "destination": "/ubicaciones/cdmx/",
+      "permanent": true
+    },
+    {
+      "source": "/products/(.*)",
+      "destination": "/",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "variant"
+        }
+      ]
+    },
+    {
+      "source": "/products/(.*)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/collections",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/collections/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/collections/(.*)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/(.*)",
+      "destination": "/blog/",
+      "permanent": true
+    }
   ]
 }
