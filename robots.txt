@@ -9,10 +9,6 @@ Disallow: /*?variant=
 # UI fragments — not public pages (404 in production; block crawl hints)
 Disallow: /components/
 
-# JS/CSS assets: required for the site; disallow indexing as standalone URLs
-Disallow: /assets/js/
-Disallow: /assets/css/
-
 # Disallow development files
 Disallow: /_v2_prototype_/
 Disallow: /dashboard.html
