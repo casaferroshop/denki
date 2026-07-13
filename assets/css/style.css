@@ -231,7 +231,6 @@ header.scrolled .logo img {
     display: flex;
     align-items: center;
     gap: 0.2rem;
-    white-space: nowrap;
 }
 
 .nav-links a:hover {

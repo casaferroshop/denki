@@ -7,9 +7,6 @@ async function loadComponent(id, componentKey, rootPath) {
     const placeholder = document.getElementById(id);
     if (!placeholder) return;
 
-    if (componentKey === 'header' && document.getElementById('main-header')) return;
-    if (componentKey === 'footer' && document.querySelector('body > footer, body footer')) return;
-
     let html = "";
 
     // Try to load fallback script first if doesn't exist to ensure file:// support
@@ -59,11 +56,6 @@ async function loadScript(src) {
 }
 
 async function initDynamicMenu(rootPath) {
-    const navMenu = document.getElementById('nav-menu');
-    if (navMenu && navMenu.querySelector('a[href*="nutricion-metabolica"]')) {
-        return;
-    }
-
     // Ensure menu data is loaded
     if (!window.DENKI_MENU_DATA) {
         await loadScript(rootPath + 'assets/js/menu-data.js');
@@ -97,6 +89,7 @@ async function initDynamicMenu(rootPath) {
         `;
     }).join('');
 
+    const navMenu = document.getElementById('nav-menu');
     if (navMenu) {
         // 1. Unified Hubs (Specialties + Hospitalaria)
         const clinicalHubs = menuData.especialidades || [];
@@ -116,6 +109,10 @@ async function initDynamicMenu(rootPath) {
         ubicacionesDesktop.innerHTML = generateItems(menuData.ubicaciones);
     }
 
+    const ubicacionesMobile = document.getElementById('mobile-ubicaciones-container');
+    if (ubicacionesMobile && menuData.ubicaciones) {
+        ubicacionesMobile.innerHTML = generateItems(menuData.ubicaciones);
+    }
 }
 
 function calculateRoot() {
@@ -193,18 +190,7 @@ function initBanner() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     const root = calculateRoot();
-    const hasStaticHeader = Boolean(document.getElementById('main-header'));
-    const hasStaticFooter = Boolean(document.querySelector('body footer'));
-
-    if (hasStaticHeader) {
-        initMobileMenu();
-    } else {
-        await loadComponent('header-placeholder', 'header', root);
-    }
-
+    await loadComponent('header-placeholder', 'header', root);
     initBanner();
-
-    if (!hasStaticFooter) {
-        loadComponent('footer-placeholder', 'footer', root);
-    }
+    loadComponent('footer-placeholder', 'footer', root);
 });
