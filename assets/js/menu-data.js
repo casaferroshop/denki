@@ -47,6 +47,11 @@ window.DENKI_MENU_DATA = {
                 { "title": "Disfagia", "url": "nutricion-clinica/disfagia/" },
                 { "title": "Nutrición Enteral", "url": "nutricion-clinica/enteral-sonda/" }
             ]
+        },
+        {
+            "title": "Nutrición Salud Mental",
+            "url": "nutricion-salud-mental/",
+            "services": []
         }
     ],
     "hospitalaria": [
@@ -56,6 +61,8 @@ window.DENKI_MENU_DATA = {
         { "title": "Consulta a Domicilio", "url": "nutricion-clinica/domicilio/" }
     ],
     "ubicaciones": [
-        { "title": "CDMX", "url": "ubicaciones/cdmx/" }
+        { "title": "CDMX", "url": "ubicaciones/cdmx/" },
+        { "title": "Benito Juárez", "url": "ubicaciones/benito-juarez/" },
+        { "title": "Roma-Condesa", "url": "ubicaciones/roma-condesa/" }
     ]
 };
