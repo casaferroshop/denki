@@ -66,6 +66,17 @@
       "permanent": true
     },
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "denki-five.vercel.app"
+        }
+      ],
+      "destination": "https://www.clinicadenki.mx/$1",
+      "permanent": true
+    },
+    {
       "source": "/products/consulta-parkinson",
       "destination": "/nutricion-neurologica/parkinson/",
       "permanent": true,
@@ -916,11 +927,6 @@
     {
       "source": "/blogs/noticias/",
       "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/contacto/",
-      "destination": "/pages/contacto/",
       "permanent": true
     },
     {

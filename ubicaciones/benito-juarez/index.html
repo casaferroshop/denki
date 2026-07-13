@@ -50,7 +50,7 @@
       "@type": "MedicalClinic",
       "name": "Clínica Denki - Sede Benito Juárez",
       "description": "Sede principal de Clínica Denki en la Col. Del Valle. Especialistas en nutrición clínica para toda la alcaldía.",
-      "url": "https://www.clinicadenki.mx/ubicaciones/benito-juarez",
+      "url": "https://www.clinicadenki.mx/ubicaciones/benito-juarez/",
       "telephone": "+52-55-5015-0285",
       "address": {
         "@type": "PostalAddress",
@@ -59,7 +59,53 @@
         "addressRegion": "CDMX",
         "postalCode": "03100",
         "addressCountry": "MX"
-      }
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Dónde está ubicada la clínica en Benito Juárez?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En Pilares 405, Entrada por Casa Ferro, Colonia Del Valle Centro, CP 03100. A minutos de Metro Zapata y Av. Universidad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué colonias atienden en la alcaldía Benito Juárez?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atendemos pacientes de Del Valle, Nápoles, Narvarte, Mixcoac, Xoco, Insurgentes Sur y colonias aledañas, con consulta presencial y a domicilio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es el horario de consulta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lunes a viernes de 9:00 a 18:00 horas. Teléfono: (55) 5015 0285."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo llego al consultorio en Del Valle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La entrada es por Casa Ferro en Pilares 405. Hay estacionamiento en la zona comercial y acceso cercano por Metro Zapata o Av. Universidad."
+          }
+        }
+      ]
     }
     </script>
 </head>
@@ -67,7 +113,193 @@
 <body>
     <div id="scroll-progress"></div>
 
-    <div id="header-placeholder"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+
+    <nav class="container">
+
+        <a href="/" class="logo">
+
+            <img src="/assets/img/logo-mobile.png" alt="Clínica Denki Logo">
+
+        </a>
+
+
+
+        <!-- Desktop Navigation -->
+
+        <ul class="nav-links" id="nav-menu">
+
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/domicilio/">Domicilio</a>
+            </li>
+
+
+
+            <!-- Ubicaciones: Desktop Only -->
+
+            <li class="has-dropdown d-none-mobile">
+
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+
+            </li>
+
+
+
+            <li><a href="/blog/">Blog</a></li>
+
+            <li><a href="/pages/nosotros">Nosotros</a></li>
+
+            <li><a href="/pages/contacto/">Contacto</a></li>
+
+        </ul>
+
+
+
+        <!-- Action Buttons (always visible) -->
+
+        <div class="nav-actions">
+
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+
+                <span class="hamburger"></span>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- Mobile Fullscreen Overlay Menu -->
+
+<div id="mobile-menu" class="mobile-menu-overlay">
+
+    <div class="mobile-menu-content">
+
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+
+        <ul class="mobile-nav-links">
+
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+
+            <li><hr></li>
+
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+
+            <li><a href="/nutricion-clinica/domicilio/">Consulta a Domicilio</a></li>
+
+            <li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+
+            <li><hr></li>
+
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+
+            <li><hr></li>
+
+            <li><a href="/blog/">Blog</a></li>
+
+            <li><a href="/pages/nosotros">Nosotros</a></li>
+
+            <li><a href="/pages/contacto/">Contacto</a></li>
+
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+<!-- denki:static-header:end -->
 
     <main>
         <!-- Hero Section -->
@@ -168,6 +400,95 @@
             </div>
         </section>
 
+        <!-- Colonias y contacto -->
+        <section id="colonias" class="section">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2>Colonias que Atendemos en Benito Juárez</h2>
+                    <p class="tagline">Consulta presencial en Del Valle y visitas a domicilio en la alcaldía.</p>
+                </div>
+                <div class="reveal" style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem;">
+                    <span class="card-tag" style="margin-bottom: 0;">Del Valle Norte</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Del Valle Centro</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Del Valle Sur</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Nápoles</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Narvarte</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Mixcoac</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Xoco</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Insurgentes Sur</span>
+                </div>
+                <div class="cta-block reveal"
+                    style="background: var(--bg-pure); border: 1px solid var(--primary); padding: 2rem; border-radius: 24px;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Dirección:</strong> Pilares 405, Entrada por Casa Ferro, Del Valle Centro, Benito Juárez, CP 03100</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Horario:</strong> Lun–Vie 9:00–18:00</p>
+                    <p style="margin-bottom: 0;"><strong>Teléfono:</strong> <a href="tel:+525550150285">(55) 5015 0285</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enlaces relacionados -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2>Recursos y Otras Ubicaciones</h2>
+                    <p class="tagline">Servicios clínicos y cobertura en la CDMX.</p>
+                </div>
+                <div class="fruit-gallery">
+                    <div class="fruit-box reveal">
+                        <h3>CDMX</h3>
+                        <p>Cobertura metropolitana con sede central y atención a domicilio.</p>
+                        <a href="/ubicaciones/cdmx/" class="btn btn-secondary mt-3"
+                            style="border: 1px solid var(--primary); color: var(--primary);">Ver CDMX →</a>
+                    </div>
+                    <div class="fruit-box reveal">
+                        <h3>Roma y Condesa</h3>
+                        <p>Consultas domiciliarias a minutos de nuestra sede en Del Valle.</p>
+                        <a href="/ubicaciones/roma-condesa/" class="btn btn-secondary mt-3"
+                            style="border: 1px solid var(--primary); color: var(--primary);">Ver cobertura →</a>
+                    </div>
+                    <div class="fruit-box reveal">
+                        <h3>Nutrición Clínica</h3>
+                        <p>Consulta presencial, hospitalaria y a domicilio con rigor médico.</p>
+                        <a href="/nutricion-clinica/" class="btn btn-secondary mt-3"
+                            style="border: 1px solid var(--primary); color: var(--primary);">Ver hub →</a>
+                    </div>
+                    <div class="fruit-box reveal">
+                        <h3>Guía Colesterol</h3>
+                        <p>Alimentos recomendados para reducir colesterol y triglicéridos.</p>
+                        <a href="/blog/guias-nutricionales/alimentos-bajan-colesterol/" class="btn btn-secondary mt-3"
+                            style="border: 1px solid var(--primary); color: var(--primary);">Leer guía →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section id="faqs" class="section">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
+                <div class="faq-grid reveal">
+                    <div class="faq-card">
+                        <h4>¿Dónde está ubicada la clínica en Benito Juárez?</h4>
+                        <p>En Pilares 405, Entrada por Casa Ferro, Colonia Del Valle Centro, CP 03100. A minutos de Metro Zapata y Av. Universidad.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4>¿Qué colonias atienden en la alcaldía Benito Juárez?</h4>
+                        <p>Atendemos pacientes de Del Valle, Nápoles, Narvarte, Mixcoac, Xoco, Insurgentes Sur y colonias aledañas, con consulta presencial y a domicilio.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4>¿Cuál es el horario de consulta?</h4>
+                        <p>Lunes a viernes de 9:00 a 18:00 horas. Teléfono: (55) 5015 0285.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4>¿Cómo llego al consultorio en Del Valle?</h4>
+                        <p>La entrada es por Casa Ferro en Pilares 405. Hay estacionamiento en la zona comercial y acceso cercano por Metro Zapata o Av. Universidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Mapa -->
         <section id="mapa" class="section">
             <div class="container">
@@ -197,13 +518,72 @@
                             en Doctoralia</a>
                     </div>
                     <p style="color: var(--text-muted); margin-top: 1.5rem; font-size: 0.85rem;">Pilares 405, Entrada por Casa Ferro, Del Valle
-                        Centro, Benito Juárez</p>
+                        Centro, Benito Juárez · Lun–Vie 9:00–18:00 · <a href="tel:+525550150285">(55) 5015 0285</a></p>
                 </div>
             </div>
         </section>
     </main>
 
-    <div id="footer-placeholder"></div>
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile.png" alt="Clínica Denki Logo" style="height: 40px;">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 (55) 5015 0285</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="f-title">Especialidades</h4>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="f-title">Ubicaciones</h4>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+                    <li><a href="/nutricion-clinica/domicilio/">Consulta a Domicilio</a></li>
+                </ul>
+                <h4 class="f-title" style="margin-top: 2rem;">Recursos</h4>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="f-title">Legal</h4>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
 
     <script src="/assets/js/main.js"></script>
 </body>
