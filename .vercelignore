@@ -1,13 +1,2 @@
 # Fragmentos HTML solo para preview local (file://); producción usa components-data.js
 components/
-
-# Materiales internos y prototipos (no deben desplegarse)
-Semrush Denki/
-Denki Reglas/
-MisLandings/
-MisHubs/
-MisLandingLocales/
-miHome/
-MisBlogs/
-_v2_prototype_/
-dashboard.html
