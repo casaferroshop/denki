@@ -1,8 +1,5 @@
 window.DENKI_COMPONENTS = {
     header: `
-<div class="maternity-banner">
-    🍼 <strong>Aviso:</strong> Clínica Denki cierra temporalmente por maternidad. Regresamos en <strong>julio 2026</strong>. Para consultas: <a href="https://wa.me/525550150285">WhatsApp</a>
-</div>
 <header id="main-header">
     <nav class="container">
         <a href="{{root}}" class="logo">
