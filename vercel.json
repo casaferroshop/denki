@@ -919,11 +919,6 @@
       "permanent": true
     },
     {
-      "source": "/pages/contacto/",
-      "destination": "/pages/contacto/",
-      "permanent": true
-    },
-    {
       "source": "/blogs/noticias",
       "destination": "/blog/",
       "permanent": true
