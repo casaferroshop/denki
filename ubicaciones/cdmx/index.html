@@ -50,7 +50,7 @@
       "@type": "MedicalClinic",
       "name": "Clínica Denki - Nutrición Clínica CDMX",
       "description": "Servicios de nutrición clínica especializada en la Ciudad de México. Sede en Del Valle y atención a domicilio.",
-      "url": "https://www.clinicadenki.mx/ubicaciones/cdmx",
+      "url": "https://www.clinicadenki.mx/ubicaciones/cdmx/",
       "telephone": "+52-55-5015-0285",
       "address": {
         "@type": "PostalAddress",
@@ -59,7 +59,53 @@
         "addressRegion": "CDMX",
         "postalCode": "03100",
         "addressCountry": "MX"
-      }
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuáles son los horarios de atención en la sede Del Valle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atendemos de lunes a viernes de 9:00 a 18:00 en Pilares 405, Del Valle Centro. Teléfono: (55) 5015 0285."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Ofrecen consulta a domicilio en la CDMX?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Realizamos visitas domiciliarias en las principales alcaldías, con cobertura preferente en Benito Juárez, Roma y Condesa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué padecimientos atienden en Clínica Denki?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nutrición clínica para diabetes, oncología, neurología (Parkinson, Alzheimer), geriatría, disfagia y nutrición hospitalaria."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo puedo agendar una cita?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puedes escribir por WhatsApp, reservar en Doctoralia o llamar al (55) 5015 0285 en horario de lunes a viernes."
+          }
+        }
+      ]
     }
     </script>
 </head>
@@ -68,14 +114,22 @@
     <div id="scroll-progress"></div>
 
     <!-- denki:static-header:start -->
-<header id="main-header">
-    <nav class="container">
-        <a href="/" class="logo">
-            <img src="/assets/img/logo-mobile.png" alt="Clínica Denki Logo">
-        </a>
-
-        <!-- Desktop Navigation -->
-        <ul class="nav-links" id="nav-menu">
+<header id="main-header">
+
+    <nav class="container">
+
+        <a href="/" class="logo">
+
+            <img src="/assets/img/logo-mobile.png" alt="Clínica Denki Logo">
+
+        </a>
+
+
+
+        <!-- Desktop Navigation -->
+
+        <ul class="nav-links" id="nav-menu">
+
                         <li class="has-dropdown">
                 <a href="/nutricion-metabolica/">Metabólica</a>
                 <ul class="dropdown-menu">
@@ -126,11 +180,16 @@
             </li>
             <li>
                 <a href="/nutricion-clinica/domicilio/">Domicilio</a>
-            </li>
-
-            <!-- Ubicaciones: Desktop Only -->
-            <li class="has-dropdown d-none-mobile">
-                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+            </li>
+
+
+
+            <!-- Ubicaciones: Desktop Only -->
+
+            <li class="has-dropdown d-none-mobile">
+
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+
                 <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
                 <a href="/ubicaciones/cdmx/">CDMX</a>
             </li>
@@ -139,56 +198,106 @@
             </li>
             <li>
                 <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
-            </li></ul>
-            </li>
-
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/pages/nosotros">Nosotros</a></li>
-            <li><a href="/pages/contacto/">Contacto</a></li>
-        </ul>
-
-        <!-- Action Buttons (always visible) -->
-        <div class="nav-actions">
-            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
-            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
-                <span class="hamburger"></span>
-            </button>
-        </div>
-    </nav>
-</header>
-
-<!-- Mobile Fullscreen Overlay Menu -->
-<div id="mobile-menu" class="mobile-menu-overlay">
-    <div class="mobile-menu-content">
-        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
-        <ul class="mobile-nav-links">
-            <li class="mobile-section-title"><strong>Especialidades</strong></li>
-            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
-            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
-            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
-            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
-            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
-            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
-            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
-            <li><hr></li>
-            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
-            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
-            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
-            <li><a href="/nutricion-clinica/domicilio/">Consulta a Domicilio</a></li>
-            <li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
-            <li><hr></li>
-            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
-            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
-            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
-            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
-            <li><hr></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/pages/nosotros">Nosotros</a></li>
-            <li><a href="/pages/contacto/">Contacto</a></li>
-            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
-        </ul>
-    </div>
-</div>
+            </li></ul>
+
+            </li>
+
+
+
+            <li><a href="/blog/">Blog</a></li>
+
+            <li><a href="/pages/nosotros">Nosotros</a></li>
+
+            <li><a href="/pages/contacto/">Contacto</a></li>
+
+        </ul>
+
+
+
+        <!-- Action Buttons (always visible) -->
+
+        <div class="nav-actions">
+
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+
+                <span class="hamburger"></span>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- Mobile Fullscreen Overlay Menu -->
+
+<div id="mobile-menu" class="mobile-menu-overlay">
+
+    <div class="mobile-menu-content">
+
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+
+        <ul class="mobile-nav-links">
+
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+
+            <li><hr></li>
+
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+
+            <li><a href="/nutricion-clinica/domicilio/">Consulta a Domicilio</a></li>
+
+            <li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+
+            <li><hr></li>
+
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+
+            <li><hr></li>
+
+            <li><a href="/blog/">Blog</a></li>
+
+            <li><a href="/pages/nosotros">Nosotros</a></li>
+
+            <li><a href="/pages/contacto/">Contacto</a></li>
+
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+
+        </ul>
+
+    </div>
+
+</div>
+
 
 <!-- denki:static-header:end -->
 
@@ -286,6 +395,96 @@
             </div>
         </section>
 
+        <!-- Colonias y contacto -->
+        <section id="zonas" class="section bg-light">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2>Zonas de Cobertura en la CDMX</h2>
+                    <p class="tagline">Consulta presencial en Del Valle y atención a domicilio en las principales colonias.</p>
+                </div>
+                <div class="reveal" style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem;">
+                    <span class="card-tag" style="margin-bottom: 0;">Del Valle</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Benito Juárez</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Nápoles</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Narvarte</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Roma</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Condesa</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Mixcoac</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Coyoacán</span>
+                    <span class="card-tag" style="margin-bottom: 0;">Insurgentes Sur</span>
+                </div>
+                <div class="cta-block reveal"
+                    style="background: var(--bg-pure); border: 1px solid var(--primary); padding: 2rem; border-radius: 24px;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Dirección:</strong> Pilares 405, Del Valle Centro, Benito Juárez, CDMX CP 03100</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Horario:</strong> Lun–Vie 9:00–18:00</p>
+                    <p style="margin-bottom: 0;"><strong>Teléfono:</strong> <a href="tel:+525550150285">(55) 5015 0285</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enlaces relacionados -->
+        <section class="section">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2>Recursos y Ubicaciones</h2>
+                    <p class="tagline">Explora nuestros servicios clínicos y otras sedes.</p>
+                </div>
+                <div class="fruit-gallery">
+                    <div class="fruit-box reveal">
+                        <h3>Sede Benito Juárez</h3>
+                        <p>Consultorio en Del Valle con bioimpedancia y atención presencial.</p>
+                        <a href="/ubicaciones/benito-juarez/" class="btn btn-secondary mt-3"
+                            style="border: 1px solid var(--primary); color: var(--primary);">Ver sede →</a>
+                    </div>
+                    <div class="fruit-box reveal">
+                        <h3>Roma y Condesa</h3>
+                        <p>Atención domiciliaria premium en las colonias más dinámicas de la ciudad.</p>
+                        <a href="/ubicaciones/roma-condesa/" class="btn btn-secondary mt-3"
+                            style="border: 1px solid var(--primary); color: var(--primary);">Ver cobertura →</a>
+                    </div>
+                    <div class="fruit-box reveal">
+                        <h3>Nutrición Metabólica</h3>
+                        <p>Control de diabetes, glucosa y HbA1c con rigor clínico.</p>
+                        <a href="/nutricion-metabolica/diabetes/" class="btn btn-secondary mt-3"
+                            style="border: 1px solid var(--primary); color: var(--primary);">Ver servicio →</a>
+                    </div>
+                    <div class="fruit-box reveal">
+                        <h3>Guía Diabetes</h3>
+                        <p>Recomendaciones alimentarias para el manejo glucémico diario.</p>
+                        <a href="/blog/guias-nutricionales/dieta-diabetes/" class="btn btn-secondary mt-3"
+                            style="border: 1px solid var(--primary); color: var(--primary);">Leer guía →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section id="faqs" class="section bg-light">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
+                <div class="faq-grid reveal">
+                    <div class="faq-card">
+                        <h4>¿Cuáles son los horarios de atención en la sede Del Valle?</h4>
+                        <p>Atendemos de lunes a viernes de 9:00 a 18:00 en Pilares 405, Del Valle Centro. Teléfono: (55) 5015 0285.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4>¿Ofrecen consulta a domicilio en la CDMX?</h4>
+                        <p>Sí. Realizamos visitas domiciliarias en las principales alcaldías, con cobertura preferente en Benito Juárez, Roma y Condesa.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4>¿Qué padecimientos atienden en Clínica Denki?</h4>
+                        <p>Nutrición clínica para diabetes, oncología, neurología (Parkinson, Alzheimer), geriatría, disfagia y nutrición hospitalaria.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4>¿Cómo puedo agendar una cita?</h4>
+                        <p>Puedes escribir por WhatsApp, reservar en Doctoralia o llamar al (55) 5015 0285 en horario de lunes a viernes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Mapa -->
         <section id="mapa" class="section bg-light">
             <div class="container">
@@ -319,6 +518,7 @@
                             style="background: white; color: var(--primary); border: 1px solid white;">Reservar
                             en Doctoralia</a>
                     </div>
+                    <p style="color: var(--text-muted); margin-top: 1.5rem; font-size: 0.85rem;">Pilares 405, Del Valle Centro · Lun–Vie 9:00–18:00 · <a href="tel:+525550150285">(55) 5015 0285</a></p>
                 </div>
             </div>
         </section>

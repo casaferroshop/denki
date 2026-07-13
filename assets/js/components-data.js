@@ -16,9 +16,6 @@ window.DENKI_COMPONENTS = {
                 <ul class="dropdown-menu" id="menu-ubicaciones"><!-- DENKI:UBICACIONES --></ul>
             </li>
 
-            <!-- Mobile Only: Ubicaciones Injection -->
-            <li id="mobile-ubicaciones-container" class="d-none-desktop"><!-- DENKI:UBICACIONES_MOBILE --></li>
-
             <li><a href="{{root}}blog/">Blog</a></li>
             <li><a href="{{root}}pages/nosotros">Nosotros</a></li>
             <li><a href="{{root}}pages/contacto/">Contacto</a></li>
