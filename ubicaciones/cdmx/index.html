@@ -9,9 +9,20 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-GXCSFJJKHV');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+        var href = a.href;
+        if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1) {
+          gtag('event', 'whatsapp_click', { page_location: location.pathname });
+        } else if (href.indexOf('tel:') === 0) {
+          gtag('event', 'phone_click', { page_location: location.pathname });
+        } else if (href.indexOf('doctoralia') !== -1) {
+          gtag('event', 'doctoralia_click', { page_location: location.pathname });
+        }
+      });
     </script>
-
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrióloga Clínica en CDMX | Nutrición con Rigor Médico | Clínica Denki</title>
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
