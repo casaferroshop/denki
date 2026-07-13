@@ -208,6 +208,19 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/guias-nutricionales/magnesio-y-parkinson/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/guias-nutricionales/suplementos-vitaminas-parkinson/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Páginas estáticas (cleanUrls + trailingSlash en Vercel) -->
   <url>
     <loc>https://www.clinicadenki.mx/pages/nosotros/</loc>

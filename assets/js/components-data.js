@@ -18,7 +18,6 @@ window.DENKI_COMPONENTS = {
 
             <li><a href="{{root}}blog/">Blog</a></li>
             <li><a href="{{root}}pages/nosotros">Nosotros</a></li>
-            <li><a href="{{root}}pages/contacto/">Contacto</a></li>
         </ul>
 
         <!-- Action Buttons (always visible) -->
@@ -58,7 +57,6 @@ window.DENKI_COMPONENTS = {
             <li><hr></li>
             <li><a href="{{root}}blog/">Blog</a></li>
             <li><a href="{{root}}pages/nosotros">Nosotros</a></li>
-            <li><a href="{{root}}pages/contacto/">Contacto</a></li>
             <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
         </ul>
     </div>
