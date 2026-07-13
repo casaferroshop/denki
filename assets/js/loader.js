@@ -116,10 +116,6 @@ async function initDynamicMenu(rootPath) {
         ubicacionesDesktop.innerHTML = generateItems(menuData.ubicaciones);
     }
 
-    const ubicacionesMobile = document.getElementById('mobile-ubicaciones-container');
-    if (ubicacionesMobile && menuData.ubicaciones) {
-        ubicacionesMobile.innerHTML = generateItems(menuData.ubicaciones);
-    }
 }
 
 function calculateRoot() {
