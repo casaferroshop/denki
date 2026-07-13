@@ -8,19 +8,20 @@ window.DENKI_COMPONENTS = {
 
         <!-- Desktop Navigation -->
         <ul class="nav-links" id="nav-menu">
-            <!-- Clinical Hubs injected dynamically here -->
+            <!-- DENKI:HUBS -->
 
             <!-- Ubicaciones: Desktop Only -->
             <li class="has-dropdown d-none-mobile">
                 <a href="{{root}}ubicaciones/cdmx/">Ubicaciones</a>
-                <ul class="dropdown-menu" id="menu-ubicaciones"></ul>
+                <ul class="dropdown-menu" id="menu-ubicaciones"><!-- DENKI:UBICACIONES --></ul>
             </li>
 
             <!-- Mobile Only: Ubicaciones Injection -->
-            <li id="mobile-ubicaciones-container" class="d-none-desktop"></li>
+            <li id="mobile-ubicaciones-container" class="d-none-desktop"><!-- DENKI:UBICACIONES_MOBILE --></li>
 
             <li><a href="{{root}}blog/">Blog</a></li>
             <li><a href="{{root}}pages/nosotros">Nosotros</a></li>
+            <li><a href="{{root}}pages/contacto/">Contacto</a></li>
         </ul>
 
         <!-- Action Buttons (always visible) -->
@@ -45,6 +46,7 @@ window.DENKI_COMPONENTS = {
             <li><a href="{{root}}nutricion-oncologica/">Nutrición Oncológica</a></li>
             <li><a href="{{root}}nutricion-geriatrica/">Nutrición Geriátrica</a></li>
             <li><a href="{{root}}nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="{{root}}nutricion-salud-mental/">Nutrición Salud Mental</a></li>
             <li><hr></li>
             <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
             <li><a href="{{root}}nutricion-clinica/disfagia/">Disfagia</a></li>
@@ -54,13 +56,17 @@ window.DENKI_COMPONENTS = {
             <li><hr></li>
             <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
             <li><a href="{{root}}ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="{{root}}ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="{{root}}ubicaciones/roma-condesa/">Roma-Condesa</a></li>
             <li><hr></li>
             <li><a href="{{root}}blog/">Blog</a></li>
             <li><a href="{{root}}pages/nosotros">Nosotros</a></li>
+            <li><a href="{{root}}pages/contacto/">Contacto</a></li>
             <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
         </ul>
     </div>
-</div>`,
+</div>
+`,
     footer: `
 <footer>
     <div class="container">
@@ -84,23 +90,29 @@ window.DENKI_COMPONENTS = {
                     <li><a href="{{root}}nutricion-oncologica/">Nutrición Oncológica</a></li>
                     <li><a href="{{root}}nutricion-geriatrica/">Nutrición Geriátrica</a></li>
                     <li><a href="{{root}}nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="{{root}}nutricion-salud-mental/">Nutrición Salud Mental</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="f-title">Ubicaciones</h4>
                 <ul class="f-links">
-                    <li><a href="{{root}}ubicaciones/cdmx/">CDMX General</a></li>
+                    <li><a href="{{root}}ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="{{root}}ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="{{root}}ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+                    <li><a href="{{root}}nutricion-clinica/domicilio/">Consulta a Domicilio</a></li>
                 </ul>
                 <h4 class="f-title" style="margin-top: 2rem;">Recursos</h4>
                 <ul class="f-links">
                     <li><a href="{{root}}blog/">Blog de Nutrición</a></li>
-                    <li><a href="{{root}}pages/nosotros">Sobre Clínica Denki</a></li>
+                    <li><a href="{{root}}pages/nosotros">Nosotros</a></li>
+                    <li><a href="{{root}}pages/contacto/">Contacto</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="f-title">Legal</h4>
                 <ul class="f-links">
                     <li><a href="{{root}}pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="{{root}}pages/politica-de-cookies/">Política de Cookies</a></li>
                     <li><a href="{{root}}pages/aviso-medico/">Aviso Médico</a></li>
                 </ul>
                 <div style="margin-top: 2rem;">
@@ -112,5 +124,6 @@ window.DENKI_COMPONENTS = {
             &copy; 2026 Clínica Denki. Todos los derechos reservados.
         </div>
     </div>
-</footer>`
+</footer>
+`
 };
