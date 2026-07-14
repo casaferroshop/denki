@@ -949,6 +949,7 @@ footer {
     background: var(--text-main);
     color: white;
     padding: 6rem 0 3rem;
+    overflow-x: clip;
 }
 
 .f-grid {
@@ -1028,6 +1029,15 @@ footer {
     .nav-links {
         display: none;
     }
+
+    .f-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    footer {
+        padding: 4rem 0 2rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1037,6 +1047,15 @@ footer {
 
     .toc-card {
         padding: 1.5rem;
+    }
+
+    .f-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .f-info {
+        grid-column: 1 / -1;
     }
 }
 
