@@ -43,6 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
+    const activateVisibleReveals = () => {
+        const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+        document.querySelectorAll('.reveal:not(.active)').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < viewHeight && rect.bottom > 0) {
+                el.classList.add('active');
+            }
+        });
+    };
+
     document.querySelectorAll('.reveal').forEach((el, index) => {
         // Auto-staggering if not specified
         if (!el.dataset.delay) {
@@ -50,6 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         observer.observe(el);
     });
+
+    activateVisibleReveals();
+    requestAnimationFrame(activateVisibleReveals);
+    window.addEventListener('load', activateVisibleReveals, { once: true });
 
     // Smooth scroll for internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
