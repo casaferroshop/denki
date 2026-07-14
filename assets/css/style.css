@@ -516,6 +516,14 @@ header.scrolled .logo img {
     transform: translateY(0);
 }
 
+/* Blog: main article content must never stay hidden (SEO, slow JS, observer edge cases) */
+.page-blog .post-hero-grid.reveal,
+.page-blog .post-body-text.reveal,
+.page-blog .post-sidebar.reveal {
+    opacity: 1;
+    transform: none;
+}
+
 /* Hero Section */
 .hero {
     padding: 8rem 0 4rem;
