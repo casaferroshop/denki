@@ -25,20 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', updateScroll);
 
-    // Reveal Animations with Intersection Observer
+    const isBlogMainContent = (el) =>
+        el.classList.contains('post-body-text') ||
+        el.classList.contains('post-hero-grid') ||
+        el.classList.contains('post-sidebar');
+
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0,
+        rootMargin: '0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                // Pulse effect for premium feel on cards
                 if (entry.target.classList.contains('fruit-box')) {
                     entry.target.style.transitionDelay = entry.target.dataset.delay || '0ms';
                 }
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
@@ -49,14 +53,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const rect = el.getBoundingClientRect();
             if (rect.top < viewHeight && rect.bottom > 0) {
                 el.classList.add('active');
+                observer.unobserve(el);
             }
         });
     };
 
     document.querySelectorAll('.reveal').forEach((el, index) => {
-        // Auto-staggering if not specified
         if (!el.dataset.delay) {
             el.dataset.delay = (index % 3) * 150 + 'ms';
+        }
+        if (isBlogMainContent(el)) {
+            el.classList.add('active');
+            return;
         }
         observer.observe(el);
     });
@@ -64,6 +72,21 @@ document.addEventListener('DOMContentLoaded', () => {
     activateVisibleReveals();
     requestAnimationFrame(activateVisibleReveals);
     window.addEventListener('load', activateVisibleReveals, { once: true });
+
+    let scrollTick = false;
+    window.addEventListener('scroll', () => {
+        if (!scrollTick) {
+            scrollTick = true;
+            requestAnimationFrame(() => {
+                activateVisibleReveals();
+                scrollTick = false;
+            });
+        }
+    }, { passive: true });
+
+    window.addEventListener('resize', activateVisibleReveals, { passive: true });
+    setTimeout(activateVisibleReveals, 1000);
+    setTimeout(activateVisibleReveals, 3000);
 
     // Smooth scroll for internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
