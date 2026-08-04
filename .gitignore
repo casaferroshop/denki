@@ -31,6 +31,8 @@ Semrush Denki/
 *.txt
 !robots.txt
 !llms.txt
+# IndexNow ownership proof (filename = key; public by design)
+!21bf930ca8a327cbf6710c23bbfdc5d5.txt
 
 # ============================================
 # Agentes / IDE
