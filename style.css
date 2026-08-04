@@ -239,6 +239,12 @@ h1 {
     margin-bottom: 2rem;
 }
 
+.read-time[style*="background: var(--primary);"],
+.read-time[style*="background:var(--primary);"] {
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+}
+
 .hero-image-container {
     padding: 1rem;
     background: var(--bg-pure);
