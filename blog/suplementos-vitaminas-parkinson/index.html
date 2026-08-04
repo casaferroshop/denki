@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GXCSFJJKHV');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+        var href = a.href;
+        if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1) {
+          gtag('event', 'whatsapp_click', { page_location: location.pathname });
+        } else if (href.indexOf('tel:') === 0) {
+          gtag('event', 'phone_click', { page_location: location.pathname });
+        } else if (href.indexOf('doctoralia') !== -1) {
+          gtag('event', 'doctoralia_click', { page_location: location.pathname });
+        }
+      });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suplementos y vitaminas para el Parkinson: cuáles sí, cuáles no | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description"
+        content="Qué suplementos y vitaminas ayudan en Parkinson y cuáles no: vitamina D, B12, omega-3, CoQ10, creatina. La interacción de la vitamina B6 con la levodopa. Guía clínica.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Suplementos y vitaminas para el Parkinson: cuáles sí, cuáles no | Clínica Denki">
+    <meta property="og:description" content="Qué suplementos tienen evidencia en Parkinson y cuáles fallaron en ensayos. La interacción de la vitamina B6 con la levodopa que debes conocer. Guía basada en evidencia.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/suplementos-vitaminas-parkinson/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/suplementos-vitaminas-parkinson/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Suplementos y vitaminas para el Parkinson: cuáles sí, cuáles no",
+      "url": "https://www.clinicadenki.mx/blog/suplementos-vitaminas-parkinson/",
+      "datePublished": "2026-07-14",
+      "dateModified": "2026-07-14",
+      "author": {
+        "@type": "Person",
+        "name": "Dra. Lucy Anita Camberos Luna"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Clínica Denki",
+        "url": "https://www.clinicadenki.mx/"
+      },
+      "description": "Guía basada en evidencia sobre qué suplementos y vitaminas tienen respaldo científico en la enfermedad de Parkinson, cuáles fallaron en ensayos clínicos y la interacción de la vitamina B6 con la levodopa.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.clinicadenki.mx/blog/suplementos-vitaminas-parkinson/"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Hay algún suplemento que frene el Parkinson?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Hasta hoy, ninguna vitamina ni suplemento ha demostrado en ensayos clínicos que detenga o revierta la progresión de la enfermedad de Parkinson. Algunos tienen evidencia preliminar de apoyo (como corregir deficiencias reales), pero ninguno es un tratamiento que modifique la enfermedad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La vitamina B6 interfiere con la levodopa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En dosis altas puede hacerlo, sobre todo con la levodopa sin carbidopa. Al mismo tiempo, el tratamiento prolongado con levodopa puede provocar niveles bajos de vitaminas B6 y B12 y contribuir a neuropatía. Por eso las vitaminas B se manejan con monitoreo médico, no por cuenta propia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué suplementos tienen algo de evidencia en Parkinson?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Corregir deficiencias reales de vitamina D y vitamina B12 tiene sentido clínico. El omega-3 muestra efectos antiinflamatorios y algunos beneficios motores en estudios pequeños, y hay interés en los probióticos para el estreñimiento y la inflamación. Nada de esto sustituye la medicación."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La CoQ10 y la creatina sirven para el Parkinson?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No según los estudios grandes. La coenzima Q10 fue prometedora en estudios pequeños, pero los ensayos grandes no mostraron beneficio. La creatina tampoco demostró frenar la enfermedad en ensayos largos a gran escala."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito tomar vitamina D si tengo Parkinson?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La deficiencia de vitamina D es más frecuente en personas con Parkinson y se asocia a mayor riesgo de caídas y fracturas. Conviene medir tus niveles y, si están bajos, corregirlos con la dosis que indique tu médico, en lugar de suplementar a ciegas."
+          }
+        }
+      ]
+    }
+    </script>
+    <script src="/assets/js/loader.js"></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile.png" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/domicilio/">Domicilio</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+            <li><a href="/nutricion-clinica/domicilio/">Consulta a Domicilio</a></li>
+            <li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Neuronutrición</span>
+                    <h1>Suplementos y vitaminas para el Parkinson: cuáles sí, cuáles no</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 14 min de lectura</span>
+                        <span>📅 Actualizado: Jul 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-suplementos/hero.png" alt="Suplementos y vitaminas para el Parkinson - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+                    <p class="lead" style="border: none; padding: 0;">"¿Qué vitaminas debería tomar para el
+                        Parkinson?" es una de las preguntas más frecuentes en la consulta. Y es comprensible: internet
+                        está lleno de listas de suplementos "milagrosos". El problema es que la mayoría promete mucho más
+                        de lo que la ciencia respalda.</p>
+
+                    <p>Esta guía separa lo que tiene evidencia de lo que no. Verás qué suplementos vale la pena
+                        considerar (casi siempre para corregir una deficiencia real), cuáles fallaron cuando se
+                        estudiaron en serio, y una interacción con la levodopa —la de la vitamina B6— que es
+                        importante conocer antes de tomar cualquier multivitamínico.</p>
+
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM).
+                        Revisado clínicamente — julio 2026.
+                    </p>
+
+                    <div class="post-toc">
+                        <h4>Contenido de este artículo</h4>
+                        <ul>
+                            <li><a href="#la-verdad">La verdad incómoda: ningún suplemento frena el Parkinson</a></li>
+                            <li><a href="#si">Los que sí tienen sentido (y por qué)</a></li>
+                            <li><a href="#no">Los que fallaron en los estudios</a></li>
+                            <li><a href="#b6">Vitamina B6 y levodopa: la interacción clave</a></li>
+                            <li><a href="#tabla">Tabla resumen: qué dice la evidencia</a></li>
+                            <li><a href="#como-decidir">Cómo decidir en tu caso</a></li>
+                            <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="la-verdad">La verdad incómoda: ningún suplemento frena el Parkinson</h2>
+                    <p>Empecemos por lo más importante y lo que casi nadie dice con claridad:
+                        <strong>hasta hoy, ningún suplemento dietético ha demostrado en ensayos clínicos que detenga o
+                        revierta la progresión del Parkinson</strong>. Las revisiones científicas más recientes son
+                        consistentes en esto.</p>
+
+                    <p>Eso no significa que la nutrición no importe —importa muchísimo—, sino que hay que ajustar las
+                        expectativas. El papel real de los suplementos en el Parkinson es más modesto y más útil:
+                        <strong>corregir deficiencias específicas</strong> que empeoran síntomas o calidad de vida, y
+                        apoyar problemas concretos como el estreñimiento o la salud ósea. No son una segunda medicina
+                        paralela a la del neurólogo.</p>
+
+                    <div class="highlight-box">
+                        <p>💡 <strong>Regla de partida:</strong> antes de "tomar algo por si ayuda", conviene saber si
+                            realmente te falta. Suplementar a ciegas cuesta dinero, puede tener efectos secundarios y, en
+                            el caso de algunas vitaminas, hasta interferir con tu tratamiento.</p>
+                    </div>
+
+                    <h2 id="si">Los que sí tienen sentido (y por qué)</h2>
+                    <p>Estos son los suplementos con más lógica clínica en Parkinson —casi siempre ligados a corregir
+                        una carencia o un problema real, no a "frenar la enfermedad":</p>
+                    <ul>
+                        <li><strong>Vitamina D:</strong> su deficiencia es más frecuente en personas con Parkinson que en
+                            la población general y se asocia a mayor riesgo de caídas y fracturas. Medir los niveles y
+                            corregirlos si están bajos es una de las intervenciones más razonables.</li>
+                        <li><strong>Vitamina B12 (y ácido fólico):</strong> el tratamiento prolongado con levodopa puede
+                            asociarse a niveles bajos de B12, algo relevante porque su deficiencia afecta la memoria y
+                            los nervios. Corregirla cuando falta es sensato.</li>
+                        <li><strong>Omega-3 (EPA/DHA):</strong> tiene efecto antiinflamatorio y en estudios pequeños se
+                            ha asociado a algunas mejoras motoras y del ánimo, aunque los resultados son inconsistentes.
+                            Puede obtenerse también del pescado azul en la dieta.</li>
+                        <li><strong>Probióticos:</strong> hay interés creciente por su papel en el estreñimiento (muy
+                            común en Parkinson) y en la inflamación, a través del eje intestino-cerebro. La evidencia es
+                            preliminar pero prometedora para síntomas digestivos.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p>🩺 <strong>Importante:</strong> "tiene sentido" no es lo mismo que "tómalo ya". La vitamina D
+                            y la B12 se suplementan según tus análisis y con la dosis que indique tu médico; en exceso
+                            también pueden causar problemas.</p>
+                    </div>
+
+                    <h2 id="no">Los que fallaron en los estudios</h2>
+                    <p>Algunos suplementos se hicieron muy populares por resultados iniciales prometedores… que no se
+                        confirmaron cuando se estudiaron en ensayos grandes y bien diseñados:</p>
+                    <ul>
+                        <li><strong>Coenzima Q10 (CoQ10):</strong> fue de las más esperanzadoras. Estudios pequeños
+                            sugerían beneficio, pero <strong>los ensayos grandes no lo demostraron</strong>, y hoy se
+                            considera no efectiva para modificar la enfermedad.</li>
+                        <li><strong>Creatina:</strong> los ensayos largos y a gran escala <strong>no mostraron ningún
+                            beneficio</strong> para frenar el Parkinson.</li>
+                        <li><strong>Vitamina E sola:</strong> no ha demostrado mejoras significativas cuando se usa por
+                            sí sola; la evidencia no alcanza para recomendarla como tratamiento.</li>
+                    </ul>
+                    <p>Esto no quiere decir que sean peligrosos en dosis normales, sino que <strong>gastar en ellos
+                        esperando frenar la enfermedad no está justificado</strong> por la evidencia.</p>
+
+                    <h2 id="b6">Vitamina B6 y levodopa: la interacción clave</h2>
+                    <p>Este es el punto de seguridad más importante del artículo. La <strong>vitamina B6 (piridoxina) en
+                        dosis altas puede reducir la eficacia de la levodopa</strong>, especialmente en las presentaciones
+                        de levodopa sin carbidopa. Históricamente esto llevó a recomendar evitar dosis altas de B6 a
+                        quienes tomaban levodopa.</p>
+
+                    <p>Pero hay una segunda cara, igual de importante: el tratamiento prolongado con levodopa
+                        <strong>puede favorecer niveles bajos de B6 y B12</strong>, y esa carencia se asocia a
+                        <strong>neuropatía periférica</strong> (hormigueo, entumecimiento, dolor en manos y pies). Es
+                        decir, ni de más ni de menos: la relación entre estas vitaminas B y la levodopa es un equilibrio
+                        que conviene vigilar con análisis, no ajustar por cuenta propia con un multivitamínico del
+                        supermercado.</p>
+
+                    <div class="highlight-box">
+                        <p>⚠️ <strong>Cuidado con los multivitamínicos:</strong> muchos contienen dosis altas de B6.
+                            Si tomas levodopa, revisa la etiqueta y consulta con tu neurólogo antes de empezar cualquier
+                            complejo vitamínico "para la energía" o "para los nervios".</p>
+                    </div>
+
+                    <h2 id="tabla">Tabla resumen: qué dice la evidencia</h2>
+                    <div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+                        <table
+                            style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                            <thead style="background: var(--primary-soft);">
+                                <tr>
+                                    <th style="padding: 1rem; text-align: left;">Suplemento</th>
+                                    <th style="padding: 1rem; text-align: left;">Qué dice la evidencia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Vitamina D</strong></td>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Útil si hay
+                                        deficiencia (frecuente). Protege hueso y reduce riesgo de caídas. Medir y corregir.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Vitamina B12</strong></td>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Corregir si está
+                                        baja (la levodopa puede bajarla). Importante para nervios y memoria.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Omega-3</strong></td>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Antiinflamatorio;
+                                        posibles beneficios motores/ánimo en estudios pequeños. Inconsistente.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Probióticos</strong></td>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Prometedores para
+                                        estreñimiento e inflamación. Evidencia preliminar.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>CoQ10</strong></td>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Los ensayos
+                                        grandes no mostraron beneficio. No recomendada para frenar la enfermedad.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Creatina</strong></td>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sin beneficio en
+                                        ensayos largos a gran escala.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Vitamina E</strong></td>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sin evidencia
+                                        suficiente como suplemento por sí sola.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 1rem;"><strong>Vitamina B6 (dosis alta)</strong></td>
+                                    <td style="padding: 1rem;">Precaución: puede reducir el efecto de la levodopa. Manejar
+                                        solo con supervisión.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2 id="como-decidir">Cómo decidir en tu caso</h2>
+                    <p>En lugar de copiar la lista de suplementos de un video, el enfoque que usamos en consulta es más
+                        sencillo y más seguro:</p>
+                    <ul>
+                        <li><strong>Primero medir, luego suplementar:</strong> con análisis de sangre (vitamina D, B12,
+                            biometría) sabemos qué falta de verdad. Corregir una deficiencia real vale más que diez
+                            suplementos "por si acaso".</li>
+                        <li><strong>La comida primero:</strong> gran parte de estos nutrientes se obtienen de una dieta
+                            bien planeada —pescado azul, huevo, lácteos, hojas verdes, leguminosas— sin riesgo de
+                            interacciones.</li>
+                        <li><strong>Revisar cada etiqueta con tu tratamiento:</strong> especialmente la vitamina B6 y el
+                            momento del día respecto a la levodopa.</li>
+                        <li><strong>Coordinar con tu neurólogo:</strong> la nutrición en Parkinson funciona mejor cuando
+                            se planea junto con el tratamiento médico, no en paralelo.</li>
+                    </ul>
+
+                    <div class="cta-banner">
+                        <h3>¿Quieres saber qué suplementos necesitas de verdad?</h3>
+                        <p>En Clínica Denki revisamos tus análisis, tu medicación y tu alimentación para darte una
+                            recomendación individualizada y segura, coordinada con tu neurólogo. Consulta en CDMX o en
+                            línea.</p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">Agendar Consulta</a>
+                    </div>
+
+                    <h2>Servicios y lecturas relacionados</h2>
+                    <ul>
+                        <li><a href="/nutricion-neurologica/parkinson/">Nutrición para Parkinson en Clínica Denki</a>.</li>
+                        <li><a href="/blog/magnesio-y-parkinson/">Magnesio y Parkinson: qué dice la evidencia</a>.</li>
+                        <li><a href="/nutricion-neurologica/">Neuronutrición: alimentación y salud cerebral</a>.</li>
+                        <li><a href="/blog/guias-nutricionales/alimentos-prohibidos-parkinson/">Alimentos a cuidar en el Parkinson</a>.</li>
+                        <li><a href="/nutricion-clinica/domicilio/">Consulta nutricional a domicilio en CDMX</a>.</li>
+                    </ul>
+
+                    <div class="highlight-box" style="margin-top: 2rem;">
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos
+                            y educativos y no sustituye la valoración de tu médico o neurólogo. Ningún suplemento
+                            sustituye el tratamiento del Parkinson; no inicies ni suspendas suplementos o medicamentos
+                            sin supervisión profesional.</p>
+                    </div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Hay algún suplemento que frene el
+                            Parkinson?</p>
+                        <p>No. Ninguna vitamina ni suplemento ha demostrado en ensayos clínicos detener o revertir la
+                            enfermedad. Su papel real es corregir deficiencias y apoyar síntomas concretos.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La vitamina B6 interfiere con la
+                            levodopa?</p>
+                        <p>En dosis altas puede reducir su efecto, sobre todo sin carbidopa. A la vez, la levodopa puede
+                            bajar la B6 y la B12. Se maneja con monitoreo, no por cuenta propia.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La CoQ10 y la creatina sirven?</p>
+                        <p>No según los estudios grandes. La CoQ10 fue prometedora en estudios pequeños pero falló en
+                            ensayos grandes; la creatina tampoco mostró beneficio para frenar la enfermedad.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Debo tomar vitamina D?</p>
+                        <p>Si tus niveles están bajos, sí conviene corregirlos: la deficiencia es frecuente en Parkinson
+                            y aumenta el riesgo de caídas y fracturas. Mide primero, suplementa con dosis indicada.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Y el magnesio?</p>
+                        <p>El magnesio tiene su propia historia y su propia interacción con la levodopa. Lo explicamos a
+                            detalle en <a href="/blog/magnesio-y-parkinson/">magnesio y Parkinson</a>.</p>
+                    </div>
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica para Parkinson y salud cerebral. Consulta presencial en Del Valle,
+                            <a href="/nutricion-clinica/domicilio/">a domicilio en CDMX</a> o en línea para toda la
+                            República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile.png" alt="Clínica Denki Logo" style="height: 40px;">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 (55) 5015 0285</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="f-title">Especialidades</h4>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="f-title">Ubicaciones</h4>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+                    <li><a href="/nutricion-clinica/domicilio/">Consulta a Domicilio</a></li>
+                </ul>
+                <h4 class="f-title" style="margin-top: 2rem;">Recursos</h4>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="f-title">Legal</h4>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
