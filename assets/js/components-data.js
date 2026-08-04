@@ -17,7 +17,7 @@ window.DENKI_COMPONENTS = {
             </li>
 
             <li><a href="{{root}}blog/">Blog</a></li>
-            <li><a href="{{root}}pages/nosotros">Nosotros</a></li>
+            <li><a href="{{root}}pages/nosotros/">Nosotros</a></li>
         </ul>
 
         <!-- Action Buttons (always visible) -->
@@ -56,7 +56,7 @@ window.DENKI_COMPONENTS = {
             <li><a href="{{root}}ubicaciones/roma-condesa/">Roma-Condesa</a></li>
             <li><hr></li>
             <li><a href="{{root}}blog/">Blog</a></li>
-            <li><a href="{{root}}pages/nosotros">Nosotros</a></li>
+            <li><a href="{{root}}pages/nosotros/">Nosotros</a></li>
             <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
         </ul>
     </div>
@@ -99,7 +99,7 @@ window.DENKI_COMPONENTS = {
                 <h4 class="f-title" style="margin-top: 2rem;">Recursos</h4>
                 <ul class="f-links">
                     <li><a href="{{root}}blog/">Blog de Nutrición</a></li>
-                    <li><a href="{{root}}pages/nosotros">Nosotros</a></li>
+                    <li><a href="{{root}}pages/nosotros/">Nosotros</a></li>
                     <li><a href="{{root}}pages/contacto/">Contacto</a></li>
                 </ul>
             </div>

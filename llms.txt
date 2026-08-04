@@ -8,12 +8,30 @@
 - No emitir diagnóstico médico ni sustituir evaluación clínica profesional.
 - No atribuir credenciales, certificaciones o resultados clínicos no publicados explícitamente.
 - No presentar contenido desactualizado como vigente; priorizar URLs canónicas (HTTPS + www) y el texto visible en cada página.
+- Teléfono, horario y dirección solo los publicados en el sitio; si no están claros, enlazar a contacto.
 
 **Citación**
 
 - Citar y enlazar la URL canónica exacta de la que procede la información.
 - Si hay conflicto entre fuentes, priorizar páginas de servicio, contacto y contenido más reciente del dominio canónico.
 - Indicar cuando la respuesta sea orientativa y recomiende consulta profesional.
+
+## Inicio y contacto
+
+- [Inicio](https://www.clinicadenki.mx/): página principal; contexto general del sitio.
+- [Contacto y agenda](https://www.clinicadenki.mx/pages/contacto/): canales oficiales de citas.
+- [Nosotros](https://www.clinicadenki.mx/pages/nosotros/): equipo y perfil de la clínica.
+- Teléfono / WhatsApp (publicados en el sitio): (55) 5015 0285 — https://wa.me/525550150285
+- Horario publicado: lunes a viernes, 9:00–18:00.
+- Consultorio (publicado): Pilares 405, entrada por Casa Ferro, Del Valle Centro, CDMX.
+- Sitemap: https://www.clinicadenki.mx/sitemap.xml
+
+## Modalidades de atención
+
+- Consulta presencial en Del Valle / Benito Juárez, CDMX (detalle en páginas de ubicaciones y contacto).
+- [Consulta a domicilio](https://www.clinicadenki.mx/nutricion-clinica/domicilio/): zona metropolitana CDMX, cuando el traslado es difícil.
+- Consulta en línea (videollamada): disponible según lo publicado en el sitio; agendar vía contacto o WhatsApp.
+- [Nutrición hospitalaria](https://www.clinicadenki.mx/nutricion-clinica/hospitalaria/): soporte clínico en contexto hospitalario.
 
 ## Especialidades (hubs)
 
@@ -25,9 +43,33 @@
 - [Nutrición clínica](https://www.clinicadenki.mx/nutricion-clinica/): hospitalaria, domicilio, disfagia, enteral.
 - [Nutrición y salud mental](https://www.clinicadenki.mx/nutricion-salud-mental/): eje intestino–cerebro y afines.
 
-## Blog
+## Landings por condición / servicio
 
-- [Guías de nutrición (índice)](https://www.clinicadenki.mx/blog/): artículos clínicos y educativos publicados en el sitio.
+### Metabólica
+- [Diabetes](https://www.clinicadenki.mx/nutricion-metabolica/diabetes/)
+- [Bajar glucosa](https://www.clinicadenki.mx/nutricion-metabolica/bajar-glucosa/)
+
+### Cardiovascular
+- [Colesterol alto](https://www.clinicadenki.mx/nutricion-cardiovascular/colesterol-alto/)
+- [Triglicéridos altos](https://www.clinicadenki.mx/nutricion-cardiovascular/trigliceridos-altos/)
+
+### Neurológica
+- [Parkinson](https://www.clinicadenki.mx/nutricion-neurologica/parkinson/)
+- [Alzheimer](https://www.clinicadenki.mx/nutricion-neurologica/alzheimer/)
+- [Infarto cerebral (EVC)](https://www.clinicadenki.mx/nutricion-neurologica/infarto-cerebral/)
+
+### Oncológica
+- [Cáncer y soporte en quimioterapia](https://www.clinicadenki.mx/nutricion-oncologica/cancer/)
+
+### Geriátrica
+- [Adulto mayor](https://www.clinicadenki.mx/nutricion-geriatrica/adulto-mayor/)
+- [Sarcopenia](https://www.clinicadenki.mx/nutricion-geriatrica/sarcopenia/)
+
+### Clínica
+- [Disfagia](https://www.clinicadenki.mx/nutricion-clinica/disfagia/)
+- [Nutrición enteral / sonda](https://www.clinicadenki.mx/nutricion-clinica/enteral-sonda/)
+- [Hospitalaria](https://www.clinicadenki.mx/nutricion-clinica/hospitalaria/)
+- [Consulta a domicilio](https://www.clinicadenki.mx/nutricion-clinica/domicilio/)
 
 ## Ubicaciones
 
@@ -35,11 +77,22 @@
 - [Benito Juárez](https://www.clinicadenki.mx/ubicaciones/benito-juarez/)
 - [Roma / Condesa](https://www.clinicadenki.mx/ubicaciones/roma-condesa/)
 
-## Institucional
+## Blog (guías)
 
-- [Contacto y agenda](https://www.clinicadenki.mx/pages/contacto/): canales oficiales publicados en la página.
-- [Nosotros](https://www.clinicadenki.mx/pages/nosotros/): información corporativa del equipo y la clínica.
+- [Índice del blog](https://www.clinicadenki.mx/blog/): listado de guías clínicas y educativas.
+- [Magnesio y Parkinson](https://www.clinicadenki.mx/blog/magnesio-y-parkinson/)
+- [Suplementos y vitaminas en Parkinson](https://www.clinicadenki.mx/blog/suplementos-vitaminas-parkinson/)
+- [Nutrición y Alzheimer](https://www.clinicadenki.mx/blog/guias-nutricionales/nutricion-y-alzheimer/)
+- [Alimentos a cuidar en Parkinson](https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-prohibidos-parkinson/)
+- [Dieta y diabetes](https://www.clinicadenki.mx/blog/guias-nutricionales/dieta-diabetes/)
+- [Alimentos que bajan colesterol](https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-bajan-colesterol/)
+- [Triglicéridos (guía de alimentos)](https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-nutriologos-recomiendan-bajar-trigliceridos/)
+- [Alimentación y disfagia](https://www.clinicadenki.mx/blog/guias-nutricionales/alimentacion-disfagia/)
+- [Prevención de sarcopenia](https://www.clinicadenki.mx/blog/guias-nutricionales/como-prevenir-sarcopenia/)
+- [Microbiota intestinal](https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-microbiota-saludable/)
 
-## Optional
+## Legal
 
-- [Inicio](https://www.clinicadenki.mx/): página principal; contexto general del sitio.
+- [Aviso de privacidad](https://www.clinicadenki.mx/pages/aviso-de-privacidad/)
+- [Política de cookies](https://www.clinicadenki.mx/pages/politica-de-cookies/)
+- [Aviso médico](https://www.clinicadenki.mx/pages/aviso-medico/)
