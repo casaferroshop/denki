@@ -2,16 +2,35 @@
 <html lang="es-MX">
 
 <head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GXCSFJJKHV');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+        var href = a.href;
+        if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1) {
+          gtag('event', 'whatsapp_click', { page_location: location.pathname });
+        } else if (href.indexOf('tel:') === 0) {
+          gtag('event', 'phone_click', { page_location: location.pathname });
+        } else if (href.indexOf('doctoralia') !== -1) {
+          gtag('event', 'doctoralia_click', { page_location: location.pathname });
+        }
+      });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <title>Nutrición y Alzheimer: dieta MIND, prevención e hidratación | Clínica Denki</title>
+    <title>Nutrición y Alzheimer: dieta MIND, prevención e hidratación | Denki</title>
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
-    <meta name="description"
-        content="Nutrición y Alzheimer: qué dice la evidencia sobre la dieta MIND y mediterránea, qué alimentos se asocian a menor deterioro cognitivo y la importancia de la hidratación. Guía clínica.">
+    <meta name="description" content="Nutrición y Alzheimer: qué dice la evidencia sobre la dieta MIND y mediterránea, qué alimentos se asocian a menor deterioro cognitivo y la importancia de.">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Nutrición y Alzheimer: dieta MIND, prevención e hidratación | Clínica Denki">
-    <meta property="og:description" content="Qué dice la evidencia sobre alimentación y Alzheimer: dieta MIND y mediterránea, alimentos asociados a menor deterioro cognitivo e hidratación en el cuidado diario.">
+    <meta property="og:title" content="Nutrición y Alzheimer: dieta MIND, prevención e hidratación | Denki">
+    <meta property="og:description" content="Nutrición y Alzheimer: qué dice la evidencia sobre la dieta MIND y mediterránea, qué alimentos se asocian a menor deterioro cognitivo y la importancia de.">
     <meta property="og:url" content="https://www.clinicadenki.mx/blog/guias-nutricionales/nutricion-y-alzheimer/">
     <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/home/hero-clinica-denki.jpg">
     <meta property="og:site_name" content="Clínica Denki">
