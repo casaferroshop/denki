@@ -39,9 +39,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Schema JSON-LD (MedicalOrganization + LocalBusiness) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD (MedicalOrganization + LocalBusiness) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,7 +70,7 @@
     }
     </script>
     <!-- Loader -->
-    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/loader.js" defer></script>
 </head>
 
 <body>
@@ -84,7 +83,7 @@
 
         <a href="/" class="logo">
 
-            <img src="/assets/img/logo-mobile.webp" width="1024" height="329" loading="lazy" decoding="async" alt="Clínica Denki Logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
 
         </a>
 
@@ -277,12 +276,12 @@
                 </div>
                 <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">(55) 5015 0285 - Lun-Vie
                     9:00-18:00</p>
-                <span class="card-tag" style="background: #E8F5E9; color: #2E7D32; margin-top: 1rem;">PhD Ciencias
+                <span class="card-tag" style="background: #E8F5E9; color: #1B5E20; margin-top: 1rem;">PhD Ciencias
                     Biomédicas - UNAM</span>
             </div>
 
             <div class="hero-image-container reveal">
-                <img src="/assets/img/home/hero-denki.webp" srcset="/assets/img/home/hero-denki-w480.webp 480w, /assets/img/home/hero-denki-w960.webp 960w, /assets/img/home/hero-denki.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABwBQCdASogACAAPzGGslOuqaQisAwB0CYJZQDNhHtv4/5G2tg4Po/hlBGL9YkOmvN/AUwAAP74tAXbGisoSyjdGlmUfao+XhKDyY+mYEJ4fxF2dbageDGdydCvoUTipb9DdYt8LCQRoiFpLq5p8mOIaQjx/9Ujfa8ATwWdOLC5WbHB9x9ANHm6pn+UMN0EOgL59AZl7PMeHdKpk4AR8AAA);background-size:cover;background-position:center" alt="Consultorio de Nutrición Clínica Especializada en CDMX | Clínica Denki" class="hero-img">
+                <img src="/assets/img/home/hero-denki-w960.webp" srcset="/assets/img/home/hero-denki-w480.webp 480w, /assets/img/home/hero-denki-w960.webp 960w, /assets/img/home/hero-denki.webp 1024w" sizes="(min-width: 900px) 50vw, 100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABwBQCdASogACAAPzGGslOuqaQisAwB0CYJZQDNhHtv4/5G2tg4Po/hlBGL9YkOmvN/AUwAAP74tAXbGisoSyjdGlmUfao+XhKDyY+mYEJ4fxF2dbageDGdydCvoUTipb9DdYt8LCQRoiFpLq5p8mOIaQjx/9Ujfa8ATwWdOLC5WbHB9x9ANHm6pn+UMN0EOgL59AZl7PMeHdKpk4AR8AAA);background-size:cover;background-position:center" alt="Consultorio de Nutrición Clínica Especializada en CDMX | Clínica Denki" class="hero-img">
             </div>
         </section>
 
@@ -297,17 +296,17 @@
 
                 <div class="concept-grid reveal">
                     <div class="concept-item">
-                        <h4>Basado en Evidencia</h4>
+                        <h3>Basado en Evidencia</h3>
                         <p>Cada plan nutricional se fundamenta en investigación científica actualizada y guías clínicas
                             internacionales.</p>
                     </div>
                     <div class="concept-item">
-                        <h4>Especialización Clínica</h4>
+                        <h3>Especialización Clínica</h3>
                         <p>Atención especializada en condiciones que requieren manejo nutricional específico y
                             seguimiento médico.</p>
                     </div>
                     <div class="concept-item">
-                        <h4>Tratamiento Individual</h4>
+                        <h3>Tratamiento Individual</h3>
                         <p>Evaluamos cada caso de forma individual, considerando la condición clínica, estudios de
                             laboratorio y contexto personal.</p>
                     </div>
@@ -329,62 +328,62 @@
                     <div class="fruit-box reveal">
                         <div class="card-thumb"
                             style="height: 180px; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden; background: #f9f9f9; display: flex; align-items: center; justify-content: center;">
-                            <img src="/assets/img/home/icon-metabolica.webp" srcset="/assets/img/home/icon-metabolica-w480.webp 480w, /assets/img/home/icon-metabolica-w960.webp 960w, /assets/img/home/icon-metabolica.webp 1024w" sizes="(min-width: 900px) 50vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Metabólica">
+                            <img src="/assets/img/home/icon-metabolica-w480.webp" srcset="/assets/img/home/icon-metabolica-w480.webp 480w, /assets/img/home/icon-metabolica-w960.webp 960w, /assets/img/home/icon-metabolica.webp 1024w" sizes="(max-width: 768px) 140px, 200px" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Metabólica">
                         </div>
                         <h3>Nutrición Metabólica</h3>
                         <p>Tratamiento nutricional para diabetes, resistencia a la insulina y alteraciones metabólicas.
                         </p>
-                        <a href="nutricion-metabolica/" class="btn btn-secondary mt-3">Ver Hub →</a>
+                        <a href="nutricion-metabolica/" class="btn btn-secondary mt-3">Ver hub metabólica →</a>
                     </div>
                     <!-- Cardiovascular -->
                     <div class="fruit-box reveal">
                         <div class="card-thumb"
                             style="height: 180px; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden; background: #f9f9f9; display: flex; align-items: center; justify-content: center;">
-                            <img src="/assets/img/home/icon-cardiovascular.webp" srcset="/assets/img/home/icon-cardiovascular-w480.webp 480w, /assets/img/home/icon-cardiovascular-w960.webp 960w, /assets/img/home/icon-cardiovascular.webp 1024w" sizes="(min-width: 900px) 50vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Cardiovascular">
+                            <img src="/assets/img/home/icon-cardiovascular-w480.webp" srcset="/assets/img/home/icon-cardiovascular-w480.webp 480w, /assets/img/home/icon-cardiovascular-w960.webp 960w, /assets/img/home/icon-cardiovascular.webp 1024w" sizes="(max-width: 768px) 140px, 200px" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Cardiovascular">
                         </div>
                         <h3>Nutrición Cardiovascular</h3>
                         <p>Manejo de triglicéridos altos, colesterol elevado y riesgo cardiovascular.</p>
-                        <a href="nutricion-cardiovascular/" class="btn btn-secondary mt-3">Ver Hub →</a>
+                        <a href="nutricion-cardiovascular/" class="btn btn-secondary mt-3">Ver hub cardiovascular →</a>
                     </div>
                     <!-- Neurológica -->
                     <div class="fruit-box reveal">
                         <div class="card-thumb"
                             style="height: 180px; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden; background: #f9f9f9; display: flex; align-items: center; justify-content: center;">
-                            <img src="/assets/img/home/icon-neurologica.webp" srcset="/assets/img/home/icon-neurologica-w480.webp 480w, /assets/img/home/icon-neurologica-w960.webp 960w, /assets/img/home/icon-neurologica.webp 1024w" sizes="(min-width: 900px) 50vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Neurológica">
+                            <img src="/assets/img/home/icon-neurologica-w480.webp" srcset="/assets/img/home/icon-neurologica-w480.webp 480w, /assets/img/home/icon-neurologica-w960.webp 960w, /assets/img/home/icon-neurologica.webp 1024w" sizes="(max-width: 768px) 140px, 200px" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Neurológica">
                         </div>
                         <h3>Nutrición Neurológica</h3>
                         <p>Soporte nutricional especializado para Parkinson, Alzheimer y condiciones neurológicas.</p>
-                        <a href="nutricion-neurologica/" class="btn btn-secondary mt-3">Ver Hub →</a>
+                        <a href="nutricion-neurologica/" class="btn btn-secondary mt-3">Ver hub neurológica →</a>
                     </div>
                     <!-- Oncológica -->
                     <div class="fruit-box reveal">
                         <div class="card-thumb"
                             style="height: 180px; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden; background: #f9f9f9; display: flex; align-items: center; justify-content: center;">
-                            <img src="/assets/img/home/icon-oncologica.webp" srcset="/assets/img/home/icon-oncologica-w480.webp 480w, /assets/img/home/icon-oncologica-w960.webp 960w, /assets/img/home/icon-oncologica.webp 1024w" sizes="(min-width: 900px) 50vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Oncológica">
+                            <img src="/assets/img/home/icon-oncologica-w480.webp" srcset="/assets/img/home/icon-oncologica-w480.webp 480w, /assets/img/home/icon-oncologica-w960.webp 960w, /assets/img/home/icon-oncologica.webp 1024w" sizes="(max-width: 768px) 140px, 200px" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Oncológica">
                         </div>
                         <h3>Nutrición Oncológica</h3>
                         <p>Nutrición clínica durante tratamiento oncológico y manejo de efectos secundarios.</p>
-                        <a href="nutricion-oncologica/" class="btn btn-secondary mt-3">Ver Hub →</a>
+                        <a href="nutricion-oncologica/" class="btn btn-secondary mt-3">Ver hub oncológica →</a>
                     </div>
                     <!-- Geriátrica -->
                     <div class="fruit-box reveal">
                         <div class="card-thumb"
                             style="height: 180px; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden; background: #f9f9f9; display: flex; align-items: center; justify-content: center;">
-                            <img src="/assets/img/home/icon-geriatrica.webp" srcset="/assets/img/home/icon-geriatrica-w480.webp 480w, /assets/img/home/icon-geriatrica-w960.webp 960w, /assets/img/home/icon-geriatrica.webp 1024w" sizes="(min-width: 900px) 50vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Geriátrica">
+                            <img src="/assets/img/home/icon-geriatrica-w480.webp" srcset="/assets/img/home/icon-geriatrica-w480.webp 480w, /assets/img/home/icon-geriatrica-w960.webp 960w, /assets/img/home/icon-geriatrica.webp 1024w" sizes="(max-width: 768px) 140px, 200px" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Geriátrica">
                         </div>
                         <h3>Nutrición Geriátrica</h3>
                         <p>Prevención de sarcopenia, fragilidad y manejo nutricional del adulto mayor.</p>
-                        <a href="nutricion-geriatrica/" class="btn btn-secondary mt-3">Ver Hub →</a>
+                        <a href="nutricion-geriatrica/" class="btn btn-secondary mt-3">Ver hub geriátrica →</a>
                     </div>
                     <!-- Clínica -->
                     <div class="fruit-box reveal">
                         <div class="card-thumb"
                             style="height: 180px; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden; background: #f9f9f9; display: flex; align-items: center; justify-content: center;">
-                            <img src="/assets/img/home/icon-clinica.webp" srcset="/assets/img/home/icon-clinica-w480.webp 480w, /assets/img/home/icon-clinica-w960.webp 960w, /assets/img/home/icon-clinica.webp 1024w" sizes="(min-width: 900px) 50vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Clínica General">
+                            <img src="/assets/img/home/icon-clinica-w480.webp" srcset="/assets/img/home/icon-clinica-w480.webp 480w, /assets/img/home/icon-clinica-w960.webp 960w, /assets/img/home/icon-clinica.webp 1024w" sizes="(max-width: 768px) 140px, 200px" width="1024" height="1024" loading="lazy" decoding="async" style="width: 80%; height: auto" alt="Nutrición Clínica General">
                         </div>
                         <h3>Nutrición Clínica</h3>
                         <p>Disfagia, nutrición enteral y soporte nutricional especializado.</p>
-                        <a href="nutricion-clinica/" class="btn btn-secondary mt-3">Ver Hub →</a>
+                        <a href="nutricion-clinica/" class="btn btn-secondary mt-3">Ver hub clínica →</a>
                     </div>
                 </div>
             </div>
@@ -423,22 +422,22 @@
                 <div class="concept-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
                     <div class="concept-item">
                         <span class="card-tag">PASO 1</span>
-                        <h4>Evaluación Clínica</h4>
+                        <h3>Evaluación Clínica</h3>
                         <p>Análisis detallado de la condición, estudios de laboratorio e historia clínica completa.</p>
                     </div>
                     <div class="concept-item">
                         <span class="card-tag">PASO 2</span>
-                        <h4>Diseño del Plan</h4>
+                        <h3>Diseño del Plan</h3>
                         <p>Desarrollo de plan nutricional individualizado basado en evidencia científica.</p>
                     </div>
                     <div class="concept-item">
                         <span class="card-tag">PASO 3</span>
-                        <h4>Implementación</h4>
+                        <h3>Implementación</h3>
                         <p>Inicio del tratamiento con orientación sobre alimentación y estrategias prácticas.</p>
                     </div>
                     <div class="concept-item">
                         <span class="card-tag">PASO 4</span>
-                        <h4>Seguimiento</h4>
+                        <h3>Seguimiento</h3>
                         <p>Monitoreo continuo de evolución y ajustes al plan según respuesta clínica.</p>
                     </div>
                 </div>
@@ -515,17 +514,17 @@
 
                 <div class="concept-grid reveal">
                     <div class="concept-item">
-                        <h4>¿Qué es la nutrición clínica?</h4>
+                        <h3>¿Qué es la nutrición clínica?</h3>
                         <p>Es la especialidad que trata condiciones médicas mediante la alimentación, basándose en
                             evidencia y análisis clínico profundo.</p>
                     </div>
                     <div class="concept-item">
-                        <h4>¿Cómo es la primera consulta?</h4>
+                        <h3>¿Cómo es la primera consulta?</h3>
                         <p>Revisamos laboratorios, historia clínica y composición corporal para entregarte un plan 100%
                             individualizado.</p>
                     </div>
                     <div class="concept-item">
-                        <h4>¿Necesito estudios previos?</h4>
+                        <h3>¿Necesito estudios previos?</h3>
                         <p>Son muy recomendables. Si no tienes, en la primera cita te indicaremos cuáles requerimos
                             según tu caso.</p>
                     </div>
@@ -561,7 +560,7 @@
         <div class="f-grid">
             <div class="f-info">
                 <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
-                    <img src="/assets/img/logo-mobile.webp" width="1024" height="329" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
                 </a>
                 <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
                 <div style="margin-top: 1.5rem;">
@@ -570,7 +569,7 @@
                 </div>
             </div>
             <div>
-                <h4 class="f-title">Especialidades</h4>
+                <h2 class="f-title">Especialidades</h2>
                 <ul class="f-links">
                     <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
                     <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
@@ -582,14 +581,14 @@
                 </ul>
             </div>
             <div>
-                <h4 class="f-title">Ubicaciones</h4>
+                <h2 class="f-title">Ubicaciones</h2>
                 <ul class="f-links">
                     <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
                     <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
                     <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
                     <li><a href="/nutricion-clinica/domicilio/">Consulta a Domicilio</a></li>
                 </ul>
-                <h4 class="f-title" style="margin-top: 2rem;">Recursos</h4>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
                 <ul class="f-links">
                     <li><a href="/blog/">Blog de Nutrición</a></li>
                     <li><a href="/pages/nosotros/">Nosotros</a></li>
@@ -597,7 +596,7 @@
                 </ul>
             </div>
             <div>
-                <h4 class="f-title">Legal</h4>
+                <h2 class="f-title">Legal</h2>
                 <ul class="f-links">
                     <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
                     <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>

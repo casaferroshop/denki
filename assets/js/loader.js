@@ -172,7 +172,7 @@ function initMobileMenu() {
     const dropdownLinks = document.querySelectorAll('.has-dropdown > a, .has-sub-dropdown > a');
     dropdownLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            if (window.innerWidth < 1000) {
+            if (window.innerWidth < 1280) {
                 e.preventDefault();
             }
         });

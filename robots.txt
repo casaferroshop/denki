@@ -3,6 +3,9 @@ Allow: /
 
 Sitemap: https://www.clinicadenki.mx/sitemap.xml
 
+# LLM / AI context (https://llmstxt.org)
+# https://www.clinicadenki.mx/llms.txt
+
 # Legacy Shopify product variants (?variant=); canonical UX is 301 in vercel.json
 Disallow: /*?variant=
 
