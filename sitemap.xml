@@ -97,7 +97,7 @@
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/nutricion-oncologica/cancer/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -161,9 +161,15 @@
   <!-- Blog -->
   <url>
     <loc>https://www.clinicadenki.mx/blog/</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-prohibidos-quimioterapia/</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/blog/guias-nutricionales/dieta-diabetes/</loc>
