@@ -6,7 +6,11 @@
     --primary: #10B981;
     --primary-light: #34D399;
     --primary-soft: #D1FAE5;
-    --primary-dark: #059669;
+    /* WCAG AA: text/icons on soft & white (≥4.5:1) */
+    --primary-dark: #065F46;
+    /* Interactive green that passes white-on-green and green-on-white */
+    --primary-ink: #047857;
+    --btn-primary-bg: #047857;
 
     /* Neutros y Acentos */
     --secondary: #6B7280;
@@ -16,9 +20,16 @@
 
     /* Neutrals */
     --text-main: hsl(210, 20%, 15%);
-    --text-muted: hsl(210, 15%, 45%);
+    /* ~7:1 on page bg (was ~4.6 borderline under LH) */
+    --text-muted: hsl(210, 14%, 36%);
     --bg-page: hsl(210, 40%, 99%);
     --bg-pure: #ffffff;
+
+    /* Layout: max outer width includes horizontal padding (border-box) */
+    --container-max: 1440px;
+    --container-pad: clamp(1.25rem, 3.5vw, 2.5rem);
+    /* Hero copy needs a bit more side air on resize */
+    --hero-pad-x: clamp(1.5rem, 5vw, 3rem);
 
     /* Aesthetics Tokens */
     --glass-bg: rgba(255, 255, 255, 0.9);
@@ -113,10 +124,12 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    /* Increased for better blog grid */
-    margin: 0 auto;
-    padding: 0 1.5rem;
+    /* Total outer width ≤ 1440px; padding sits inside that cap */
+    max-width: var(--container-max);
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--container-pad);
+    box-sizing: border-box;
 }
 
 /* Utility Grids */
@@ -235,7 +248,7 @@ header.scrolled .logo img {
 }
 
 .nav-links a:hover {
-    color: var(--primary);
+    color: var(--primary-ink);
 }
 
 /* Dropdown Menu */
@@ -321,7 +334,7 @@ header.scrolled .logo img {
     transform: translateX(0);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1280px) {
     .has-sub-dropdown>a::after {
         content: '▾';
     }
@@ -475,33 +488,42 @@ header.scrolled .logo img {
 }
 
 .btn-primary {
-    background: var(--primary);
-    color: white;
-    box-shadow: 0 10px 20px -10px hsla(var(--p-h), var(--p-s), var(--p-l), 0.5);
+    background: var(--btn-primary-bg);
+    color: #ffffff;
+    box-shadow: 0 10px 20px -10px hsla(var(--p-h), var(--p-s), 30%, 0.45);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    background: var(--primary-soft);
-    box-shadow: 0 15px 30px -10px hsla(var(--p-h), var(--p-s), var(--p-l), 0.6);
+    background: var(--primary-dark);
+    color: #ffffff;
+    box-shadow: 0 15px 30px -10px hsla(var(--p-h), var(--p-s), 25%, 0.5);
 }
 
 .btn-secondary {
     background: white;
     /* Ensure visibility on dark/primary backgrounds */
-    color: var(--primary);
-    border: 1px solid var(--primary);
+    color: var(--primary-ink);
+    border: 1px solid var(--primary-ink);
 }
 
 .btn-secondary:hover {
     transform: translateY(-3px);
-    background: var(--secondary-dark);
-    box-shadow: 0 15px 30px -10px hsla(0, 100%, 71%, 0.4);
+    background: var(--primary-soft);
+    color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    box-shadow: 0 15px 30px -10px hsla(var(--p-h), var(--p-s), 30%, 0.2);
 }
 
 .btn-whatsapp {
-    background: #25D366;
-    color: white;
+    /* #25D366 fails white text (~2:1); this stays brand-adjacent and AA */
+    background: #107C35;
+    color: #ffffff;
+}
+
+.btn-whatsapp:hover {
+    background: #0F7030;
+    color: #ffffff;
 }
 
 /* Reveal Animations */
@@ -524,10 +546,57 @@ header.scrolled .logo img {
     transform: none;
 }
 
+/* LCP: hero media must paint immediately (do not wait for .reveal / JS) */
+.hero-image-container.reveal {
+    opacity: 1;
+    transform: none;
+}
+
 /* Hero Section */
 .hero {
     padding: 8rem 0 4rem;
     text-align: center;
+}
+
+/* Home hero is also .container — stronger side inset so copy never hugs edges */
+.hero.container {
+    padding-inline: var(--hero-pad-x);
+}
+
+.hero.container.section-grid {
+    column-gap: clamp(2rem, 4vw, 4rem);
+    row-gap: clamp(1.5rem, 3vw, 2.5rem);
+    gap: clamp(1.5rem, 3vw, 4rem);
+}
+
+.hero.container .header-group {
+    min-width: 0; /* grid overflow protection */
+    max-width: 40rem;
+    margin-inline: 0;
+    padding-inline: 0;
+}
+
+/* Space eyebrow tag → H1 (default 1.2rem feels tight in hero) */
+.hero.container .header-group > .card-tag:first-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.hero.container .header-group > h1 {
+    margin-top: 0.62rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Stacked: CTA row wraps without overflowing the padded rail */
+.hero.container .header-group > div[style*="display: flex"] {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+}
+
+.hero.container .hero-image-container {
+    min-width: 0;
+    width: 100%;
+    margin-block: 0;
 }
 
 h1 {
@@ -539,15 +608,15 @@ h1 {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(135deg, var(--text-main) 30%, var(--primary));
+    background: linear-gradient(135deg, var(--text-main) 45%, var(--primary-ink));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .read-time {
-    color: var(--primary);
-    background: var(--primary-light);
+    color: var(--primary-dark);
+    background: var(--primary-soft);
     display: inline-block;
     padding: 0.4rem 1rem;
     border-radius: var(--radius-pill);
@@ -634,10 +703,10 @@ h1 {
 .lead {
     font-size: 1.4rem;
     font-weight: 600;
-    color: var(--primary);
+    color: var(--primary-ink);
     line-height: 1.4;
     margin-bottom: 1.5rem;
-    border-left: 4px solid var(--secondary);
+    border-left: 4px solid var(--primary-ink);
     padding-left: 1.5rem;
 }
 
@@ -741,7 +810,7 @@ h1 {
 }
 
 .feat-item strong {
-    color: var(--primary);
+    color: var(--primary-ink);
     display: block;
     font-size: 1.1rem;
     margin-bottom: 0.3rem;
@@ -761,6 +830,23 @@ h1 {
     border-radius: var(--radius-soft);
     border: 1px solid var(--primary-light);
     box-shadow: var(--shadow-soft);
+}
+
+/* Same title look for h3 (correct outline) and legacy h4 elsewhere */
+.concept-item h3,
+.concept-item h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--text-main);
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.01em;
+}
+
+.concept-item p {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    margin: 0;
 }
 
 .mini-table {
@@ -799,6 +885,23 @@ h1 {
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
+}
+
+/* Hub cards: pin title size (usually h3; h4 safe if remaining) */
+.fruit-box h3,
+.fruit-box h4 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-main);
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.015em;
+}
+
+.fruit-box > p {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    margin: 0 0 1rem;
 }
 
 .fruit-box::after {
@@ -944,9 +1047,12 @@ h1 {
     border: 1px solid var(--primary-light);
 }
 
+.faq-card h3,
 .faq-card h4 {
-    color: var(--primary);
+    color: var(--primary-ink);
     font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.35;
     margin-bottom: 1rem;
 }
 
@@ -974,9 +1080,11 @@ footer {
 
 .f-title {
     font-size: 1.1rem;
+    font-weight: 700;
     margin-bottom: 1.5rem;
     position: relative;
     color: white;
+    line-height: 1.3;
 }
 
 .f-links {
@@ -1003,7 +1111,7 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 2rem;
     font-size: 0.85rem;
-    color: #636e72;
+    color: #b8c0c8;
 }
 
 /* Responsive Overrides */
@@ -1017,6 +1125,16 @@ footer {
 
     .hero .header-group {
         margin-bottom: 1rem;
+        max-width: none;
+        width: 100%;
+    }
+
+    /* Tablet/phone: photo full width of content rail; side padding from .container */
+    .hero.container .hero-image-container {
+        width: 100%;
+        max-width: 100%;
+        margin-inline: 0;
+        margin-block: 0.25rem 0;
     }
 
     .concept-grid {
@@ -1025,15 +1143,6 @@ footer {
 
     h1 {
         font-size: 2.5rem;
-    }
-
-    /* Mobile: hide desktop nav, show overlay toggle */
-    .mobile-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
     }
 
     .f-grid {
@@ -1046,9 +1155,29 @@ footer {
     }
 }
 
+/* Nav only: desktop links overflow ~1257px — collapse a bit earlier */
+@media (max-width: 1280px) {
+    .mobile-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
 @media (max-width: 600px) {
     .hero {
         padding-top: 6rem;
+    }
+
+    .hero.container {
+        /* Keep a floor so copy never hits the screen edge on small phones */
+        padding-inline: max(1.25rem, env(safe-area-inset-left, 0px)) max(1.25rem, env(safe-area-inset-right, 0px));
+    }
+
+    .hero.container .header-group [style*="display: flex"] {
+        flex-wrap: wrap;
     }
 
     .toc-card {
@@ -1160,6 +1289,12 @@ footer {
     letter-spacing: 0.05em;
     width: fit-content;
     margin-bottom: 1.2rem;
+}
+
+/* Keep tags readable when pages override with soft greens */
+.card-tag[style*="#E8F5E9"],
+.card-tag[style*="#e8f5e9"] {
+    color: #1B5E20 !important;
 }
 
 .card-content h3 {
