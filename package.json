@@ -1,0 +1,8 @@
+{
+  "name": "clinica-denki-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "indexnow": "node scripts/indexnow.mjs"
+  }
+}
