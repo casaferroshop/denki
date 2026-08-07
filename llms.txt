@@ -80,6 +80,7 @@
 ## Blog (guías)
 
 - [Índice del blog](https://www.clinicadenki.mx/blog/): listado de guías clínicas y educativas.
+- [Alimentos prohibidos durante la quimioterapia](https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-prohibidos-quimioterapia/)
 - [Magnesio y Parkinson](https://www.clinicadenki.mx/blog/magnesio-y-parkinson/)
 - [Suplementos y vitaminas en Parkinson](https://www.clinicadenki.mx/blog/suplementos-vitaminas-parkinson/)
 - [Nutrición y Alzheimer](https://www.clinicadenki.mx/blog/guias-nutricionales/nutricion-y-alzheimer/)
