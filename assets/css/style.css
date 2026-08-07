@@ -1488,6 +1488,105 @@ footer {
     margin-bottom: 2.2rem;
 }
 
+/* Lists in articles: compact indent (never fight the TOC) */
+.post-body-text ul:not(.post-toc ul),
+.post-body-text ol:not(.post-toc ol) {
+    margin: 0 0 2rem;
+    padding-left: 1.25rem;
+    padding-inline-start: 1.25rem;
+    list-style-position: outside;
+}
+
+.post-body-text ul:not(.post-toc ul) {
+    list-style-type: disc;
+}
+
+.post-body-text ol:not(.post-toc ol) {
+    list-style-type: decimal;
+}
+
+.post-body-text ul:not(.post-toc ul) > li,
+.post-body-text ol:not(.post-toc ol) > li {
+    margin-bottom: 0.75rem;
+    padding-left: 0.25rem;
+    line-height: 1.7;
+}
+
+.post-body-text ul:not(.post-toc ul) > li:last-child,
+.post-body-text ol:not(.post-toc ol) > li:last-child {
+    margin-bottom: 0;
+}
+
+.post-body-text li > ul,
+.post-body-text li > ol {
+    margin-top: 0.65rem;
+    margin-bottom: 0.35rem;
+    padding-left: 1.25rem;
+}
+
+/* In-article table of contents — must beat body list + browser link styles */
+.post-body-text .post-toc,
+.post-toc {
+    background: var(--bg-pure);
+    border: 1px solid var(--primary-soft);
+    border-radius: 20px;
+    padding: 1.5rem 1.5rem 1.25rem;
+    margin: 0 0 2.5rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.post-body-text .post-toc h4,
+.post-toc h4 {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.post-body-text .post-toc ul,
+.post-toc ul {
+    list-style: none !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-inline-start: 0 !important;
+    display: grid;
+    gap: 0.4rem;
+}
+
+.post-body-text .post-toc li,
+.post-toc li {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-left: 0 !important;
+}
+
+.post-body-text .post-toc a,
+.post-toc a,
+.post-body-text .post-toc a:visited,
+.post-toc a:visited {
+    display: block;
+    text-decoration: none !important;
+    color: var(--text-main) !important;
+    font-weight: 500;
+    font-size: 0.98rem;
+    line-height: 1.45;
+    padding: 0.65rem 0.85rem;
+    border-radius: 12px;
+    background: var(--bg-page);
+    transition: var(--transition-fast);
+}
+
+.post-body-text .post-toc a:hover,
+.post-body-text .post-toc a:focus-visible,
+.post-toc a:hover,
+.post-toc a:focus-visible {
+    background: var(--primary-soft);
+    color: var(--primary-dark) !important;
+    outline: none;
+}
+
 .post-body-text h2 {
     font-size: 2.2rem;
     color: var(--primary-dark);
@@ -1518,4 +1617,32 @@ footer {
     box-shadow: var(--shadow-soft);
     position: sticky;
     top: 120px;
+}
+
+/* Related posts under blog articles — same cards as blog listing */
+.related-posts.section,
+.related-posts.blog-grid {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background: var(--bg-page);
+}
+
+.related-posts .header-group {
+    margin-bottom: 0.25rem;
+}
+
+.related-posts-grid {
+    padding-top: 1.5rem;
+}
+
+.related-posts .card-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.related-posts .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
