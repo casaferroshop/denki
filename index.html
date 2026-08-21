@@ -8,18 +8,26 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'G-GXCSFJJKHV');
+
       document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
         var a = e.target.closest('a');
         if (!a || !a.href) return;
-        var href = a.href;
-        if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1) {
-          gtag('event', 'whatsapp_click', { page_location: location.pathname });
-        } else if (href.indexOf('tel:') === 0) {
-          gtag('event', 'phone_click', { page_location: location.pathname });
-        } else if (href.indexOf('doctoralia') !== -1) {
-          gtag('event', 'doctoralia_click', { page_location: location.pathname });
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
         }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
       });
     </script>
 <meta charset="UTF-8">
@@ -40,7 +48,7 @@
     <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/home/hero-denki.webp">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.clinicadenki.mx/">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
@@ -90,7 +98,7 @@
     }
     </script>
     <!-- Loader -->
-    <script src="assets/js/loader.js" defer></script>
+    <script src="/assets/js/loader.js" defer></script>
 </head>
 
 <body>
@@ -294,7 +302,7 @@
                     <a href="https://wa.me/525550150285" class="btn btn-primary">Agendar Consulta</a>
                     <a href="#perfil" class="btn btn-secondary">Perfil Profesional</a>
                 </div>
-                <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">(55) 5015 0285 - Lun-Vie
+                <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);"><a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a> - Lun-Vie
                     9:00-18:00</p>
                 <span class="card-tag" style="background: #E8F5E9; color: #1B5E20; margin-top: 1rem;">PhD Ciencias
                     Biomédicas - UNAM</span>
@@ -585,7 +593,7 @@
                 <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
                 <div style="margin-top: 1.5rem;">
                     <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
-                    <p style="color: #99aab5; font-size: 0.9rem;">📞 (55) 5015 0285</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
                 </div>
             </div>
             <div>
@@ -635,7 +643,7 @@
 
 <!-- denki:static-footer:end -->
 
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

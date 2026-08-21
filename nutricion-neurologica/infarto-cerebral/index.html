@@ -8,18 +8,26 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'G-GXCSFJJKHV');
+
       document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
         var a = e.target.closest('a');
         if (!a || !a.href) return;
-        var href = a.href;
-        if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1) {
-          gtag('event', 'whatsapp_click', { page_location: location.pathname });
-        } else if (href.indexOf('tel:') === 0) {
-          gtag('event', 'phone_click', { page_location: location.pathname });
-        } else if (href.indexOf('doctoralia') !== -1) {
-          gtag('event', 'doctoralia_click', { page_location: location.pathname });
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
         }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
       });
     </script>
 <meta charset="UTF-8">
@@ -549,7 +557,7 @@
                 <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
                 <div style="margin-top: 1.5rem;">
                     <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
-                    <p style="color: #99aab5; font-size: 0.9rem;">📞 (55) 5015 0285</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
                 </div>
             </div>
             <div>
