@@ -1,16 +1,7 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": true,
-  "routes": [
-    {
-      "src": "/components(/.*)?",
-      "status": 404,
-      "dest": "/404.html"
-    },
-    {
-      "handle": "filesystem"
-    }
-  ],
   "headers": [
     {
       "source": "/assets/js/(.*)",
@@ -52,7 +43,6 @@
       ]
     }
   ],
-  "rewrites": [],
   "redirects": [
     {
       "source": "/(.*)",
@@ -977,6 +967,16 @@
       "source": "/blog/guias-nutricionales/suplementos-vitaminas-parkinson/",
       "destination": "/blog/suplementos-vitaminas-parkinson/",
       "permanent": true
+    },
+    {
+      "source": "/components",
+      "destination": "/404.html",
+      "statusCode": 404
+    },
+    {
+      "source": "/components/:path*",
+      "destination": "/404.html",
+      "statusCode": 404
     },
     {
       "source": "/products/(.*)",
