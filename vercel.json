@@ -26,6 +26,15 @@
       ]
     },
     {
+      "source": "/404/",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
       "source": "/(.*)",
       "headers": [
         {
@@ -969,6 +978,16 @@
       "permanent": true
     },
     {
+      "source": "/404/",
+      "destination": "/404.html",
+      "statusCode": 404
+    },
+    {
+      "source": "/components/",
+      "destination": "/404.html",
+      "statusCode": 404
+    },
+    {
       "source": "/components",
       "destination": "/404.html",
       "statusCode": 404
@@ -1003,6 +1022,12 @@
       "source": "/blogs/(.*)",
       "destination": "/404.html",
       "statusCode": 404
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/favicon.ico",
+      "destination": "/assets/img/favicon.png"
     }
   ]
 }
