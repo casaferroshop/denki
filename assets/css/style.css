@@ -1329,6 +1329,9 @@ footer {
     color: #1B5E20 !important;
 }
 
+/* Same card-title look for h2 (blog index, where each post is a top-level
+   item under the page h1) and h3 (related-posts inside an article) */
+.card-content h2,
 .card-content h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -1535,12 +1538,22 @@ footer {
     box-shadow: var(--shadow-soft);
 }
 
+/* Same title look for h2 (correct outline) and legacy h4 elsewhere */
+.post-body-text .post-toc h2,
+.post-toc h2,
 .post-body-text .post-toc h4,
 .post-toc h4 {
     margin: 0 0 1rem;
     font-size: 1rem;
     font-weight: 700;
     color: var(--primary-dark);
+    padding-left: 0;
+}
+
+/* The TOC title is an h2 so the outline has no gap, but it must not pick
+   up the accent bar that .post-body-text h2 draws for article sections. */
+.post-body-text .post-toc h2::before {
+    content: none;
 }
 
 .post-body-text .post-toc ul,
@@ -1617,6 +1630,13 @@ footer {
     box-shadow: var(--shadow-soft);
     position: sticky;
     top: 120px;
+}
+
+/* Card titles are h3 so the outline has no gap; pin the size the h4 they
+   replaced rendered at, since no rule styled them before. */
+.sidebar-card-premium h3 {
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 /* Related posts under blog articles — same cards as blog listing */
