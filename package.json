@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "sitemap": "node scripts/sitemap.mjs",
+    "sitemap:check": "node scripts/sitemap.mjs --check"
   }
 }

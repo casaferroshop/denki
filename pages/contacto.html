@@ -2,6 +2,7 @@
 <html lang="es-MX">
 
 <head>
+<meta charset="UTF-8">
 <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
     <script>
@@ -30,7 +31,6 @@
         gtag('event', eventName, { link_url: url });
       });
     </script>
-<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <title>Contacto | Clínica Denki - Agenda tu Consulta</title>
@@ -51,7 +51,9 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" media="print" onload="this.media=&#39;all&#39;">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"></noscript>
 <script src="/assets/js/loader.js" defer></script>
 
     <!-- Schema JSON-LD: ContactPage + MedicalClinic + BreadcrumbList -->
@@ -103,7 +105,7 @@
               "closes": "18:00"
             }
           ],
-          "medicalSpecialty": ["Nutrition", "Neurology", "Oncology", "Geriatrics"]
+          "medicalSpecialty": ["DietNutrition", "Neurologic", "Oncologic", "Geriatric"]
         },
         {
           "@type": "BreadcrumbList",
@@ -276,6 +278,18 @@
 
             <li><hr></li>
 
+            <li class="mobile-section-title"><strong>Por condición</strong></li>
+            <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+            <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+            <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+            <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+            <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+            <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+            <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+            <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+            <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+            <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+            <li><hr></li>
             <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
 
             <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
@@ -351,11 +365,11 @@
                 <div class="reveal">
                     <h2>Ubicaciones en CDMX</h2>
                     <div class="concept-item" style="margin-bottom: 1rem;">
-                        <h4>📍 Del Valle (Sede Central)</h4>
+                        <h3>📍 Del Valle (Sede Central)</h3>
                         <p>Consulta presencial en Pilares 405, Entrada por Casa Ferro, Col. Del Valle Centro, Benito Juárez, 03100 CDMX.</p>
                     </div>
                     <div class="concept-item">
-                        <h4>📍 Roma / Condesa</h4>
+                        <h3>📍 Roma / Condesa</h3>
                         <p>Sin consultorio local. Ofrecemos <strong>consulta a domicilio</strong> en Roma y Condesa, y la
                             sede presencial más cercana es Del Valle (aprox. 15–20 min). Más info en
                             <a href="/ubicaciones/roma-condesa/">cobertura Roma-Condesa</a>.</p>

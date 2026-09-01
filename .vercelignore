@@ -1,5 +1,6 @@
 # Fragmentos HTML solo para preview local (file://); producción usa components-data.js
 components/
+snippets/
 
 # Materiales internos y prototipos (no deben desplegarse)
 Semrush Denki/
@@ -11,3 +12,4 @@ miHome/
 MisBlogs/
 _v2_prototype_/
 dashboard.html
+CONTRIBUTING.md

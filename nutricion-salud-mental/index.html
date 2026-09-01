@@ -2,6 +2,7 @@
 <html lang="es-MX">
 
 <head>
+<meta charset="UTF-8">
 <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
     <script>
@@ -30,7 +31,6 @@
         gtag('event', eventName, { link_url: url });
       });
     </script>
-<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrición y Salud Mental en CDMX | Clínica Denki</title>
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
@@ -51,7 +51,9 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" media="print" onload="this.media=&#39;all&#39;">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"></noscript>
 <script src="/assets/js/loader.js" defer></script>
     <script type="application/ld+json">
 {
@@ -256,6 +258,18 @@
 
             <li><hr></li>
 
+            <li class="mobile-section-title"><strong>Por condición</strong></li>
+            <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+            <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+            <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+            <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+            <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+            <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+            <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+            <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+            <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+            <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+            <li><hr></li>
             <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
 
             <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
@@ -374,15 +388,15 @@
                 </div>
                 <div class="concept-grid reveal">
                     <div class="concept-item">
-                        <h4>Historia clínica</h4>
+                        <h3>Historia clínica</h3>
                         <p>Revisión de síntomas digestivos, sueño, medicamentos y antecedentes de salud mental.</p>
                     </div>
                     <div class="concept-item">
-                        <h4>Plan personalizado</h4>
+                        <h3>Plan personalizado</h3>
                         <p>Menú adaptable con prioridad en microbiota, micronutrientes y tolerancia individual.</p>
                     </div>
                     <div class="concept-item">
-                        <h4>Seguimiento</h4>
+                        <h3>Seguimiento</h3>
                         <p>Ajustes según tu respuesta y coordinación con tu psiquiatra o psicólogo si lo deseas.</p>
                     </div>
                 </div>
@@ -404,7 +418,7 @@
             </div>
         </section>
         <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin: 2rem auto; max-width: 800px;">
-            <em>Última revisión clínica: 11 de mayo de 2026 — Dra. Lucy Anita Camberos Luna, PhD UNAM.
+            <em>Última revisión clínica: 11 de mayo de 2026 — <a href="/pages/nosotros/#perfil">Dra. Lucy Anita Camberos Luna</a>, PhD UNAM.
             <a href="/pages/aviso-medico/">Aviso médico</a>.</em>
         </p>
     </main>

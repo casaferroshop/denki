@@ -2,6 +2,7 @@
 <html lang="es-MX">
 
 <head>
+<meta charset="UTF-8">
 <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
     <script>
@@ -30,7 +31,6 @@
         gtag('event', eventName, { link_url: url });
       });
     </script>
-<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <title>Equipo Médico y Política Editorial | Clínica Denki</title>
@@ -51,7 +51,9 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" media="print" onload="this.media=&#39;all&#39;">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"></noscript>
 <script src="/assets/js/loader.js" defer></script>
 
     <!-- Schema JSON-LD: AboutPage + Physician + BreadcrumbList -->
@@ -113,8 +115,8 @@
             "url": "https://www.clinicadenki.mx/"
           },
           "medicalSpecialty": [
-            "Nutrition",
-            "Oncology",
+            "DietNutrition",
+            "Oncologic",
             "Geriatric",
             "PrimaryCare"
           ]
@@ -290,6 +292,18 @@
 
             <li><hr></li>
 
+            <li class="mobile-section-title"><strong>Por condición</strong></li>
+            <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+            <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+            <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+            <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+            <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+            <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+            <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+            <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+            <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+            <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+            <li><hr></li>
             <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
 
             <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
@@ -437,32 +451,32 @@
 
                 <div class="concept-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
                     <div class="concept-item">
-                        <h4>Quién escribe</h4>
+                        <h3>Quién escribe</h3>
                         <p>Todo el contenido clínico es elaborado o revisado directamente por la Dra. Lucy Camberos. No
                             publicamos contenido generado por IA sin revisión médica.</p>
                     </div>
                     <div class="concept-item">
-                        <h4>Fuentes</h4>
+                        <h3>Fuentes</h3>
                         <p>Citamos únicamente guías de sociedades médicas (ESPEN, ASPEN, NCCN, ADA), revistas indizadas
                             y consensos de organismos oficiales (OMS, Secretaría de Salud, INCan).</p>
                     </div>
                     <div class="concept-item">
-                        <h4>Revisión periódica</h4>
+                        <h3>Revisión periódica</h3>
                         <p>Cada página clínica se revisa al menos una vez al año o cuando se publica nueva evidencia
                             relevante. La fecha de revisión aparece en el encabezado de cada artículo.</p>
                     </div>
                     <div class="concept-item">
-                        <h4>Lo que no hacemos</h4>
+                        <h3>Lo que no hacemos</h3>
                         <p>No promovemos productos, suplementos de marca, ni dietas de moda. No prometemos cura ni
                             sustituimos el tratamiento médico. No diagnosticamos por internet.</p>
                     </div>
                     <div class="concept-item">
-                        <h4>Conflictos de interés</h4>
+                        <h3>Conflictos de interés</h3>
                         <p>No recibimos pagos de farmacéuticas ni de marcas de suplementos. Si en algún momento
                             existiera un patrocinio, se declararía visiblemente en la página correspondiente.</p>
                     </div>
                     <div class="concept-item">
-                        <h4>Cómo reportar un error</h4>
+                        <h3>Cómo reportar un error</h3>
                         <p>Si detectas información imprecisa, escríbenos a
                             <a href="mailto:denkinutricion@gmail.com">denkinutricion@gmail.com</a> indicando la URL.
                             Las correcciones se publican en la misma página.</p>
