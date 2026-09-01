@@ -552,6 +552,16 @@ header.scrolled .logo img {
     transform: none;
 }
 
+/* LCP: on mobile the h1 is usually the LCP element, not the image. Keep the
+   whole hero text block out of the reveal animation so it does not wait for
+   the stylesheet, DOMContentLoaded and a 0.6s transition before painting. */
+.hero h1.reveal,
+.hero .read-time.reveal,
+.hero .lead.reveal {
+    opacity: 1;
+    transform: none;
+}
+
 /* Hero Section */
 .hero {
     padding: 8rem 0 4rem;
