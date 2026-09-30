@@ -220,7 +220,7 @@
     },
     {
       "source": "/products/nutricion-parenteral-a-domicilio",
-      "destination": "/nutricion-clinica/domicilio/",
+      "destination": "/nutricion-clinica/",
       "permanent": true,
       "has": [
         {
@@ -231,7 +231,7 @@
     },
     {
       "source": "/products/nutricion-parenteral-a-domicilio/",
-      "destination": "/nutricion-clinica/domicilio/",
+      "destination": "/nutricion-clinica/",
       "permanent": true,
       "has": [
         {
@@ -688,18 +688,8 @@
       "permanent": true
     },
     {
-      "source": "/products/nutricion-parenteral-a-domicilio/",
-      "destination": "/nutricion-clinica/domicilio/",
-      "permanent": true
-    },
-    {
       "source": "/blogs/noticias/5-alimentos-para-parkinson",
       "destination": "/blog/guias-nutricionales/alimentos-prohibidos-parkinson/",
-      "permanent": true
-    },
-    {
-      "source": "/products/nutricion-parenteral-a-domicilio",
-      "destination": "/nutricion-clinica/domicilio/",
       "permanent": true
     },
     {
@@ -728,138 +718,13 @@
       "permanent": true
     },
     {
-      "source": "/products/consulta-infarto-cerebral/",
-      "destination": "/nutricion-neurologica/infarto-cerebral/",
-      "permanent": true
-    },
-    {
       "source": "/collections/servicios-de-nutricion",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "/products/consulta-infarto-cerebral",
-      "destination": "/nutricion-neurologica/infarto-cerebral/",
-      "permanent": true
-    },
-    {
-      "source": "/products/alimentacion-consciente/",
-      "destination": "/nutricion-salud-mental/",
-      "permanent": true
-    },
-    {
-      "source": "/products/nutrici-n-para-diabetes/",
-      "destination": "/nutricion-metabolica/diabetes/",
-      "permanent": true
-    },
-    {
-      "source": "/products/alimentacion-consciente",
-      "destination": "/nutricion-salud-mental/",
-      "permanent": true
-    },
-    {
-      "source": "/products/nutrici-n-para-diabetes",
-      "destination": "/nutricion-metabolica/diabetes/",
-      "permanent": true
-    },
-    {
-      "source": "/products/nutricion-consciente/",
-      "destination": "/nutricion-salud-mental/",
-      "permanent": true
-    },
-    {
-      "source": "/products/nutricion-parenteral/",
-      "destination": "/nutricion-clinica/enteral-sonda/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-en-linea-1/",
-      "destination": "/pages/contacto/",
-      "permanent": true
-    },
-    {
-      "source": "/products/nutricion-consciente",
-      "destination": "/nutricion-salud-mental/",
-      "permanent": true
-    },
-    {
-      "source": "/products/nutricion-parenteral",
-      "destination": "/nutricion-clinica/enteral-sonda/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-alzheimer/",
-      "destination": "/nutricion-neurologica/alzheimer/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-en-linea-1",
-      "destination": "/pages/contacto/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-parkinson/",
-      "destination": "/nutricion-neurologica/parkinson/",
-      "permanent": true
-    },
-    {
-      "source": "/products/nutricion-infantil/",
-      "destination": "/nutricion-clinica/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-alzheimer",
-      "destination": "/nutricion-neurologica/alzheimer/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-diabetes/",
-      "destination": "/nutricion-metabolica/diabetes/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-en-linea/",
-      "destination": "/pages/contacto/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-parkinson",
-      "destination": "/nutricion-neurologica/parkinson/",
-      "permanent": true
-    },
-    {
-      "source": "/products/nutricion-clinica/",
-      "destination": "/nutricion-clinica/",
-      "permanent": true
-    },
-    {
-      "source": "/products/nutricion-infantil",
-      "destination": "/nutricion-clinica/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-diabetes",
-      "destination": "/nutricion-metabolica/diabetes/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-en-linea",
-      "destination": "/pages/contacto/",
-      "permanent": true
-    },
-    {
-      "source": "/products/nutricion-clinica",
-      "destination": "/nutricion-clinica/",
-      "permanent": true
-    },
-    {
       "source": "/collections/enfermedades/",
       "destination": "/nutricion-neurologica/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-cancer/",
-      "destination": "/nutricion-oncologica/cancer/",
       "permanent": true
     },
     {
@@ -875,11 +740,6 @@
     {
       "source": "/collections/enfermedades",
       "destination": "/nutricion-neurologica/",
-      "permanent": true
-    },
-    {
-      "source": "/products/consulta-cancer",
-      "destination": "/nutricion-oncologica/cancer/",
       "permanent": true
     },
     {
@@ -1009,11 +869,6 @@
       ]
     },
     {
-      "source": "/products/(.*)",
-      "destination": "/404.html",
-      "statusCode": 404
-    },
-    {
       "source": "/collections/(.*)",
       "destination": "/404.html",
       "statusCode": 404
@@ -1022,6 +877,16 @@
       "source": "/blogs/(.*)",
       "destination": "/404.html",
       "statusCode": 404
+    },
+    {
+      "source": "/nutricion-clinica/domicilio",
+      "destination": "/nutricion-clinica/",
+      "permanent": true
+    },
+    {
+      "source": "/nutricion-clinica/domicilio/",
+      "destination": "/nutricion-clinica/",
+      "permanent": true
     }
   ],
   "rewrites": [

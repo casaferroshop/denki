@@ -47,7 +47,6 @@ window.DENKI_COMPONENTS = {
             <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
             <li><a href="{{root}}nutricion-clinica/disfagia/">Disfagia</a></li>
             <li><a href="{{root}}nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
-            <li><a href="{{root}}nutricion-clinica/domicilio/">Consulta a Domicilio</a></li>
             <li><a href="{{root}}nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
             <li><hr></li>
             <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
@@ -94,7 +93,6 @@ window.DENKI_COMPONENTS = {
                     <li><a href="{{root}}ubicaciones/cdmx/">CDMX</a></li>
                     <li><a href="{{root}}ubicaciones/benito-juarez/">Benito Juárez</a></li>
                     <li><a href="{{root}}ubicaciones/roma-condesa/">Roma-Condesa</a></li>
-                    <li><a href="{{root}}nutricion-clinica/domicilio/">Consulta a Domicilio</a></li>
                 </ul>
                 <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
                 <ul class="f-links">

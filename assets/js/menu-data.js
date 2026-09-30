@@ -57,8 +57,7 @@ window.DENKI_MENU_DATA = {
     "hospitalaria": [
         { "title": "Nutrición Hospitalaria", "url": "nutricion-clinica/hospitalaria/" },
         { "title": "Disfagia", "url": "nutricion-clinica/disfagia/" },
-        { "title": "Nutrición Enteral", "url": "nutricion-clinica/enteral-sonda/" },
-        { "title": "Consulta a Domicilio", "url": "nutricion-clinica/domicilio/" }
+        { "title": "Nutrición Enteral", "url": "nutricion-clinica/enteral-sonda/" }
     ],
     "ubicaciones": [
         { "title": "CDMX", "url": "ubicaciones/cdmx/" },
