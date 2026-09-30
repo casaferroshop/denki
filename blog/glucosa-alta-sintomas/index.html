@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Glucosa alta: síntomas, valores y qué hacer | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Glucosa alta: síntomas como sed, orinar seguido, cansancio y visión borrosa. Conoce los valores normales, las señales de urgencia y qué estudios pedir.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Glucosa alta: síntomas, valores y qué hacer | Clínica Denki">
+    <meta property="og:description" content="Glucosa alta: síntomas como sed, orinar seguido, cansancio y visión borrosa. Conoce los valores normales, las señales de urgencia y qué estudios pedir.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/glucosa-alta-sintomas/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-glucosa-sintomas/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Glucosa alta: síntomas, valores y qué hacer | Clínica Denki">
+    <meta name="twitter:description" content="Glucosa alta: síntomas como sed, orinar seguido, cansancio y visión borrosa. Conoce los valores normales, las señales de urgencia y qué estudios pedir.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-glucosa-sintomas/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/glucosa-alta-sintomas/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Glucosa alta: síntomas, valores y cuándo preocuparte",
+  "url": "https://www.clinicadenki.mx/blog/glucosa-alta-sintomas/",
+  "image": "https://www.clinicadenki.mx/assets/img/blog/post-glucosa-sintomas/hero.webp",
+  "datePublished": "2026-09-30",
+  "dateModified": "2026-09-30",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Lucy Anita Camberos Luna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clínica Denki",
+    "url": "https://www.clinicadenki.mx/"
+  },
+  "description": "Síntomas de glucosa alta (hiperglucemia), valores de referencia ADA 2025, señales de urgencia, diferencia con hipoglucemia y qué estudios hacerse.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.clinicadenki.mx/blog/glucosa-alta-sintomas/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.clinicadenki.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.clinicadenki.mx/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Glucosa alta: síntomas",
+      "item": "https://www.clinicadenki.mx/blog/glucosa-alta-sintomas/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son los primeros síntomas de glucosa alta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los más frecuentes son sed intensa, orinar más seguido (también de noche), cansancio y visión borrosa. Muchas personas con glucosa ligeramente elevada no sienten nada, por eso los estudios de laboratorio son tan importantes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede tener glucosa alta sin síntomas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, y es lo más común en la prediabetes y en las etapas iniciales de la diabetes tipo 2. Los síntomas suelen aparecer cuando la glucosa ya está bastante elevada, así que no conviene esperar a sentir algo para hacerte estudios."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué nivel de glucosa es peligroso?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Una glucosa en ayuno de 126 mg/dL o más en dos ocasiones sugiere diabetes y requiere valoración médica. Cifras muy altas acompañadas de vómito, confusión, respiración rápida o mucha somnolencia son una urgencia, sin importar el número exacto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La glucosa alta da dolor de cabeza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puede acompañarse de dolor de cabeza, sobre todo cuando hay deshidratación, pero no es un síntoma específico. Muchas situaciones causan dolor de cabeza; la única forma de saber si tu glucosa está alta es medirla."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué estudios debo pedir si sospecho glucosa alta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lo habitual es glucosa plasmática en ayuno y hemoglobina glucosilada (HbA1c). Tu médico también puede indicar una curva de tolerancia a la glucosa. El diagnóstico lo establece el médico con base en estos resultados."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Un glucómetro casero sirve para diagnosticar diabetes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. El glucómetro es útil para el seguimiento cuando ya existe un diagnóstico, pero el diagnóstico se hace con estudios de laboratorio. Si una medición casera sale alta, confírmala en laboratorio y acude con tu médico."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La glucosa alta se puede normalizar con alimentación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En prediabetes, los cambios de alimentación, la actividad física y una pérdida de peso moderada reducen de forma importante el riesgo de desarrollar diabetes. En diabetes, la alimentación es parte central del tratamiento, junto con lo que indique tu médico."
+      }
+    }
+  ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Metabólica</span>
+                    <h1>Glucosa alta: síntomas, valores y cuándo preocuparte</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 9 min de lectura</span>
+                        <span>📅 Actualizado: Sep 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-glucosa-sintomas/hero.webp" srcset="/assets/img/blog/post-glucosa-sintomas/hero-w480.webp 480w, /assets/img/blog/post-glucosa-sintomas/hero-w960.webp 960w, /assets/img/blog/post-glucosa-sintomas/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRuwAAABXRUJQVlA4IOAAAADQBQCdASogACAAPu1eqU6ppKOiMBgMATAdiWIAtsg0eG0LvujEeS7rdSjawjeb0x8AzUWNCkgAAP73CCOGUKt0qzIUKfN4vfFDrANtJelsUrxKluqJ+eVsuB2fARzdWCP5ed08ID+MHb4ST/FGu1SCzhR2bqRojW8vDJfEm4OVkNAn+Hce54C0OykNYS7GSikg6lOjogI/pPpy3WaOyL/DA6GWEE8rGmDr4qZgEUU4/zzckVdkPZirPg4UXOa+zc/q5gihDFGm5DQoPKeZ2QJiTgdgCSIp/5sXRA+D1AAAAA==);background-size:cover;background-position:center" alt="Glucosa alta síntomas: persona revisando sus niveles de glucosa - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+<p class="lead" style="border: none; padding: 0;">Los <strong>síntomas de glucosa alta</strong> más frecuentes son sed intensa, orinar con frecuencia, cansancio, hambre constante y visión borrosa. Sin embargo, la mayoría de las personas con glucosa ligeramente elevada o prediabetes <strong>no siente absolutamente nada</strong> durante años. Por eso, más que esperar síntomas, lo que realmente protege tu salud es medir tu glucosa en laboratorio.</p>
+
+<p>En esta guía te explicamos cómo reconocer las señales de la hiperglucemia, qué valores se consideran normales, cuáles síntomas son una urgencia, en qué se diferencia de la glucosa baja y qué hacer si sospechas que tu glucosa está elevada. Todo con base en los criterios de la Asociación Americana de Diabetes (ADA 2025) y en lenguaje claro.</p>
+
+<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — septiembre 2026.</p>
+
+<div class="post-toc">
+    <h4>Contenido de este artículo</h4>
+    <ul>
+        <li><a href="#sintomas">Síntomas de glucosa alta</a></li>
+        <li><a href="#sin-sintomas">Por qué muchas personas no tienen síntomas</a></li>
+        <li><a href="#valores">Valores de glucosa: normal, prediabetes y diabetes</a></li>
+        <li><a href="#urgencia">Síntomas de alarma: cuándo es urgencia</a></li>
+        <li><a href="#hipoglucemia">Glucosa alta vs. glucosa baja</a></li>
+        <li><a href="#que-hacer">Qué hacer si sospechas glucosa alta</a></li>
+        <li><a href="#alimentacion">Primeros cambios de alimentación</a></li>
+        <li><a href="#quien">Quién debe hacerse estudios</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+    </ul>
+</div>
+
+<h2 id="sintomas">¿Cuáles son los síntomas de la glucosa alta?</h2>
+<p>Cuando la glucosa en sangre sube por encima de lo que los riñones pueden retener, el cuerpo empieza a eliminar el exceso por la orina y arrastra agua con ella. De ahí vienen buena parte de los síntomas clásicos de la hiperglucemia:</p>
+<ul>
+    <li><strong>Sed intensa:</strong> sientes la boca seca y necesitas tomar líquidos con mucha más frecuencia de lo habitual.</li>
+    <li><strong>Orinar con frecuencia:</strong> vas al baño muchas veces al día y te levantas en la noche a orinar.</li>
+    <li><strong>Hambre constante:</strong> aunque comas, la glucosa no entra bien a las células y el cuerpo sigue pidiendo energía.</li>
+    <li><strong>Visión borrosa:</strong> los cambios de glucosa alteran temporalmente el cristalino del ojo.</li>
+    <li><strong>Cansancio y falta de energía:</strong> una sensación de agotamiento que no mejora con el descanso.</li>
+    <li><strong>Heridas que tardan en sanar:</strong> cortadas o raspones que cicatrizan más lento de lo normal.</li>
+    <li><strong>Infecciones frecuentes:</strong> sobre todo urinarias, de piel, de encías o infecciones por hongos.</li>
+    <li><strong>Pérdida de peso inexplicable:</strong> bajar de peso sin proponértelo, a pesar de comer igual o más.</li>
+</ul>
+<p>Ninguno de estos síntomas, por sí solo, confirma que tengas glucosa alta: la sed puede deberse al calor o al ejercicio, y el cansancio a muchas causas. Lo importante es la combinación y la persistencia. Si reconoces varios de ellos, el siguiente paso es un estudio de laboratorio, no un remedio casero.</p>
+
+<div class="highlight-box">
+    <p>💡 <strong>Idea clave:</strong> los síntomas clásicos suelen aparecer cuando la glucosa ya está bastante elevada. Si esperas a sentirlos, es posible que el problema lleve tiempo avanzando.</p>
+</div>
+
+<h2 id="sin-sintomas">¿Por qué muchas personas con glucosa alta no tienen síntomas?</h2>
+<p>La <strong>prediabetes</strong> es, en la gran mayoría de los casos, silenciosa. La glucosa se eleva de forma gradual a lo largo de años, mientras el páncreas produce más insulina para compensar la resistencia del cuerpo a esta hormona. Durante ese tiempo no hay dolor ni molestias evidentes, y las cifras pueden estar fuera de rango sin que la persona lo note.</p>
+<p>En México, las Encuestas Nacionales de Salud y Nutrición (ENSANUT) han mostrado de forma consistente que la diabetes es muy frecuente en adultos y que una proporción importante de las personas que la tienen <strong>no sabe que la tiene</strong>. Además, la prediabetes afecta a un número todavía mayor de adultos. Por eso el tamizaje —hacerse estudios aunque te sientas bien— es una de las herramientas más útiles para detectar el problema a tiempo, cuando los cambios de estilo de vida tienen mayor impacto.</p>
+
+<h2 id="valores">Valores de glucosa: ¿cuándo se considera alta?</h2>
+<p>Estos son los rangos que utiliza la ADA en sus Estándares de Atención 2025. Sirven como referencia para entender tus resultados, pero <strong>el diagnóstico lo hace tu médico</strong>, considerando tu historia clínica y, por lo general, confirmando con un segundo estudio.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Estudio</th><th style="padding: 1rem; text-align: left;">Normal</th><th style="padding: 1rem; text-align: left;">Prediabetes</th><th style="padding: 1rem; text-align: left;">Sugiere diabetes*</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Glucosa en ayuno</strong> (8 h sin comer)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">70-99 mg/dL</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">100-125 mg/dL</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">126 mg/dL o más</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Hemoglobina glucosilada (HbA1c)</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Menos de 5.7%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">5.7-6.4%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">6.5% o más</td></tr>
+<tr><td style="padding: 1rem;"><strong>Curva de tolerancia</strong> (2 h tras 75 g de glucosa)</td><td style="padding: 1rem;">Menos de 140 mg/dL</td><td style="padding: 1rem;">140-199 mg/dL</td><td style="padding: 1rem;">200 mg/dL o más</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size: 0.9rem; color: var(--text-muted);">*Para diagnosticar diabetes se requieren, en general, dos resultados alterados (en la misma muestra o en dos muestras distintas). Una glucosa al azar de 200 mg/dL o más con síntomas clásicos también orienta al diagnóstico. Fuente: ADA, Standards of Care in Diabetes-2025.</p>
+<p>Si tus resultados caen en el rango de prediabetes, es una señal de alerta valiosa: estás a tiempo de hacer cambios que reduzcan tu riesgo. En nuestra guía sobre <a href="/nutricion-metabolica/bajar-glucosa/">cómo bajar la glucosa</a> encontrarás las estrategias con mayor respaldo científico.</p>
+
+<h2 id="urgencia">Síntomas de alarma: ¿cuándo la glucosa alta es una urgencia?</h2>
+<p>En algunas situaciones la glucosa puede subir tanto que se vuelve peligrosa en horas o días. Suele ocurrir en personas con diabetes que no saben que la tienen, que suspendieron su tratamiento o que cursan con una infección u otra enfermedad aguda. Las dos complicaciones más importantes son:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Situación</th><th style="padding: 1rem; text-align: left;">Señales en lenguaje simple</th><th style="padding: 1rem; text-align: left;">Qué hacer</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Cetoacidosis diabética</strong> (más común en diabetes tipo 1, pero puede ocurrir en tipo 2)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Náusea o vómito, dolor abdominal, respiración rápida y profunda, aliento con olor afrutado, somnolencia</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Acudir a urgencias de inmediato</td></tr>
+<tr><td style="padding: 1rem;"><strong>Estado hiperosmolar</strong> (más común en adultos mayores con diabetes tipo 2)</td><td style="padding: 1rem;">Deshidratación marcada, boca muy seca, sed extrema, orinar muchísimo o casi nada, confusión o desorientación</td><td style="padding: 1rem;">Acudir a urgencias de inmediato</td></tr>
+</tbody>
+</table>
+</div>
+<div class="highlight-box">
+    <p>⚠️ <strong>Acude a urgencias</strong> si tú o un familiar tienen glucosa muy alta acompañada de vómito persistente, dificultad para respirar, confusión, mucha somnolencia o signos de deshidratación severa. No intentes bajarla en casa con remedios ni ajustando medicamentos por tu cuenta.</p>
+</div>
+
+<h2 id="hipoglucemia">¿En qué se diferencia de la glucosa baja (hipoglucemia)?</h2>
+<p>A veces se confunden, pero son situaciones opuestas. La hipoglucemia es más común en personas que usan insulina o ciertos medicamentos para la diabetes, y requiere atención rápida.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;"></th><th style="padding: 1rem; text-align: left;">Glucosa alta (hiperglucemia)</th><th style="padding: 1rem; text-align: left;">Glucosa baja (hipoglucemia)</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Cómo aparece</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Poco a poco, en días o semanas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">De forma rápida, en minutos</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Síntomas típicos</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sed, orinar seguido, cansancio, visión borrosa</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Temblor, sudor frío, hambre repentina, palpitaciones, confusión</td></tr>
+<tr><td style="padding: 1rem;"><strong>Cifra de referencia</strong></td><td style="padding: 1rem;">126 mg/dL o más en ayuno (repetido)</td><td style="padding: 1rem;">Menos de 70 mg/dL</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="que-hacer">¿Qué hacer si sospechas que tienes la glucosa alta?</h2>
+<ol>
+    <li><strong>Mide tu glucosa en un laboratorio.</strong> Pide glucosa plasmática en ayuno (8 horas sin comer) y, de preferencia, hemoglobina glucosilada (HbA1c), que refleja tu promedio de los últimos dos a tres meses.</li>
+    <li><strong>No te diagnostiques con un glucómetro casero.</strong> Es útil para el seguimiento, pero no reemplaza al laboratorio.</li>
+    <li><strong>Acude con tu médico</strong> con tus resultados. Él o ella confirmará el diagnóstico, buscará otras causas y decidirá si necesitas tratamiento farmacológico.</li>
+    <li><strong>Busca apoyo nutricional clínico.</strong> La alimentación es parte central del manejo de la prediabetes y la diabetes, y funciona mejor con un plan individualizado y coordinado con tu médico.</li>
+</ol>
+
+<h2 id="alimentacion">Primeros cambios de alimentación si tu glucosa está alta</h2>
+<p>El consenso de nutrición de la ADA (Evert, 2019) señala que no existe una sola distribución ideal de nutrientes para todas las personas, pero sí hay principios comunes que funcionan en la mayoría:</p>
+<ul>
+    <li><strong>Cambia bebidas azucaradas por agua simple.</strong> Refrescos, jugos y aguas de sabor con azúcar elevan la glucosa rápidamente.</li>
+    <li><strong>Llena la mitad de tu plato con verduras</strong>, un cuarto con proteína y un cuarto con un carbohidrato de buena calidad, como tortilla de maíz, frijoles o arroz integral en porción moderada.</li>
+    <li><strong>Prefiere carbohidratos con fibra</strong> (leguminosas, avena en hojuela, verduras, fruta entera) sobre harinas refinadas y pan dulce.</li>
+    <li><strong>Muévete después de comer:</strong> una caminata ligera ayuda a que tus músculos utilicen la glucosa.</li>
+</ul>
+<p>En prediabetes, el estudio Diabetes Prevention Program (Knowler, 2002) mostró que un programa de alimentación y actividad física con una pérdida de peso cercana al 7% redujo en 58% la aparición de diabetes tipo 2 en comparación con placebo. Si quieres ir más a fondo, revisa nuestra guía de <a href="/blog/guias-nutricionales/dieta-diabetes/">dieta para diabetes: qué comer y qué evitar</a> o conoce el servicio de <a href="/nutricion-metabolica/diabetes/">nutrición clínica para diabetes</a>.</p>
+
+<h2 id="quien">¿Quién debe hacerse estudios de glucosa?</h2>
+<p>Aunque no tengas síntomas, conviene medir tu glucosa si cumples con alguna de estas condiciones:</p>
+<ul>
+    <li><strong>Tienes 35 años o más:</strong> la ADA recomienda iniciar el tamizaje a esta edad en todos los adultos.</li>
+    <li><strong>Sobrepeso u obesidad, sobre todo abdominal</strong>, a cualquier edad si se acompaña de otro factor de riesgo.</li>
+    <li><strong>Antecedentes familiares</strong> de diabetes en padres o hermanos.</li>
+    <li><strong>Diabetes gestacional en un embarazo previo</strong>, que requiere vigilancia periódica de por vida.</li>
+    <li><strong>Acantosis nigricans:</strong> piel oscura y aterciopelada en cuello, axilas o ingles, un signo frecuente de resistencia a la insulina.</li>
+    <li><strong>Presión alta, triglicéridos elevados, colesterol HDL bajo</strong>, <a href="/blog/dieta-higado-graso/">hígado graso</a> o síndrome de ovario poliquístico.</li>
+    <li><strong>Vida sedentaria</strong> o resultados previos en rango de prediabetes.</li>
+</ul>
+<p>Si tus resultados están alterados, actúa pronto: los cambios en etapa de prediabetes son los que más rinden.</p>
+
+<div class="cta-banner">
+    <h3>¿Tus estudios salieron con glucosa alta?</h3>
+    <p>En Clínica Denki revisamos tus laboratorios, tu alimentación y tu composición corporal para diseñar un plan nutricional realista y coordinado con tu médico. Consulta presencial en Del Valle, CDMX, o videoconsulta para toda la República.</p>
+    <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+    <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+</div>
+
+<h2>Servicios y lecturas relacionados</h2>
+<ul>
+    <li><a href="/nutricion-metabolica/bajar-glucosa/">Cómo bajar la glucosa: estrategias con evidencia</a>.</li>
+    <li><a href="/nutricion-metabolica/diabetes/">Nutrición clínica para diabetes en CDMX</a>.</li>
+    <li><a href="/blog/guias-nutricionales/dieta-diabetes/">Dieta para diabetes: qué comer y qué evitar</a>.</li>
+    <li><a href="/blog/dieta-higado-graso/">Dieta para hígado graso</a>.</li>
+</ul>
+
+<h2 id="referencias">Referencias</h2>
+<ol style="padding-left: 1.2rem; line-height: 1.7;">
+    <li>American Diabetes Association Professional Practice Committee. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=2.%20Diagnosis%20and%20Classification%20of%20Diabetes%3A%20Standards%20of%20Care%20in%20Diabetes-2025." target="_blank" rel="noopener noreferrer">2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes-2025.</a> Diabetes Care. 2025.</li>
+    <li>Evert AB, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Nutrition%20Therapy%20for%20Adults%20With%20Diabetes%20or%20Prediabetes%3A%20A%20Consensus%20Report." target="_blank" rel="noopener noreferrer">Nutrition Therapy for Adults With Diabetes or Prediabetes: A Consensus Report.</a> Diabetes Care. 2019.</li>
+    <li>Knowler WC, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Reduction%20in%20the%20incidence%20of%20type%202%20diabetes%20with%20lifestyle%20intervention%20or%20metformin." target="_blank" rel="noopener noreferrer">Reduction in the incidence of type 2 diabetes with lifestyle intervention or metformin.</a> N Engl J Med. 2002.</li>
+    <li>Reynolds A, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Carbohydrate%20quality%20and%20human%20health%3A%20a%20series%20of%20systematic%20reviews%20and%20meta-analyses." target="_blank" rel="noopener noreferrer">Carbohydrate quality and human health: a series of systematic reviews and meta-analyses.</a> Lancet. 2019.</li>
+</ol>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+    <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico. El diagnóstico de prediabetes o diabetes lo establece un médico con estudios de laboratorio. No inicies, suspendas ni ajustes medicamentos sin indicación de tu médico tratante.</p>
+</div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+<div class="faq-card" style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+    <p style="font-weight: 700; color: var(--primary-dark);">¿Cuáles son los primeros síntomas de glucosa alta?</p>
+    <p>Los más frecuentes son sed intensa, orinar más seguido (también de noche), cansancio y visión borrosa. Muchas personas con glucosa ligeramente elevada no sienten nada, por eso los estudios de laboratorio son tan importantes.</p>
+</div>
+<div class="faq-card" style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+    <p style="font-weight: 700; color: var(--primary-dark);">¿Se puede tener glucosa alta sin síntomas?</p>
+    <p>Sí, y es lo más común en la prediabetes y en las etapas iniciales de la diabetes tipo 2. Los síntomas suelen aparecer cuando la glucosa ya está bastante elevada, así que no conviene esperar a sentir algo para hacerte estudios.</p>
+</div>
+<div class="faq-card" style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+    <p style="font-weight: 700; color: var(--primary-dark);">¿Qué nivel de glucosa es peligroso?</p>
+    <p>Una glucosa en ayuno de 126 mg/dL o más en dos ocasiones sugiere diabetes y requiere valoración médica. Cifras muy altas acompañadas de vómito, confusión, respiración rápida o mucha somnolencia son una urgencia, sin importar el número exacto.</p>
+</div>
+<div class="faq-card" style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+    <p style="font-weight: 700; color: var(--primary-dark);">¿La glucosa alta da dolor de cabeza?</p>
+    <p>Puede acompañarse de dolor de cabeza, sobre todo cuando hay deshidratación, pero no es un síntoma específico. Muchas situaciones causan dolor de cabeza; la única forma de saber si tu glucosa está alta es medirla.</p>
+</div>
+<div class="faq-card" style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+    <p style="font-weight: 700; color: var(--primary-dark);">¿Qué estudios debo pedir si sospecho glucosa alta?</p>
+    <p>Lo habitual es glucosa plasmática en ayuno y hemoglobina glucosilada (HbA1c). Tu médico también puede indicar una curva de tolerancia a la glucosa. El diagnóstico lo establece el médico con base en estos resultados.</p>
+</div>
+<div class="faq-card" style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+    <p style="font-weight: 700; color: var(--primary-dark);">¿Un glucómetro casero sirve para diagnosticar diabetes?</p>
+    <p>No. El glucómetro es útil para el seguimiento cuando ya existe un diagnóstico, pero el diagnóstico se hace con estudios de laboratorio. Si una medición casera sale alta, confírmala en laboratorio y acude con tu médico.</p>
+</div>
+<div class="faq-card" style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+    <p style="font-weight: 700; color: var(--primary-dark);">¿La glucosa alta se puede normalizar con alimentación?</p>
+    <p>En prediabetes, los cambios de alimentación, la actividad física y una pérdida de peso moderada reducen de forma importante el riesgo de desarrollar diabetes. En diabetes, la alimentación es parte central del tratamiento, junto con lo que indique tu médico.</p>
+</div>
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica para glucosa alta, prediabetes y diabetes. Consulta presencial en Del Valle o videoconsulta para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/dieta-diabetes/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-06/hero.webp" srcset="/assets/img/blog/post-06/hero-w480.webp 480w, /assets/img/blog/post-06/hero-w960.webp 960w, /assets/img/blog/post-06/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Dieta para diabetes: qué comer y qué evitar</h3>
+                            <p>Guía práctica de alimentación para controlar la glucosa.</p>
+                            <a href="/blog/guias-nutricionales/dieta-diabetes/" class="btn-text" aria-label="Leer: Dieta para diabetes: qué comer y qué evitar">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/dieta-higado-graso/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-higado-graso/hero.webp" srcset="/assets/img/blog/post-higado-graso/hero-w480.webp 480w, /assets/img/blog/post-higado-graso/hero-w960.webp 960w, /assets/img/blog/post-higado-graso/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Dieta para hígado graso</h3>
+                            <p>Qué comer, qué evitar y un menú mexicano de ejemplo.</p>
+                            <a href="/blog/dieta-higado-graso/" class="btn-text" aria-label="Leer: Dieta para hígado graso">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/cuanto-cobra-nutriologo-cdmx/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-cuanto-cobra/hero.webp" srcset="/assets/img/blog/post-cuanto-cobra/hero-w480.webp 480w, /assets/img/blog/post-cuanto-cobra/hero-w960.webp 960w, /assets/img/blog/post-cuanto-cobra/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Consulta</span>
+                            <h3>¿Cuánto cobra un nutriólogo en CDMX?</h3>
+                            <p>Precios, qué incluye la consulta y cómo elegir.</p>
+                            <a href="/blog/cuanto-cobra-nutriologo-cdmx/" class="btn-text" aria-label="Leer: ¿Cuánto cobra un nutriólogo en CDMX?">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

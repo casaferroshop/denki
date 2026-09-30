@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Qué es la neuronutrición y cuándo se necesita | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Qué es la neuronutrición, qué nutrientes necesita el cerebro y cómo apoya a personas con Parkinson, Alzheimer o infarto cerebral. Guía clínica sin mitos.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Qué es la neuronutrición y cuándo se necesita | Clínica Denki">
+    <meta property="og:description" content="Qué es la neuronutrición, qué nutrientes necesita el cerebro y cómo apoya a personas con Parkinson, Alzheimer o infarto cerebral. Guía clínica sin mitos.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/que-es-neuronutricion/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-neuronutricion/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Qué es la neuronutrición y cuándo se necesita | Clínica Denki">
+    <meta name="twitter:description" content="Qué es la neuronutrición, qué nutrientes necesita el cerebro y cómo apoya a personas con Parkinson, Alzheimer o infarto cerebral. Guía clínica sin mitos.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-neuronutricion/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/que-es-neuronutricion/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Qué es la neuronutrición y cuándo se necesita",
+    "url": "https://www.clinicadenki.mx/blog/que-es-neuronutricion/",
+    "image": "https://www.clinicadenki.mx/assets/img/blog/post-neuronutricion/hero.webp",
+    "datePublished": "2026-09-30",
+    "dateModified": "2026-09-30",
+    "author": {
+        "@type": "Person",
+        "name": "Dra. Lucy Anita Camberos Luna"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Clínica Denki",
+        "url": "https://www.clinicadenki.mx/"
+    },
+    "description": "Qué es la neuronutrición, qué nutrientes necesita el cerebro y cómo apoya a personas con Parkinson, Alzheimer o infarto cerebral. Guía clínica sin mitos.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.clinicadenki.mx/blog/que-es-neuronutricion/"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.clinicadenki.mx/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.clinicadenki.mx/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Qué es la neuronutrición",
+            "item": "https://www.clinicadenki.mx/blog/que-es-neuronutricion/"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Qué es la neuronutrición en palabras sencillas?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Es la parte de la nutrición clínica que estudia cómo los nutrientes influyen en el cerebro y los nervios, y que usa la alimentación para apoyar a personas con enfermedades neurológicas, en coordinación con su médico."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Quién necesita una consulta de neuronutrición?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Personas con Parkinson, Alzheimer u otras demencias, secuelas de infarto cerebral o dificultad para tragar, especialmente si hay pérdida de peso, estreñimiento o dudas sobre la comida y los medicamentos."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿La neuronutrición puede curar el Parkinson o el Alzheimer?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Ningún alimento o suplemento cura estas enfermedades. La neuronutrición ayuda a mantener el estado nutricional, la masa muscular y la calidad de vida, y a que la alimentación no interfiera con el tratamiento."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre un nutriólogo general y uno con enfoque en neuronutrición?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El enfoque en neuronutrición considera los síntomas neurológicos, la deglución, las interacciones con medicamentos como la levodopa y el papel de los cuidadores, además de las necesidades de energía y proteína."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Necesito tomar suplementos para el cerebro?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En la mayoría de los casos no. Se prioriza cubrir los nutrientes con alimentos. Un suplemento se considera solo si hay una deficiencia comprobada o una indicación clínica, revisando interacciones con tus medicamentos."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿El eje intestino-cerebro está comprobado?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La comunicación entre intestino y cerebro está bien descrita, pero mucha evidencia viene de estudios en animales. Que el Parkinson inicie en el intestino es una hipótesis, no un hecho demostrado."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Puedo tener una consulta de neuronutrición en línea?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. En Clínica Denki ofrecemos consulta presencial en Del Valle, CDMX, y videoconsulta para toda la República, con plan personalizado y seguimiento."
+            }
+        }
+    ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Neuronutrición</span>
+                    <h1>Qué es la neuronutrición y cuándo se necesita</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 10 min de lectura</span>
+                        <span>📅 Actualizado: Sep 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-neuronutricion/hero.webp" srcset="/assets/img/blog/post-neuronutricion/hero-w480.webp 480w, /assets/img/blog/post-neuronutricion/hero-w960.webp 960w, /assets/img/blog/post-neuronutricion/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABwBQCdASogACAAPu1kqE2ppaOiMAgBMB2JQBgbjSw434fNxGBvGhqgtg+Y76ZME6OhmKQAAP79+SYvfplax5jc5+hcG9o3SNR0CdXRxaIH3ppLi6AHLpJdldXyrDFr7VJIVTwoyAUd6Fg38VfGrrYvJt8d9UvJzjA1pO/yC5p34s7VUOTNbWwbHWTw/MMRqxwSdKnBSNr9xio28kbdnndjB3ZZ6lJ3zL0W1cH1Gk2iVrF6JwgR5vnt/+PBNzuAAAA=);background-size:cover;background-position:center" alt="Alimentos ricos en omega-3, huevo y leguminosas que apoyan la salud cerebral - neuronutrición Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+                    <p class="lead" style="border: none; padding: 0;">La neuronutrición es la rama de la nutrición clínica que estudia cómo los nutrientes influyen en la estructura y el funcionamiento del sistema nervioso, y que aplica ese conocimiento para acompañar a personas con enfermedades neurológicas como Parkinson, Alzheimer o infarto cerebral. No sustituye al neurólogo: trabaja junto a él para que la alimentación apoye el tratamiento, en lugar de complicarlo.</p>
+
+                    <p>Se necesita, sobre todo, cuando una condición neurológica empieza a afectar la forma de comer: pérdida de peso, dificultad para tragar, estreñimiento, interacción de la comida con los medicamentos o cambios en el apetito. También tiene un papel en la prevención del deterioro cognitivo, siempre con expectativas realistas.</p>
+
+                    <p>En esta guía te explicamos qué es exactamente la neuronutrición, por qué el cerebro es tan sensible a lo que comemos, qué nutrientes importan, en qué situaciones clínicas se aplica y qué <strong>no</strong> es, para que puedas distinguir la evidencia de las promesas de internet.</p>
+
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — septiembre 2026.
+                    </p>
+
+                    <div class="post-toc">
+                        <h4>Contenido de este artículo</h4>
+                        <ul>
+                            <li><a href="#definicion">¿Qué es la neuronutrición?</a></li>
+                            <li><a href="#cerebro-sensible">Por qué el cerebro es sensible a la nutrición</a></li>
+                            <li><a href="#nutrientes">Nutrientes clave</a></li>
+                            <li><a href="#aplicaciones">En qué enfermedades se aplica</a></li>
+                            <li><a href="#eje-intestino-cerebro">El eje intestino-cerebro</a></li>
+                            <li><a href="#que-no-es">Qué NO es la neuronutrición</a></li>
+                            <li><a href="#consulta">Cómo es una consulta en Denki</a></li>
+                            <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="definicion">¿Qué es la neuronutrición?</h2>
+                    <p>La neuronutrición une la neurociencia, la bioquímica y la nutrición clínica. Su pregunta central es sencilla: <strong>¿cómo influye lo que comemos en el cerebro y en los nervios, y cómo podemos usar la alimentación para apoyar a una persona con una enfermedad neurológica?</strong></p>
+                    <p>En la práctica, un nutriólogo clínico con enfoque en neuronutrición no solo revisa calorías y proteína. Evalúa también cómo la enfermedad cambia la capacidad de comer (temblor, rigidez, disfagia, olvido), cómo interactúan los alimentos con los medicamentos neurológicos, y qué deficiencias de nutrientes pueden empeorar síntomas como el cansancio, el estreñimiento o la pérdida de masa muscular. Las guías de la Sociedad Europea de Nutrición Clínica y Metabolismo (ESPEN) dedican una guía específica a la nutrición en enfermedades neurológicas, lo que refleja que es un campo clínico formal, no una moda.</p>
+
+                    <h2 id="cerebro-sensible">¿Por qué el cerebro es tan sensible a la nutrición?</h2>
+                    <p>El cerebro representa alrededor del 2% del peso corporal, pero en reposo consume aproximadamente una quinta parte de la energía del organismo. Esa demanda, junto con su composición, lo hace especialmente dependiente de un aporte estable de nutrientes:</p>
+                    <ul>
+                        <li><strong>Gasto energético alto y constante:</strong> las neuronas necesitan glucosa y oxígeno de forma continua; periodos prolongados de ayuno, desnutrición o deshidratación se reflejan pronto en la atención, el ánimo y la claridad mental.</li>
+                        <li><strong>Membranas ricas en DHA:</strong> el ácido docosahexaenoico (DHA), un omega-3, es un componente estructural abundante en las membranas neuronales y participa en la comunicación entre neuronas.</li>
+                        <li><strong>Neurotransmisores que dependen de cofactores:</strong> la dopamina, la serotonina y la acetilcolina se fabrican a partir de aminoácidos y otros precursores de la dieta, con ayuda de vitaminas y minerales como la B6, el folato, la B12 y el hierro.</li>
+                    </ul>
+                    <p>La revisión de Gómez-Pinilla (2008) resume bien este campo: distintos nutrientes influyen en procesos cerebrales como la plasticidad sináptica, y los hábitos de vida (alimentación, ejercicio, sueño) interactúan entre sí. La mayor parte de esa evidencia proviene de estudios experimentales y observacionales, por lo que se interpreta como apoyo a un patrón de alimentación saludable, no como receta de nutrientes milagro.</p>
+
+                    <h2 id="nutrientes">Nutrientes clave en neuronutrición</h2>
+                    <p>Estos son los nutrientes que más revisamos en consulta, qué hacen en el sistema nervioso y dónde encontrarlos en la alimentación mexicana:</p>
+
+                    <div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                            <thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Nutriente</th><th style="padding: 1rem; text-align: left;">Función en el sistema nervioso</th><th style="padding: 1rem; text-align: left;">Fuentes accesibles en México</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Omega-3 (DHA y EPA)</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Forman parte de las membranas neuronales; participan en la regulación de la inflamación.</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sardina, atún, salmón, trucha, charales; chía y nuez aportan ALA, un omega-3 vegetal</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colina</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Precursor de la acetilcolina (memoria, control muscular) y de componentes de las membranas.</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Huevo (sobre todo la yema), hígado de res o pollo, frijol, soya</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Vitaminas B6, B12 y folato</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Cofactores en la síntesis de neurotransmisores; la B12 es clave para la mielina. Participan en el metabolismo de la homocisteína.</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Huevo, carnes, pescado, lácteos (B12); frijol, lenteja, quelites, espinaca (folato); plátano, garbanzo, pollo (B6)</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Vitamina D</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tiene receptores en el cerebro. Niveles bajos se <em>asocian</em> con mayor riesgo de algunas enfermedades neurológicas, sin que se haya demostrado que suplementar las prevenga.</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Exposición solar, pescados grasos, yema de huevo, lácteos fortificados</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Magnesio</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Regula la excitabilidad neuronal y participa en cientos de reacciones enzimáticas.</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Semillas de calabaza, frijol, cacahuate, almendras, espinaca, aguacate</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Hierro</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Necesario para fabricar dopamina y para transportar oxígeno al cerebro.</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Carne roja, hígado, frijol, lenteja, hojas verdes (mejor con una fuente de vitamina C como guayaba o naranja)</td></tr>
+                                <tr><td style="padding: 1rem;"><strong>Polifenoles</strong></td><td style="padding: 1rem;">Compuestos vegetales con actividad antioxidante y antiinflamatoria en estudios experimentales.</td><td style="padding: 1rem;">Cacao, frutos rojos, jamaica, té, aceite de oliva, cebolla, manzana</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p>💡 <strong>Idea clave:</strong> la neuronutrición parte de cubrir bien estos nutrientes con comida real. Los suplementos se consideran solo cuando hay una deficiencia comprobada o una indicación clínica concreta, y siempre revisando interacciones con los medicamentos.</p>
+                    </div>
+
+                    <h2 id="aplicaciones">¿En qué enfermedades se aplica la neuronutrición?</h2>
+                    <p>La guía ESPEN de nutrición en neurología (Burgos et al., 2018) reúne recomendaciones para varias condiciones. Estos son los escenarios más frecuentes en consulta:</p>
+
+                    <h3>Enfermedad de Parkinson</h3>
+                    <p>La levodopa se absorbe en el intestino usando los mismos transportadores que los aminoácidos de la proteína. En personas con fluctuaciones motoras, una comida muy alta en proteína cerca de la toma puede reducir su efecto; por eso, en casos seleccionados y con el neurólogo, se valora redistribuir la proteína a lo largo del día (Cereda et al., 2010), sin reducir la proteína total. También se trabaja el estreñimiento, la pérdida de peso y la disfagia. Conoce más en nuestra página de <a href="/nutricion-neurologica/parkinson/">nutrición para Parkinson</a> y en la guía sobre <a href="/blog/magnesio-y-parkinson/">magnesio y Parkinson</a>.</p>
+
+                    <h3>Alzheimer y otras demencias</h3>
+                    <p>El reto principal suele ser práctico: pérdida de peso, olvido de comidas, rechazo de alimentos, dificultad para usar cubiertos y baja ingesta de líquidos. La intervención incluye adaptar texturas, horarios y ambiente, y apoyar a los cuidadores. Más información en <a href="/nutricion-neurologica/alzheimer/">nutrición en Alzheimer</a>.</p>
+
+                    <h3>Infarto cerebral (EVC)</h3>
+                    <p>Después de un evento vascular cerebral es frecuente la disfagia, que aumenta el riesgo de desnutrición y de neumonía por aspiración. La neuronutrición ayuda a elegir texturas seguras en coordinación con el terapeuta de deglución y a controlar factores de riesgo como presión arterial, glucosa y colesterol. Revisa <a href="/nutricion-neurologica/infarto-cerebral/">nutrición después de un infarto cerebral</a>.</p>
+
+                    <h3>Prevención del deterioro cognitivo</h3>
+                    <p>Aquí la evidencia pide prudencia. Los patrones de alimentación tipo mediterráneo o MIND se asocian con mejor salud cerebral en estudios observacionales, pero un ensayo clínico reciente con la dieta MIND no mostró diferencias significativas frente a la dieta control. Lo razonable es cuidar la alimentación como parte de un estilo de vida integral. Profundizamos en <a href="/blog/alimentos-para-la-memoria/">alimentos para la memoria</a>.</p>
+
+                    <h2 id="eje-intestino-cerebro">El eje intestino-cerebro: qué sabemos y qué no</h2>
+                    <p>El intestino y el cerebro se comunican en ambas direcciones a través del nervio vago, el sistema inmunitario y sustancias producidas por la microbiota. La revisión de Cryan et al. (2019) describe este eje con detalle y deja claro que buena parte de la evidencia viene de modelos animales, con estudios en humanos todavía en desarrollo.</p>
+                    <p>En Parkinson existe una <strong>hipótesis</strong> conocida: Braak et al. (2003) propusieron que los cambios patológicos podrían iniciar en estructuras fuera del cerebro, incluido el sistema nervioso del intestino, y avanzar después hacia el cerebro. Es una hipótesis influyente y útil para la investigación, pero no está demostrada ni aplica a todos los pacientes. Lo que sí es un hecho clínico es que el estreñimiento es muy común en Parkinson y merece atención nutricional: fibra suficiente, líquidos y horarios regulares.</p>
+
+                    <div class="highlight-box">
+                        <p>⚠️ <strong>Cuidado con los titulares:</strong> "el Parkinson empieza en el intestino" o "los probióticos protegen tu cerebro" simplifican demasiado. Cuidar la microbiota con fibra y alimentos variados es sensato; esperar que prevenga o revierta una enfermedad neurológica no está respaldado.</p>
+                    </div>
+
+                    <h2 id="que-no-es">Qué NO es la neuronutrición</h2>
+                    <ul>
+                        <li><strong>No es "suplementos para el cerebro":</strong> la mayoría de los productos que prometen memoria o concentración no tienen evidencia sólida, y algunos interactúan con medicamentos.</li>
+                        <li><strong>No es una cura:</strong> ningún alimento repara neuronas dañadas ni detiene una enfermedad neurodegenerativa. La nutrición apoya la calidad de vida, la funcionalidad y la respuesta al tratamiento.</li>
+                        <li><strong>No sustituye al neurólogo:</strong> la estrategia nutricional se coordina con el médico tratante y nunca implica suspender o ajustar medicamentos por cuenta propia.</li>
+                        <li><strong>No es una dieta de moda:</strong> no requiere eliminar grupos de alimentos sin razón clínica.</li>
+                    </ul>
+
+                    <h2 id="consulta">¿Cómo es una consulta de neuronutrición en Clínica Denki?</h2>
+                    <p>La primera consulta dura lo necesario para entender el caso completo. Se realiza de forma presencial en Del Valle (Benito Juárez, CDMX) o por videoconsulta para toda la República, e incluye:</p>
+                    <ul>
+                        <li><strong>Historia clínica y dietética:</strong> diagnóstico, evolución, hábitos, horarios de comida y preferencias.</li>
+                        <li><strong>Revisión de medicamentos:</strong> horarios de levodopa u otros fármacos y posibles interacciones con alimentos o suplementos.</li>
+                        <li><strong>Composición corporal:</strong> masa muscular y cambios de peso, porque la pérdida de músculo es frecuente en enfermedades neurológicas.</li>
+                        <li><strong>Tamizaje de deglución:</strong> señales de disfagia que requieran texturas adaptadas o valoración por un terapeuta de deglución.</li>
+                        <li><strong>Plan personalizado:</strong> menú práctico, adaptado a la cocina mexicana y a la rutina de la familia.</li>
+                        <li><strong>Acompañamiento a cuidadores:</strong> estrategias concretas para las comidas diarias y seguimiento del progreso.</li>
+                    </ul>
+                    <p>La atención la dirige la Dra. Lucy Anita Camberos Luna, PhD en Ciencias Biomédicas (UNAM) y miembro de ESPEN, con protocolos basados en las guías ESPEN y ASPEN. Puedes conocer el enfoque completo en nuestra sección de <a href="/nutricion-neurologica/">nutrición neurológica</a>.</p>
+
+                    <div class="cta-banner">
+                        <h3>¿Tu familiar tiene una condición neurológica y te preocupa su alimentación?</h3>
+                        <p>En Clínica Denki evaluamos su caso, sus medicamentos y su deglución para diseñar un plan nutricional seguro y coordinado con su neurólogo. Consulta presencial en CDMX o en línea.</p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+                    </div>
+
+                    <h2>Servicios y lecturas relacionados</h2>
+                    <ul>
+                        <li><a href="/nutricion-neurologica/">Nutrición neurológica en Clínica Denki</a>.</li>
+                        <li><a href="/nutricion-neurologica/parkinson/">Plan de nutrición para Parkinson</a>.</li>
+                        <li><a href="/nutricion-neurologica/alzheimer/">Nutrición y cuidados alimentarios en Alzheimer</a>.</li>
+                        <li><a href="/blog/alimentos-para-la-memoria/">Alimentos para la memoria: qué dice la evidencia</a>.</li>
+                    </ul>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué es la neuronutrición en palabras sencillas?</p>
+                        <p>Es la parte de la nutrición clínica que estudia cómo los nutrientes influyen en el cerebro y los nervios, y que usa la alimentación para apoyar a personas con enfermedades neurológicas, en coordinación con su médico.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Quién necesita una consulta de neuronutrición?</p>
+                        <p>Personas con Parkinson, Alzheimer u otras demencias, secuelas de infarto cerebral o dificultad para tragar, especialmente si hay pérdida de peso, estreñimiento o dudas sobre la comida y los medicamentos.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La neuronutrición puede curar el Parkinson o el Alzheimer?</p>
+                        <p>No. Ningún alimento o suplemento cura estas enfermedades. La neuronutrición ayuda a mantener el estado nutricional, la masa muscular y la calidad de vida, y a que la alimentación no interfiera con el tratamiento.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué diferencia hay entre un nutriólogo general y uno con enfoque en neuronutrición?</p>
+                        <p>El enfoque en neuronutrición considera los síntomas neurológicos, la deglución, las interacciones con medicamentos como la levodopa y el papel de los cuidadores, además de las necesidades de energía y proteína.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Necesito tomar suplementos para el cerebro?</p>
+                        <p>En la mayoría de los casos no. Se prioriza cubrir los nutrientes con alimentos. Un suplemento se considera solo si hay una deficiencia comprobada o una indicación clínica, revisando interacciones con tus medicamentos.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿El eje intestino-cerebro está comprobado?</p>
+                        <p>La comunicación entre intestino y cerebro está bien descrita, pero mucha evidencia viene de estudios en animales. Que el Parkinson inicie en el intestino es una hipótesis, no un hecho demostrado.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Puedo tener una consulta de neuronutrición en línea?</p>
+                        <p>Sí. En Clínica Denki ofrecemos consulta presencial en Del Valle, CDMX, y videoconsulta para toda la República, con plan personalizado y seguimiento.</p>
+                    </div>
+
+                    <h2 id="referencias">Referencias</h2>
+                    <ol style="font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ESPEN%20guideline%20clinical%20nutrition%20in%20neurology" target="_blank" rel="noopener noreferrer">Burgos R, et al. ESPEN guideline clinical nutrition in neurology. Clin Nutr. 2018.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Brain%20foods%3A%20the%20effects%20of%20nutrients%20on%20brain%20function" target="_blank" rel="noopener noreferrer">Gómez-Pinilla F. Brain foods: the effects of nutrients on brain function. Nat Rev Neurosci. 2008.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Staging%20of%20brain%20pathology%20related%20to%20sporadic%20Parkinson%27s%20disease" target="_blank" rel="noopener noreferrer">Braak H, et al. Staging of brain pathology related to sporadic Parkinson's disease. Neurobiol Aging. 2003.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=The%20Microbiota-Gut-Brain%20Axis" target="_blank" rel="noopener noreferrer">Cryan JF, et al. The Microbiota-Gut-Brain Axis. Physiol Rev. 2019.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Low-protein%20and%20protein-redistribution%20diets%20for%20Parkinson%27s%20disease%20patients%20with%20motor%20fluctuations%3A%20a%20systematic%20review" target="_blank" rel="noopener noreferrer">Cereda E, et al. Low-protein and protein-redistribution diets for Parkinson's disease patients with motor fluctuations: a systematic review. Mov Disord. 2010.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Trial%20of%20the%20MIND%20Diet%20for%20Prevention%20of%20Cognitive%20Decline%20in%20Older%20Persons" target="_blank" rel="noopener noreferrer">Barnes LL, et al. Trial of the MIND Diet for Prevention of Cognitive Decline in Older Persons. N Engl J Med. 2023.</a></li>
+                    </ol>
+
+                    <div class="highlight-box" style="margin-top: 2rem;">
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico o neurólogo. No inicies ni suspendas suplementos o medicamentos sin supervisión profesional.</p>
+                    </div>
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Neuronutrición para Parkinson, Alzheimer y salud cerebral. Consulta presencial en Del Valle o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/magnesio-y-parkinson/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-magnesio/hero.webp" srcset="/assets/img/blog/post-magnesio/hero-w480.webp 480w, /assets/img/blog/post-magnesio/hero-w960.webp 960w, /assets/img/blog/post-magnesio/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Magnesio y Parkinson: qué dice la evidencia</h3>
+                            <p>Formas de magnesio, estudios y su interacción con la levodopa.</p>
+                            <a href="/blog/magnesio-y-parkinson/" class="btn-text" aria-label="Leer: Magnesio y Parkinson: qué dice la evidencia">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/nutricion-y-alzheimer/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-alzheimer/hero.webp" srcset="/assets/img/blog/post-alzheimer/hero-w480.webp 480w, /assets/img/blog/post-alzheimer/hero-w960.webp 960w, /assets/img/blog/post-alzheimer/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Nutrición y Alzheimer: dieta MIND</h3>
+                            <p>Dieta MIND, hidratación y cuidados alimentarios en demencia.</p>
+                            <a href="/blog/guias-nutricionales/nutricion-y-alzheimer/" class="btn-text" aria-label="Leer: Nutrición y Alzheimer: dieta MIND">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/suplementos-vitaminas-parkinson/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-suplementos/hero.webp" srcset="/assets/img/blog/post-suplementos/hero-w480.webp 480w, /assets/img/blog/post-suplementos/hero-w960.webp 960w, /assets/img/blog/post-suplementos/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Suplementos y vitaminas para el Parkinson</h3>
+                            <p>Qué ayuda, qué no, y el cuidado con la vitamina B6 y levodopa.</p>
+                            <a href="/blog/suplementos-vitaminas-parkinson/" class="btn-text" aria-label="Leer: Suplementos y vitaminas para el Parkinson">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

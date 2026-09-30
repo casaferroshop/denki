@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.clinicadenki.mx/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -47,7 +47,7 @@
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/nutricion-salud-mental/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -55,7 +55,7 @@
   <!-- Especialidades: subpáginas -->
   <url>
     <loc>https://www.clinicadenki.mx/nutricion-metabolica/bajar-glucosa/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -67,13 +67,13 @@
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/nutricion-cardiovascular/colesterol-alto/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/nutricion-cardiovascular/trigliceridos-altos/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -109,7 +109,7 @@
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/nutricion-geriatrica/sarcopenia/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -121,7 +121,7 @@
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/nutricion-clinica/enteral-sonda/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -135,7 +135,7 @@
   <!-- Ubicaciones -->
   <url>
     <loc>https://www.clinicadenki.mx/ubicaciones/cdmx/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -147,7 +147,7 @@
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/ubicaciones/roma-condesa/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -155,7 +155,7 @@
   <!-- Blog -->
   <url>
     <loc>https://www.clinicadenki.mx/blog/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -173,19 +173,19 @@
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-microbiota-saludable/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-nutriologos-recomiendan-bajar-trigliceridos/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/blog/guias-nutricionales/alimentos-prohibidos-parkinson/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -215,7 +215,61 @@
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/blog/magnesio-y-parkinson/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/que-es-neuronutricion/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/alimentos-con-dopamina/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/hidratacion-alzheimer/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/alimentos-para-la-memoria/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/colesterol-alto-sintomas/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/glucosa-alta-sintomas/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/dieta-higado-graso/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/alimentos-fermentados/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.clinicadenki.mx/blog/cuanto-cobra-nutriologo-cdmx/</loc>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -235,7 +289,7 @@
   </url>
   <url>
     <loc>https://www.clinicadenki.mx/pages/contacto/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

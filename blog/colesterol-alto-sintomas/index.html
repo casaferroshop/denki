@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Colesterol alto: síntomas y cuándo medirlo | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="¿El colesterol alto da síntomas? Casi nunca. Conoce las señales de casos genéticos, los mitos más comunes y cómo leer tu perfil de lípidos a tiempo.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Colesterol alto: síntomas y cuándo medirlo | Clínica Denki">
+    <meta property="og:description" content="¿El colesterol alto da síntomas? Casi nunca. Conoce las señales de casos genéticos, los mitos más comunes y cómo leer tu perfil de lípidos a tiempo.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/colesterol-alto-sintomas/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-colesterol-sintomas/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Colesterol alto: síntomas y cuándo medirlo | Clínica Denki">
+    <meta name="twitter:description" content="¿El colesterol alto da síntomas? Casi nunca. Conoce las señales de casos genéticos, los mitos más comunes y cómo leer tu perfil de lípidos a tiempo.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-colesterol-sintomas/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/colesterol-alto-sintomas/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Colesterol alto: síntomas, señales y cuándo medirlo",
+    "url": "https://www.clinicadenki.mx/blog/colesterol-alto-sintomas/",
+    "image": "https://www.clinicadenki.mx/assets/img/blog/post-colesterol-sintomas/hero.webp",
+    "datePublished": "2026-09-30",
+    "dateModified": "2026-09-30",
+    "author": {
+        "@type": "Person",
+        "name": "Dra. Lucy Anita Camberos Luna"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Clínica Denki",
+        "url": "https://www.clinicadenki.mx/"
+    },
+    "description": "Por qué el colesterol alto casi nunca da síntomas, qué señales físicas aparecen en casos muy altos o genéticos, qué mitos descartar y cómo leer tu perfil de lípidos.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.clinicadenki.mx/blog/colesterol-alto-sintomas/"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.clinicadenki.mx/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.clinicadenki.mx/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Colesterol alto: síntomas",
+            "item": "https://www.clinicadenki.mx/blog/colesterol-alto-sintomas/"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿El colesterol alto da síntomas?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Casi nunca. El colesterol alto suele ser silencioso durante años y se detecta con un perfil de lípidos. Los síntomas aparecen cuando ya hay complicaciones, como enfermedad del corazón o infarto cerebral."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿El colesterol alto causa dolor de cabeza o dolor de nuca?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No es un síntoma típico. El dolor de cabeza o de nuca suele relacionarse con tensión muscular, falta de sueño, migraña o presión arterial muy alta. Si es frecuente, consúltalo con tu médico."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué señales pueden verse en la piel o los ojos?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En casos de colesterol muy alto o hipercolesterolemia familiar pueden aparecer xantomas en los tendones, xantelasmas en los párpados y un arco corneal antes de los 45 años. Si notas alguno, pide un perfil de lípidos."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cada cuánto debo medir mi colesterol?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Los adultos deben medirlo de forma periódica. Si tienes antecedentes familiares, diabetes, hipertensión u obesidad, conviene hacerlo antes y con más frecuencia. La periodicidad exacta la define tu médico."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Necesito ayuno para el perfil de lípidos?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Muchas guías aceptan una muestra sin ayuno para la valoración inicial. Si tus triglicéridos salen altos, tu médico puede pedirte repetirlo en ayuno. Sigue las indicaciones de tu laboratorio."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué valor de colesterol LDL se considera alto?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Como referencia, un LDL de 160 mg/dL o más se considera alto y de 190 mg/dL o más muy alto. Tu meta puede ser más baja si tienes diabetes o enfermedad cardiovascular; tu médico la establece."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Se puede bajar el colesterol solo con dieta?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En algunas personas los cambios de alimentación y estilo de vida son suficientes; en otras, sobre todo con riesgo alto o causa genética, se necesita además medicamento. La dieta siempre complementa, nunca sustituye, lo que indique tu médico."
+            }
+        }
+    ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Cardiovascular</span>
+                    <h1>Colesterol alto: síntomas, señales y cuándo medirlo</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 10 min de lectura</span>
+                        <span>📅 Actualizado: Sep 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-colesterol-sintomas/hero.webp" srcset="/assets/img/blog/post-colesterol-sintomas/hero-w480.webp 480w, /assets/img/blog/post-colesterol-sintomas/hero-w960.webp 960w, /assets/img/blog/post-colesterol-sintomas/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAADwBQCdASogACAAPu1oqk2ppqQiMBgMATAdiUAQG6CL5mFA+sT/nS4Y/fNevwyEvefQkpfSA6HYAAD+8czNC2GuN4MtAfBPbEzvS0HsdA1JRK06zPvN0PWHBYwn9mA/o0QVW2st2h/9VRGdLxTLthjxYTXNftLIEJldjYSXhSajKC9OAPy5GaRBLDhQmFLOpo3V8wTF1K6l7olEcNOmaiWX7vBLAZ1uaFpEInk+vPPTMJmPqnAkAZu0v5eyr2ykaLAAAA==);background-size:cover;background-position:center" alt="Persona revisando los resultados de su perfil de lípidos para detectar colesterol alto - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+                    <p class="lead" style="border: none; padding: 0;">Si buscas "colesterol alto síntomas", la respuesta
+                        honesta es esta: <strong>el colesterol alto casi nunca da síntomas</strong>. Puedes sentirte perfectamente
+                        bien durante años mientras el exceso de colesterol LDL se deposita en las paredes de tus arterias. Por eso
+                        la única forma confiable de saber cómo estás es con un análisis de sangre llamado <strong>perfil de
+                        lípidos</strong>.</p>
+
+                    <p>En esta guía te explicamos qué señales físicas sí pueden aparecer cuando el colesterol es muy alto o de
+                        origen genético, cuáles son los síntomas de sus complicaciones (y cuándo llamar a emergencias), qué molestias
+                        se atribuyen al colesterol sin serlo, quién debe medirse y cómo interpretar tus resultados.</p>
+
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — septiembre 2026.
+                    </p>
+
+                    <div class="post-toc">
+                        <h4>Contenido de este artículo</h4>
+                        <ul>
+                            <li><a href="#da-sintomas">¿El colesterol alto da síntomas?</a></li>
+                            <li><a href="#senales">Señales físicas en colesterol muy alto o genético</a></li>
+                            <li><a href="#complicaciones">Síntomas de las complicaciones</a></li>
+                            <li><a href="#mitos">Mitos: lo que no es síntoma de colesterol</a></li>
+                            <li><a href="#quien-debe-medirse">Quién debe medirse y cada cuánto</a></li>
+                            <li><a href="#perfil">Cómo leer tu perfil de lípidos</a></li>
+                            <li><a href="#factores">Factores de riesgo</a></li>
+                            <li><a href="#que-hacer">Qué hacer si tu colesterol sale alto</a></li>
+                            <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="da-sintomas">¿El colesterol alto da síntomas?</h2>
+                    <p>En la gran mayoría de las personas, no. El colesterol es una grasa que viaja en la sangre dentro de
+                        partículas llamadas lipoproteínas. Cuando hay demasiado colesterol LDL (el llamado "colesterol malo"), este
+                        se va acumulando poco a poco en la pared de las arterias y forma placas. Ese proceso, llamado
+                        aterosclerosis, avanza en silencio: no duele, no marea y no cansa.</p>
+                    <p>Las guías internacionales de manejo del colesterol, tanto la estadounidense (AHA/ACC) como la europea
+                        (ESC/EAS), coinciden en que la detección depende de medir los lípidos en sangre y de estimar el riesgo
+                        cardiovascular global, no de esperar a que aparezcan molestias. Cuando el colesterol alto "da la cara", casi
+                        siempre es porque ya provocó una complicación.</p>
+
+                    <div class="highlight-box">
+                        <p>💡 <strong>Idea clave:</strong> sentirte bien no significa que tu colesterol esté bien. La única manera
+                            de saberlo es con un perfil de lípidos en ayuno o sin ayuno, según te indique tu médico o laboratorio.</p>
+                    </div>
+
+                    <h2 id="senales">Señales físicas que pueden aparecer con colesterol muy alto o genético</h2>
+                    <p>Hay una excepción importante: la <strong>hipercolesterolemia familiar</strong>, una condición hereditaria en
+                        la que el cuerpo no logra retirar bien el LDL de la sangre desde el nacimiento. Un consenso de la Sociedad
+                        Europea de Aterosclerosis señaló que es una enfermedad subdiagnosticada y subtratada en la población general,
+                        a pesar de que eleva de manera importante el riesgo de infarto a edades tempranas. En estos casos, los niveles
+                        de colesterol muy altos durante años pueden dejar señales visibles:</p>
+                    <ul>
+                        <li><strong>Xantomas tendinosos:</strong> engrosamientos o bultos firmes en los tendones, sobre todo en el
+                            tendón de Aquiles (parte posterior del tobillo) y en los tendones del dorso de las manos.</li>
+                        <li><strong>Xantelasmas:</strong> placas amarillentas, planas o ligeramente elevadas, en los párpados o
+                            alrededor de los ojos. No siempre indican colesterol alto, pero ameritan revisar tus lípidos.</li>
+                        <li><strong>Arco corneal antes de los 45 años:</strong> un anillo blanco o grisáceo alrededor de la parte
+                            de color del ojo. En personas mayores puede ser un cambio de la edad; en adultos jóvenes es una señal
+                            de alerta.</li>
+                    </ul>
+                    <p>Otras pistas de hipercolesterolemia familiar no se ven en el espejo, sino en la historia familiar: padres,
+                        hermanos o abuelos con infarto o colesterol muy alto a edades tempranas. Las guías estadounidenses consideran
+                        que un LDL de 190 mg/dL o más obliga a descartar una causa genética y a valorar tratamiento médico, y el
+                        diagnóstico oportuno permite estudiar también a los familiares.</p>
+
+                    <h2 id="complicaciones">Síntomas de las complicaciones del colesterol alto</h2>
+                    <p>Cuando las placas estrechan o bloquean una arteria, sí aparecen síntomas. Pero en ese punto ya no hablamos
+                        del colesterol en sí, sino de enfermedad cardiovascular:</p>
+                    <ul>
+                        <li><strong>Enfermedad del corazón:</strong> dolor, presión u opresión en el pecho que puede extenderse al
+                            brazo izquierdo, cuello, mandíbula o espalda; falta de aire; sudoración fría; náusea. En mujeres,
+                            adultos mayores y personas con diabetes los síntomas pueden ser menos típicos.</li>
+                        <li><strong>Infarto cerebral (evento vascular cerebral):</strong> cara caída de un lado, debilidad o
+                            adormecimiento de un brazo o pierna, dificultad repentina para hablar o entender, pérdida de visión o
+                            mareo intenso con pérdida del equilibrio.</li>
+                        <li><strong>Enfermedad arterial periférica:</strong> dolor en las pantorrillas al caminar que mejora con el
+                            reposo.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p>⚠️ <strong>Emergencia:</strong> si tú o alguien más presenta dolor de pecho, falta de aire súbita o
+                            signos de infarto cerebral, llama de inmediato al <strong>911</strong>. No esperes a que se pase ni
+                            manejes tú mismo al hospital: en estos casos cada minuto cuenta.</p>
+                    </div>
+                    <p>Si tuviste un infarto cerebral, la alimentación forma parte de la recuperación; en Clínica Denki tenemos un
+                        programa de <a href="/nutricion-neurologica/infarto-cerebral/">nutrición después de un infarto cerebral</a>
+                        coordinado con tu equipo médico.</p>
+
+                    <h2 id="mitos">Mitos: dolor de cabeza, mareo y cansancio no son síntomas típicos</h2>
+                    <p>Es muy común escuchar que el colesterol alto "se siente" en la nuca o en la cabeza. No hay evidencia de que
+                        eso ocurra. Estas molestias suelen tener otras causas:</p>
+                    <ul>
+                        <li><strong>Dolor de cabeza o de nuca:</strong> se relaciona más con tensión muscular, falta de sueño,
+                            migraña o presión arterial muy elevada, no con el colesterol.</li>
+                        <li><strong>Mareo:</strong> puede deberse a presión baja, deshidratación, problemas del oído interno o
+                            efectos de medicamentos.</li>
+                        <li><strong>Cansancio:</strong> tiene muchas causas posibles, como anemia, problemas de tiroides, glucosa
+                            alta, mal descanso o depresión.</li>
+                        <li><strong>Hormigueo en manos o piernas:</strong> no es un síntoma del colesterol; conviene revisarlo con
+                            tu médico porque puede relacionarse con glucosa alta o deficiencia de vitamina B12, entre otras causas.</li>
+                    </ul>
+                    <p>El riesgo de este mito es doble: por un lado, hay personas que se tranquilizan porque "no sienten nada"; por
+                        otro, hay quien atribuye al colesterol molestias que merecen otro estudio. En ambos casos, lo correcto es
+                        medir y consultar. Si además tienes sed excesiva o orinas mucho, revisa nuestra guía de
+                        <a href="/blog/glucosa-alta-sintomas/">síntomas de glucosa alta</a>.</p>
+
+                    <h2 id="quien-debe-medirse">¿Quién debe medirse el colesterol y cada cuánto?</h2>
+                    <p>Como el colesterol alto no avisa, la medición periódica es la herramienta de prevención. De manera general:</p>
+                    <ul>
+                        <li><strong>Adultos:</strong> conviene tener un perfil de lípidos desde la edad adulta joven y repetirlo de
+                            forma periódica, según tu riesgo cardiovascular.</li>
+                        <li><strong>Antes y con más frecuencia</strong> si tienes antecedentes familiares de colesterol alto o de
+                            infarto temprano, diabetes, hipertensión, obesidad, tabaquismo, enfermedad renal o si tuviste
+                            preeclampsia o menopausia temprana.</li>
+                        <li><strong>Niñas, niños y adolescentes</strong> con familiares que tienen hipercolesterolemia familiar
+                            también pueden necesitar estudio, siempre indicado por su pediatra.</li>
+                    </ul>
+                    <p>La frecuencia exacta la define tu médico. Hoy muchas guías aceptan una muestra sin ayuno para la valoración
+                        inicial; si los triglicéridos salen elevados, es probable que te pidan repetir el estudio en ayuno.</p>
+
+                    <h2 id="perfil">Cómo leer tu perfil de lípidos</h2>
+                    <p>El perfil de lípidos suele incluir colesterol total, LDL, HDL y triglicéridos. La siguiente tabla es
+                        orientativa y se basa en los puntos de corte de la NOM-037-SSA2-2012 para población adulta. Tu meta
+                        personal puede ser más estricta si ya tienes diabetes, enfermedad cardiovascular u otros factores de riesgo.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                            <thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Parámetro</th><th style="padding: 1rem; text-align: left;">Deseable</th><th style="padding: 1rem; text-align: left;">Limítrofe</th><th style="padding: 1rem; text-align: left;">Alto</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colesterol total</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Menos de 200 mg/dL</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">200-239 mg/dL</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">240 mg/dL o más</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colesterol LDL</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Menos de 100 mg/dL (óptimo)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">130-159 mg/dL</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">160 mg/dL o más; 190 o más es muy alto</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colesterol HDL</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Mayor es mejor</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">—</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Bajo: menos de 40 mg/dL</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Triglicéridos</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Menos de 150 mg/dL</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">150-199 mg/dL</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">200 mg/dL o más</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Un LDL entre 100 y 129 mg/dL se considera cercano al óptimo. El colesterol "no HDL" (total menos HDL)
+                        también se usa cada vez más, porque refleja todas las partículas que pueden formar placa. Si tus
+                        triglicéridos salieron altos, te puede interesar nuestra página sobre
+                        <a href="/nutricion-cardiovascular/trigliceridos-altos/">triglicéridos altos</a>.</p>
+
+                    <h2 id="factores">Factores de riesgo del colesterol alto</h2>
+                    <p>El colesterol en sangre depende de la genética y del estilo de vida. Los factores más relevantes son:</p>
+                    <ul>
+                        <li>Antecedentes familiares e hipercolesterolemia familiar.</li>
+                        <li>Alimentación alta en grasas saturadas y trans (embutidos, frituras, productos de panadería
+                            industrial) y baja en fibra.</li>
+                        <li>Sobrepeso, sobre todo con grasa abdominal, y poca actividad física.</li>
+                        <li>Diabetes tipo 2, hipotiroidismo y enfermedad renal.</li>
+                        <li>Tabaquismo, que además daña directamente las arterias.</li>
+                        <li>Algunos medicamentos; nunca los suspendas por tu cuenta, coméntalo con tu médico.</li>
+                    </ul>
+
+                    <h2 id="que-hacer">Qué hacer si tu colesterol sale alto</h2>
+                    <p>Un resultado alto no es motivo de pánico, pero sí de actuar. Lo primero es revisarlo con tu médico, que
+                        estimará tu riesgo cardiovascular global y decidirá si además de los cambios de estilo de vida necesitas
+                        medicamento. A partir de ahí, estos son los pilares:</p>
+                    <ul>
+                        <li><strong>Alimentación:</strong> sustituir grasas saturadas por grasas insaturadas (aceite de oliva,
+                            aguacate, nueces), aumentar la fibra soluble (avena, leguminosas, frutas) y reducir ultraprocesados.
+                            Te explicamos el plan completo en nuestra guía de
+                            <a href="/nutricion-cardiovascular/colesterol-alto/">dieta para el colesterol alto</a> y en la lista de
+                            <a href="/blog/guias-nutricionales/alimentos-bajan-colesterol/">alimentos que ayudan a bajar el colesterol</a>.</li>
+                        <li><strong>Actividad física:</strong> movimiento regular de intensidad moderada, adaptado a tu condición
+                            y aprobado por tu médico si tienes alguna enfermedad cardiovascular.</li>
+                        <li><strong>Tabaco:</strong> dejar de fumar es una de las medidas con mayor impacto en el riesgo
+                            cardiovascular.</li>
+                        <li><strong>Seguimiento:</strong> repetir el perfil de lípidos en el plazo que indique tu médico para
+                            evaluar la respuesta. Si te recetaron una estatina u otro fármaco, la alimentación lo complementa, no lo
+                            sustituye.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p>🥗 <strong>En resumen práctico:</strong> no esperes síntomas. Mide tu perfil de lípidos, conoce tu riesgo y,
+                            si sale alto, trabaja con tu médico y con una nutrióloga clínica en un plan que puedas sostener.</p>
+                    </div>
+
+                    <div class="cta-banner">
+                        <h3>¿Tu perfil de lípidos salió alto?</h3>
+                        <p>En Clínica Denki revisamos tus estudios, tu historia y tus hábitos para diseñar un plan de alimentación coordinado con tu médico. Consulta presencial en CDMX o videoconsulta para toda la República.</p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+                    </div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿El colesterol alto da síntomas?</p>
+                        <p>Casi nunca. El colesterol alto suele ser silencioso durante años y se detecta con un perfil de lípidos. Los síntomas aparecen cuando ya hay complicaciones, como enfermedad del corazón o infarto cerebral.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿El colesterol alto causa dolor de cabeza o dolor de nuca?</p>
+                        <p>No es un síntoma típico. El dolor de cabeza o de nuca suele relacionarse con tensión muscular, falta de sueño, migraña o presión arterial muy alta. Si es frecuente, consúltalo con tu médico.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué señales pueden verse en la piel o los ojos?</p>
+                        <p>En casos de colesterol muy alto o hipercolesterolemia familiar pueden aparecer xantomas en los tendones, xantelasmas en los párpados y un arco corneal antes de los 45 años. Si notas alguno, pide un perfil de lípidos.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cada cuánto debo medir mi colesterol?</p>
+                        <p>Los adultos deben medirlo de forma periódica. Si tienes antecedentes familiares, diabetes, hipertensión u obesidad, conviene hacerlo antes y con más frecuencia. La periodicidad exacta la define tu médico.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Necesito ayuno para el perfil de lípidos?</p>
+                        <p>Muchas guías aceptan una muestra sin ayuno para la valoración inicial. Si tus triglicéridos salen altos, tu médico puede pedirte repetirlo en ayuno. Sigue las indicaciones de tu laboratorio.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué valor de colesterol LDL se considera alto?</p>
+                        <p>Como referencia, un LDL de 160 mg/dL o más se considera alto y de 190 mg/dL o más muy alto. Tu meta puede ser más baja si tienes diabetes o enfermedad cardiovascular; tu médico la establece.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Se puede bajar el colesterol solo con dieta?</p>
+                        <p>En algunas personas los cambios de alimentación y estilo de vida son suficientes; en otras, sobre todo con riesgo alto o causa genética, se necesita además medicamento. La dieta siempre complementa, nunca sustituye, lo que indique tu médico.</p>
+                    </div>
+
+                    <h2 id="referencias">Referencias</h2>
+                    <ol style="font-size: 0.9rem;">
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=2018%20AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA%20Guideline%20on%20the%20Management%20of%20Blood%20Cholesterol" target="_blank" rel="noopener noreferrer">Grundy SM, et al. 2018 AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Blood Cholesterol. Circulation. 2019.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=2019%20ESC/EAS%20Guidelines%20for%20the%20management%20of%20dyslipidaemias%3A%20lipid%20modification%20to%20reduce%20cardiovascular%20risk" target="_blank" rel="noopener noreferrer">Mach F, et al. 2019 ESC/EAS Guidelines for the management of dyslipidaemias: lipid modification to reduce cardiovascular risk. Eur Heart J. 2020.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Familial%20hypercholesterolaemia%20is%20underdiagnosed%20and%20undertreated%20in%20the%20general%20population%3A%20guidance%20for%20clinicians%20to%20prevent%20coronary%20heart%20disease" target="_blank" rel="noopener noreferrer">Nordestgaard BG, et al. Familial hypercholesterolaemia is underdiagnosed and undertreated in the general population: guidance for clinicians to prevent coronary heart disease. Eur Heart J. 2013.</a></li>
+                        <li>NOM-037-SSA2-2012, Para la prevención, tratamiento y control de las dislipidemias. Diario Oficial de la Federación.</li>
+                    </ol>
+
+                    <div class="highlight-box" style="margin-top: 2rem;">
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico. Los valores de laboratorio son orientativos; tu meta de colesterol depende de tu riesgo individual. No inicies, suspendas ni ajustes medicamentos sin supervisión profesional.</p>
+                    </div>
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica cardiovascular basada en evidencia. Consulta presencial en Del Valle o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/alimentos-bajan-colesterol/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-02/hero.webp" srcset="/assets/img/blog/post-02/hero-w480.webp 480w, /assets/img/blog/post-02/hero-w960.webp 960w, /assets/img/blog/post-02/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Cardiovascular</span>
+                            <h3>Alimentos que bajan el colesterol</h3>
+                            <p>Qué incluir en tu plato para mejorar tu perfil de lípidos.</p>
+                            <a href="/blog/guias-nutricionales/alimentos-bajan-colesterol/" class="btn-text" aria-label="Leer: Alimentos que bajan el colesterol">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/alimentos-nutriologos-recomiendan-bajar-trigliceridos/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-07/hero.webp" srcset="/assets/img/blog/post-07/hero-w480.webp 480w, /assets/img/blog/post-07/hero-w960.webp 960w, /assets/img/blog/post-07/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Cardiovascular</span>
+                            <h3>Cómo bajar los triglicéridos</h3>
+                            <p>Plan práctico y alimentos que recomiendan las nutriólogas.</p>
+                            <a href="/blog/guias-nutricionales/alimentos-nutriologos-recomiendan-bajar-trigliceridos/" class="btn-text" aria-label="Leer: Cómo bajar los triglicéridos">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/glucosa-alta-sintomas/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-glucosa-sintomas/hero.webp" srcset="/assets/img/blog/post-glucosa-sintomas/hero-w480.webp 480w, /assets/img/blog/post-glucosa-sintomas/hero-w960.webp 960w, /assets/img/blog/post-glucosa-sintomas/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Glucosa alta: síntomas</h3>
+                            <p>Señales de glucosa elevada y cuándo hacerte estudios.</p>
+                            <a href="/blog/glucosa-alta-sintomas/" class="btn-text" aria-label="Leer: Glucosa alta: síntomas">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

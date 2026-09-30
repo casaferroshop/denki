@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Alimentos fermentados y prebióticos: qué son | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Qué son los alimentos fermentados, en qué se distinguen de probióticos y prebióticos, cuáles encuentras en México y cómo sumarlos a tu dieta con seguridad.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Alimentos fermentados y prebióticos: qué son | Clínica Denki">
+    <meta property="og:description" content="Qué son los alimentos fermentados, en qué se distinguen de probióticos y prebióticos, cuáles encuentras en México y cómo sumarlos a tu dieta con seguridad.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/alimentos-fermentados/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-fermentados/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alimentos fermentados y prebióticos: qué son | Clínica Denki">
+    <meta name="twitter:description" content="Qué son los alimentos fermentados, en qué se distinguen de probióticos y prebióticos, cuáles encuentras en México y cómo sumarlos a tu dieta con seguridad.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-fermentados/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/alimentos-fermentados/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Alimentos fermentados y prebióticos: guía práctica",
+    "url": "https://www.clinicadenki.mx/blog/alimentos-fermentados/",
+    "image": "https://www.clinicadenki.mx/assets/img/blog/post-fermentados/hero.webp",
+    "datePublished": "2026-09-30",
+    "dateModified": "2026-09-30",
+    "author": {
+        "@type": "Person",
+        "name": "Dra. Lucy Anita Camberos Luna"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Clínica Denki",
+        "url": "https://www.clinicadenki.mx/"
+    },
+    "description": "Qué es un alimento fermentado según el consenso ISAPP, diferencias con probióticos y prebióticos, lista de fermentados y alimentos prebióticos accesibles en México, y precauciones.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.clinicadenki.mx/blog/alimentos-fermentados/"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.clinicadenki.mx/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.clinicadenki.mx/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Alimentos fermentados y prebióticos",
+            "item": "https://www.clinicadenki.mx/blog/alimentos-fermentados/"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Qué son los alimentos fermentados?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Son alimentos elaborados mediante la acción controlada de microorganismos, como bacterias y levaduras, que modifican sus componentes. Ejemplos: yogur, kéfir, chucrut, kimchi, miso y tepache."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Todos los alimentos fermentados tienen probióticos?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Muchos se pasteurizan, hornean o tuestan después de fermentarse, como el pan o la cerveza, y ya no contienen microorganismos vivos. Además, para llamarse probiótico una cepa debe tener beneficios comprobados."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre probióticos y prebióticos?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Los probióticos son microorganismos vivos con beneficio comprobado. Los prebióticos son fibras que las bacterias de tu intestino usan como alimento, presentes en ajo, cebolla, poro, espárrago, avena y leguminosas."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué alimentos prebióticos hay en México?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ajo, cebolla, poro, espárrago, alcachofa, plátano poco maduro, avena, frijol, lenteja, garbanzo, jícama y nopal aportan fibras prebióticas o fermentables."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuánto yogur o kéfir puedo comer al día?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para empezar, media taza al día es una porción razonable, y puedes aumentar según tu tolerancia. Elige versiones naturales, sin azúcar añadido y con cultivos vivos y activos."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿La kombucha y el tepache son saludables?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pueden formar parte de una dieta variada, pero con moderación: muchas kombuchas comerciales tienen azúcar añadido y el tepache casero puede contener algo de alcohol y azúcar. El pulque no se recomienda por su contenido de alcohol."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Quién no debe comer alimentos fermentados?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Las personas con inmunosupresión o en quimioterapia deben consultar antes. También conviene precaución en intolerancia a la histamina, síndrome de intestino irritable e hipertensión por el sodio de los encurtidos."
+            }
+        }
+    ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Digestiva</span>
+                    <h1>Alimentos fermentados y prebióticos: guía práctica</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 10 min de lectura</span>
+                        <span>📅 Actualizado: Sep 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-fermentados/hero.webp" srcset="/assets/img/blog/post-fermentados/hero-w480.webp 480w, /assets/img/blog/post-fermentados/hero-w960.webp 960w, /assets/img/blog/post-fermentados/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAADwBQCdASogACAAPu1iqk+ppSOiMBgIATAdiWIAwqEEtQAstu6fH1x2e7qrbY5KMHZbc2mGIaeYAAD+/SzpPULWXlWB1m3I6SIVxyC34Hg1X0w86sl9Fu+YvnxBnlIH+L5QbnJ65N9GIofZQ3fwGqQ8V6xmGL+mzjzofYi7Pr2aEsibAe+LiRndxZ0DulTcIyMMU/jev0w35PsMh96BxXhju8HaBfuIWU+jULY7snzodX+PeMn0hnfrLbPdaniO4D100SVzDz6V5eKvtbfDF1o8ekB1GgtRAarBBGQPBQwLyrkJp/m4YAAA);background-size:cover;background-position:center" alt="Alimentos fermentados como yogur natural, kéfir, chucrut y kimchi junto a alimentos prebióticos - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+                    <p class="lead" style="border: none; padding: 0;">Los <strong>alimentos fermentados</strong> son aquellos que
+                        se elaboran gracias a la acción de microorganismos, como bacterias y levaduras, que modifican los
+                        componentes del alimento. El yogur, el kéfir, el chucrut, el kimchi o el tepache son ejemplos. Los
+                        <strong>alimentos prebióticos</strong>, en cambio, aportan fibras que sirven de alimento a las bacterias
+                        benéficas que ya viven en tu intestino.</p>
+
+                    <p>Ambos pueden ser aliados de tu microbiota intestinal, pero no son lo mismo ni hacen lo mismo. En esta guía te
+                        explicamos las diferencias, qué dice la ciencia, cuáles encuentras fácilmente en México, cómo empezar a
+                        comerlos sin molestias y en qué casos conviene tener precaución.</p>
+
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — septiembre 2026.
+                    </p>
+
+                    <div class="post-toc">
+                        <h4>Contenido de este artículo</h4>
+                        <ul>
+                            <li><a href="#que-es">¿Qué es un alimento fermentado?</a></li>
+                            <li><a href="#diferencias">Fermentado, probiótico y prebiótico: diferencias</a></li>
+                            <li><a href="#ciencia">Qué dice la ciencia</a></li>
+                            <li><a href="#lista">Alimentos fermentados accesibles en México</a></li>
+                            <li><a href="#prebioticos">Alimentos prebióticos</a></li>
+                            <li><a href="#como-incorporarlos">Cómo incorporarlos poco a poco</a></li>
+                            <li><a href="#precauciones">Quién debe tener precaución</a></li>
+                            <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="que-es">¿Qué es un alimento fermentado?</h2>
+                    <p>En 2021, la Asociación Científica Internacional de Probióticos y Prebióticos (ISAPP) publicó un consenso que
+                        define a los alimentos fermentados como aquellos elaborados mediante el <strong>crecimiento deseado de
+                        microorganismos y la conversión enzimática</strong> de los componentes del alimento. Es decir, la
+                        fermentación es intencional y controlada, no un alimento que "se echó a perder".</p>
+                    <p>Un detalle importante que suele pasarse por alto: <strong>no todos los alimentos fermentados contienen
+                        microorganismos vivos al momento de comerlos</strong>. El pan se hornea, la cerveza y muchos encurtidos
+                        comerciales se pasteurizan, y el café y el chocolate se tuestan después de fermentarse. Siguen siendo
+                        fermentados, pero los microbios ya no están activos. Otros, como el yogur con cultivos vivos, el kéfir o
+                        el chucrut sin pasteurizar, sí conservan microorganismos vivos.</p>
+
+                    <h2 id="diferencias">Diferencia entre fermentado, probiótico y prebiótico</h2>
+                    <p>Estos tres términos se usan como sinónimos en etiquetas y redes sociales, pero tienen definiciones
+                        científicas distintas establecidas por consensos de la ISAPP:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                            <thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Término</th><th style="padding: 1rem; text-align: left;">Qué es</th><th style="padding: 1rem; text-align: left;">Ejemplos</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Alimento fermentado</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Alimento elaborado por la acción de microorganismos. Puede o no contener microbios vivos al consumirse.</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur, kéfir, chucrut, kimchi, miso, pan de masa madre</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Probiótico</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Microorganismos vivos que, en cantidades adecuadas, aportan un beneficio comprobado a la salud. Requiere cepas identificadas y estudios.</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Ciertas cepas de <em>Lactobacillus</em> o <em>Bifidobacterium</em> en productos o suplementos específicos</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Prebiótico</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sustrato que los microorganismos del intestino utilizan de forma selectiva y que aporta un beneficio a la salud.</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Inulina y fructooligosacáridos (ajo, cebolla, poro), galactooligosacáridos (leguminosas)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>En resumen: un alimento fermentado no es automáticamente un probiótico. Para que algo se llame probiótico,
+                        las cepas deben estar identificadas y tener beneficios demostrados. Aun así, los fermentados con
+                        microorganismos vivos pueden aportar diversidad microbiana a la dieta. Si quieres entender mejor cómo
+                        funciona este ecosistema, lee nuestra guía sobre la <a href="/blog/guias-nutricionales/alimentos-microbiota-saludable/">microbiota intestinal</a>.</p>
+
+                    <h2 id="ciencia">¿Qué dice la ciencia sobre los alimentos fermentados?</h2>
+                    <p>La microbiota intestinal participa en la digestión de la fibra, en la producción de compuestos como los
+                        ácidos grasos de cadena corta y en la regulación del sistema inmune. Una revisión publicada en el
+                        <em>BMJ</em> en 2018 destacó que la alimentación es uno de los factores que más influyen en su composición
+                        y que una mayor diversidad microbiana suele asociarse a mejor salud.</p>
+                    <p>Uno de los estudios más citados sobre fermentados es un ensayo de la Universidad de Stanford publicado en
+                        2021 en la revista <em>Cell</em>. Adultos sanos siguieron durante 10 semanas una dieta alta en alimentos
+                        fermentados o una dieta alta en fibra. En el grupo de fermentados <strong>aumentó la diversidad de la
+                        microbiota y disminuyeron varios marcadores inflamatorios</strong> en sangre. Es un resultado interesante,
+                        pero conviene leerlo con prudencia: fue un estudio pequeño, en personas sanas y de corta duración.</p>
+
+                    <div class="highlight-box">
+                        <p>💡 <strong>Idea clave:</strong> la evidencia sobre fermentados es prometedora pero todavía inicial. No
+                            son un tratamiento para ninguna enfermedad; son una forma de enriquecer una alimentación variada, rica
+                            en verduras, frutas, leguminosas y cereales integrales.</p>
+                    </div>
+                    <p>También hay un interés creciente en la relación entre microbiota y cerebro. Si te interesa el tema, en
+                        Clínica Denki trabajamos el <a href="/nutricion-salud-mental/">eje intestino-cerebro</a> dentro de la
+                        nutrición para la salud mental, siempre como complemento del tratamiento médico o psicológico.</p>
+
+                    <h2 id="lista">Lista de alimentos fermentados accesibles en México</h2>
+                    <p>No necesitas productos importados ni caros. Estos son fermentados que puedes encontrar en supermercados,
+                        mercados o preparar en casa, con lo que conviene saber de cada uno:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                            <thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Alimento</th><th style="padding: 1rem; text-align: left;">Qué conviene saber</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Yogur natural sin azúcar</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Busca "cultivos vivos y activos" en la etiqueta y evita los endulzados o con saborizantes.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Kéfir de leche o de agua</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Contiene una mezcla variada de bacterias y levaduras. El de agua puede tener azúcar; revisa la etiqueta.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Jocoque</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Lácteo fermentado tradicional; elige versiones naturales y moderadas en sal.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Quesos madurados</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Como el añejo o algunos tipos de manchego; aportan sabor, pero también sodio y grasa saturada: porciones pequeñas.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Chucrut y kimchi</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Col fermentada. Para conservar microorganismos vivos deben ser refrigerados y no pasteurizados.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Pepinillos fermentados</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Los fermentados en salmuera conservan microbios; los hechos con vinagre y pasteurizados no los tienen.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Miso y tempeh</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fermentados de soya. El miso es alto en sodio; agrégalo al final de la cocción, sin hervir.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Kombucha</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Té fermentado. Muchas marcas comerciales tienen azúcar añadido; revisa la etiqueta.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Tepache casero</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fermentado de piña tradicional. Puede contener algo de alcohol y azúcar; consúmelo con moderación.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Pulque</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">No lo recomendamos como fuente de fermentados porque contiene alcohol.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2 id="prebioticos">Alimentos prebióticos: el alimento de tu microbiota</h2>
+                    <p>Los prebióticos son fibras que no digieres tú, sino las bacterias de tu intestino. El consenso ISAPP de
+                        2017 los define como sustratos que los microorganismos del huésped utilizan de forma selectiva y que aportan
+                        un beneficio a la salud. Muchos alimentos cotidianos en México los contienen, junto con otras fibras
+                        fermentables:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                            <thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Alimento</th><th style="padding: 1rem; text-align: left;">Tipo de fibra que aporta</th><th style="padding: 1rem; text-align: left;">Idea para consumirlo</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Ajo, cebolla y poro</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Inulina y fructooligosacáridos</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Base de guisos, salsas y sopas</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Espárrago y alcachofa</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Inulina</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Asados o al vapor como guarnición</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Plátano poco maduro</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Almidón resistente</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En licuado o cocido, cuando aún está firme</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Avena</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Betaglucanos (fibra soluble fermentable)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En hojuelas para desayuno o en preparaciones horneadas</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Leguminosas</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Galactooligosacáridos y fibra</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Frijol, lenteja, garbanzo o haba en caldos y ensaladas</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Jícama</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Inulina</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Cruda en bastones o en ensaladas</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Nopal</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fibra soluble (mucílago)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Asado, en ensalada o en licuado</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Combinar fermentados con prebióticos tiene sentido: unos aportan microorganismos y los otros el sustrato
+                        que alimenta a la microbiota. Un ejemplo sencillo es un yogur natural con avena y plátano, o unos frijoles
+                        con cebolla acompañados de una porción pequeña de chucrut.</p>
+
+                    <h2 id="como-incorporarlos">Cómo incorporarlos poco a poco</h2>
+                    <p>Al aumentar fibra y fermentados de golpe, es común tener gases, distensión o cambios en las evacuaciones
+                        durante los primeros días. Para evitarlo:</p>
+                    <ul>
+                        <li><strong>Empieza con porciones pequeñas:</strong> por ejemplo, media taza de yogur o kéfir, o una a dos
+                            cucharadas de chucrut o kimchi al día, y ve aumentando según tu tolerancia.</li>
+                        <li><strong>Introduce un alimento nuevo a la vez</strong> para identificar cuál te cae mejor.</li>
+                        <li><strong>Aumenta la fibra de forma gradual</strong> y acompáñala de suficiente agua.</li>
+                        <li><strong>Busca variedad</strong> más que cantidad: distintos fermentados y distintas fibras a lo largo de
+                            la semana.</li>
+                        <li><strong>Lee etiquetas</strong> para evitar azúcar añadido y exceso de sodio.</li>
+                    </ul>
+
+                    <h2 id="precauciones">Quién debe tener precaución con los fermentados</h2>
+                    <p>Para la mayoría de las personas sanas, los alimentos fermentados son seguros. Sin embargo, conviene
+                        consultar antes de incluirlos en estos casos:</p>
+                    <ul>
+                        <li><strong>Inmunosupresión o quimioterapia:</strong> los alimentos con microorganismos vivos o no
+                            pasteurizados pueden no ser recomendables en ciertos momentos del tratamiento. Consulta con tu equipo
+                            médico; en Clínica Denki acompañamos este proceso con <a href="/nutricion-oncologica/cancer/">nutrición
+                            oncológica</a>.</li>
+                        <li><strong>Intolerancia a la histamina:</strong> los fermentados suelen ser altos en histamina y pueden
+                            provocar síntomas en personas sensibles.</li>
+                        <li><strong>Hipertensión o enfermedad renal:</strong> encurtidos, miso, kimchi y quesos madurados aportan
+                            mucho sodio; ajusta las porciones con tu médico o nutrióloga.</li>
+                        <li><strong>Síndrome de intestino irritable:</strong> algunos prebióticos, como la inulina del ajo y la
+                            cebolla, pueden empeorar los síntomas; requiere un plan individualizado.</li>
+                        <li><strong>Embarazo:</strong> evita lácteos y fermentados no pasteurizados y cualquier bebida con alcohol.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p>🥗 <strong>En resumen práctico:</strong> suma a tu semana uno o dos fermentados con microorganismos vivos y
+                            varias fuentes de fibra prebiótica, empieza despacio y prioriza opciones sin azúcar añadido.</p>
+                    </div>
+
+                    <div class="cta-banner">
+                        <h3>¿Quieres cuidar tu microbiota con un plan a tu medida?</h3>
+                        <p>En Clínica Denki evaluamos tus síntomas digestivos, tus estudios y tus hábitos para diseñar una alimentación que puedas sostener. Consulta presencial en CDMX o videoconsulta para toda la República.</p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+                    </div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué son los alimentos fermentados?</p>
+                        <p>Son alimentos elaborados mediante la acción controlada de microorganismos, como bacterias y levaduras, que modifican sus componentes. Ejemplos: yogur, kéfir, chucrut, kimchi, miso y tepache.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Todos los alimentos fermentados tienen probióticos?</p>
+                        <p>No. Muchos se pasteurizan, hornean o tuestan después de fermentarse, como el pan o la cerveza, y ya no contienen microorganismos vivos. Además, para llamarse probiótico una cepa debe tener beneficios comprobados.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué diferencia hay entre probióticos y prebióticos?</p>
+                        <p>Los probióticos son microorganismos vivos con beneficio comprobado. Los prebióticos son fibras que las bacterias de tu intestino usan como alimento, presentes en ajo, cebolla, poro, espárrago, avena y leguminosas.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué alimentos prebióticos hay en México?</p>
+                        <p>Ajo, cebolla, poro, espárrago, alcachofa, plátano poco maduro, avena, frijol, lenteja, garbanzo, jícama y nopal aportan fibras prebióticas o fermentables.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuánto yogur o kéfir puedo comer al día?</p>
+                        <p>Para empezar, media taza al día es una porción razonable, y puedes aumentar según tu tolerancia. Elige versiones naturales, sin azúcar añadido y con cultivos vivos y activos.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La kombucha y el tepache son saludables?</p>
+                        <p>Pueden formar parte de una dieta variada, pero con moderación: muchas kombuchas comerciales tienen azúcar añadido y el tepache casero puede contener algo de alcohol y azúcar. El pulque no se recomienda por su contenido de alcohol.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Quién no debe comer alimentos fermentados?</p>
+                        <p>Las personas con inmunosupresión o en quimioterapia deben consultar antes. También conviene precaución en intolerancia a la histamina, síndrome de intestino irritable e hipertensión por el sodio de los encurtidos.</p>
+                    </div>
+
+                    <h2 id="referencias">Referencias</h2>
+                    <ol style="font-size: 0.9rem;">
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=The%20International%20Scientific%20Association%20for%20Probiotics%20and%20Prebiotics%20%28ISAPP%29%20consensus%20statement%20on%20fermented%20foods" target="_blank" rel="noopener noreferrer">Marco ML, et al. The International Scientific Association for Probiotics and Prebiotics (ISAPP) consensus statement on fermented foods. Nat Rev Gastroenterol Hepatol. 2021.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Expert%20consensus%20document%3A%20The%20International%20Scientific%20Association%20for%20Probiotics%20and%20Prebiotics%20%28ISAPP%29%20consensus%20statement%20on%20the%20definition%20and%20scope%20of%20prebiotics" target="_blank" rel="noopener noreferrer">Gibson GR, et al. Expert consensus document: The International Scientific Association for Probiotics and Prebiotics (ISAPP) consensus statement on the definition and scope of prebiotics. Nat Rev Gastroenterol Hepatol. 2017.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Expert%20consensus%20document.%20The%20International%20Scientific%20Association%20for%20Probiotics%20and%20Prebiotics%20consensus%20statement%20on%20the%20scope%20and%20appropriate%20use%20of%20the%20term%20probiotic" target="_blank" rel="noopener noreferrer">Hill C, et al. Expert consensus document. The International Scientific Association for Probiotics and Prebiotics consensus statement on the scope and appropriate use of the term probiotic. Nat Rev Gastroenterol Hepatol. 2014.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Gut-microbiota-targeted%20diets%20modulate%20human%20immune%20status" target="_blank" rel="noopener noreferrer">Wastyk HC, et al. Gut-microbiota-targeted diets modulate human immune status. Cell. 2021.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Role%20of%20the%20gut%20microbiota%20in%20nutrition%20and%20health" target="_blank" rel="noopener noreferrer">Valdes AM, et al. Role of the gut microbiota in nutrition and health. BMJ. 2018.</a></li>
+                    </ol>
+
+                    <div class="highlight-box" style="margin-top: 2rem;">
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico. La evidencia sobre alimentos fermentados en humanos es aún inicial. Si tienes una enfermedad o tomas medicamentos, consulta antes de hacer cambios importantes en tu alimentación.</p>
+                    </div>
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica para salud digestiva y microbiota. Consulta presencial en Del Valle o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/alimentos-microbiota-saludable/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-03/hero.webp" srcset="/assets/img/blog/post-03/hero-w480.webp 480w, /assets/img/blog/post-03/hero-w960.webp 960w, /assets/img/blog/post-03/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Digestiva</span>
+                            <h3>Alimentos para una microbiota saludable</h3>
+                            <p>Cómo alimentar a las bacterias benéficas de tu intestino.</p>
+                            <a href="/blog/guias-nutricionales/alimentos-microbiota-saludable/" class="btn-text" aria-label="Leer: Alimentos para una microbiota saludable">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/dieta-higado-graso/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-higado-graso/hero.webp" srcset="/assets/img/blog/post-higado-graso/hero-w480.webp 480w, /assets/img/blog/post-higado-graso/hero-w960.webp 960w, /assets/img/blog/post-higado-graso/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Dieta para el hígado graso</h3>
+                            <p>Qué comer y qué limitar si tienes hígado graso.</p>
+                            <a href="/blog/dieta-higado-graso/" class="btn-text" aria-label="Leer: Dieta para el hígado graso">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/alimentos-para-la-memoria/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-memoria/hero.webp" srcset="/assets/img/blog/post-memoria/hero-w480.webp 480w, /assets/img/blog/post-memoria/hero-w960.webp 960w, /assets/img/blog/post-memoria/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Alimentos para la memoria</h3>
+                            <p>Qué dice la ciencia sobre alimentación y salud cerebral.</p>
+                            <a href="/blog/alimentos-para-la-memoria/" class="btn-text" aria-label="Leer: Alimentos para la memoria">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

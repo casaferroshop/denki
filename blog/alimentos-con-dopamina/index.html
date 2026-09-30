@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Alimentos con dopamina: qué dice la ciencia | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Alimentos con dopamina: por qué la del plátano no llega al cerebro, qué alimentos aportan tirosina y qué saber sobre habas y levodopa en Parkinson.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Alimentos con dopamina: qué dice la ciencia | Clínica Denki">
+    <meta property="og:description" content="Alimentos con dopamina: por qué la del plátano no llega al cerebro, qué alimentos aportan tirosina y qué saber sobre habas y levodopa en Parkinson.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/alimentos-con-dopamina/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-dopamina/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alimentos con dopamina: qué dice la ciencia | Clínica Denki">
+    <meta name="twitter:description" content="Alimentos con dopamina: por qué la del plátano no llega al cerebro, qué alimentos aportan tirosina y qué saber sobre habas y levodopa en Parkinson.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-dopamina/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/alimentos-con-dopamina/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Alimentos con dopamina: qué dice la ciencia",
+    "url": "https://www.clinicadenki.mx/blog/alimentos-con-dopamina/",
+    "image": "https://www.clinicadenki.mx/assets/img/blog/post-dopamina/hero.webp",
+    "datePublished": "2026-09-30",
+    "dateModified": "2026-09-30",
+    "author": {
+        "@type": "Person",
+        "name": "Dra. Lucy Anita Camberos Luna"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Clínica Denki",
+        "url": "https://www.clinicadenki.mx/"
+    },
+    "description": "Alimentos con dopamina: por qué la del plátano no llega al cerebro, qué alimentos aportan tirosina y qué saber sobre habas y levodopa en Parkinson.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.clinicadenki.mx/blog/alimentos-con-dopamina/"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.clinicadenki.mx/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.clinicadenki.mx/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Alimentos con dopamina",
+            "item": "https://www.clinicadenki.mx/blog/alimentos-con-dopamina/"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Qué alimentos tienen dopamina?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El plátano, sobre todo su cáscara, contiene dopamina, y otras frutas y verduras en menor cantidad. Pero esa dopamina no cruza la barrera hematoencefálica, así que no llega al cerebro."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cómo puedo aumentar la dopamina con la alimentación?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Asegurando proteína suficiente, que aporta tirosina y fenilalanina, y cofactores como hierro, vitamina B6 y folato. El cuerpo fabrica su propia dopamina con estos ingredientes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿El plátano sube la dopamina del cerebro?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Aunque contiene dopamina, esta se metaboliza en el intestino y el hígado y no cruza al cerebro. El plátano es un buen alimento, pero no un estimulante de dopamina."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Las habas sirven para el Parkinson?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Contienen L-dopa natural y un estudio pequeño mostró mejoría temporal, pero la dosis es impredecible y pueden causar efectos adversos o favismo. Nunca las uses en lugar de tu medicación."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Es segura la Mucuna pruriens?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No se recomienda sin supervisión. Contiene L-dopa en cantidades variables y puede sumarse a tu medicación y provocar efectos adversos. Consulta siempre a tu neurólogo."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Por qué la proteína afecta a la levodopa?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Los aminoácidos de la proteína compiten con la levodopa por los mismos transportadores. En algunas personas con fluctuaciones, redistribuir la proteína con supervisión puede ayudar."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Sirven los suplementos para aumentar la dopamina?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No hay evidencia sólida. Los suplementos con dopamina no llegan al cerebro y los de L-dopa natural tienen dosis poco controladas. Prioriza la alimentación y consulta antes de suplementar."
+            }
+        }
+    ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Neurología</span>
+                    <h1>Alimentos con dopamina: qué dice la ciencia</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 10 min de lectura</span>
+                        <span>📅 Actualizado: Sep 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-dopamina/hero.webp" srcset="/assets/img/blog/post-dopamina/hero-w480.webp 480w, /assets/img/blog/post-dopamina/hero-w960.webp 960w, /assets/img/blog/post-dopamina/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRuoAAABXRUJQVlA4IN4AAADQBQCdASogACAAPu1mq06ppaQiKA1RMB2JQBhnNrhpLTGGd8VDdscdwejR1RFImPAvL+psflkAAP75cbaDP3WYjKmI9nd+7PCCe6UTeBdx1Iw+lQNlWauCMt+BF9ZWo/tiY1dyHeiKD9oTa1A6uuzND5jqtZ3Nsw4Rg1S+WJRzkP0alqWS/YFvTuCCAldcSc5Z6xFGDup1uZcqnrGkPVUza5wFcQkQZUDQ8/2RnhhyyMmAGzXCmruEGYBI4bnJSCssUisSf8TMS7UoeqcRuNnoM4hSPtMQXC/WCGQAAAA=);background-size:cover;background-position:center" alt="Huevo, pescado, frijol, semillas de calabaza y plátano, alimentos relacionados con la producción de dopamina - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+                    <p class="lead" style="border: none; padding: 0;">¿Existen alimentos con dopamina? Sí: algunos, como el plátano (sobre todo su cáscara), contienen dopamina. Pero esa dopamina <strong>no llega al cerebro</strong>, porque no puede cruzar la barrera hematoencefálica. Lo que tu cerebro usa para fabricar su propia dopamina son aminoácidos de la proteína, como la tirosina y la fenilalanina, junto con cofactores como el hierro, la vitamina B6 y el folato.</p>
+
+                    <p>Este matiz es especialmente importante si tú o un familiar viven con Parkinson, una enfermedad en la que se pierden neuronas productoras de dopamina. En esta guía te explicamos cómo se produce la dopamina, qué alimentos aportan sus "ingredientes", qué pasa con las habas y la <em>Mucuna pruriens</em>, y por qué la proteína puede interferir con la levodopa.</p>
+
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — septiembre 2026.
+                    </p>
+
+                    <div class="post-toc">
+                        <h4>Contenido de este artículo</h4>
+                        <ul>
+                            <li><a href="#como-se-produce">Cómo produce el cerebro la dopamina</a></li>
+                            <li><a href="#existen">¿Existen alimentos con dopamina?</a></li>
+                            <li><a href="#tirosina">Alimentos fuente de tirosina</a></li>
+                            <li><a href="#cofactores">Cofactores: hierro, B6 y folato</a></li>
+                            <li><a href="#habas-mucuna">Habas y Mucuna pruriens</a></li>
+                            <li><a href="#parkinson">Proteína y levodopa en Parkinson</a></li>
+                            <li><a href="#habitos">Hábitos que influyen</a></li>
+                            <li><a href="#no-funciona">Lo que NO funciona</a></li>
+                            <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="como-se-produce">¿Cómo produce el cerebro la dopamina?</h2>
+                    <p>La dopamina es un neurotransmisor que participa en el movimiento, la motivación y la sensación de recompensa. El cerebro la fabrica en varios pasos:</p>
+                    <ol>
+                        <li><strong>Fenilalanina → tirosina:</strong> la fenilalanina, un aminoácido esencial de la proteína, se transforma en tirosina. La tirosina también se obtiene directamente de los alimentos.</li>
+                        <li><strong>Tirosina → L-dopa:</strong> una enzima que necesita hierro convierte la tirosina en L-dopa (levodopa). En este paso participa también un cofactor cuyo reciclaje se relaciona con el folato.</li>
+                        <li><strong>L-dopa → dopamina:</strong> otra enzima, que depende de la vitamina B6, transforma la L-dopa en dopamina dentro de las neuronas.</li>
+                    </ol>
+                    <p>La clave está en el segundo paso: a diferencia de la dopamina, la <strong>L-dopa sí puede atravesar la barrera hematoencefálica</strong>. Por eso el tratamiento más usado en Parkinson es la levodopa, y no la dopamina en pastilla.</p>
+
+                    <h2 id="existen">¿Existen alimentos con dopamina?</h2>
+                    <p>Sí. Kanazawa y Sakakibara (2000) encontraron concentraciones altas de dopamina en el plátano Cavendish, especialmente en la cáscara y en menor cantidad en la pulpa. También se ha detectado en otras frutas y verduras en cantidades menores.</p>
+                    <p>Sin embargo, la dopamina de los alimentos se metaboliza en el intestino y el hígado, y la que llega a la sangre <strong>no cruza la barrera hematoencefálica</strong>. En otras palabras: comer plátano no "sube la dopamina" del cerebro. El estudio de Kanazawa se enfocó, de hecho, en la dopamina como antioxidante del alimento, no como fuente para el cerebro.</p>
+
+                    <div class="highlight-box">
+                        <p>💡 <strong>Idea clave:</strong> no busques "alimentos con dopamina", busca una alimentación con suficiente proteína de calidad y los micronutrientes que tu cuerpo necesita para fabricarla por sí mismo.</p>
+                    </div>
+
+                    <h2 id="tirosina">Alimentos fuente de tirosina</h2>
+                    <p>La tirosina y la fenilalanina están presentes en casi todos los alimentos con proteína. Si tu alimentación cubre tus necesidades de proteína, en general aporta la tirosina suficiente. Estas son fuentes accesibles:</p>
+
+                    <div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                            <thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Alimento</th><th style="padding: 1rem; text-align: left;">Aporte de tirosina</th><th style="padding: 1rem; text-align: left;">Comentario</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Huevo</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Alto</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Versátil y económico; también aporta colina y B12</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pescado (sardina, atún, tilapia)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Alto</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Además aporta omega-3</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pollo y pavo</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Alto</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Proteína magra de uso diario</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Lácteos (leche, yogur, queso fresco)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Alto</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Buena opción en colaciones</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Frijol y lenteja</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Moderado</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Aportan también hierro, folato y fibra</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Cacahuate</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Moderado</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Mejor natural, sin sal ni azúcar añadida</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Semillas de calabaza (pepitas)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Moderado</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Aportan también magnesio y hierro</td></tr>
+                                <tr><td style="padding: 1rem;">Soya y derivados (tofu, edamame)</td><td style="padding: 1rem;">Alto</td><td style="padding: 1rem;">Alternativa vegetal de proteína completa</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2 id="cofactores">Cofactores: hierro, vitamina B6 y folato</h2>
+                    <p>Tener tirosina no basta; las enzimas que fabrican dopamina necesitan ayuda:</p>
+                    <ul>
+                        <li><strong>Hierro:</strong> carne roja, hígado, frijol, lenteja y hojas verdes. El hierro vegetal se absorbe mejor con vitamina C (guayaba, naranja, limón). Un suplemento de hierro solo debe tomarse con indicación médica y, si tomas levodopa, separado de ella, porque puede reducir su absorción.</li>
+                        <li><strong>Vitamina B6:</strong> plátano, garbanzo, pollo, pescado y papa. Con las presentaciones actuales de levodopa combinada con carbidopa la B6 de los alimentos no representa un problema, pero los suplementos en dosis altas deben consultarse con el neurólogo.</li>
+                        <li><strong>Folato:</strong> frijol, lenteja, espinaca, quelites, brócoli y aguacate.</li>
+                    </ul>
+
+                    <h2 id="habas-mucuna">Habas y Mucuna pruriens: L-dopa natural, con precaución</h2>
+                    <p>Aquí hay un matiz real: algunas plantas sí contienen <strong>L-dopa</strong>, el precursor que cruza al cerebro. Las más conocidas son las habas (<em>Vicia faba</em>) y la <em>Mucuna pruriens</em>.</p>
+                    <ul>
+                        <li><strong>Habas:</strong> Rabey et al. (1992) observaron en un grupo pequeño de pacientes con Parkinson que comer habas elevó la levodopa en sangre y mejoró temporalmente los síntomas motores.</li>
+                        <li><strong><em>Mucuna pruriens</em>:</strong> Katzenschlager et al. (2004) compararon en un ensayo con muy pocos pacientes preparaciones de <em>Mucuna</em> con la levodopa estándar, con efectos motores comparables a corto plazo.</li>
+                    </ul>
+                    <p>Suena prometedor, pero en la práctica tiene riesgos importantes:</p>
+                    <ul>
+                        <li><strong>Dosis impredecibles:</strong> la cantidad de L-dopa varía según la variedad, la parte de la planta, la madurez y la preparación. No hay forma de saber cuánto estás tomando.</li>
+                        <li><strong>Efectos adversos:</strong> sumada a la medicación puede provocar movimientos involuntarios (discinesias), náusea, mareo o presión baja.</li>
+                        <li><strong>Interacción con tus medicamentos:</strong> puede alterar el esquema que ajustó tu neurólogo.</li>
+                        <li><strong>Favismo:</strong> las personas con deficiencia de la enzima G6PD pueden presentar una anemia hemolítica grave al comer habas.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p>⚠️ <strong>Nunca sustituyas ni combines tu medicación</strong> con habas, <em>Mucuna</em> o suplementos de "L-dopa natural" sin hablar antes con tu neurólogo. Comer habas de forma ocasional como parte de un platillo suele ser distinto a consumirlas en cantidad con fines terapéuticos; si tienes dudas, pregunta.</p>
+                    </div>
+
+                    <h2 id="parkinson">Proteína, dopamina y Parkinson: la interacción con la levodopa</h2>
+                    <p>La proteína aporta la tirosina que necesitas, pero en Parkinson tiene un segundo efecto: los aminoácidos de una comida rica en proteína <strong>compiten con la levodopa</strong> por los mismos transportadores en el intestino y en la barrera hematoencefálica. En algunas personas, sobre todo con fluctuaciones motoras, esto puede hacer que el medicamento funcione peor después de comer.</p>
+                    <p>La revisión sistemática de Cereda et al. (2010) analizó las dietas bajas en proteína y de redistribución de proteína (concentrar la mayor parte de la proteína en la cena y consumir menos durante el día). La redistribución puede mejorar la respuesta motora en pacientes seleccionados, pero requiere supervisión para no caer en una ingesta insuficiente de proteína y pérdida de masa muscular. No se trata de eliminar la proteína, sino de organizarla con tu equipo clínico.</p>
+                    <p>Para profundizar, revisa nuestra guía de <a href="/blog/guias-nutricionales/alimentos-prohibidos-parkinson/">alimentos a cuidar en el Parkinson</a> y la página de <a href="/nutricion-neurologica/parkinson/">nutrición para Parkinson</a>.</p>
+
+                    <div class="highlight-box">
+                        <p>🩺 <strong>Regla de oro:</strong> no cambies el horario de tu levodopa ni reduzcas la proteína por tu cuenta. Cualquier ajuste se decide con tu neurólogo y tu nutrióloga clínica.</p>
+                    </div>
+
+                    <h2 id="habitos">Hábitos que influyen en el sistema dopaminérgico</h2>
+                    <p>Más allá de la comida, algunos hábitos se relacionan con el funcionamiento del sistema dopaminérgico y con la calidad de vida en Parkinson:</p>
+                    <ul>
+                        <li><strong>Ejercicio regular:</strong> la actividad física es una recomendación consistente en Parkinson para la movilidad y el equilibrio, adaptada a cada persona.</li>
+                        <li><strong>Sueño suficiente:</strong> dormir mal afecta el ánimo, la motivación y la energía.</li>
+                        <li><strong>Alimentación completa:</strong> proteína suficiente bien distribuida, fibra y líquidos para prevenir el estreñimiento, y control del peso y la masa muscular.</li>
+                    </ul>
+                    <p>Estos hábitos no reemplazan el tratamiento, pero forman parte de un cuidado integral. Si te interesa el enfoque completo, lee <a href="/blog/que-es-neuronutricion/">qué es la neuronutrición</a>.</p>
+
+                    <h2 id="no-funciona">Lo que NO funciona: suplementos "de dopamina"</h2>
+                    <p>En redes sociales abundan productos y consejos para "aumentar la dopamina de forma natural". Conviene saber que:</p>
+                    <ul>
+                        <li>Los suplementos que dicen contener dopamina no pueden hacerla llegar al cerebro.</li>
+                        <li>Los suplementos de tirosina no han demostrado beneficios claros en personas que ya comen suficiente proteína.</li>
+                        <li>Los productos de "L-dopa natural" tienen dosis poco controladas y pueden interactuar con la medicación.</li>
+                        <li>El "ayuno de dopamina" y otras tendencias similares no tienen base científica sólida.</li>
+                    </ul>
+                    <p>Si estás considerando un suplemento, revisa antes nuestras guías de <a href="/blog/suplementos-vitaminas-parkinson/">suplementos y vitaminas para el Parkinson</a> y de <a href="/blog/magnesio-y-parkinson/">magnesio y Parkinson</a>.</p>
+
+                    <div class="cta-banner">
+                        <h3>¿Dudas sobre tu alimentación y la levodopa?</h3>
+                        <p>En Clínica Denki revisamos tu medicación, tus horarios y tu alimentación para organizar la proteína de forma segura y coordinada con tu neurólogo. Consulta presencial en CDMX o en línea.</p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+                    </div>
+
+                    <h2>Servicios y lecturas relacionados</h2>
+                    <ul>
+                        <li><a href="/nutricion-neurologica/parkinson/">Nutrición para Parkinson en Clínica Denki</a>.</li>
+                        <li><a href="/blog/guias-nutricionales/alimentos-prohibidos-parkinson/">Alimentos a cuidar en el Parkinson</a>.</li>
+                        <li><a href="/blog/suplementos-vitaminas-parkinson/">Suplementos y vitaminas para el Parkinson</a>.</li>
+                        <li><a href="/blog/que-es-neuronutricion/">Qué es la neuronutrición y cuándo se necesita</a>.</li>
+                    </ul>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué alimentos tienen dopamina?</p>
+                        <p>El plátano, sobre todo su cáscara, contiene dopamina, y otras frutas y verduras en menor cantidad. Pero esa dopamina no cruza la barrera hematoencefálica, así que no llega al cerebro.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cómo puedo aumentar la dopamina con la alimentación?</p>
+                        <p>Asegurando proteína suficiente, que aporta tirosina y fenilalanina, y cofactores como hierro, vitamina B6 y folato. El cuerpo fabrica su propia dopamina con estos ingredientes.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿El plátano sube la dopamina del cerebro?</p>
+                        <p>No. Aunque contiene dopamina, esta se metaboliza en el intestino y el hígado y no cruza al cerebro. El plátano es un buen alimento, pero no un estimulante de dopamina.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Las habas sirven para el Parkinson?</p>
+                        <p>Contienen L-dopa natural y un estudio pequeño mostró mejoría temporal, pero la dosis es impredecible y pueden causar efectos adversos o favismo. Nunca las uses en lugar de tu medicación.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Es segura la Mucuna pruriens?</p>
+                        <p>No se recomienda sin supervisión. Contiene L-dopa en cantidades variables y puede sumarse a tu medicación y provocar efectos adversos. Consulta siempre a tu neurólogo.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Por qué la proteína afecta a la levodopa?</p>
+                        <p>Los aminoácidos de la proteína compiten con la levodopa por los mismos transportadores. En algunas personas con fluctuaciones, redistribuir la proteína con supervisión puede ayudar.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Sirven los suplementos para aumentar la dopamina?</p>
+                        <p>No hay evidencia sólida. Los suplementos con dopamina no llegan al cerebro y los de L-dopa natural tienen dosis poco controladas. Prioriza la alimentación y consulta antes de suplementar.</p>
+                    </div>
+
+                    <h2 id="referencias">Referencias</h2>
+                    <ol style="font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=High%20content%20of%20dopamine%2C%20a%20strong%20antioxidant%2C%20in%20Cavendish%20banana" target="_blank" rel="noopener noreferrer">Kanazawa K, Sakakibara H. High content of dopamine, a strong antioxidant, in Cavendish banana. J Agric Food Chem. 2000.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Improvement%20of%20parkinsonian%20features%20correlate%20with%20high%20plasma%20levodopa%20values%20after%20broad%20bean%20%28Vicia%20faba%29%20consumption" target="_blank" rel="noopener noreferrer">Rabey JM, et al. Improvement of parkinsonian features correlate with high plasma levodopa values after broad bean (Vicia faba) consumption. J Neurol Neurosurg Psychiatry. 1992.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Mucuna%20pruriens%20in%20Parkinson%27s%20disease%3A%20a%20double%20blind%20clinical%20and%20pharmacological%20study" target="_blank" rel="noopener noreferrer">Katzenschlager R, et al. Mucuna pruriens in Parkinson's disease: a double blind clinical and pharmacological study. J Neurol Neurosurg Psychiatry. 2004.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Low-protein%20and%20protein-redistribution%20diets%20for%20Parkinson%27s%20disease%20patients%20with%20motor%20fluctuations%3A%20a%20systematic%20review" target="_blank" rel="noopener noreferrer">Cereda E, et al. Low-protein and protein-redistribution diets for Parkinson's disease patients with motor fluctuations: a systematic review. Mov Disord. 2010.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ESPEN%20guideline%20clinical%20nutrition%20in%20neurology" target="_blank" rel="noopener noreferrer">Burgos R, et al. ESPEN guideline clinical nutrition in neurology. Clin Nutr. 2018.</a></li>
+                    </ol>
+
+                    <div class="highlight-box" style="margin-top: 2rem;">
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico o neurólogo. No sustituyas, combines ni suspendas medicamentos, ni inicies suplementos, sin supervisión profesional.</p>
+                    </div>
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica para Parkinson y salud cerebral. Consulta presencial en Del Valle o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/alimentos-prohibidos-parkinson/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-01/hero.webp" srcset="/assets/img/blog/post-01/hero-w480.webp 480w, /assets/img/blog/post-01/hero-w960.webp 960w, /assets/img/blog/post-01/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Alimentos prohibidos en Parkinson</h3>
+                            <p>Qué evitar y cómo proteger la eficacia de tu medicación.</p>
+                            <a href="/blog/guias-nutricionales/alimentos-prohibidos-parkinson/" class="btn-text" aria-label="Leer: Alimentos prohibidos en Parkinson">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/suplementos-vitaminas-parkinson/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-suplementos/hero.webp" srcset="/assets/img/blog/post-suplementos/hero-w480.webp 480w, /assets/img/blog/post-suplementos/hero-w960.webp 960w, /assets/img/blog/post-suplementos/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Suplementos y vitaminas para el Parkinson</h3>
+                            <p>Qué ayuda, qué no, y el cuidado con la vitamina B6 y levodopa.</p>
+                            <a href="/blog/suplementos-vitaminas-parkinson/" class="btn-text" aria-label="Leer: Suplementos y vitaminas para el Parkinson">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/magnesio-y-parkinson/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-magnesio/hero.webp" srcset="/assets/img/blog/post-magnesio/hero-w480.webp 480w, /assets/img/blog/post-magnesio/hero-w960.webp 960w, /assets/img/blog/post-magnesio/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Magnesio y Parkinson: qué dice la evidencia</h3>
+                            <p>Formas de magnesio, estudios y su interacción con la levodopa.</p>
+                            <a href="/blog/magnesio-y-parkinson/" class="btn-text" aria-label="Leer: Magnesio y Parkinson: qué dice la evidencia">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

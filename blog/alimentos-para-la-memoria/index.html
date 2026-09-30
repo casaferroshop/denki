@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Alimentos para la memoria: qué dice la ciencia | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Alimentos para la memoria con mejor respaldo científico, qué es la dieta MIND y qué mostraron sus estudios, qué limitar y cuándo consultar por olvidos.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Alimentos para la memoria: qué dice la ciencia | Clínica Denki">
+    <meta property="og:description" content="Alimentos para la memoria con mejor respaldo científico, qué es la dieta MIND y qué mostraron sus estudios, qué limitar y cuándo consultar por olvidos.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/alimentos-para-la-memoria/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-memoria/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alimentos para la memoria: qué dice la ciencia | Clínica Denki">
+    <meta name="twitter:description" content="Alimentos para la memoria con mejor respaldo científico, qué es la dieta MIND y qué mostraron sus estudios, qué limitar y cuándo consultar por olvidos.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-memoria/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/alimentos-para-la-memoria/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Alimentos para la memoria: qué dice la ciencia",
+    "url": "https://www.clinicadenki.mx/blog/alimentos-para-la-memoria/",
+    "image": "https://www.clinicadenki.mx/assets/img/blog/post-memoria/hero.webp",
+    "datePublished": "2026-09-30",
+    "dateModified": "2026-09-30",
+    "author": {
+        "@type": "Person",
+        "name": "Dra. Lucy Anita Camberos Luna"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Clínica Denki",
+        "url": "https://www.clinicadenki.mx/"
+    },
+    "description": "Qué alimentos y patrones de alimentación se asocian con mejor salud cerebral, qué es la dieta MIND y qué mostraron sus estudios, deficiencias que afectan la memoria y cuándo consultar.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.clinicadenki.mx/blog/alimentos-para-la-memoria/"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.clinicadenki.mx/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.clinicadenki.mx/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Alimentos para la memoria",
+            "item": "https://www.clinicadenki.mx/blog/alimentos-para-la-memoria/"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Qué alimentos son buenos para la memoria?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Los que tienen mejor respaldo forman parte de un patrón de alimentación: verduras de hoja verde, frutos rojos, nueces, pescado graso, leguminosas, aceite de oliva y cereales integrales. Ningún alimento aislado mejora la memoria por sí solo."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué es la dieta MIND?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Es un patrón de alimentación que combina la dieta mediterránea y la dieta DASH. Favorece 10 grupos de alimentos, como verduras de hoja verde, frutos rojos, nueces y pescado, y limita 5, como carnes rojas, mantequilla, queso, postres y frituras."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿La dieta MIND previene el Alzheimer?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Un estudio observacional de 2015 la asoció con menor riesgo de Alzheimer, pero un ensayo clínico de 2023 no encontró diferencia significativa frente a una dieta control. Hoy no se puede afirmar que una dieta prevenga el Alzheimer."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿El omega-3 mejora la memoria?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El omega-3 del pescado es importante para el cerebro y el pescado forma parte de los patrones asociados con mejor salud cognitiva. Los suplementos no han mostrado beneficios claros en personas sin deficiencia; consulta antes de tomarlos."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿La falta de vitamina B12 causa olvidos?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí puede. La deficiencia de vitamina B12 puede causar olvidos, confusión y hormigueo. Es más frecuente en adultos mayores y en personas que toman metformina. Se detecta con un estudio de sangre."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿El café es bueno para la memoria?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El café con moderación puede formar parte de una alimentación saludable y ayuda a la atención a corto plazo, pero no hay evidencia de que prevenga la pérdida de memoria. Evita tomarlo con mucho azúcar o por la noche."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuándo debo preocuparme por los olvidos?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Consulta a tu médico o a un neurólogo si los olvidos afectan tu vida diaria, repites las mismas preguntas, te pierdes en lugares conocidos o tus familiares notan cambios de personalidad o de juicio."
+            }
+        }
+    ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Neurología</span>
+                    <h1>Alimentos para la memoria: qué dice la ciencia</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 11 min de lectura</span>
+                        <span>📅 Actualizado: Sep 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-memoria/hero.webp" srcset="/assets/img/blog/post-memoria/hero-w480.webp 480w, /assets/img/blog/post-memoria/hero-w960.webp 960w, /assets/img/blog/post-memoria/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRuoAAABXRUJQVlA4IN4AAADQBQCdASogACAAPu1mqk8ppaOiKA1RMB2JYwDChbAxk12VcdsiX/f5OgZu24YtblRJC9uZ4eSAAP75bkXfHVvlcwLHWlmFseYSsbPSJ5rnCrgTcquPhHXpuSHeh/YHbaJTzWbdCN6ssg16S2Dq15er4GCXXNKk0RkxTCewAqLeFvtjXiPXa4QnTCYM0Bi967qlNERLc++T/iP7xmmHXFxxawjNGM6O+/hMx0gPc86Euv2Q0J2/UFMxvMQyCdbbqeeTwUv8lL6xId76Yh5F1fgsGp5fRccGUZiUeRrfAAA=);background-size:cover;background-position:center" alt="Alimentos para la memoria como nueces, frutos rojos, verduras de hoja verde y pescado - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+                    <p class="lead" style="border: none; padding: 0;">Si buscas <strong>alimentos para la memoria</strong>, empecemos
+                        con honestidad: ningún alimento por sí solo "mejora la memoria". Lo que la ciencia respalda es un
+                        <strong>patrón de alimentación</strong> rico en verduras, frutos rojos, nueces, pescado, leguminosas y aceite
+                        de oliva, sostenido en el tiempo y acompañado de ejercicio, buen sueño, control de la presión y la glucosa,
+                        cuidado de la audición y vida social activa.</p>
+
+                    <p>En esta guía te contamos qué alimentos tienen mejor respaldo, qué es la dieta MIND y qué mostraron sus
+                        estudios (incluido un ensayo reciente sin diferencias), qué conviene limitar, qué deficiencias de nutrientes
+                        pueden afectar la memoria y cuándo los olvidos merecen una consulta médica.</p>
+
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — septiembre 2026.
+                    </p>
+
+                    <div class="post-toc">
+                        <h4>Contenido de este artículo</h4>
+                        <ul>
+                            <li><a href="#evidencia">Qué dice la evidencia</a></li>
+                            <li><a href="#alimentos">10 alimentos con mejor respaldo</a></li>
+                            <li><a href="#dieta-mind">La dieta MIND explicada</a></li>
+                            <li><a href="#limitar">Qué limitar</a></li>
+                            <li><a href="#deficiencias">Nutrientes cuya deficiencia afecta la memoria</a></li>
+                            <li><a href="#estilo-de-vida">Más allá del plato: estilo de vida</a></li>
+                            <li><a href="#cuando-consultar">Cuándo consultar por olvidos</a></li>
+                            <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="evidencia">¿Qué alimentos ayudan a la memoria? Lo que dice la evidencia</h2>
+                    <p>El cerebro es un órgano con alta demanda de energía y nutrientes. Una revisión clásica publicada en
+                        <em>Nature Reviews Neuroscience</em> describió cómo los ácidos grasos omega-3, los flavonoides de frutas y
+                        verduras, y las vitaminas del complejo B participan en la función neuronal y la plasticidad cerebral, mientras
+                        que las dietas altas en grasas saturadas y azúcar se asocian con peor desempeño cognitivo.</p>
+                    <p>Sin embargo, la memoria depende de mucho más que la comida. El reporte 2024 de la Comisión
+                        <em>Lancet</em> sobre prevención de la demencia identificó <strong>14 factores de riesgo modificables</strong>,
+                        entre ellos la hipertensión, la diabetes, el colesterol LDL alto, la inactividad física, el tabaquismo, el
+                        consumo excesivo de alcohol, la pérdida de audición y de visión, la depresión y el aislamiento social. Según
+                        sus estimaciones, atender estos factores podría prevenir o retrasar cerca de la mitad de los casos de
+                        demencia a nivel poblacional.</p>
+
+                    <div class="highlight-box">
+                        <p>💡 <strong>Idea clave:</strong> la alimentación es una pieza importante del cuidado cerebral, pero funciona
+                            mejor como parte de un conjunto: movimiento, sueño, control de enfermedades crónicas y relaciones
+                            sociales. Ningún superalimento compensa lo demás.</p>
+                    </div>
+
+                    <h2 id="alimentos">10 alimentos y grupos con mejor respaldo para la salud cerebral</h2>
+                    <p>Estos alimentos aparecen de forma consistente en los patrones de alimentación asociados con mejor salud
+                        cognitiva, como la dieta mediterránea y la dieta MIND. Las porciones son orientativas para adultos sanos:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                            <thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Alimento o grupo</th><th style="padding: 1rem; text-align: left;">Nutriente o compuesto de interés</th><th style="padding: 1rem; text-align: left;">Porción sugerida</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Verduras de hoja verde</strong> (espinaca, acelga, quelites)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Folato, vitamina K, luteína</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 taza cruda o ½ taza cocida, casi a diario</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Frutos rojos</strong> (fresa, zarzamora, arándano)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Flavonoides (antocianinas)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza, al menos 2 veces por semana</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Nueces y oleaginosas</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Grasas insaturadas, vitamina E, omega-3 vegetal (nuez)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Un puñito (unos 30 g), la mayoría de los días</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Pescado graso</strong> (salmón, sardina, atún, macarela)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Omega-3 DHA y EPA</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 porción, al menos 1 vez por semana</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Leguminosas</strong> (frijol, lenteja, garbanzo)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fibra, folato, proteína vegetal</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza cocida, varias veces por semana</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Aceite de oliva</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Grasas monoinsaturadas, polifenoles</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Como grasa principal para cocinar y aderezar</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Cereales integrales</strong> (avena, tortilla de maíz, arroz integral)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fibra, vitaminas del complejo B</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En la mayoría de las comidas, en lugar de refinados</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Huevo</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Colina, vitamina B12, luteína</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 pieza al día puede formar parte de una dieta equilibrada</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Cacao y café</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Flavonoides, cafeína</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Con moderación y sin exceso de azúcar</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Agua</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hidratación</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Según tus necesidades; en adultos mayores la sed disminuye</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>El orden no importa tanto como la constancia. Un plato mexicano como unas lentejas con verduras, tortilla
+                        de maíz y una ensalada de nopales con aceite de oliva cumple con varios de estos grupos a la vez. En personas
+                        mayores, la hidratación merece atención especial, porque la deshidratación puede causar confusión.</p>
+
+                    <h2 id="dieta-mind">La dieta MIND explicada</h2>
+                    <p>La dieta MIND combina elementos de la dieta mediterránea y de la dieta DASH (diseñada para la presión
+                        arterial), con énfasis en alimentos relacionados con la salud cerebral. Propone <strong>10 grupos a
+                        favorecer</strong> (verduras de hoja verde, otras verduras, nueces, frutos rojos, leguminosas, cereales
+                        integrales, pescado, aves, aceite de oliva y, en la versión original, vino) y <strong>5 grupos a
+                        limitar</strong> (carnes rojas, mantequilla y margarina, queso, pan dulce y postres, y frituras o comida
+                        rápida).</p>
+                    <p><strong>Lo que mostró el primer estudio (2015):</strong> en un estudio observacional con adultos mayores
+                        de Chicago, quienes seguían más de cerca la dieta MIND tuvieron un riesgo significativamente menor de
+                        desarrollar Alzheimer durante el seguimiento. Al ser observacional, muestra una asociación, no una relación
+                        de causa y efecto: quienes comen mejor suelen tener también otros hábitos saludables.</p>
+                    <p><strong>Lo que mostró el ensayo clínico (2023):</strong> un ensayo aleatorizado publicado en el <em>New
+                        England Journal of Medicine</em> comparó durante tres años la dieta MIND con una dieta control en adultos
+                        mayores sin deterioro cognitivo; ambos grupos tenían una leve restricción de calorías. Los dos grupos
+                        mejoraron su función cognitiva, pero <strong>no hubo una diferencia significativa entre ellos</strong>.</p>
+                    <p>¿Cómo interpretarlo con prudencia? El ensayo no demuestra que la dieta MIND "no sirva": pudo influir la
+                        duración, que el grupo control también mejoró su alimentación o que los participantes ya estaban
+                        relativamente sanos. Lo que sí indica es que no hay evidencia sólida para prometer que una dieta específica
+                        prevenga la pérdida de memoria. Profundizamos en el tema en nuestra guía de
+                        <a href="/blog/guias-nutricionales/nutricion-y-alzheimer/">dieta MIND y Alzheimer</a>.</p>
+
+                    <div class="highlight-box">
+                        <p>⚠️ <strong>Sobre el vino:</strong> aunque la versión original de la dieta MIND incluía una copa de vino
+                            al día, hoy no se recomienda empezar a beber para cuidar el cerebro. El consumo excesivo de alcohol es
+                            uno de los factores de riesgo de demencia identificados por la Comisión <em>Lancet</em>.</p>
+                    </div>
+
+                    <h2 id="limitar">Qué limitar para cuidar tu memoria</h2>
+                    <ul>
+                        <li><strong>Ultraprocesados:</strong> botanas, embutidos, cereales azucarados y comidas listas suelen ser
+                            altos en sodio, azúcar y grasas de baja calidad.</li>
+                        <li><strong>Azúcar añadido:</strong> refrescos, jugos industrializados y pan dulce; el exceso favorece el
+                            aumento de peso y la glucosa alta, ambos relacionados con el riesgo cardiovascular y cerebral.</li>
+                        <li><strong>Alcohol:</strong> cuanto menos, mejor para el cerebro.</li>
+                        <li><strong>Frituras y comida rápida:</strong> aportan grasas saturadas y trans que afectan la salud
+                            vascular.</li>
+                    </ul>
+
+                    <h2 id="deficiencias">Nutrientes cuya deficiencia puede afectar la memoria</h2>
+                    <p>Algunos problemas de memoria o concentración tienen una causa nutricional que se puede detectar y
+                        corregir con apoyo médico:</p>
+                    <ul>
+                        <li><strong>Vitamina B12:</strong> su deficiencia puede causar olvidos, confusión, hormigueo y anemia. Es
+                            más frecuente en adultos mayores, en personas que toman metformina o medicamentos para la acidez por
+                            largo tiempo, y en quienes siguen una dieta vegana sin suplementación.</li>
+                        <li><strong>Vitamina D:</strong> los niveles bajos son comunes y se han asociado con peor función cognitiva,
+                            aunque suplementar sin deficiencia no ha mostrado beneficios claros en la memoria.</li>
+                        <li><strong>Hierro:</strong> la anemia por deficiencia de hierro puede causar cansancio y dificultad para
+                            concentrarse.</li>
+                    </ul>
+                    <p>Estas deficiencias se detectan con estudios de laboratorio. No te automediques con suplementos: tu médico
+                        decidirá si necesitas alguno y en qué dosis. Si te interesa el enfoque clínico de la alimentación y el
+                        cerebro, lee <a href="/blog/que-es-neuronutricion/">qué es la neuronutrición</a>.</p>
+
+                    <h2 id="estilo-de-vida">Más allá del plato: el enfoque multidominio</h2>
+                    <p>El estudio finlandés FINGER, publicado en <em>The Lancet</em> en 2015, incluyó a 1,260 adultos de 60 a 77
+                        años con riesgo de deterioro cognitivo. Durante dos años, un grupo recibió una intervención combinada de
+                        alimentación saludable, ejercicio, entrenamiento cognitivo y control de factores de riesgo vascular. Este
+                        grupo tuvo un mejor desempeño en pruebas cognitivas que el grupo control.</p>
+                    <p>La lección práctica es que la combinación de hábitos importa más que cualquier alimento aislado:</p>
+                    <ul>
+                        <li>Actividad física regular, que incluya ejercicio de fuerza.</li>
+                        <li>Sueño suficiente y de buena calidad.</li>
+                        <li>Control de la presión arterial, la glucosa y el colesterol con tu médico.</li>
+                        <li>Revisión de la audición y uso de auxiliares auditivos si los necesitas.</li>
+                        <li>Actividades que estimulen la mente y convivencia frecuente con otras personas.</li>
+                    </ul>
+
+                    <h2 id="cuando-consultar">Cuándo consultar por olvidos</h2>
+                    <p>Olvidar dónde dejaste las llaves de vez en cuando es normal. Consulta con tu médico o con un neurólogo si
+                        notas alguna de estas señales:</p>
+                    <ul>
+                        <li>Olvidos que afectan tu vida diaria, el trabajo o la administración del dinero.</li>
+                        <li>Repetir las mismas preguntas o historias en poco tiempo.</li>
+                        <li>Perderse en lugares conocidos.</li>
+                        <li>Dificultad para seguir una conversación, encontrar palabras o realizar tareas habituales.</li>
+                        <li>Cambios de personalidad, de ánimo o de juicio que notan tus familiares.</li>
+                    </ul>
+                    <p>Una valoración a tiempo permite descartar causas tratables y, si se trata de una enfermedad
+                        neurodegenerativa, planear el cuidado. En Clínica Denki acompañamos a pacientes y familias con
+                        <a href="/nutricion-neurologica/alzheimer/">nutrición clínica para Alzheimer</a>, en coordinación con el
+                        neurólogo tratante.</p>
+
+                    <div class="highlight-box">
+                        <p>🥗 <strong>En resumen práctico:</strong> llena tu plato de verduras, leguminosas, frutos rojos, nueces y
+                            pescado, cocina con aceite de oliva, limita ultraprocesados y alcohol, y acompaña tu alimentación con
+                            ejercicio, sueño y chequeos médicos.</p>
+                    </div>
+
+                    <div class="cta-banner">
+                        <h3>¿Te preocupa tu memoria o la de un familiar?</h3>
+                        <p>En Clínica Denki evaluamos tu alimentación, tus estudios y tu medicación para diseñar un plan de neuronutrición coordinado con tu médico. Consulta presencial en CDMX o videoconsulta para toda la República.</p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+                    </div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué alimentos son buenos para la memoria?</p>
+                        <p>Los que tienen mejor respaldo forman parte de un patrón de alimentación: verduras de hoja verde, frutos rojos, nueces, pescado graso, leguminosas, aceite de oliva y cereales integrales. Ningún alimento aislado mejora la memoria por sí solo.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué es la dieta MIND?</p>
+                        <p>Es un patrón de alimentación que combina la dieta mediterránea y la dieta DASH. Favorece 10 grupos de alimentos, como verduras de hoja verde, frutos rojos, nueces y pescado, y limita 5, como carnes rojas, mantequilla, queso, postres y frituras.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La dieta MIND previene el Alzheimer?</p>
+                        <p>Un estudio observacional de 2015 la asoció con menor riesgo de Alzheimer, pero un ensayo clínico de 2023 no encontró diferencia significativa frente a una dieta control. Hoy no se puede afirmar que una dieta prevenga el Alzheimer.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿El omega-3 mejora la memoria?</p>
+                        <p>El omega-3 del pescado es importante para el cerebro y el pescado forma parte de los patrones asociados con mejor salud cognitiva. Los suplementos no han mostrado beneficios claros en personas sin deficiencia; consulta antes de tomarlos.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La falta de vitamina B12 causa olvidos?</p>
+                        <p>Sí puede. La deficiencia de vitamina B12 puede causar olvidos, confusión y hormigueo. Es más frecuente en adultos mayores y en personas que toman metformina. Se detecta con un estudio de sangre.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿El café es bueno para la memoria?</p>
+                        <p>El café con moderación puede formar parte de una alimentación saludable y ayuda a la atención a corto plazo, pero no hay evidencia de que prevenga la pérdida de memoria. Evita tomarlo con mucho azúcar o por la noche.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuándo debo preocuparme por los olvidos?</p>
+                        <p>Consulta a tu médico o a un neurólogo si los olvidos afectan tu vida diaria, repites las mismas preguntas, te pierdes en lugares conocidos o tus familiares notan cambios de personalidad o de juicio.</p>
+                    </div>
+
+                    <h2 id="referencias">Referencias</h2>
+                    <ol style="font-size: 0.9rem;">
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=MIND%20diet%20associated%20with%20reduced%20incidence%20of%20Alzheimer%27s%20disease" target="_blank" rel="noopener noreferrer">Morris MC, et al. MIND diet associated with reduced incidence of Alzheimer&#x27;s disease. Alzheimers Dement. 2015.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Trial%20of%20the%20MIND%20Diet%20for%20Prevention%20of%20Cognitive%20Decline%20in%20Older%20Persons" target="_blank" rel="noopener noreferrer">Barnes LL, et al. Trial of the MIND Diet for Prevention of Cognitive Decline in Older Persons. N Engl J Med. 2023.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Dementia%20prevention%2C%20intervention%2C%20and%20care%3A%202024%20report%20of%20the%20Lancet%20standing%20Commission" target="_blank" rel="noopener noreferrer">Livingston G, et al. Dementia prevention, intervention, and care: 2024 report of the Lancet standing Commission. Lancet. 2024.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=A%202%20year%20multidomain%20intervention%20of%20diet%2C%20exercise%2C%20cognitive%20training%2C%20and%20vascular%20risk%20monitoring%20versus%20control%20to%20prevent%20cognitive%20decline%20in%20at-risk%20elderly%20people%20%28FINGER%29%3A%20a%20randomised%20controlled%20trial" target="_blank" rel="noopener noreferrer">Ngandu T, et al. A 2 year multidomain intervention of diet, exercise, cognitive training, and vascular risk monitoring versus control to prevent cognitive decline in at-risk elderly people (FINGER): a randomised controlled trial. Lancet. 2015.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Brain%20foods%3A%20the%20effects%20of%20nutrients%20on%20brain%20function" target="_blank" rel="noopener noreferrer">Gómez-Pinilla F. Brain foods: the effects of nutrients on brain function. Nat Rev Neurosci. 2008.</a></li>
+                    </ol>
+
+                    <div class="highlight-box" style="margin-top: 2rem;">
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico o neurólogo. La evidencia sobre alimentación y memoria proviene en gran parte de estudios observacionales. No inicies ni suspendas suplementos o medicamentos sin supervisión profesional.</p>
+                    </div>
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Neuronutrición y salud cerebral basada en evidencia. Consulta presencial en Del Valle o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/nutricion-y-alzheimer/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-alzheimer/hero.webp" srcset="/assets/img/blog/post-alzheimer/hero-w480.webp 480w, /assets/img/blog/post-alzheimer/hero-w960.webp 960w, /assets/img/blog/post-alzheimer/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Nutrición y Alzheimer: dieta MIND</h3>
+                            <p>Dieta MIND, hidratación y cuidados alimentarios en demencia.</p>
+                            <a href="/blog/guias-nutricionales/nutricion-y-alzheimer/" class="btn-text" aria-label="Leer: Nutrición y Alzheimer: dieta MIND">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/que-es-neuronutricion/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-neuronutricion/hero.webp" srcset="/assets/img/blog/post-neuronutricion/hero-w480.webp 480w, /assets/img/blog/post-neuronutricion/hero-w960.webp 960w, /assets/img/blog/post-neuronutricion/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Qué es la neuronutrición</h3>
+                            <p>Cómo la alimentación clínica apoya la salud del cerebro.</p>
+                            <a href="/blog/que-es-neuronutricion/" class="btn-text" aria-label="Leer: Qué es la neuronutrición">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/hidratacion-alzheimer/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-hidratacion/hero.webp" srcset="/assets/img/blog/post-hidratacion/hero-w480.webp 480w, /assets/img/blog/post-hidratacion/hero-w960.webp 960w, /assets/img/blog/post-hidratacion/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Hidratación en Alzheimer</h3>
+                            <p>Qué hacer si una persona con Alzheimer no quiere tomar agua.</p>
+                            <a href="/blog/hidratacion-alzheimer/" class="btn-text" aria-label="Leer: Hidratación en Alzheimer">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

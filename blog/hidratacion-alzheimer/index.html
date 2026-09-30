@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Hidratación en Alzheimer: guía para cuidadores | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Si tu familiar con Alzheimer no quiere tomar agua: señales de deshidratación, cuánto líquido necesita, 12 estrategias y cómo darle líquidos seguros.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Hidratación en Alzheimer: guía para cuidadores | Clínica Denki">
+    <meta property="og:description" content="Si tu familiar con Alzheimer no quiere tomar agua: señales de deshidratación, cuánto líquido necesita, 12 estrategias y cómo darle líquidos seguros.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/hidratacion-alzheimer/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-hidratacion/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hidratación en Alzheimer: guía para cuidadores | Clínica Denki">
+    <meta name="twitter:description" content="Si tu familiar con Alzheimer no quiere tomar agua: señales de deshidratación, cuánto líquido necesita, 12 estrategias y cómo darle líquidos seguros.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-hidratacion/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/hidratacion-alzheimer/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hidratación en Alzheimer: guía práctica para cuidadores",
+    "url": "https://www.clinicadenki.mx/blog/hidratacion-alzheimer/",
+    "image": "https://www.clinicadenki.mx/assets/img/blog/post-hidratacion/hero.webp",
+    "datePublished": "2026-09-30",
+    "dateModified": "2026-09-30",
+    "author": {
+        "@type": "Person",
+        "name": "Dra. Lucy Anita Camberos Luna"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Clínica Denki",
+        "url": "https://www.clinicadenki.mx/"
+    },
+    "description": "Si tu familiar con Alzheimer no quiere tomar agua: señales de deshidratación, cuánto líquido necesita, 12 estrategias y cómo darle líquidos seguros.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.clinicadenki.mx/blog/hidratacion-alzheimer/"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.clinicadenki.mx/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.clinicadenki.mx/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Hidratación en Alzheimer",
+            "item": "https://www.clinicadenki.mx/blog/hidratacion-alzheimer/"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Por qué una persona con Alzheimer no quiere tomar agua?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Con la edad disminuye la sensación de sed, y la demencia añade olvido, dificultad para usar el vaso y, en etapas avanzadas, problemas para tragar. No suele ser rechazo voluntario."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuánta agua debe tomar un adulto mayor con Alzheimer?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Como referencia, la guía ESPEN de geriatría propone alrededor de 1.6 litros al día en mujeres y 2.0 litros en hombres, salvo que el médico indique otra cantidad por problemas cardiacos o renales."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cómo saber si mi familiar está deshidratado?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Orina escasa u oscura, más confusión o somnolencia, mareo al levantarse, boca seca y estreñimiento pueden ser señales, aunque ninguna es infalible. El médico puede confirmarlo con estudios."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿La deshidratación empeora la confusión en la demencia?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, puede contribuir a un delirium o confusión aguda y favorece infecciones urinarias. Un cambio brusco de conducta amerita valoración médica."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué hago si se atraganta al tomar agua?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No insistas con agua natural y busca una evaluación de la deglución. El equipo clínico indicará si necesita líquidos espesados y en qué nivel IDDSI."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Los alimentos cuentan para la hidratación?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Pepino, sandía, melón, jícama, naranja, caldos y gelatina aportan agua. Si hay disfagia, consulta antes, porque algunos se vuelven líquido fino en la boca."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Puedo usar espesante sin indicación médica?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No es recomendable. El nivel de espesor adecuado depende de una evaluación de la deglución; un nivel incorrecto puede ser inseguro o reducir aún más lo que la persona bebe."
+            }
+        }
+    ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Neurología</span>
+                    <h1>Hidratación en Alzheimer: guía práctica para cuidadores</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 10 min de lectura</span>
+                        <span>📅 Actualizado: Sep 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-hidratacion/hero.webp" srcset="/assets/img/blog/post-hidratacion/hero-w480.webp 480w, /assets/img/blog/post-hidratacion/hero-w960.webp 960w, /assets/img/blog/post-hidratacion/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAADQBQCdASogACAAPtFUoU2oJKMiN+gBABoJQBfoDAToAkb5/0r+pbmHRdq/PURuGnX7d5GrM9OAAP7QbqklPoXvk0P6dMwJwc+NTWq3Af8Uqdbjme8pEri6pdHvxce7AojuosNS8HrZxQAmSCCKnUCo1CdmpQTxQShnHzD0MLTuCkbfouCwqWr6OcNVuFc0QF9ziFiP80RdgIr4xaEQoQNIrDb1f7c0+0L+U9c325MUXjPRlTYn+8zIawEABjvjii1vx/Njq121m1I5D/tMQ/lfe7J9TB834Kih7+6KP5IngAAA);background-size:cover;background-position:center" alt="Cuidadora ofreciendo un vaso de agua a un adulto mayor con Alzheimer - hidratación Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+                    <p class="lead" style="border: none; padding: 0;">La hidratación en el Alzheimer es uno de los cuidados más importantes y más fáciles de pasar por alto. Si tu familiar con Alzheimer no quiere tomar agua, no es terquedad: con la edad disminuye la sensación de sed, y la demencia suma olvido, dificultad para usar el vaso y, en etapas avanzadas, problemas para tragar.</p>
+
+                    <p>La buena noticia es que con estrategias sencillas y constantes se puede mejorar mucho la ingesta de líquidos. En esta guía encontrarás por qué la deshidratación es tan frecuente y peligrosa en la demencia, cómo reconocerla, cuánto líquido se recomienda, 12 estrategias prácticas para cuidadores, alimentos con alto contenido de agua y cómo ofrecer líquidos de forma segura cuando hay disfagia.</p>
+
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — septiembre 2026.
+                    </p>
+
+                    <div class="post-toc">
+                        <h4>Contenido de este artículo</h4>
+                        <ul>
+                            <li><a href="#por-que">Por qué no quiere tomar agua</a></li>
+                            <li><a href="#senales">Señales de deshidratación</a></li>
+                            <li><a href="#cuanto">Cuánto líquido necesita</a></li>
+                            <li><a href="#estrategias">12 estrategias para cuidadores</a></li>
+                            <li><a href="#alimentos">Alimentos con alto contenido de agua</a></li>
+                            <li><a href="#disfagia">Disfagia y líquidos seguros</a></li>
+                            <li><a href="#urgencias">Cuándo acudir a urgencias</a></li>
+                            <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="por-que">¿Por qué una persona con Alzheimer no quiere tomar agua?</h2>
+                    <p>La deshidratación es frecuente en adultos mayores y todavía más en quienes viven con demencia. Hooper et al. (2014) describen que el envejecimiento reduce la sensación de sed y la capacidad de los riñones para concentrar la orina, de modo que se pierde agua con más facilidad y se repone menos. En el Alzheimer se suman otros factores:</p>
+                    <ul>
+                        <li><strong>Menor sensación de sed:</strong> la persona no percibe que necesita beber, aunque esté deshidratada.</li>
+                        <li><strong>Olvido:</strong> no recuerda si ya bebió, deja el vaso a medias o no identifica el vaso como algo para beber.</li>
+                        <li><strong>Apraxia:</strong> dificultad para realizar movimientos aprendidos, como tomar el vaso, llevarlo a la boca o usar un popote.</li>
+                        <li><strong>Disfagia:</strong> en etapas moderadas y avanzadas, tragar líquidos puede provocar tos o atragantamiento, y la persona los rechaza.</li>
+                        <li><strong>Miedo a ir al baño:</strong> algunas personas beben menos para evitar la incontinencia o las salidas nocturnas.</li>
+                        <li><strong>Dependencia de otros:</strong> si no puede servirse sola, bebe solo cuando alguien se lo ofrece.</li>
+                    </ul>
+
+                    <h3>Por qué es peligrosa la deshidratación en la demencia</h3>
+                    <p>La falta de líquidos se asocia con <strong>infecciones urinarias, delirium (confusión aguda), estreñimiento, mareo y caídas</strong>, además de hospitalizaciones que podrían evitarse. Un punto que muchas familias no conocen: un cambio brusco en la conducta o un aumento repentino de la confusión puede deberse a deshidratación o a una infección urinaria, no necesariamente a que la demencia avanzó. Por eso conviene consultar al médico ante cualquier cambio rápido.</p>
+
+                    <h2 id="senales">Señales de deshidratación en adultos mayores con demencia</h2>
+                    <p>Algunas señales son útiles para el cuidador, pero ninguna es infalible. Hooper et al. señalan que signos clásicos como la boca seca o el color de la orina son poco fiables por sí solos en adultos mayores; la confirmación se hace con estudios de laboratorio indicados por el médico.</p>
+
+                    <div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                            <thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Señal</th><th style="padding: 1rem; text-align: left;">Qué observar</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Orina escasa u oscura</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Va menos al baño, el pañal está seco por más tiempo de lo habitual o la orina tiene olor fuerte.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Más confusión o somnolencia</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Está más desorientada, agitada o dormida que en sus días habituales.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Mareo al ponerse de pie</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Se tambalea, se sostiene de los muebles o tiene una caída.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Boca y labios secos</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Labios agrietados, saliva espesa, lengua seca.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Estreñimiento</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Menos evacuaciones o heces más duras que de costumbre.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Cansancio o debilidad</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Menos energía para caminar o participar en actividades cotidianas.</td></tr>
+                                <tr><td style="padding: 1rem;">Cambios en la presión o el pulso</td><td style="padding: 1rem;">Presión baja o pulso rápido, si se miden en casa con indicación médica.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2 id="cuanto">¿Cuánto líquido necesita una persona con Alzheimer?</h2>
+                    <p>La guía ESPEN de nutrición e hidratación en geriatría (Volkert et al., 2019) recomienda como referencia para adultos mayores alrededor de <strong>1.6 litros al día en mujeres y 2.0 litros al día en hombres</strong>, salvo que exista una condición que requiera otra cantidad. Esta cifra incluye todos los líquidos: agua, leche, café, té, caldos y aguas de fruta. Los alimentos con mucha agua también contribuyen.</p>
+
+                    <div class="highlight-box">
+                        <p>⚠️ <strong>Importante:</strong> en personas con insuficiencia cardiaca, enfermedad renal avanzada u otras condiciones, el médico puede indicar una restricción de líquidos. En esos casos, sigue siempre su indicación y no apliques la recomendación general.</p>
+                    </div>
+
+                    <p>Si además hay Parkinson, recuerda que la levodopa suele indicarse con un vaso de agua, y que el temblor, la rigidez y la disfagia pueden hacer más difícil beber. Pregunta a su neurólogo cómo coordinar los líquidos con sus tomas.</p>
+
+                    <h2 id="estrategias">12 estrategias para que tu familiar beba más agua</h2>
+                    <ol>
+                        <li><strong>No esperes a que pida agua:</strong> ofrece líquidos a intervalos regulares durante el día, sin depender de la sed.</li>
+                        <li><strong>Ata los líquidos a rutinas:</strong> un vaso al despertar, con cada comida, con cada medicamento y a media tarde.</li>
+                        <li><strong>Deja el vaso a la vista y al alcance:</strong> lo que no se ve, se olvida.</li>
+                        <li><strong>Usa vasos adecuados:</strong> con asas, de color contrastante con la mesa, ligeros y antiderrame. Evita los vasos transparentes si no los identifica.</li>
+                        <li><strong>Ofrece porciones pequeñas:</strong> medio vaso varias veces es más aceptado que un vaso lleno.</li>
+                        <li><strong>Da ejemplo:</strong> bebe junto con tu familiar; muchas personas con demencia imitan lo que ven.</li>
+                        <li><strong>Da instrucciones simples:</strong> "Toma un trago" funciona mejor que "¿Quieres agua?".</li>
+                        <li><strong>Varía sabores y temperaturas:</strong> agua con rodajas de pepino o naranja, té de manzanilla tibio, leche o aguas de fruta sin azúcar.</li>
+                        <li><strong>Suma alimentos con mucha agua:</strong> fruta, sopas y caldos cuentan para la hidratación.</li>
+                        <li><strong>Concentra los líquidos en el día:</strong> ofrecer más por la mañana y la tarde ayuda a reducir las idas al baño nocturnas.</li>
+                        <li><strong>Lleva un registro sencillo:</strong> anota vasos o marca una botella para detectar días de baja ingesta.</li>
+                        <li><strong>Respeta y reintenta:</strong> si la rechaza, no la fuerces; vuelve a ofrecer en unos minutos con otra bebida o en otro momento.</li>
+                    </ol>
+
+                    <div class="highlight-box">
+                        <p>💡 <strong>Tip para cuidadores:</strong> si el rechazo coincide con tos, carraspeo o voz "mojada" al beber, puede tratarse de disfagia. En ese caso, no insistas con agua natural y busca valoración profesional.</p>
+                    </div>
+
+                    <h2 id="alimentos">Alimentos con alto contenido de agua</h2>
+                    <p>Cuando cuesta beber, la comida puede aportar una parte importante de los líquidos del día. Estas opciones son accesibles y comunes en México:</p>
+
+                    <div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                            <thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Alimento</th><th style="padding: 1rem; text-align: left;">Contenido de agua aprox.</th><th style="padding: 1rem; text-align: left;">Cómo ofrecerlo</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pepino</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">~95%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En bastones o rodajas, con limón</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sandía</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">~92%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En cubos pequeños, sin semillas</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Melón</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">~90%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En cubos o licuado como agua fresca sin azúcar</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Jícama</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">~90%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En bastones delgados (vigila si hay problemas para masticar)</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Naranja</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">~87%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En gajos sin semilla o en jugo natural en porción pequeña</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Gelatina</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Alta (principalmente agua)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">De agua o leche, baja en azúcar</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Caldo o sopa</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Alta</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Caldo de pollo o de verduras a temperatura tibia</td></tr>
+                                <tr><td style="padding: 1rem;">Agua de fruta sin azúcar</td><td style="padding: 1rem;">Alta</td><td style="padding: 1rem;">Jamaica, pepino con limón, melón o guayaba</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>Si hay diabetes, prioriza las aguas sin azúcar y reparte la fruta a lo largo del día. Si hay disfagia, ten en cuenta que la gelatina, las paletas de hielo y frutas muy jugosas como la sandía se convierten en líquido fino en la boca y pueden no ser seguras; consulta antes con el equipo clínico.</p>
+
+                    <h2 id="disfagia">Disfagia y líquidos seguros</h2>
+                    <p>La disfagia es la dificultad para tragar. En demencias avanzadas, los líquidos finos como el agua suelen ser los más difíciles de controlar, y pueden pasar a la vía respiratoria sin que la persona tosa. Para describir las texturas con un lenguaje común se utiliza el marco internacional IDDSI (Cichero et al., 2017), que clasifica las bebidas en cinco niveles:</p>
+
+                    <div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                            <thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Nivel IDDSI</th><th style="padding: 1rem; text-align: left;">Nombre</th><th style="padding: 1rem; text-align: left;">Descripción breve</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">0</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fino (<em>Thin</em>)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fluye como el agua.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Ligeramente espeso (<em>Slightly thick</em>)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Más espeso que el agua, pasa por un popote convencional.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Levemente espeso (<em>Mildly thick</em>)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fluye desde una cuchara; se bebe con cierto esfuerzo por popote.</td></tr>
+                                <tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">3</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Moderadamente espeso (<em>Moderately thick</em>)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Se puede tomar de un vaso o con cuchara; cuesta sorberlo con popote.</td></tr>
+                                <tr><td style="padding: 1rem;">4</td><td style="padding: 1rem;">Extremadamente espeso (<em>Extremely thick</em>)</td><td style="padding: 1rem;">Se come con cuchara; mantiene su forma.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>Algunas etiquetas y textos antiguos usan términos como "néctar", "miel" o "pudín", que corresponden de forma aproximada a los niveles 2, 3 y 4. Hoy se recomienda usar la terminología IDDSI para evitar confusiones. <strong>El nivel adecuado lo indica el equipo clínico después de evaluar la deglución</strong>; espesar "por si acaso" o elegir el nivel por cuenta propia puede ser contraproducente.</p>
+                    <p>Otras medidas que suelen recomendarse, siempre adaptadas por el terapeuta de lenguaje y deglución:</p>
+                    <ul>
+                        <li>Sentar a la persona bien erguida al beber y mantenerla así un rato después.</li>
+                        <li>Ofrecer sorbos pequeños, uno a la vez, sin prisa y sin distracciones.</li>
+                        <li>Evitar dar líquidos con la cabeza inclinada hacia atrás o cuando está somnolienta.</li>
+                        <li>Preparar los espesantes exactamente como indica el fabricante y el equipo clínico.</li>
+                    </ul>
+                    <p>Puedes profundizar en nuestra página de <a href="/nutricion-clinica/disfagia/">manejo nutricional de la disfagia</a> y en la guía de <a href="/blog/guias-nutricionales/alimentacion-disfagia/">alimentación en disfagia</a>.</p>
+
+                    <h2 id="urgencias">¿Cuándo acudir a urgencias?</h2>
+                    <p>Busca atención médica inmediata si observas:</p>
+                    <ul>
+                        <li>Confusión, agitación o somnolencia que aparecen o empeoran de forma repentina.</li>
+                        <li>Dificultad para despertarla o mantenerla despierta.</li>
+                        <li>Orina muy escasa o ausente durante gran parte del día.</li>
+                        <li>Mareo intenso, desmayo o caída.</li>
+                        <li>Fiebre, dolor al orinar u orina con mal olor persistente.</li>
+                        <li>No puede tragar líquidos o se atraganta con dificultad para respirar.</li>
+                        <li>Tos frecuente al comer o beber acompañada de fiebre.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p>🩺 <strong>Regla práctica:</strong> ante un cambio brusco en el estado de tu familiar, no esperes a ver si mejora con más agua. La valoración médica oportuna previene complicaciones.</p>
+                    </div>
+
+                    <p>La hidratación es solo una parte del cuidado nutricional en la demencia. Revisa también nuestra guía de <a href="/blog/guias-nutricionales/nutricion-y-alzheimer/">nutrición y Alzheimer</a> y la página de <a href="/nutricion-neurologica/alzheimer/">atención nutricional en Alzheimer</a>.</p>
+
+                    <div class="cta-banner">
+                        <h3>¿Te cuesta que tu familiar coma y beba lo suficiente?</h3>
+                        <p>En Clínica Denki diseñamos un plan de alimentación e hidratación adaptado a su etapa, su deglución y su rutina, y acompañamos a los cuidadores. Consulta presencial en CDMX o en línea.</p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+                    </div>
+
+                    <h2>Servicios y lecturas relacionados</h2>
+                    <ul>
+                        <li><a href="/nutricion-neurologica/alzheimer/">Nutrición en Alzheimer en Clínica Denki</a>.</li>
+                        <li><a href="/blog/guias-nutricionales/nutricion-y-alzheimer/">Nutrición y Alzheimer: dieta MIND y cuidados alimentarios</a>.</li>
+                        <li><a href="/nutricion-clinica/disfagia/">Tratamiento nutricional de la disfagia</a>.</li>
+                        <li><a href="/nutricion-geriatrica/adulto-mayor/">Nutrición para el adulto mayor</a>.</li>
+                    </ul>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Por qué una persona con Alzheimer no quiere tomar agua?</p>
+                        <p>Con la edad disminuye la sensación de sed, y la demencia añade olvido, dificultad para usar el vaso y, en etapas avanzadas, problemas para tragar. No suele ser rechazo voluntario.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuánta agua debe tomar un adulto mayor con Alzheimer?</p>
+                        <p>Como referencia, la guía ESPEN de geriatría propone alrededor de 1.6 litros al día en mujeres y 2.0 litros en hombres, salvo que el médico indique otra cantidad por problemas cardiacos o renales.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cómo saber si mi familiar está deshidratado?</p>
+                        <p>Orina escasa u oscura, más confusión o somnolencia, mareo al levantarse, boca seca y estreñimiento pueden ser señales, aunque ninguna es infalible. El médico puede confirmarlo con estudios.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La deshidratación empeora la confusión en la demencia?</p>
+                        <p>Sí, puede contribuir a un delirium o confusión aguda y favorece infecciones urinarias. Un cambio brusco de conducta amerita valoración médica.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué hago si se atraganta al tomar agua?</p>
+                        <p>No insistas con agua natural y busca una evaluación de la deglución. El equipo clínico indicará si necesita líquidos espesados y en qué nivel IDDSI.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Los alimentos cuentan para la hidratación?</p>
+                        <p>Sí. Pepino, sandía, melón, jícama, naranja, caldos y gelatina aportan agua. Si hay disfagia, consulta antes, porque algunos se vuelven líquido fino en la boca.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Puedo usar espesante sin indicación médica?</p>
+                        <p>No es recomendable. El nivel de espesor adecuado depende de una evaluación de la deglución; un nivel incorrecto puede ser inseguro o reducir aún más lo que la persona bebe.</p>
+                    </div>
+
+                    <h2 id="referencias">Referencias</h2>
+                    <ol style="font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ESPEN%20guideline%20on%20clinical%20nutrition%20and%20hydration%20in%20geriatrics" target="_blank" rel="noopener noreferrer">Volkert D, et al. ESPEN guideline on clinical nutrition and hydration in geriatrics. Clin Nutr. 2019.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Water-loss%20dehydration%20and%20aging" target="_blank" rel="noopener noreferrer">Hooper L, et al. Water-loss dehydration and aging. Mech Ageing Dev. 2014.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Development%20of%20International%20Terminology%20and%20Definitions%20for%20Texture-Modified%20Foods%20and%20Thickened%20Fluids%20Used%20in%20Dysphagia%20Management%3A%20The%20IDDSI%20Framework" target="_blank" rel="noopener noreferrer">Cichero JAY, et al. Development of International Terminology and Definitions for Texture-Modified Foods and Thickened Fluids Used in Dysphagia Management: The IDDSI Framework. Dysphagia. 2017.</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ESPEN%20guideline%20clinical%20nutrition%20in%20neurology" target="_blank" rel="noopener noreferrer">Burgos R, et al. ESPEN guideline clinical nutrition in neurology. Clin Nutr. 2018.</a></li>
+                    </ol>
+
+                    <div class="highlight-box" style="margin-top: 2rem;">
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración del médico tratante ni del terapeuta de deglución. Si hay restricción de líquidos o disfagia, sigue siempre las indicaciones del equipo clínico.</p>
+                    </div>
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición e hidratación en Alzheimer y demencias, con apoyo a cuidadores. Consulta presencial en Del Valle o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/nutricion-y-alzheimer/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-alzheimer/hero.webp" srcset="/assets/img/blog/post-alzheimer/hero-w480.webp 480w, /assets/img/blog/post-alzheimer/hero-w960.webp 960w, /assets/img/blog/post-alzheimer/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Nutrición y Alzheimer: dieta MIND</h3>
+                            <p>Dieta MIND, hidratación y cuidados alimentarios en demencia.</p>
+                            <a href="/blog/guias-nutricionales/nutricion-y-alzheimer/" class="btn-text" aria-label="Leer: Nutrición y Alzheimer: dieta MIND">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/alimentacion-disfagia/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-05/hero.webp" srcset="/assets/img/blog/post-05/hero-w480.webp 480w, /assets/img/blog/post-05/hero-w960.webp 960w, /assets/img/blog/post-05/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Clínica</span>
+                            <h3>Alimentación en disfagia</h3>
+                            <p>Texturas seguras y cómo adaptar la comida cuando cuesta tragar.</p>
+                            <a href="/blog/guias-nutricionales/alimentacion-disfagia/" class="btn-text" aria-label="Leer: Alimentación en disfagia">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/como-prevenir-sarcopenia/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-04/hero.webp" srcset="/assets/img/blog/post-04/hero-w480.webp 480w, /assets/img/blog/post-04/hero-w960.webp 960w, /assets/img/blog/post-04/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Geriátrica</span>
+                            <h3>Cómo prevenir la sarcopenia</h3>
+                            <p>Proteína, ejercicio y hábitos para conservar la masa muscular.</p>
+                            <a href="/blog/guias-nutricionales/como-prevenir-sarcopenia/" class="btn-text" aria-label="Leer: Cómo prevenir la sarcopenia">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
