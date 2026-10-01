@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Vitamina B12: alimentos y quién necesita más | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Qué alimentos tienen vitamina B12, cuánta necesitas, quién tiene más riesgo de deficiencia (adultos mayores, metformina, veganos) y cómo se diagnostica.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Vitamina B12: alimentos y quién necesita más | Clínica Denki">
+    <meta property="og:description" content="Qué alimentos tienen vitamina B12, cuánta necesitas, quién tiene más riesgo de deficiencia (adultos mayores, metformina, veganos) y cómo se diagnostica.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/vitamina-b12-alimentos/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-b12/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vitamina B12: alimentos y quién necesita más | Clínica Denki">
+    <meta name="twitter:description" content="Qué alimentos tienen vitamina B12, cuánta necesitas, quién tiene más riesgo de deficiencia (adultos mayores, metformina, veganos) y cómo se diagnostica.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-b12/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/vitamina-b12-alimentos/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Vitamina B12: alimentos, deficiencia y quién tiene más riesgo",
+  "url": "https://www.clinicadenki.mx/blog/vitamina-b12-alimentos/",
+  "image": "https://www.clinicadenki.mx/assets/img/blog/post-b12/hero.webp",
+  "datePublished": "2026-10-02",
+  "dateModified": "2026-10-02",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Lucy Anita Camberos Luna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clínica Denki",
+    "url": "https://www.clinicadenki.mx/"
+  },
+  "description": "Guía clínica sobre la vitamina B12: funciones, requerimiento diario, alimentos de origen animal y fortificados que la contienen, grupos de riesgo (adultos mayores, metformina, antiácidos, dieta vegana, cirugía bariátrica), síntomas, diagnóstico y tratamiento.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.clinicadenki.mx/blog/vitamina-b12-alimentos/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.clinicadenki.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.clinicadenki.mx/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Vitamina B12: alimentos",
+      "item": "https://www.clinicadenki.mx/blog/vitamina-b12-alimentos/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué alimentos tienen más vitamina B12?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El hígado y las almejas son los más ricos. También aportan sardina, trucha, salmón, atún, carne de res, leche, yogur y huevo. Las plantas no la contienen, salvo los productos fortificados."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánta vitamina B12 necesito al día?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un adulto necesita 2.4 microgramos al día; 2.6 en el embarazo y 2.8 durante la lactancia. Una porción de pescado o carne y algunos lácteos suelen cubrirla."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La metformina baja la vitamina B12?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Su uso prolongado se asocia con mayor riesgo de deficiencia de B12. No debes suspenderla: lo indicado es que tu médico revise tu B12 periódicamente y la trate si está baja."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los veganos necesitan suplemento de B12?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Las plantas no producen vitamina B12, así que una dieta vegana necesita alimentos fortificados o un suplemento para cubrirla. Las personas vegetarianas que comen huevo y lácteos pueden cubrirla con planeación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son los síntomas de falta de vitamina B12?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cansancio, palidez, hormigueo en manos y pies, pérdida de equilibrio, problemas de memoria y lengua dolorosa. Pueden tener otras causas, así que se confirma con estudios."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La falta de B12 puede causar problemas de memoria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. En adultos mayores puede confundirse con deterioro cognitivo. Por eso el médico suele medir la B12 cuando hay problemas de memoria, ya que es una causa tratable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es mejor la vitamina B12 inyectada o en pastillas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de la causa y la gravedad. La vía oral en dosis altas funciona en muchos casos; las inyecciones se prefieren con síntomas neurológicos importantes. Lo decide tu médico."
+      }
+    }
+  ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Nutrientes</span>
+                    <h1>Vitamina B12: alimentos, deficiencia y quién tiene más riesgo</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 10 min de lectura</span>
+                        <span>📅 Actualizado: Oct 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-b12/hero.webp" srcset="/assets/img/blog/post-b12/hero-w480.webp 480w, /assets/img/blog/post-b12/hero-w960.webp 960w, /assets/img/blog/post-b12/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAABwBQCdASogACAAPu1qr1CppaSiqAqpMB2JQBYdjSv8hE7bDi5AUYVl6BwXMRtZ9jMXhggAAP78eAbB31GGwBNWpxTG68mGQbzyaISPM03if8rzS0LbdP/G0sfs1F78gIoNIgZfklXdBFCp7bFrA3ZsW+rMj2jdduVXwY9Kt4rW3dSR5gVH+6mJm2yHVgsX6HBhfrPXM0LLUHE0/yLNgvuuDGL+T8G2DXAOgzuEBR8m/CKcMbELcvYFwFk9uaNbn58I2f7MBJWS7UpuCGAAAA==);background-size:cover;background-position:center" alt="Alimentos con vitamina B12: hígado, sardina, huevo, leche, yogur y carne de res - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+<p class="lead" style="border: none; padding: 0;">Los <strong>alimentos con vitamina B12</strong> son de origen animal: hígado, almejas, sardina, trucha, atún, carne de res, huevo, leche, yogur y queso. Las plantas no la producen, así que en una dieta vegana las únicas fuentes confiables son los alimentos fortificados y los suplementos. Un adulto necesita 2.4 microgramos al día, una cantidad pequeña que se cubre con facilidad si comes productos animales.</p>
+
+<p>El problema más frecuente no es comer poca B12, sino absorberla mal, algo común en adultos mayores, en personas que toman metformina o antiácidos por años y después de una cirugía bariátrica. En esta guía te explicamos para qué sirve, cuánto aporta cada alimento, quién tiene más riesgo, qué señales vigilar y por qué la deficiencia puede confundirse con problemas de memoria.</p>
+
+<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — octubre 2026.</p>
+
+<div class="post-toc">
+    <h4>Contenido de este artículo</h4>
+    <ul>
+        <li><a href="#para-que-sirve">Para qué sirve la vitamina B12</a></li>
+        <li><a href="#cuanta">Cuánta vitamina B12 necesitas</a></li>
+        <li><a href="#tabla">Tabla de alimentos con vitamina B12</a></li>
+        <li><a href="#absorcion">Cómo se absorbe la B12</a></li>
+        <li><a href="#riesgo">Quién tiene más riesgo de deficiencia</a></li>
+        <li><a href="#senales">Síntomas de deficiencia</a></li>
+        <li><a href="#diagnostico">Diagnóstico y tratamiento</a></li>
+        <li><a href="#suplementos">Suplementos: cuándo sí</a></li>
+        <li><a href="#menu">Menú de un día con B12</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+    </ul>
+</div>
+
+<h2 id="para-que-sirve">¿Para qué sirve la vitamina B12?</h2>
+<p>La vitamina B12, o cobalamina, es indispensable para dos procesos clave:</p>
+<ul>
+    <li><strong>Formar glóbulos rojos sanos.</strong> Sin B12, la médula ósea produce glóbulos rojos grandes e inmaduros que funcionan mal: es la llamada anemia megaloblástica.</li>
+    <li><strong>Mantener el sistema nervioso.</strong> Participa en la formación de la mielina, la capa que protege a los nervios, y en el funcionamiento del cerebro y la médula espinal.</li>
+</ul>
+<p>También interviene en la síntesis del ADN y en el metabolismo de la homocisteína. El hígado guarda reservas que pueden durar años, por eso la deficiencia suele desarrollarse lentamente y pasar inadvertida mucho tiempo.</p>
+
+<h2 id="cuanta">¿Cuánta vitamina B12 necesitas al día?</h2>
+<p>Estas son las ingestas diarias recomendadas del Instituto de Medicina de EE. UU. (IOM):</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Grupo</th><th style="padding: 1rem; text-align: left;">Vitamina B12 al día</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Niños de 1 a 3 años</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">0.9 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Niños de 4 a 8 años</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1.2 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Niños de 9 a 13 años</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1.8 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Adolescentes y adultos (14 años en adelante)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2.4 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Embarazo</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2.6 µg</td></tr>
+<tr><td style="padding: 1rem;">Lactancia</td><td style="padding: 1rem;">2.8 µg</td></tr>
+</tbody>
+</table>
+</div>
+<p>El IOM sugiere que las personas mayores de 50 años obtengan buena parte de su B12 de alimentos fortificados o de un suplemento, porque con la edad disminuye la capacidad de liberar la B12 que viene unida a las proteínas de la comida.</p>
+
+<h2 id="tabla">Tabla de alimentos con vitamina B12 (accesibles en México)</h2>
+<p>Valores aproximados por porción, con base en tablas estándar de composición. Varían según el producto y la preparación.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-b12/tabla.webp" srcset="/assets/img/blog/post-b12/tabla-w480.webp 480w, /assets/img/blog/post-b12/tabla-w960.webp 960w, /assets/img/blog/post-b12/tabla.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADwBACdASogABYAPu1mqE2ppiOiMBgMATAdiUAYmwIeAAfBkLLWOerkJMpNL0E1qOAA/vHImzuapEwuhClL9Kl2uRzcKbbT8QpjGfTXB1Deew3+qVZOHh3PFDDzK02z4TgO3H/AedO8GbJxqXIz4Tupiou3IwixYFgRW87GQLjVIuNISgPAm7uUYLic6Rcs3GOAAA==);background-size:cover;background-position:center" alt="Almejas, sardinas, carne, huevo, leche, yogur y cereal fortificado">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">La B12 está en alimentos de origen animal y fortificados.</figcaption>
+</figure>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Alimento</th><th style="padding: 1rem; text-align: left;">Porción</th><th style="padding: 1rem; text-align: left;">Vitamina B12 aprox.</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Almejas cocidas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">80 µg o más</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hígado de res cocido</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">70 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sardina en lata</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 lata (90 g escurrida)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">8 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Trucha cocida</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">5 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Salmón cocido</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2.6 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Atún en agua, en lata</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2.5 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Carne de res cocida</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1.5-2.5 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Leche de vaca</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 taza (240 ml)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1.2 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur natural</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">¾ de taza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Huevo</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 pieza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">0.5 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pechuga de pollo cocida</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">0.3 µg</td></tr>
+<tr><td style="padding: 1rem;">Cereal o bebida vegetal fortificada</td><td style="padding: 1rem;">1 porción</td><td style="padding: 1rem;">Según etiqueta</td></tr>
+</tbody>
+</table>
+</div>
+<p>Como ves, con una porción de pescado o carne y algunos lácteos al día se supera con holgura el requerimiento. Las cantidades muy altas del hígado y las almejas no son un problema: el cuerpo absorbe solo una fracción y guarda o desecha el resto.</p>
+
+<div class="highlight-box">
+    <p>💡 <strong>Idea clave:</strong> si comes productos animales, casi siempre consumes suficiente B12; lo que suele fallar es la absorción.</p>
+</div>
+
+<h2 id="absorcion">Cómo se absorbe la vitamina B12</h2>
+<p>La absorción de la B12 tiene varios pasos, y cada uno puede fallar:</p>
+<ol>
+    <li>El ácido y las enzimas del estómago la liberan de las proteínas de los alimentos.</li>
+    <li>Se une al <strong>factor intrínseco</strong>, una proteína que produce el estómago.</li>
+    <li>Ese complejo se absorbe al final del intestino delgado (íleon).</li>
+</ol>
+<p>Por eso, problemas del estómago (gastritis atrófica, falta de ácido, cirugía) o del íleon pueden causar deficiencia aunque la dieta sea adecuada. Como describe Stabler (2013), una pequeña parte de la B12 se absorbe sin factor intrínseco cuando se toma en dosis altas; esto explica por qué el tratamiento oral puede funcionar incluso en algunos casos de mala absorción.</p>
+
+<h2 id="riesgo">¿Quién tiene más riesgo de deficiencia de vitamina B12?</h2>
+<ul>
+    <li><strong>Adultos mayores:</strong> la gastritis atrófica y la menor producción de ácido son frecuentes con la edad. Es un punto que revisamos en la <a href="/nutricion-geriatrica/adulto-mayor/">nutrición del adulto mayor</a>.</li>
+    <li><strong>Personas que toman metformina:</strong> en el seguimiento a largo plazo del Diabetes Prevention Program (Aroda, 2016), el uso prolongado de metformina se asoció con mayor riesgo de deficiencia de B12, y el riesgo aumentaba con los años de uso. Por eso conviene revisar periódicamente la B12 en quienes la usan por tiempo prolongado. <strong>No suspendas la metformina</strong>: es un medicamento eficaz y seguro; lo indicado es vigilar la B12 con tu médico. Si vives con diabetes, conoce nuestro servicio de <a href="/nutricion-metabolica/diabetes/">nutrición para diabetes</a>.</li>
+    <li><strong>Uso prolongado de antiácidos:</strong> los inhibidores de la bomba de protones (como omeprazol) y otros medicamentos que reducen el ácido pueden dificultar la liberación de la B12 de los alimentos.</li>
+    <li><strong>Personas vegetarianas y veganas:</strong> las vegetarianas que comen huevo y lácteos pueden cubrirla con planeación; las veganas necesitan alimentos fortificados o un suplemento.</li>
+    <li><strong>Cirugía bariátrica o del estómago,</strong> y cirugías o enfermedades del íleon, como la enfermedad de Crohn.</li>
+    <li><strong>Anemia perniciosa:</strong> una enfermedad autoinmune en la que el cuerpo deja de producir factor intrínseco.</li>
+    <li><strong>Bebés de madres veganas sin suplementación,</strong> que pueden tener deficiencia en los primeros meses.</li>
+</ul>
+
+<h2 id="senales">Síntomas de deficiencia de vitamina B12</h2>
+<p>Los síntomas aparecen de forma gradual y pueden ser muy variados:</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-b12/sintomas.webp" srcset="/assets/img/blog/post-b12/sintomas-w480.webp 480w, /assets/img/blog/post-b12/sintomas-w960.webp 960w, /assets/img/blog/post-b12/sintomas.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBQCdASogABYAPu1kpU4ppaMiMBgMATAdiWIAuwA0b+64aaK44CRH4kVjxw+ZnO97oEwA/vYGHUtlrkvUZKlKaX/IdeZk/pjp6WPwPfvSO56eZWxjlbOZqQXGRdVZO7tuJs1sTHXJpl6QjsC6QxAJYSqJwYEzGqvXIhIe7RjLyXcIJfoD36idKP2h6WTpc5PcCFK/9dlqSdYcAAA=);background-size:cover;background-position:center" alt="Adulta mayor frotándose las manos por hormigueo, acompañada de su hija">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Hormigueo, cansancio u olvidos pueden relacionarse con falta de B12.</figcaption>
+</figure>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-b12/riesgo.webp" srcset="/assets/img/blog/post-b12/riesgo-w480.webp 480w, /assets/img/blog/post-b12/riesgo-w960.webp 960w, /assets/img/blog/post-b12/riesgo.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwBACdASogABYAPu1grVAppSQisBgIATAdiUAYaqdwlTWldwjYbz1WcYSAFkHqGAAA/vcB8q1GGaBo6JApTZ3qoUHaLmteExUkp/7oUOlKziQhLuO3D3QKo4eELuSMckewsNIaN/i0QxCjyEtxvyhzVl+CcaCHUoPMrOX/UfQ8IE4DAEXE1O96/vo2ecDN0n4HxwiwgoyDc2XgAAA=);background-size:cover;background-position:center" alt="Adulto mayor con su pastillero y desayuno">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Adultos mayores y quienes toman metformina tienen más riesgo.</figcaption>
+</figure>
+<ul>
+    <li><strong>De la sangre:</strong> cansancio, debilidad, palidez y falta de aire por anemia.</li>
+    <li><strong>Neurológicos:</strong> hormigueo o adormecimiento en manos y pies, pérdida de equilibrio, dificultad para caminar.</li>
+    <li><strong>Cognitivos y del ánimo:</strong> problemas de memoria y concentración, confusión, irritabilidad o ánimo bajo.</li>
+    <li><strong>Otros:</strong> lengua roja, lisa y dolorosa (glositis) y llagas en la boca.</li>
+</ul>
+<p>Stabler (2013) destaca dos puntos importantes. Primero, los síntomas neurológicos pueden aparecer <strong>sin anemia</strong>, así que una biometría normal no descarta la deficiencia. Segundo, en adultos mayores la deficiencia puede <strong>confundirse con deterioro cognitivo o demencia</strong>; por eso suele incluirse en el estudio de cualquier persona con problemas de memoria, ya que es una causa tratable. Si te interesa la salud cognitiva, revisa nuestra guía de <a href="/blog/alimentos-para-la-memoria/">alimentos para la memoria</a>.</p>
+<p>Ninguno de estos síntomas permite autodiagnosticarse: todos pueden tener otras causas, y la deficiencia se confirma con estudios.</p>
+
+<h2 id="diagnostico">Diagnóstico y tratamiento de la deficiencia de B12</h2>
+<p>El médico suele pedir la concentración de vitamina B12 en sangre y una biometría hemática. Cuando el resultado es limítrofe, puede solicitar ácido metilmalónico u homocisteína, que se elevan cuando falta B12 a nivel celular. También es importante identificar la causa: dieta, medicamentos, gastritis atrófica, anemia perniciosa o problemas intestinales.</p>
+<p>El tratamiento depende de la causa y de la gravedad. Según Stabler (2013), la B12 oral en dosis altas es eficaz en muchos casos, incluso cuando hay problemas de absorción, mientras que las inyecciones se prefieren cuando hay síntomas neurológicos importantes o se necesita una corrección rápida. <strong>La vía, la dosis y la duración las indica el médico</strong>, y en algunos casos el tratamiento es de por vida. Los síntomas neurológicos mejoran más si se trata a tiempo.</p>
+<p>Recuerda que la deficiencia de hierro también causa anemia y cansancio; ambas pueden coexistir. Consulta nuestra guía de <a href="/blog/alimentos-ricos-en-hierro/">alimentos ricos en hierro</a>.</p>
+
+<h2 id="suplementos">Suplementos de vitamina B12: cuándo sí y riesgos</h2>
+<p>Un suplemento o alimentos fortificados tienen sentido en personas veganas, en mayores de 50 años con poca ingesta y cuando el médico confirma deficiencia o un riesgo alto (metformina prolongada, cirugía bariátrica). La B12 tiene baja toxicidad y no se ha establecido un límite superior; aun así:</p>
+<ul>
+    <li>No conviene aplicarse inyecciones "para la energía" sin diagnóstico: no mejoran el cansancio si no hay deficiencia.</li>
+    <li>Suplementar antes de hacer los estudios puede dificultar el diagnóstico de la causa.</li>
+    <li>El ácido fólico en dosis altas puede corregir la anemia y ocultar una deficiencia de B12, mientras el daño neurológico avanza.</li>
+</ul>
+
+<h2 id="menu">Menú de un día con vitamina B12</h2>
+<p>Ejemplo orientativo que supera los 2.4 µg diarios. Las porciones dependen de tu caso.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Tiempo</th><th style="padding: 1rem; text-align: left;">Ejemplo</th><th style="padding: 1rem; text-align: left;">Vitamina B12 aprox.</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Desayuno</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2 huevos a la mexicana, 2 tortillas de maíz, frijoles y 1 vaso de leche</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2.2 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colación</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">¾ de taza de yogur natural con fruta</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Comida</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g de bistec de res asado, arroz, calabacitas y ensalada</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1.5-2.5 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colación</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fruta y un puño de nueces</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">0 µg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Cena</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tostadas de sardina con jitomate y lechuga</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">8 µg</td></tr>
+<tr><td style="padding: 1rem;"><strong>Total</strong></td><td style="padding: 1rem;"></td><td style="padding: 1rem;">Aprox. 12-14 µg</td></tr>
+</tbody>
+</table>
+</div>
+<div class="highlight-box">
+    <p>🥗 <strong>Tip práctico:</strong> si eres vegano, elige una bebida vegetal o un cereal fortificado con B12 y comenta con tu nutriólogo si además necesitas un suplemento.</p>
+</div>
+
+<h2 id="relacionados">Lecturas y servicios relacionados</h2>
+<ul>
+    <li><a href="/blog/alimentos-para-la-memoria/">Alimentos para la memoria: qué dice la ciencia</a>.</li>
+    <li><a href="/nutricion-metabolica/diabetes/">Nutrición para diabetes en CDMX</a>.</li>
+    <li><a href="/nutricion-geriatrica/adulto-mayor/">Nutrición en el adulto mayor</a>.</li>
+    <li><a href="/blog/alimentos-ricos-en-hierro/">Alimentos ricos en hierro y cómo absorberlo</a>.</li>
+</ul>
+
+<div class="cta-banner">
+    <h3>¿Tomas metformina o te preocupa tu vitamina B12?</h3>
+    <p>Revisamos tu alimentación, tus medicamentos y tus estudios para ayudarte, junto con tu médico, a prevenir o corregir deficiencias. Consulta presencial en Del Valle, CDMX, o videoconsulta.</p>
+    <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+    <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+</div>
+
+<h2 id="referencias">Referencias</h2>
+<ol style="padding-left: 1.2rem; line-height: 1.7;">
+    <li>Stabler SP. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Vitamin%20B12%20deficiency." target="_blank" rel="noopener noreferrer">Vitamin B12 deficiency.</a> N Engl J Med. 2013.</li>
+    <li>Aroda VR, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Long-term%20Metformin%20Use%20and%20Vitamin%20B12%20Deficiency%20in%20the%20Diabetes%20Prevention%20Program%20Outcomes%20Study." target="_blank" rel="noopener noreferrer">Long-term Metformin Use and Vitamin B12 Deficiency in the Diabetes Prevention Program Outcomes Study.</a> J Clin Endocrinol Metab. 2016.</li>
+    <li>Volkert D, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ESPEN%20guideline%20on%20clinical%20nutrition%20and%20hydration%20in%20geriatrics." target="_blank" rel="noopener noreferrer">ESPEN guideline on clinical nutrition and hydration in geriatrics.</a> Clin Nutr. 2019.</li>
+    <li>Volkert D, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ESPEN%20guidelines%20on%20nutrition%20in%20dementia." target="_blank" rel="noopener noreferrer">ESPEN guidelines on nutrition in dementia.</a> Clin Nutr. 2015.</li>
+</ol>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+    <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico. La deficiencia de vitamina B12 se confirma con estudios de laboratorio y su tratamiento lo indica el médico. No suspendas la metformina ni otros medicamentos, ni inicies suplementos, sin indicación de tu médico tratante.</p>
+</div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué alimentos tienen más vitamina B12?</p>
+                        <p>El hígado y las almejas son los más ricos. También aportan sardina, trucha, salmón, atún, carne de res, leche, yogur y huevo. Las plantas no la contienen, salvo los productos fortificados.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuánta vitamina B12 necesito al día?</p>
+                        <p>Un adulto necesita 2.4 microgramos al día; 2.6 en el embarazo y 2.8 durante la lactancia. Una porción de pescado o carne y algunos lácteos suelen cubrirla.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La metformina baja la vitamina B12?</p>
+                        <p>Su uso prolongado se asocia con mayor riesgo de deficiencia de B12. No debes suspenderla: lo indicado es que tu médico revise tu B12 periódicamente y la trate si está baja.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Los veganos necesitan suplemento de B12?</p>
+                        <p>Sí. Las plantas no producen vitamina B12, así que una dieta vegana necesita alimentos fortificados o un suplemento para cubrirla. Las personas vegetarianas que comen huevo y lácteos pueden cubrirla con planeación.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuáles son los síntomas de falta de vitamina B12?</p>
+                        <p>Cansancio, palidez, hormigueo en manos y pies, pérdida de equilibrio, problemas de memoria y lengua dolorosa. Pueden tener otras causas, así que se confirma con estudios.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La falta de B12 puede causar problemas de memoria?</p>
+                        <p>Sí. En adultos mayores puede confundirse con deterioro cognitivo. Por eso el médico suele medir la B12 cuando hay problemas de memoria, ya que es una causa tratable.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Es mejor la vitamina B12 inyectada o en pastillas?</p>
+                        <p>Depende de la causa y la gravedad. La vía oral en dosis altas funciona en muchos casos; las inyecciones se prefieren con síntomas neurológicos importantes. Lo decide tu médico.</p>
+                    </div>
+
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica para deficiencias, diabetes y adulto mayor. Consulta presencial en Del Valle
+                            o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/alimentos-para-la-memoria/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-memoria/hero.webp" srcset="/assets/img/blog/post-memoria/hero-w480.webp 480w, /assets/img/blog/post-memoria/hero-w960.webp 960w, /assets/img/blog/post-memoria/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Alimentos para la memoria</h3>
+                            <p>Qué dice la ciencia sobre la alimentación y la salud cognitiva.</p>
+                            <a href="/blog/alimentos-para-la-memoria/" class="btn-text" aria-label="Leer: Alimentos para la memoria">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/dieta-diabetes/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-06/hero.webp" srcset="/assets/img/blog/post-06/hero-w480.webp 480w, /assets/img/blog/post-06/hero-w960.webp 960w, /assets/img/blog/post-06/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Dieta para diabéticos</h3>
+                            <p>Guía práctica con lista de alimentos y menú de 7 días.</p>
+                            <a href="/blog/guias-nutricionales/dieta-diabetes/" class="btn-text" aria-label="Leer: Dieta para diabéticos">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/que-es-neuronutricion/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-neuronutricion/hero.webp" srcset="/assets/img/blog/post-neuronutricion/hero-w480.webp 480w, /assets/img/blog/post-neuronutricion/hero-w960.webp 960w, /assets/img/blog/post-neuronutricion/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Qué es la neuronutrición</h3>
+                            <p>Cómo la alimentación clínica apoya al sistema nervioso y cuándo se necesita.</p>
+                            <a href="/blog/que-es-neuronutricion/" class="btn-text" aria-label="Leer: Qué es la neuronutrición">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

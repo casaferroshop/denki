@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Dieta DASH y alimentos para bajar la presión | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Qué es la dieta DASH, porciones por grupo, alimentos para bajar la presión, dónde se esconde el sodio en México y un menú de 7 días con comida mexicana.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Dieta DASH y alimentos para bajar la presión | Clínica Denki">
+    <meta property="og:description" content="Qué es la dieta DASH, porciones por grupo, alimentos para bajar la presión, dónde se esconde el sodio en México y un menú de 7 días con comida mexicana.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/dieta-dash/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-dash/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dieta DASH y alimentos para bajar la presión | Clínica Denki">
+    <meta name="twitter:description" content="Qué es la dieta DASH, porciones por grupo, alimentos para bajar la presión, dónde se esconde el sodio en México y un menú de 7 días con comida mexicana.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-dash/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/dieta-dash/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Dieta DASH: menú y alimentos para bajar la presión arterial",
+  "url": "https://www.clinicadenki.mx/blog/dieta-dash/",
+  "image": "https://www.clinicadenki.mx/assets/img/blog/post-dash/hero.webp",
+  "datePublished": "2026-10-02",
+  "dateModified": "2026-10-02",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Lucy Anita Camberos Luna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clínica Denki",
+    "url": "https://www.clinicadenki.mx/"
+  },
+  "description": "Guía clínica de la dieta DASH: origen y evidencia (ensayos DASH y DASH-Sodio), porciones por grupo, alimentos para bajar la presión, sodio y etiquetado en México, menú de 7 días y precauciones en enfermedad renal.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.clinicadenki.mx/blog/dieta-dash/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.clinicadenki.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.clinicadenki.mx/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dieta DASH",
+      "item": "https://www.clinicadenki.mx/blog/dieta-dash/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es la dieta DASH?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DASH significa Dietary Approaches to Stop Hypertension (enfoques dietéticos para detener la hipertensión). Es un patrón de alimentación rico en verduras, frutas, lácteos bajos en grasa, cereales integrales, leguminosas y nueces, con poca carne roja, azúcar y sodio. Se diseñó y probó en ensayos clínicos para bajar la presión arterial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto baja la presión con la dieta DASH?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En el ensayo original, la dieta DASH bajó la presión en pocas semanas, con un efecto mayor en personas con hipertensión. El ensayo DASH-Sodio mostró que el efecto aumenta cuando además se reduce el sodio. La respuesta varía entre personas y no sustituye el tratamiento indicado por tu médico."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué alimentos ayudan a bajar la presión arterial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los que forman parte del patrón DASH: verduras de hoja, jitomate, plátano, frijol y otras leguminosas, aguacate, yogur natural, avena y nueces sin sal. Aportan potasio, magnesio, calcio y fibra. Ningún alimento aislado baja la presión por sí solo; funciona el conjunto, junto con menos sodio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánta sal puedo comer al día si tengo presión alta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La Organización Mundial de la Salud recomienda menos de 5 g de sal al día, que equivalen a unos 2 g de sodio. La mayor parte del sodio viene de alimentos procesados, no del salero. Tu médico o nutriólogo puede indicarte una meta más específica según tu caso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El agua de jamaica baja la presión?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Algunos estudios pequeños sugieren un efecto modesto, pero la evidencia es limitada. Puede formar parte de tu alimentación como agua sin azúcar, pero no sustituye a la dieta DASH, a la reducción de sodio ni a los medicamentos indicados por tu médico."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo dejar mis medicamentos para la presión si sigo la dieta DASH?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. La dieta DASH complementa el tratamiento, no lo reemplaza. Si tu presión mejora, tu médico es quien decide si ajusta la dosis. Nunca suspendas ni modifiques medicamentos por tu cuenta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La dieta DASH es segura si tengo enfermedad renal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No siempre. La dieta DASH es rica en potasio y fósforo, que pueden acumularse cuando los riñones no funcionan bien, y algunos medicamentos para la presión también elevan el potasio. Si tienes enfermedad renal, consulta con tu nefrólogo antes de cambiar tu alimentación."
+      }
+    }
+  ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Cardiovascular</span>
+                    <h1>Dieta DASH: menú y alimentos para bajar la presión arterial</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 11 min de lectura</span>
+                        <span>📅 Actualizado: Oct 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-dash/hero.webp" srcset="/assets/img/blog/post-dash/hero-w480.webp 480w, /assets/img/blog/post-dash/hero-w960.webp 960w, /assets/img/blog/post-dash/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRtwAAABXRUJQVlA4INAAAAAQBgCdASogACAAPu1sr1CppiQiqAqpMB2JQBdgtt4wBZbeXNc2/fylaOg86v1iBh2YeNqVOnq4HAAA/vx6QzFYkeJeIvmahHt3XCd2LIqk8Xc6cae2m9LSyQbEuoYerME5kvGsW9FaFGSAvOFFPhJwFPL9WY9O5imaznJN2wBTxuJQGwNpYXMDdiG0pww3ZCaQrLv0pD/x2RgQa1yaKDBK2fnhyWu8XX76fY7TAiJCeZ/xF03NDSfPFRjcQJHLmIbfIZIZKj8stAL3/zydgAAA);background-size:cover;background-position:center" alt="Dieta DASH: verduras, frutas, leguminosas y lácteos para bajar la presión arterial - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+<p class="lead" style="border: none; padding: 0;">La <strong>dieta DASH</strong> es un patrón de alimentación diseñado para bajar la presión arterial. Prioriza verduras, frutas, lácteos bajos en grasa, cereales integrales, leguminosas y nueces, y limita la carne roja, los azúcares y el sodio. A diferencia de muchas dietas de moda, se probó en ensayos clínicos controlados y su efecto es mayor cuando se combina con menos sal.</p>
+
+<p>Si te dijeron que tienes la presión alta o quieres prevenirla, aquí encontrarás qué es la dieta DASH, cuántas porciones de cada grupo se recomiendan, qué <strong>alimentos ayudan a bajar la presión</strong> y por qué, dónde se esconde el sodio en la comida mexicana y un menú de 7 días.</p>
+
+<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — octubre 2026.</p>
+
+<div class="post-toc">
+    <h4>Contenido de este artículo</h4>
+    <ul>
+        <li><a href="#que-es">Qué es la dieta DASH y su origen</a></li>
+        <li><a href="#porciones">Porciones por grupo de alimentos</a></li>
+        <li><a href="#alimentos">Alimentos para bajar la presión</a></li>
+        <li><a href="#sodio">Sodio: dónde se esconde y cómo leer etiquetas</a></li>
+        <li><a href="#menu">Menú de 7 días</a></li>
+        <li><a href="#precauciones">Precauciones</a></li>
+        <li><a href="#para-quien">Para quién conviene</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+    </ul>
+</div>
+
+<h2 id="que-es">¿Qué es la dieta DASH y de dónde viene?</h2>
+<p>DASH son las siglas en inglés de <em>Dietary Approaches to Stop Hypertension</em>, es decir, "enfoques dietéticos para detener la hipertensión". Surgió en Estados Unidos en los años noventa, cuando un grupo de investigadores quiso probar si un patrón de alimentación completo, y no un nutriente aislado, podía bajar la presión arterial.</p>
+<h3>El ensayo DASH original (Appel, 1997)</h3>
+<p>En este ensayo, adultos con presión normal-alta o hipertensión leve recibieron durante ocho semanas toda su comida preparada en una de tres dietas: una dieta control similar a la típica estadounidense, una dieta rica en frutas y verduras, y la dieta "combinada" (lo que hoy llamamos DASH), rica en frutas, verduras y lácteos bajos en grasa y con menos grasa saturada. El sodio y el peso se mantuvieron estables para aislar el efecto del patrón.</p>
+<p>La dieta DASH bajó la presión en apenas dos semanas y el efecto se mantuvo. Fue claramente mayor en las personas con hipertensión: alrededor de 11 mmHg en la presión sistólica y 5.5 mmHg en la diastólica en comparación con la dieta control.</p>
+<h3>DASH-Sodio: el efecto aumenta con menos sal (Sacks, 2001)</h3>
+<p>El segundo gran ensayo combinó la dieta DASH o la dieta control con tres niveles de sodio: alto, intermedio y bajo. Reducir el sodio bajó la presión con ambas dietas, y la combinación de <strong>dieta DASH con el nivel más bajo de sodio</strong> logró el mayor descenso. La conclusión práctica: el patrón y la reducción de sal suman.</p>
+<div class="highlight-box">
+    <p>💡 <strong>Idea clave:</strong> la dieta DASH funciona como un todo. Su efecto viene del conjunto de alimentos, no de un "superalimento", y es mayor si además bajas el sodio.</p>
+</div>
+
+<h2 id="porciones">Porciones de la dieta DASH por grupo de alimentos</h2>
+<p>Estas son las porciones de referencia del patrón DASH para un plan de aproximadamente 2,000 kcal al día. Si necesitas más o menos energía, las cantidades cambian; tómalas como guía, no como receta fija.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-dash/porciones.webp" srcset="/assets/img/blog/post-dash/porciones-w480.webp 480w, /assets/img/blog/post-dash/porciones-w960.webp 960w, /assets/img/blog/post-dash/porciones.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAQBQCdASogABYAPuFcqU2opSQiMAwBEBwJaAC1CL/DA1WCA9C8nzL4LceqX7lB2pagAP7za/8IT5IBZxSZX49+6x2FWVoz8HCHymn171zF7YWj4AEkJxCa++WXlm+iUUvAdlFz1aA3cgMTnJE9BOydoyCj532Vi2yzWWehcJQCD8fAhQ5IEdle4aTolzN6fVGUINmOo3oAAA==);background-size:cover;background-position:center" alt="Tazones con verduras, frutas, yogur, integrales, leguminosas y nueces">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">La DASH prioriza verduras, frutas, lácteos bajos en grasa e integrales.</figcaption>
+</figure>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Grupo</th><th style="padding: 1rem; text-align: left;">Porciones (plan de ~2,000 kcal)</th><th style="padding: 1rem; text-align: left;">Ejemplo de 1 porción</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Verduras</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">4-5 al día</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 taza de verdura cruda de hoja o ½ taza cocida</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Frutas</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">4-5 al día</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 fruta mediana o ½ taza de fruta picada</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Lácteos bajos en grasa</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2-3 al día</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 taza de leche o yogur natural; 40 g aprox. de queso fresco</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Cereales, de preferencia integrales</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">6-8 al día</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 tortilla de maíz, 1 rebanada de pan integral o ½ taza de arroz o avena cocida</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Carnes magras, aves y pescado</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hasta 6 porciones de 30 g al día</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">30 g de pollo, pescado o carne magra cocidos; 1 huevo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Leguminosas, nueces y semillas</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">4-5 a la semana</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza de frijol cocido; ⅓ de taza de nueces; 2 cucharadas de semillas</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Grasas y aceites</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2-3 al día</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 cucharadita de aceite; 1 cucharada de aderezo ligero</td></tr>
+<tr><td style="padding: 1rem;"><strong>Dulces y azúcares añadidos</strong></td><td style="padding: 1rem;">5 o menos a la semana</td><td style="padding: 1rem;">1 cucharada de azúcar, mermelada o miel</td></tr>
+</tbody>
+</table>
+</div>
+<p>Fuente de las porciones: plan DASH del National Heart, Lung, and Blood Institute (NHLBI) de Estados Unidos. En la práctica, un plato DASH se ve así: la mitad de verduras, una cuarta parte de cereal integral o tortilla y una cuarta parte de proteína magra o leguminosas, con fruta y un lácteo al día.</p>
+
+<h2 id="alimentos">Alimentos para bajar la presión arterial</h2>
+<p>Los alimentos del patrón DASH comparten algo: son ricos en <strong>potasio, magnesio, calcio y fibra</strong>, y bajos en sodio. El potasio ayuda al riñón a eliminar sodio y favorece la relajación de los vasos sanguíneos; el magnesio y el calcio participan en la contracción del músculo de los vasos; la fibra se asocia con mejor salud cardiovascular. Ninguno funciona como medicamento, pero juntos forman la base del patrón.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-dash/alimentos.webp" srcset="/assets/img/blog/post-dash/alimentos-w480.webp 480w, /assets/img/blog/post-dash/alimentos-w960.webp 960w, /assets/img/blog/post-dash/alimentos.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACwBQCdASogABYAPu1cqU4ppKOiMBgMATAdiWQAxNwIAKUgxXEePGHjE8aNQHJvG1O7zzBbkiYA/vNuknukIUtkPbe5WIcKuR3uP0X/QfFVaYN7KA36HgMcedL3LAjjiJvuM7a0tPzDNm83VZSjj3AhjQlS64TEJQUSk7XFyf6BTyYTbzUu3Qze7dMz/C8VGaQVH9UyPxO5Y9lRT165x7tSDOPgZ6EHhoK7JP46ckG5DLCH2QLqsAAA);background-size:cover;background-position:center" alt="Plátano, jitomate, espinaca, frijol, aguacate, avena y agua de jamaica">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Alimentos ricos en potasio, magnesio y fibra.</figcaption>
+</figure>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Alimento</th><th style="padding: 1rem; text-align: left;">Qué aporta</th><th style="padding: 1rem; text-align: left;">Cómo incluirlo</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Plátano</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Potasio</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 pieza en el desayuno o como colación</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Jitomate</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Potasio y antioxidantes como el licopeno</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En salsas caseras, ensaladas o caldos</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Espinaca y otras verduras de hoja</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Potasio, magnesio y folato</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Salteadas, en omelette o en ensalada; quelites y acelgas también cuentan</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Frijol y otras leguminosas</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Potasio, magnesio y fibra</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Frijoles de la olla, lentejas o garbanzos varias veces por semana</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Aguacate</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Potasio y grasa insaturada</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Una porción moderada en tacos, tostadas o ensaladas</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Yogur natural y leche baja en grasa</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Calcio, potasio y proteína</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur sin azúcar con fruta; leche en el licuado</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Avena</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fibra soluble y magnesio</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En el desayuno, con fruta y canela</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Nueces, almendras y pepitas sin sal</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Magnesio y grasas insaturadas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Un puñito como colación</td></tr>
+<tr><td style="padding: 1rem;"><strong>Agua de jamaica sin azúcar</strong></td><td style="padding: 1rem;">Polifenoles; evidencia limitada sobre la presión</td><td style="padding: 1rem;">Como alternativa al refresco, sin endulzar</td></tr>
+</tbody>
+</table>
+</div>
+<p>Sobre la jamaica: algunos estudios pequeños sugieren un efecto modesto, pero no es un tratamiento. Su principal ventaja práctica es sustituir bebidas azucaradas.</p>
+
+<h2 id="sodio">Sodio: dónde se esconde en la comida mexicana</h2>
+<p>La mayor parte del sodio que comemos no viene del salero, sino de alimentos procesados y comida preparada fuera de casa. La Organización Mundial de la Salud recomienda menos de <strong>5 g de sal al día</strong>, unos 2 g de sodio, y la guía de prevención cardiovascular de la AHA/ACC (Arnett, 2019) incluye la reducción de sodio entre sus recomendaciones para adultos con presión elevada o hipertensión.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-dash/sodio.webp" srcset="/assets/img/blog/post-dash/sodio-w480.webp 480w, /assets/img/blog/post-dash/sodio-w960.webp 960w, /assets/img/blog/post-dash/sodio.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAADQBACdASogABYAPu1iqE2ppaOiMAgBMB2JYgDCgCG8LYhH2LHVR+/MKpG5FOuN8AD+8czToFKi7vtMhqCUUwkZUjaBCBOz2MPdCKeo+avs+vff87ylQ2qTXkjhT5CEF49SGqBOayxQLmkXPIdat+I/038YdbTXD5bAGIgEZ0Kmdnmyx+Jde1tqZkAUW3xPfCPrpgDdGej1at42Ja4XzPBIAAA=);background-size:cover;background-position:center" alt="Embutidos, sopa instantánea y botanas frente a hierbas frescas">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Embutidos, sopas instantáneas y botanas concentran mucho sodio.</figcaption>
+</figure>
+<p>Fuentes frecuentes de sodio en México:</p>
+<ul>
+    <li><strong>Embutidos:</strong> jamón, salchicha, chorizo, longaniza, tocino.</li>
+    <li><strong>Sopas instantáneas y consomés en cubo o polvo.</strong></li>
+    <li><strong>Botanas:</strong> papas fritas, cacahuates salados, frituras de maíz o harina.</li>
+    <li><strong>Pan:</strong> bolillo, pan de caja y pan dulce, que aportan sodio aunque no sepan salados.</li>
+    <li><strong>Salsas embotelladas,</strong> salsa de soya, salsa inglesa y sazonadores.</li>
+    <li><strong>Quesos maduros,</strong> atún y verduras enlatadas con sal añadida.</li>
+    <li><strong>Comida rápida y antojitos de la calle.</strong></li>
+</ul>
+<h3>Cómo leer etiquetas en México</h3>
+<p>El etiquetado frontal de advertencia facilita la tarea: si un producto tiene el sello octagonal negro <strong>"EXCESO SODIO"</strong>, es una señal para limitarlo o buscar una alternativa. Además:</p>
+<ul>
+    <li>Revisa la tabla nutrimental y compara el sodio por porción entre marcas.</li>
+    <li>Fíjate en el tamaño de la porción: un empaque puede contener varias.</li>
+    <li>Busca en los ingredientes palabras como sal, glutamato monosódico, bicarbonato o fosfato de sodio.</li>
+    <li>Escurre y enjuaga frijoles, atún o verduras enlatadas para reducir parte de la sal.</li>
+</ul>
+<div class="highlight-box">
+    <p>🥗 <strong>Tip práctico:</strong> sazona con limón, ajo, cebolla, cilantro, orégano, comino y chiles. El paladar se acostumbra a menos sal en unas semanas.</p>
+</div>
+
+<h2 id="menu">Menú de 7 días de dieta DASH con comida mexicana</h2>
+<p>Ejemplo orientativo para un adulto sin enfermedad renal. Agrega dos colaciones al día con fruta, yogur natural o un puñito de nueces sin sal. Las porciones se ajustan de forma individual.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Día</th><th style="padding: 1rem; text-align: left;">Desayuno</th><th style="padding: 1rem; text-align: left;">Comida</th><th style="padding: 1rem; text-align: left;">Cena</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Lunes</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Avena con leche baja en grasa, plátano y nuez</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pollo a la plancha; ensalada de espinaca y jitomate; arroz integral; frijoles de la olla</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur natural con papaya y pepitas</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Martes</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Huevo con espinaca, 2 tortillas y salsa casera</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pescado al ajo con verduras al vapor; tortillas; agua de jamaica sin azúcar</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tostadas horneadas de frijol con lechuga, jitomate y queso fresco</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Miércoles</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Licuado de leche con fresas y avena</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Lentejas con verduras; ensalada de nopales; tortillas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sándwich de pan integral con pollo deshebrado, aguacate y jitomate</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Jueves</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur natural con manzana y almendras</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tinga de pollo casera con poca sal; arroz integral; calabacitas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Quesadilla de queso panela con champiñones; fruta</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Viernes</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pan integral con aguacate, jitomate y huevo</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Caldo de verduras con garbanzo; pescado a la talla; tortillas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Licuado de leche con plátano</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Sábado</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Chilaquiles horneados con salsa verde casera y frijoles</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Carne magra asada con nopales y ensalada; tortillas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Ensalada de atún en agua (escurrido) con verduras y galletas integrales</td></tr>
+<tr><td style="padding: 1rem;"><strong>Domingo</strong></td><td style="padding: 1rem;">Molletes de pan integral con frijol y pico de gallo</td><td style="padding: 1rem;">Pollo en caldo con verduras; arroz integral; fruta</td><td style="padding: 1rem;">Avena con leche y fresas</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="precauciones">Precauciones con la dieta DASH</h2>
+<ul>
+    <li><strong>Enfermedad renal crónica:</strong> la dieta DASH es rica en potasio y fósforo. Si tus riñones no funcionan bien, estos minerales pueden acumularse. Consulta con tu nefrólogo antes de aumentar frutas, verduras, leguminosas y lácteos.</li>
+    <li><strong>Medicamentos que elevan el potasio:</strong> algunos fármacos para la presión o el corazón pueden aumentar el potasio en sangre. Si los tomas, coméntalo con tu médico antes de hacer cambios grandes, y evita los sustitutos de sal con cloruro de potasio sin su autorización.</li>
+    <li><strong>Diabetes:</strong> la dieta DASH incluye varias porciones de fruta y cereales; conviene ajustar cantidades para cuidar la glucosa.</li>
+    <li><strong>Intolerancia a la lactosa:</strong> puedes usar leche deslactosada o yogur natural.</li>
+    <li><strong>Medicamentos para la presión:</strong> la dieta los complementa, no los sustituye. Nunca suspendas ni ajustes la dosis sin indicación médica.</li>
+</ul>
+
+<h2 id="para-quien">¿Para quién conviene la dieta DASH?</h2>
+<p>Es útil para adultos con presión normal-alta o hipertensión, para quienes tienen riesgo cardiovascular y como patrón general de alimentación saludable. Es parte de la base que trabajamos en <a href="/nutricion-cardiovascular/">nutrición cardiovascular</a>.</p>
+<p>También es relevante después de un evento vascular cerebral: la guía de prevención secundaria de la AHA/ASA (Kleindorfer, 2021) destaca el control de la presión arterial y la reducción de sodio. Si tú o un familiar tuvieron un infarto cerebral, revisa nuestra página sobre <a href="/nutricion-neurologica/infarto-cerebral/">alimentación después de un infarto cerebral</a>.</p>
+<p>DASH y mediterránea comparten mucho: verduras, frutas, leguminosas, cereales integrales y nueces. La mediterránea pone más énfasis en el aceite de oliva y el pescado; DASH, en los lácteos bajos en grasa y el sodio. Si te interesa comparar, lee nuestra guía de la <a href="/blog/dieta-mediterranea/">dieta mediterránea con menú mexicano</a>.</p>
+
+<div class="cta-banner">
+    <h3>¿Tienes la presión alta y quieres un plan DASH a tu medida?</h3>
+    <p>Revisamos tus estudios, tus medicamentos y tus hábitos para diseñar un plan realista, coordinado con tu médico. Consulta presencial en Del Valle, CDMX, o videoconsulta.</p>
+    <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+    <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+</div>
+
+<h2 id="referencias">Referencias</h2>
+<ol style="padding-left: 1.2rem; line-height: 1.7;">
+    <li>Appel LJ, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=A%20clinical%20trial%20of%20the%20effects%20of%20dietary%20patterns%20on%20blood%20pressure." target="_blank" rel="noopener noreferrer">A clinical trial of the effects of dietary patterns on blood pressure.</a> N Engl J Med. 1997.</li>
+    <li>Sacks FM, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Effects%20on%20blood%20pressure%20of%20reduced%20dietary%20sodium%20and%20the%20Dietary%20Approaches%20to%20Stop%20Hypertension%20%28DASH%29%20diet." target="_blank" rel="noopener noreferrer">Effects on blood pressure of reduced dietary sodium and the Dietary Approaches to Stop Hypertension (DASH) diet.</a> N Engl J Med. 2001.</li>
+    <li>Arnett DK, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=2019%20ACC%2FAHA%20Guideline%20on%20the%20Primary%20Prevention%20of%20Cardiovascular%20Disease." target="_blank" rel="noopener noreferrer">2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease.</a> Circulation. 2019.</li>
+    <li>Kleindorfer DO, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=2021%20Guideline%20for%20the%20Prevention%20of%20Stroke%20in%20Patients%20With%20Stroke%20and%20Transient%20Ischemic%20Attack%3A%20A%20Guideline%20From%20the%20American%20Heart%20Association%2FAmerican%20Stroke%20Association." target="_blank" rel="noopener noreferrer">2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack: A Guideline From the American Heart Association/American Stroke Association.</a> Stroke. 2021.</li>
+</ol>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+    <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico. El diagnóstico y el tratamiento de la hipertensión los establece un médico. Si tienes enfermedad renal o tomas medicamentos que afectan el potasio, consulta antes de cambiar tu alimentación. No suspendas ni ajustes medicamentos sin indicación de tu médico tratante.</p>
+</div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué es la dieta DASH?</p>
+                        <p>DASH significa Dietary Approaches to Stop Hypertension (enfoques dietéticos para detener la hipertensión). Es un patrón de alimentación rico en verduras, frutas, lácteos bajos en grasa, cereales integrales, leguminosas y nueces, con poca carne roja, azúcar y sodio. Se diseñó y probó en ensayos clínicos para bajar la presión arterial.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuánto baja la presión con la dieta DASH?</p>
+                        <p>En el ensayo original, la dieta DASH bajó la presión en pocas semanas, con un efecto mayor en personas con hipertensión. El ensayo DASH-Sodio mostró que el efecto aumenta cuando además se reduce el sodio. La respuesta varía entre personas y no sustituye el tratamiento indicado por tu médico.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué alimentos ayudan a bajar la presión arterial?</p>
+                        <p>Los que forman parte del patrón DASH: verduras de hoja, jitomate, plátano, frijol y otras leguminosas, aguacate, yogur natural, avena y nueces sin sal. Aportan potasio, magnesio, calcio y fibra. Ningún alimento aislado baja la presión por sí solo; funciona el conjunto, junto con menos sodio.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuánta sal puedo comer al día si tengo presión alta?</p>
+                        <p>La Organización Mundial de la Salud recomienda menos de 5 g de sal al día, que equivalen a unos 2 g de sodio. La mayor parte del sodio viene de alimentos procesados, no del salero. Tu médico o nutriólogo puede indicarte una meta más específica según tu caso.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿El agua de jamaica baja la presión?</p>
+                        <p>Algunos estudios pequeños sugieren un efecto modesto, pero la evidencia es limitada. Puede formar parte de tu alimentación como agua sin azúcar, pero no sustituye a la dieta DASH, a la reducción de sodio ni a los medicamentos indicados por tu médico.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Puedo dejar mis medicamentos para la presión si sigo la dieta DASH?</p>
+                        <p>No. La dieta DASH complementa el tratamiento, no lo reemplaza. Si tu presión mejora, tu médico es quien decide si ajusta la dosis. Nunca suspendas ni modifiques medicamentos por tu cuenta.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La dieta DASH es segura si tengo enfermedad renal?</p>
+                        <p>No siempre. La dieta DASH es rica en potasio y fósforo, que pueden acumularse cuando los riñones no funcionan bien, y algunos medicamentos para la presión también elevan el potasio. Si tienes enfermedad renal, consulta con tu nefrólogo antes de cambiar tu alimentación.</p>
+                    </div>
+
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica para presión alta y salud cardiovascular. Consulta presencial en Del Valle
+                            o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/alimentos-bajan-colesterol/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-02/hero.webp" srcset="/assets/img/blog/post-02/hero-w480.webp 480w, /assets/img/blog/post-02/hero-w960.webp 960w, /assets/img/blog/post-02/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Cardiovascular</span>
+                            <h3>Alimentos que bajan el colesterol</h3>
+                            <p>Los alimentos con mejor evidencia para bajar el LDL y cómo comerlos.</p>
+                            <a href="/blog/guias-nutricionales/alimentos-bajan-colesterol/" class="btn-text" aria-label="Leer: Alimentos que bajan el colesterol">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/colesterol-alto-sintomas/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-colesterol-sintomas/hero.webp" srcset="/assets/img/blog/post-colesterol-sintomas/hero-w480.webp 480w, /assets/img/blog/post-colesterol-sintomas/hero-w960.webp 960w, /assets/img/blog/post-colesterol-sintomas/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Cardiovascular</span>
+                            <h3>Colesterol alto: síntomas y señales</h3>
+                            <p>Por qué casi nunca da síntomas y cuándo conviene medirlo.</p>
+                            <a href="/blog/colesterol-alto-sintomas/" class="btn-text" aria-label="Leer: Colesterol alto: síntomas y señales">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/alimentos-nutriologos-recomiendan-bajar-trigliceridos/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-07/hero.webp" srcset="/assets/img/blog/post-07/hero-w480.webp 480w, /assets/img/blog/post-07/hero-w960.webp 960w, /assets/img/blog/post-07/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Cardiovascular</span>
+                            <h3>Cómo bajar los triglicéridos</h3>
+                            <p>Dieta práctica y menú de 7 días para bajar los triglicéridos.</p>
+                            <a href="/blog/guias-nutricionales/alimentos-nutriologos-recomiendan-bajar-trigliceridos/" class="btn-text" aria-label="Leer: Cómo bajar los triglicéridos">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

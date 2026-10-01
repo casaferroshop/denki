@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Vitamina D: alimentos y cuánta necesitas | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Qué alimentos tienen vitamina D, cuánta necesitas según tu edad, el papel del sol y cuándo sí conviene un suplemento según las guías actuales. Guía clínica.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Vitamina D: alimentos y cuánta necesitas | Clínica Denki">
+    <meta property="og:description" content="Qué alimentos tienen vitamina D, cuánta necesitas según tu edad, el papel del sol y cuándo sí conviene un suplemento según las guías actuales. Guía clínica.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/vitamina-d-alimentos/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-vitamina-d/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vitamina D: alimentos y cuánta necesitas | Clínica Denki">
+    <meta name="twitter:description" content="Qué alimentos tienen vitamina D, cuánta necesitas según tu edad, el papel del sol y cuándo sí conviene un suplemento según las guías actuales. Guía clínica.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-vitamina-d/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/vitamina-d-alimentos/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Vitamina D: alimentos que la contienen y cuánta necesitas",
+  "url": "https://www.clinicadenki.mx/blog/vitamina-d-alimentos/",
+  "image": "https://www.clinicadenki.mx/assets/img/blog/post-vitamina-d/hero.webp",
+  "datePublished": "2026-10-02",
+  "dateModified": "2026-10-02",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Lucy Anita Camberos Luna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clínica Denki",
+    "url": "https://www.clinicadenki.mx/"
+  },
+  "description": "Guía clínica sobre la vitamina D: alimentos que la contienen, el sol como fuente principal, ingesta recomendada por edad (IOM), quién tiene más riesgo de deficiencia, qué dice la guía de la Endocrine Society 2024 y riesgos del exceso.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.clinicadenki.mx/blog/vitamina-d-alimentos/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.clinicadenki.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.clinicadenki.mx/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Vitamina D: alimentos",
+      "item": "https://www.clinicadenki.mx/blog/vitamina-d-alimentos/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué alimentos tienen más vitamina D?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los pescados grasos, como trucha, salmón y sardina. Le siguen la yema de huevo, el hígado, los hongos expuestos a luz UV y las leches o bebidas fortificadas. La mayoría de los demás alimentos aporta muy poca."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánta vitamina D necesito al día?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Según el Instituto de Medicina, 600 UI al día de 1 a 70 años, incluidos embarazo y lactancia, y 800 UI a partir de los 70 años. Los bebés necesitan 400 UI."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Con tomar el sol es suficiente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para muchas personas el sol es la fuente principal, pero depende de la hora, la piel expuesta, el tono de piel, la edad y el protector solar. Pasar el día en interiores puede dejar niveles bajos aun en México."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Debo medirme la vitamina D?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No de forma rutinaria si estás sano. La guía de la Endocrine Society 2024 no lo recomienda para la población general. Tu médico puede pedirla si tienes osteoporosis, mala absorción u otra condición."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Quién sí debería tomar un suplemento de vitamina D?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La guía 2024 lo sugiere para niños y adolescentes, personas de 75 años o más, embarazadas y adultos con prediabetes de alto riesgo. La dosis la define el médico según cada caso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede tomar demasiada vitamina D?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, con suplementos en dosis altas por tiempo prolongado. El exceso eleva el calcio en sangre y puede dañar los riñones. El sol y los alimentos no causan intoxicación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los champiñones tienen vitamina D?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los comunes aportan muy poca. Los hongos expuestos a luz ultravioleta, que así se indica en su etiqueta, pueden aportar cantidades importantes de vitamina D."
+      }
+    }
+  ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Nutrientes</span>
+                    <h1>Vitamina D: alimentos que la contienen y cuánta necesitas</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 11 min de lectura</span>
+                        <span>📅 Actualizado: Oct 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-vitamina-d/hero.webp" srcset="/assets/img/blog/post-vitamina-d/hero-w480.webp 480w, /assets/img/blog/post-vitamina-d/hero-w960.webp 960w, /assets/img/blog/post-vitamina-d/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADwBQCdASogACAAPulkq02pJiQiMBgMASAdCUAYnx/hXzZamHe6+xxzqtF6qsmpSgCW22lfmi/hAAD+/jBekt4cOjmjRNoQtP9T3Fkn5Qvu/pUdoB1uqEtvbWZ153GzEeMFMpATZ2tbwHpIUngQXi1YEDacxul0JcJL1bM0KZaLjmxSqCcVHMwFzho5aP357VxEVATrBZyf6CRffjo3/igshUyiq1qeTkC5Xp+/nPokwi5EfDRbKdNAs8QAAA==);background-size:cover;background-position:center" alt="Alimentos con vitamina D: salmón, trucha, sardina, huevo, leche fortificada y champiñones - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+<p class="lead" style="border: none; padding: 0;">Pocos <strong>alimentos contienen vitamina D</strong> de forma natural: los pescados grasos como salmón, trucha y sardina, la yema de huevo, el hígado, los hongos expuestos a luz ultravioleta y los productos fortificados, como algunas leches. La fuente principal para la mayoría de las personas no es la comida, sino la piel, que fabrica vitamina D con la luz del sol.</p>
+
+<p>En esta guía te explicamos cuánta vitamina D necesitas según tu edad, cuánto aportan los alimentos más accesibles en México, por qué la deficiencia también existe en un país soleado, quién tiene más riesgo y qué dicen las guías más recientes sobre medirla y suplementarla, que han cambiado en los últimos años.</p>
+
+<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — octubre 2026.</p>
+
+<div class="post-toc">
+    <h4>Contenido de este artículo</h4>
+    <ul>
+        <li><a href="#para-que-sirve">Para qué sirve la vitamina D</a></li>
+        <li><a href="#cuanta">Cuánta vitamina D necesitas</a></li>
+        <li><a href="#tabla">Alimentos con vitamina D</a></li>
+        <li><a href="#sol">El sol como fuente principal</a></li>
+        <li><a href="#absorcion">Cómo aprovecharla mejor</a></li>
+        <li><a href="#riesgo">Quién tiene más riesgo de deficiencia</a></li>
+        <li><a href="#senales">Señales de deficiencia</a></li>
+        <li><a href="#suplementos">Suplementos: qué dice la guía 2024</a></li>
+        <li><a href="#exceso">Exceso y toxicidad</a></li>
+        <li><a href="#menu">Menú de un día con vitamina D</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+    </ul>
+</div>
+
+<h2 id="para-que-sirve">¿Para qué sirve la vitamina D?</h2>
+<p>La vitamina D funciona más como una hormona que como una vitamina típica. Su función con más respaldo es ayudar a <strong>absorber el calcio y el fósforo</strong> de los alimentos y mantener huesos y dientes mineralizados. Sin suficiente vitamina D, el intestino absorbe solo una parte del calcio de la dieta, y el cuerpo lo toma del hueso.</p>
+<p>También participa en el funcionamiento muscular y en el sistema inmune. Holick (2007) describe su deficiencia como un problema frecuente en todo el mundo y asocia niveles bajos con raquitismo en niños, osteomalacia (huesos blandos) en adultos y debilidad muscular. Otros beneficios que se le atribuyen en redes sociales, como prevenir el cáncer o la depresión con dosis altas, no se han confirmado en los grandes ensayos clínicos.</p>
+
+<h2 id="cuanta">¿Cuánta vitamina D necesitas al día?</h2>
+<p>El informe del Instituto de Medicina de EE. UU. (Ross, 2011) estableció estas ingestas diarias recomendadas, calculadas suponiendo una exposición mínima al sol:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Edad</th><th style="padding: 1rem; text-align: left;">Vitamina D recomendada al día</th><th style="padding: 1rem; text-align: left;">Límite superior tolerable</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Bebés de 0 a 12 meses</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">400 UI (10 µg), ingesta adecuada</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1,000-1,500 UI</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">De 1 a 70 años (incluye embarazo y lactancia)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">600 UI (15 µg)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2,500-4,000 UI según edad; 4,000 UI desde los 9 años</td></tr>
+<tr><td style="padding: 1rem;">Mayores de 70 años</td><td style="padding: 1rem;">800 UI (20 µg)</td><td style="padding: 1rem;">4,000 UI</td></tr>
+</tbody>
+</table>
+</div>
+<p>El límite superior no es una meta: es la cantidad diaria por encima de la cual aumenta el riesgo de efectos adversos si se mantiene por tiempo prolongado. Para los niveles en sangre, el IOM consideró que unos 20 ng/mL de 25-hidroxivitamina D cubren las necesidades del hueso en la mayoría de las personas; otros grupos han propuesto valores más altos, y el tema sigue en discusión.</p>
+
+<h2 id="tabla">Alimentos con vitamina D (accesibles en México)</h2>
+<p>Valores aproximados por porción, con base en tablas estándar de composición. Varían según la especie, si el pescado es silvestre o de granja y la marca.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-vitamina-d/alimentos.webp" srcset="/assets/img/blog/post-vitamina-d/alimentos-w480.webp 480w, /assets/img/blog/post-vitamina-d/alimentos-w960.webp 960w, /assets/img/blog/post-vitamina-d/alimentos.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADQBACdASogABYAPt1YpU2opSOiN/qoARAbiUAAC3bUBDYgtUs8IQBn/8/kiYv0AAD+9Nvg1OCPxFtib+/2HF4zAgNIP23yfNdiT1STKftPrjJxpM5bik7NrLKNW6odes1I+JJYbD4MuhDYFWu1oVEOUVca8j1E9d53J5ql5MiHWs/VPhgfBDHTqsAAAA==);background-size:cover;background-position:center" alt="Salmón, sardinas, huevo, hongos y leche fortificada">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Pocos alimentos la contienen: pescados grasos, huevo y lácteos fortificados.</figcaption>
+</figure>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Alimento</th><th style="padding: 1rem; text-align: left;">Porción</th><th style="padding: 1rem; text-align: left;">Vitamina D aprox.</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Trucha arcoíris cocida</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">600 UI</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Salmón cocido</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">400-570 UI</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Champiñones expuestos a luz UV (así etiquetados)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Varios cientos de UI; revisa la etiqueta</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sardina en lata</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 lata (90 g escurrida)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">150-180 UI</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Leche o bebida vegetal fortificada</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 taza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Según etiqueta, a menudo cerca de 100 UI</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Huevo entero (la vitamina está en la yema)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 pieza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">40-45 UI</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hígado de res cocido</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">40 UI</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Atún en agua, en lata</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">40 UI</td></tr>
+<tr><td style="padding: 1rem;">Champiñones comunes</td><td style="padding: 1rem;">½ taza</td><td style="padding: 1rem;">Muy poca</td></tr>
+</tbody>
+</table>
+</div>
+<p>Como ves, con excepción de los pescados grasos, las cantidades son pequeñas frente a 600 UI diarias. Por eso la alimentación ayuda, pero rara vez cubre por sí sola el requerimiento si no hay exposición al sol.</p>
+
+<div class="highlight-box">
+    <p>💡 <strong>Idea clave:</strong> una porción de trucha o salmón aporta casi toda la vitamina D del día; el resto de los alimentos suma poco a poco.</p>
+</div>
+
+<h2 id="sol">El sol, la fuente principal (y por qué en México también hay deficiencia)</h2>
+<p>Cuando la luz ultravioleta B toca la piel, se forma vitamina D, que después el hígado y el riñón convierten en su forma activa. Según Holick (2007), esta es la principal fuente para la mayoría de las personas, y la exposición solar excesiva no causa intoxicación por vitamina D, porque la piel regula la producción.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-vitamina-d/sol.webp" srcset="/assets/img/blog/post-vitamina-d/sol-w480.webp 480w, /assets/img/blog/post-vitamina-d/sol-w960.webp 960w, /assets/img/blog/post-vitamina-d/sol.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAADwBACdASogABYAPu1mq06ppaOiKA1RMB2JQBhQAiO00OD0FAMEZdBpOmuU9h+Vw0AA/vI0QnxbTZ/zfA9/RWF4H6ymdbjUxZgvLW9Ci876OrKEulCV9TsMQOHKXVFIWyCr1uLZykxNfnuOkLaKqMbeKXFDN6Eaq5K2cyIAL6+WgW2qUACreHsjdwMjI8ubvR4n6j2ltaVpQHwP3cCGiDYx5Sk/7wAA);background-size:cover;background-position:center" alt="Pareja de adultos mayores en una banca soleada del parque">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">La exposición al sol es la principal fuente de vitamina D.</figcaption>
+</figure>
+<p>México tiene sol casi todo el año, pero eso no asegura niveles adecuados. Holick (2007) señala que la deficiencia es frecuente incluso en países soleados, porque la producción en la piel depende de varios factores:</p>
+<ul>
+    <li>Pasar la mayor parte del día en interiores (oficina, escuela, casa).</li>
+    <li>La hora del día: temprano en la mañana y al atardecer se produce muy poca.</li>
+    <li>El uso de ropa que cubre casi toda la piel y del protector solar.</li>
+    <li>La piel morena o oscura, que necesita más tiempo de exposición.</li>
+    <li>La edad: la piel de los adultos mayores produce menos vitamina D.</li>
+    <li>La obesidad, que reduce la vitamina D disponible en sangre.</li>
+</ul>
+<p>Exponerse al sol para producir vitamina D no significa broncearse ni quemarse. La radiación solar también es el principal factor de riesgo de cáncer de piel, así que conviene comentar con tu médico cuánta exposición es razonable para ti, sobre todo si tienes piel clara o antecedentes de lesiones en la piel.</p>
+
+<h2 id="absorcion">Cómo aprovechar mejor la vitamina D</h2>
+<ul>
+    <li><strong>Con algo de grasa:</strong> es una vitamina liposoluble; se absorbe mejor junto con alimentos que contienen grasa, como aguacate, aceite o los propios pescados.</li>
+    <li><strong>Con calcio suficiente:</strong> vitamina D y calcio trabajan en equipo para el hueso. Revisa nuestra guía de <a href="/blog/alimentos-ricos-en-calcio/">alimentos ricos en calcio</a>.</li>
+    <li><strong>Atención a la absorción intestinal:</strong> enfermedades como la celiaca, la enfermedad inflamatoria intestinal o la cirugía bariátrica reducen su absorción.</li>
+</ul>
+
+<h2 id="riesgo">¿Quién tiene más riesgo de deficiencia de vitamina D?</h2>
+<ul>
+    <li><strong>Adultos mayores,</strong> sobre todo si salen poco de casa o viven en residencias. Es parte de lo que vigilamos en la <a href="/nutricion-geriatrica/adulto-mayor/">nutrición del adulto mayor</a>.</li>
+    <li>Personas con <strong>poca exposición al sol</strong> por trabajo, enfermedad o vestimenta.</li>
+    <li>Personas con <strong>piel oscura</strong> y personas con <strong>obesidad</strong>.</li>
+    <li>Bebés alimentados solo con leche materna, cuyo pediatra suele indicar vitamina D.</li>
+    <li>Personas con <strong>mala absorción</strong> o enfermedad hepática o renal.</li>
+    <li>Quienes usan ciertos medicamentos de forma prolongada, como algunos anticonvulsivantes o corticoides (nunca los suspendas por tu cuenta).</li>
+</ul>
+
+<h2 id="senales">Señales de deficiencia de vitamina D</h2>
+<p>La mayoría de las personas con niveles bajos no tienen síntomas. Cuando la deficiencia es importante y prolongada pueden aparecer dolor óseo difuso, debilidad muscular (sobre todo en caderas y muslos), dificultad para levantarse o subir escaleras y mayor riesgo de caídas y fracturas; en niños, raquitismo. Estas señales no son exclusivas de la vitamina D: la pérdida de fuerza en el adulto mayor también puede deberse a <a href="/nutricion-geriatrica/sarcopenia/">sarcopenia</a>, que muchas veces coexiste con niveles bajos. Solo un estudio de sangre, indicado por el médico cuando hay motivo, confirma la deficiencia.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-vitamina-d/riesgo.webp" srcset="/assets/img/blog/post-vitamina-d/riesgo-w480.webp 480w, /assets/img/blog/post-vitamina-d/riesgo-w960.webp 960w, /assets/img/blog/post-vitamina-d/riesgo.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACQBACdASogABYAPu1irE4ppaSiKA1RMB2JQBgbgiOV/OEEkzWJ3mjJoYxrPcAA/vHPi4EqrO26pAsd9F7HzoXGLtfnXOLYF0cwdpreNBRbWV7GVKxNOeqJVOX+ZJSlK2KhLfr9krbuYhhO+kNUq1SeeqYQEnfyRJmh15gA);background-size:cover;background-position:center" alt="Adulta mayor leyendo en casa junto a la ventana con una manta">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Los adultos mayores y quienes salen poco tienen más riesgo.</figcaption>
+</figure>
+
+<h2 id="suplementos">Suplementos de vitamina D: qué dice la guía de la Endocrine Society 2024</h2>
+<p>Durante años se popularizó medir la vitamina D a todo el mundo y suplementar casi a cualquiera. La guía de la Endocrine Society publicada en 2024 (Demay) revisó los ensayos clínicos disponibles y propuso un enfoque más prudente para personas <strong>sin</strong> una enfermedad que lo justifique:</p>
+<ul>
+    <li><strong>No recomienda medir la vitamina D de forma rutinaria</strong> en la población general, porque no se demostró que guiar el tratamiento por el nivel en sangre mejore los resultados.</li>
+    <li>En adultos sanos de 18 a 74 años <strong>no sugiere suplementar por encima de la ingesta recomendada</strong>.</li>
+    <li>Sí sugiere suplementación empírica en grupos donde los estudios mostraron algún beneficio: <strong>niños y adolescentes</strong> (1 a 18 años), <strong>personas de 75 años o más</strong>, <strong>embarazo</strong> y <strong>adultos con prediabetes de alto riesgo</strong>.</li>
+    <li>En personas de 50 años o más prefiere dosis diarias moderadas en lugar de dosis altas espaciadas (por ejemplo, ampolletas mensuales).</li>
+</ul>
+<p>Esta guía no aplica a quienes tienen osteoporosis, mala absorción, enfermedad renal u otras condiciones en las que el médico sí puede medir y tratar la vitamina D. En todos los casos, la dosis la define tu médico. Si te interesa el tema de la prediabetes, revisa nuestra guía sobre <a href="/blog/resistencia-a-la-insulina/">resistencia a la insulina</a>.</p>
+
+<h2 id="exceso">Exceso y toxicidad de la vitamina D</h2>
+<p>La intoxicación por vitamina D no viene del sol ni de los alimentos, sino de suplementos en dosis altas por tiempo prolongado. El exceso eleva el calcio en sangre (hipercalcemia), que puede causar náusea, vómito, pérdida de apetito, sed intensa, confusión, cálculos y daño renal. Por eso no conviene tomar "megadosis" o ampolletas de dosis alta por recomendación de conocidos, ni sumar varios productos que la contienen sin revisar las etiquetas.</p>
+
+<h2 id="menu">Menú de un día con vitamina D</h2>
+<p>Ejemplo orientativo para cubrir alrededor de 600-800 UI con alimentos. No es necesario comer pescado graso diario; 2 o 3 veces por semana ya suma.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Tiempo</th><th style="padding: 1rem; text-align: left;">Ejemplo</th><th style="padding: 1rem; text-align: left;">Vitamina D aprox.</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Desayuno</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2 huevos revueltos con espinaca, 2 tortillas de maíz y 1 vaso de leche fortificada</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">180 UI</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colación</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur natural con fruta y nueces</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Poca</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Comida</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g de trucha o salmón al horno con limón, arroz y ensalada con aguacate</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">400-600 UI</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colación</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pepino y jícama con limón</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">0 UI</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Cena</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tostada de atún con jitomate y aguacate</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">40 UI</td></tr>
+<tr><td style="padding: 1rem;"><strong>Total</strong></td><td style="padding: 1rem;">Más la vitamina D que produce tu piel con el sol</td><td style="padding: 1rem;">Aprox. 620-820 UI</td></tr>
+</tbody>
+</table>
+</div>
+<div class="highlight-box">
+    <p>🥗 <strong>Tip práctico:</strong> la trucha de granja mexicana suele ser más económica que el salmón y aporta una cantidad similar de vitamina D.</p>
+</div>
+
+<h2 id="relacionados">Lecturas y servicios relacionados</h2>
+<ul>
+    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia: qué es y cómo se trata</a>.</li>
+    <li><a href="/blog/alimentos-ricos-en-calcio/">Alimentos ricos en calcio y cuánto necesitas</a>.</li>
+    <li><a href="/nutricion-geriatrica/adulto-mayor/">Nutrición en el adulto mayor en CDMX</a>.</li>
+</ul>
+
+<div class="cta-banner">
+    <h3>¿Tienes dudas sobre tu vitamina D o tus huesos?</h3>
+    <p>Revisamos tu alimentación, tus estudios y tus medicamentos para definir, junto con tu médico, si necesitas algo más que comida. Consulta presencial en Del Valle, CDMX, o videoconsulta.</p>
+    <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+    <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+</div>
+
+<h2 id="referencias">Referencias</h2>
+<ol style="padding-left: 1.2rem; line-height: 1.7;">
+    <li>Holick MF. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Vitamin%20D%20deficiency." target="_blank" rel="noopener noreferrer">Vitamin D deficiency.</a> N Engl J Med. 2007.</li>
+    <li>Ross AC, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=The%202011%20report%20on%20dietary%20reference%20intakes%20for%20calcium%20and%20vitamin%20D%20from%20the%20Institute%20of%20Medicine%3A%20what%20clinicians%20need%20to%20know." target="_blank" rel="noopener noreferrer">The 2011 report on dietary reference intakes for calcium and vitamin D from the Institute of Medicine: what clinicians need to know.</a> J Clin Endocrinol Metab. 2011.</li>
+    <li>Demay MB, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Vitamin%20D%20for%20the%20Prevention%20of%20Disease%3A%20An%20Endocrine%20Society%20Clinical%20Practice%20Guideline." target="_blank" rel="noopener noreferrer">Vitamin D for the Prevention of Disease: An Endocrine Society Clinical Practice Guideline.</a> J Clin Endocrinol Metab. 2024.</li>
+    <li>Volkert D, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ESPEN%20guideline%20on%20clinical%20nutrition%20and%20hydration%20in%20geriatrics." target="_blank" rel="noopener noreferrer">ESPEN guideline on clinical nutrition and hydration in geriatrics.</a> Clin Nutr. 2019.</li>
+</ol>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+    <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico. La deficiencia de vitamina D se confirma con estudios de laboratorio cuando el médico lo considera necesario. No tomes suplementos en dosis altas ni ajustes medicamentos sin indicación de tu médico tratante.</p>
+</div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué alimentos tienen más vitamina D?</p>
+                        <p>Los pescados grasos, como trucha, salmón y sardina. Le siguen la yema de huevo, el hígado, los hongos expuestos a luz UV y las leches o bebidas fortificadas. La mayoría de los demás alimentos aporta muy poca.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuánta vitamina D necesito al día?</p>
+                        <p>Según el Instituto de Medicina, 600 UI al día de 1 a 70 años, incluidos embarazo y lactancia, y 800 UI a partir de los 70 años. Los bebés necesitan 400 UI.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Con tomar el sol es suficiente?</p>
+                        <p>Para muchas personas el sol es la fuente principal, pero depende de la hora, la piel expuesta, el tono de piel, la edad y el protector solar. Pasar el día en interiores puede dejar niveles bajos aun en México.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Debo medirme la vitamina D?</p>
+                        <p>No de forma rutinaria si estás sano. La guía de la Endocrine Society 2024 no lo recomienda para la población general. Tu médico puede pedirla si tienes osteoporosis, mala absorción u otra condición.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Quién sí debería tomar un suplemento de vitamina D?</p>
+                        <p>La guía 2024 lo sugiere para niños y adolescentes, personas de 75 años o más, embarazadas y adultos con prediabetes de alto riesgo. La dosis la define el médico según cada caso.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Se puede tomar demasiada vitamina D?</p>
+                        <p>Sí, con suplementos en dosis altas por tiempo prolongado. El exceso eleva el calcio en sangre y puede dañar los riñones. El sol y los alimentos no causan intoxicación.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Los champiñones tienen vitamina D?</p>
+                        <p>Los comunes aportan muy poca. Los hongos expuestos a luz ultravioleta, que así se indica en su etiqueta, pueden aportar cantidades importantes de vitamina D.</p>
+                    </div>
+
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica para salud ósea, adulto mayor y deficiencias. Consulta presencial en Del Valle
+                            o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/como-prevenir-sarcopenia/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-04/hero.webp" srcset="/assets/img/blog/post-04/hero-w480.webp 480w, /assets/img/blog/post-04/hero-w960.webp 960w, /assets/img/blog/post-04/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Geriátrica</span>
+                            <h3>Cómo prevenir la sarcopenia</h3>
+                            <p>10 hábitos y un menú para conservar músculo y fuerza con la edad.</p>
+                            <a href="/blog/guias-nutricionales/como-prevenir-sarcopenia/" class="btn-text" aria-label="Leer: Cómo prevenir la sarcopenia">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/alimentos-para-la-memoria/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-memoria/hero.webp" srcset="/assets/img/blog/post-memoria/hero-w480.webp 480w, /assets/img/blog/post-memoria/hero-w960.webp 960w, /assets/img/blog/post-memoria/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Alimentos para la memoria</h3>
+                            <p>Qué dice la ciencia sobre la alimentación y la salud cognitiva.</p>
+                            <a href="/blog/alimentos-para-la-memoria/" class="btn-text" aria-label="Leer: Alimentos para la memoria">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/resistencia-a-la-insulina/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-resistencia-insulina/hero.webp" srcset="/assets/img/blog/post-resistencia-insulina/hero-w480.webp 480w, /assets/img/blog/post-resistencia-insulina/hero-w960.webp 960w, /assets/img/blog/post-resistencia-insulina/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Resistencia a la insulina</h3>
+                            <p>Qué es, señales, diagnóstico y qué comer para mejorarla.</p>
+                            <a href="/blog/resistencia-a-la-insulina/" class="btn-text" aria-label="Leer: Resistencia a la insulina">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

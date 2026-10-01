@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Índice glucémico y carbohidratos complejos | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Qué es el índice glucémico, tabla de alimentos mexicanos con IG bajo, medio y alto, diferencia entre carbohidratos complejos y simples, y cómo usarlo.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Índice glucémico y carbohidratos complejos | Clínica Denki">
+    <meta property="og:description" content="Qué es el índice glucémico, tabla de alimentos mexicanos con IG bajo, medio y alto, diferencia entre carbohidratos complejos y simples, y cómo usarlo.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/indice-glucemico/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-indice-glucemico/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Índice glucémico y carbohidratos complejos | Clínica Denki">
+    <meta name="twitter:description" content="Qué es el índice glucémico, tabla de alimentos mexicanos con IG bajo, medio y alto, diferencia entre carbohidratos complejos y simples, y cómo usarlo.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-indice-glucemico/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/indice-glucemico/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Índice glucémico: tabla de alimentos y carbohidratos complejos",
+  "url": "https://www.clinicadenki.mx/blog/indice-glucemico/",
+  "image": "https://www.clinicadenki.mx/assets/img/blog/post-indice-glucemico/hero.webp",
+  "datePublished": "2026-10-02",
+  "dateModified": "2026-10-02",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Lucy Anita Camberos Luna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clínica Denki",
+    "url": "https://www.clinicadenki.mx/"
+  },
+  "description": "Guía clínica sobre el índice glucémico y la carga glucémica: tabla aproximada de alimentos comunes en México, diferencia entre carbohidratos complejos y simples, factores que modifican el IG, sus limitaciones y cómo aplicarlo en diabetes y prediabetes.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.clinicadenki.mx/blog/indice-glucemico/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.clinicadenki.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.clinicadenki.mx/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Índice glucémico",
+      "item": "https://www.clinicadenki.mx/blog/indice-glucemico/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es el índice glucémico?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es una escala de 0 a 100 que indica qué tan rápido sube la glucosa después de comer un alimento con carbohidratos, comparado con la glucosa pura. Bajo es 55 o menos, medio 56 a 69 y alto 70 o más."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué diferencia hay entre índice glucémico y carga glucémica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El índice glucémico mide la velocidad con que sube la glucosa; la carga glucémica también considera cuántos carbohidratos tiene la porción. La carga glucémica refleja mejor lo que pasa en una comida real."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué son los carbohidratos complejos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Son cadenas largas de glucosa, como el almidón y la fibra. Están en leguminosas, maíz, avena, arroz, papa y verduras. No todos tienen índice glucémico bajo: el pan blanco y la papa lo tienen alto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La tortilla de maíz tiene índice glucémico alto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Su índice glucémico es aproximadamente bajo a medio, alrededor de 45 a 55 según la preparación. En porción moderada y acompañada de verduras, proteína y frijoles puede formar parte de una alimentación equilibrada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué frutas tienen índice glucémico bajo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La manzana, la naranja, la pera y las fresas suelen tener índice glucémico bajo. El plátano muy maduro y la sandía son más altos, aunque la sandía tiene carga glucémica baja por porción."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Una dieta de índice glucémico bajo sirve para la diabetes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puede ayudar a mejorar modestamente el control de la glucosa, sobre todo como parte de un patrón de alimentación de calidad con fibra, verduras y proteína. La cantidad total de carbohidratos también importa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo puedo bajar el índice glucémico de mis comidas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Combina los carbohidratos con verduras, proteína y grasa saludable, prefiere alimentos enteros y poco procesados, evita cocinar de más la pasta y el arroz, y empieza la comida por la ensalada."
+      }
+    }
+  ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Metabólica</span>
+                    <h1>Índice glucémico: tabla de alimentos y carbohidratos complejos</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 11 min de lectura</span>
+                        <span>📅 Actualizado: Oct 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-indice-glucemico/hero.webp" srcset="/assets/img/blog/post-indice-glucemico/hero-w480.webp 480w, /assets/img/blog/post-indice-glucemico/hero-w960.webp 960w, /assets/img/blog/post-indice-glucemico/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAADwBACdASogACAAPu1qrlCppaQiqAqpMB2JQBfnDSwA7x3Xedbq+8vBGVTXE1tdWAAA/vx5zxBtOIaGd38ih15uy5LWvLi8qXFF83ZyjUwgvVWgNqwdcnHdjHktI8MEbjtfBAAOsXxPAshll+cCSXCJlVCDONlal9k3shbhTvXhKis53VtZL7FqkqrjMK0MSdcpKTCMurbmdq+wv4aCSyO680/u+sZ06DEPNLNMqZTT+kzOoGZB4ox0aRg15dQWadFTKyjZ1TokQKEu/Jn/ZmH4PBxzIOieAAA=);background-size:cover;background-position:center" alt="Índice glucémico: tortilla, frijoles, avena y fruta en una mesa mexicana - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+<p class="lead" style="border: none; padding: 0;">El <strong>índice glucémico</strong> (IG) indica qué tan rápido y cuánto sube la glucosa en sangre después de comer un alimento con carbohidratos, comparado con la glucosa pura, que vale 100. Un IG de 55 o menos se considera bajo, de 56 a 69 medio y de 70 o más alto. Los <strong>carbohidratos complejos</strong>, como las leguminosas y los cereales integrales, suelen tener un IG más bajo que los azúcares y las harinas refinadas, aunque hay excepciones.</p>
+
+<p>El IG es una herramienta útil para elegir mejor, sobre todo si tienes diabetes o prediabetes, pero no lo es todo: la porción, la combinación del plato y la calidad global de tu alimentación pesan más. Aquí encontrarás una tabla con alimentos comunes en México, la diferencia entre carbohidratos complejos y simples, y cómo aplicarlo en tu día a día.</p>
+
+<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — octubre 2026.</p>
+
+<div class="post-toc">
+    <h4>Contenido de este artículo</h4>
+    <ul>
+        <li><a href="#que-es">Qué es el índice glucémico</a></li>
+        <li><a href="#carga-glucemica">Índice glucémico vs carga glucémica</a></li>
+        <li><a href="#tabla">Tabla de índice glucémico de alimentos</a></li>
+        <li><a href="#carbohidratos-complejos">Carbohidratos complejos y simples</a></li>
+        <li><a href="#factores">Qué cambia el índice glucémico</a></li>
+        <li><a href="#limitaciones">Limitaciones del índice glucémico</a></li>
+        <li><a href="#en-la-practica">Cómo usarlo en la práctica</a></li>
+        <li><a href="#plato">Ejemplo de plato</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+    </ul>
+</div>
+
+<h2 id="que-es">¿Qué es el índice glucémico?</h2>
+<p>El índice glucémico se mide en laboratorio: un grupo de personas come una cantidad de alimento que aporta 50 g de carbohidratos disponibles y se compara la subida de glucosa durante 2 horas con la que produce la misma cantidad de glucosa pura. Así cada alimento recibe un valor de 0 a 100:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Categoría</th><th style="padding: 1rem; text-align: left;">Índice glucémico</th><th style="padding: 1rem; text-align: left;">Qué significa</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Bajo</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">55 o menos</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">La glucosa sube de forma más lenta y moderada</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Medio</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">56 a 69</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Subida intermedia</td></tr>
+<tr><td style="padding: 1rem;"><strong>Alto</strong></td><td style="padding: 1rem;">70 o más</td><td style="padding: 1rem;">La glucosa sube rápido y más alto</td></tr>
+</tbody>
+</table>
+</div>
+<p>El concepto lo propusieron Jenkins y colaboradores a inicios de los años 80, y su revisión de 2002 resume su utilidad: los alimentos de IG bajo provocan subidas de glucosa e insulina más suaves, lo que puede ayudar al control de la glucosa en personas con diabetes. Solo aplica a alimentos con carbohidratos: la carne, el huevo o el aceite no tienen índice glucémico.</p>
+
+<h2 id="carga-glucemica">Índice glucémico vs carga glucémica: ¿cuál importa más?</h2>
+<p>El IG dice qué tan rápido sube la glucosa, pero no cuántos carbohidratos comes en una porción real. Para eso existe la <strong>carga glucémica</strong> (CG), que combina ambas cosas:</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-indice-glucemico/carga.webp" srcset="/assets/img/blog/post-indice-glucemico/carga-w480.webp 480w, /assets/img/blog/post-indice-glucemico/carga-w960.webp 960w, /assets/img/blog/post-indice-glucemico/carga.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAACQBACdASogABYAPu1mq06ppaOiKA1RMB2JQBhQAiHD4Cteellty0iKD3L6+AAA/vHK9Lm8v5p17l6XovvazrHeuLUqtCzU8HomFsYYqEMzPTFfhr3nOq91vCe0+QnmA+RKCkhV/bidchN6YsXBmxSO1Q3jMkzgAAA=);background-size:cover;background-position:center" alt="Porción pequeña de sandía frente a un plato grande de arroz blanco">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">La carga glucémica considera también la porción.</figcaption>
+</figure>
+<p style="text-align: center;"><strong>CG = (IG × gramos de carbohidratos de la porción) ÷ 100</strong></p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Carga glucémica por porción</th><th style="padding: 1rem; text-align: left;">Categoría</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">10 o menos</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Baja</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">11 a 19</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Media</td></tr>
+<tr><td style="padding: 1rem;">20 o más</td><td style="padding: 1rem;">Alta</td></tr>
+</tbody>
+</table>
+</div>
+<p>Un ejemplo ayuda a verlo: la sandía tiene un IG alto (aprox. 72), pero una taza aporta poca cantidad de carbohidratos (aprox. 11 g), así que su carga glucémica es baja (aprox. 8). En cambio, una taza de arroz blanco cocido tiene IG alto y unos 44 g de carbohidratos: su carga glucémica es alta (aprox. 32). En la práctica, la carga glucémica refleja mejor lo que pasa en tu plato.</p>
+
+<div class="highlight-box">
+    <p>💡 <strong>Idea clave:</strong> un alimento con IG alto en porción pequeña puede subir menos la glucosa que uno de IG medio en porción grande.</p>
+</div>
+
+<h2 id="tabla">Tabla de índice glucémico de alimentos comunes en México</h2>
+<p>Valores aproximados basados en las tablas internacionales de índice glucémico (Atkinson, 2021). El IG de un mismo alimento varía según la variedad, la preparación y el estudio, por eso se muestran rangos orientativos y no cifras exactas.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Alimento</th><th style="padding: 1rem; text-align: left;">IG aprox.</th><th style="padding: 1rem; text-align: left;">Categoría</th><th style="padding: 1rem; text-align: left;">Comentario</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Frijol cocido</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">25-40</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Baja</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Rico en fibra y proteína vegetal</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Lenteja cocida</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">25-35</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Baja</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Una de las opciones con IG más bajo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Leche</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">30-40</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Baja</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">La proteína y la grasa moderan la respuesta</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur natural sin azúcar</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">35-45</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Baja</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Las versiones azucaradas aumentan la carga</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Manzana</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">35-40</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Baja</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Mejor entera que en jugo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Naranja</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">40-45</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Baja</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">La fruta entera conserva la fibra</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tortilla de maíz</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">45-55</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Baja a media</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Su porción es fácil de medir</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Plátano</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">45-60</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Baja a media</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Más maduro, IG más alto</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Avena en hojuela cocida</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">55-60</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Baja a media</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">La avena instantánea suele tener IG alto</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Arroz blanco cocido</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">70-75</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Alta</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Acompañar con frijol y verduras</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pan blanco o bolillo</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">70-75</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Alta</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Harina refinada con poca fibra</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Papa cocida</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">70-85</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Alta</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Varía mucho según variedad y cocción</td></tr>
+<tr><td style="padding: 1rem;">Sandía</td><td style="padding: 1rem;">70-75</td><td style="padding: 1rem;">Alta</td><td style="padding: 1rem;">Carga glucémica baja por porción</td></tr>
+</tbody>
+</table>
+</div>
+<p>Si quieres conocer qué alimentos aportan más fibra, una de las claves para bajar el impacto glucémico, revisa nuestra guía de <a href="/blog/alimentos-ricos-en-fibra/">alimentos ricos en fibra</a>.</p>
+
+<h2 id="carbohidratos-complejos">Carbohidratos complejos y simples: diferencias y ejemplos</h2>
+<p>Los carbohidratos se clasifican según el tamaño de sus moléculas:</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-indice-glucemico/complejos.webp" srcset="/assets/img/blog/post-indice-glucemico/complejos-w480.webp 480w, /assets/img/blog/post-indice-glucemico/complejos-w960.webp 960w, /assets/img/blog/post-indice-glucemico/complejos.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACwBACdASogABYAPuVgpk2pJaOiMAwBIByJYgC/OCHfGKdQeRO5I0kS4s8938SwAP7zckBvsE1t4Xt9eZphUxUV19k2Eutt64EWxaM4PEfKz+59Sf4X3Csf+e0di4UFJKkuzwmgy2TRZFM470/klrE5UWjNDWx/3f1Qukeww4OBSd7myDWWNtMeMbMFpUzb6lgFVeCrqAA=);background-size:cover;background-position:center" alt="Avena, frijol y tortillas frente a azúcar, pan dulce y refresco">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Los carbohidratos complejos se digieren más lento.</figcaption>
+</figure>
+<ul>
+    <li><strong>Carbohidratos simples:</strong> azúcares formados por una o dos moléculas, como glucosa, fructosa, sacarosa (azúcar de mesa) y lactosa (de la leche). Están en el azúcar, la miel, los refrescos, los dulces, la fruta y los lácteos.</li>
+    <li><strong>Carbohidratos complejos:</strong> cadenas largas de moléculas de glucosa, principalmente el almidón y la fibra. Están en las leguminosas, el maíz, la avena, el arroz, la papa, el pan y las verduras.</li>
+</ul>
+<h3>¿Los carbohidratos complejos siempre son mejores?</h3>
+<p>No necesariamente. El pan blanco y la papa son carbohidratos complejos y tienen IG alto, porque su almidón se digiere muy rápido. En cambio, la manzana o la naranja contienen azúcares simples y tienen IG bajo gracias a su fibra y a su tipo de azúcar. Por eso, más que "complejo o simple", conviene fijarse en la <strong>calidad del carbohidrato</strong>:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Carbohidratos de mejor calidad</th><th style="padding: 1rem; text-align: left;">Carbohidratos a limitar</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Frijol, lenteja, garbanzo, haba</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Refresco, jugos y aguas de sabor</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tortilla de maíz, avena en hojuela</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pan dulce, galletas, cereales azucarados</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Arroz integral, pasta integral al dente</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pan blanco, harinas refinadas</td></tr>
+<tr><td style="padding: 1rem;">Verduras y fruta entera</td><td style="padding: 1rem;">Fruta en almíbar, dulces, postres</td></tr>
+</tbody>
+</table>
+</div>
+<p>La revisión de Reynolds y colaboradores para la OMS (Lancet, 2019) encontró que las personas con mayor consumo de fibra y de granos enteros tuvieron entre 15 y 30% menos mortalidad y menor incidencia de enfermedad cardiovascular, diabetes tipo 2 y cáncer colorrectal que las de menor consumo. Sugiere al menos 25 a 29 g de fibra al día.</p>
+
+<h2 id="factores">¿Qué cambia el índice glucémico de un alimento?</h2>
+<p>El IG no es un número fijo. Estos factores lo modifican:</p>
+<ul>
+    <li><strong>Cocción:</strong> cuanto más cocido, más rápido se digiere el almidón. La pasta al dente tiene un IG menor que la muy cocida.</li>
+    <li><strong>Madurez:</strong> un plátano maduro tiene más azúcares libres y un IG más alto que uno verde.</li>
+    <li><strong>Procesamiento:</strong> la avena en hojuela tiene un IG menor que la instantánea; la fruta entera, menor que el jugo.</li>
+    <li><strong>Fibra:</strong> la fibra soluble, como la de la avena y las leguminosas, hace más lenta la absorción.</li>
+    <li><strong>Grasa, proteína y acidez de la comida:</strong> retrasan el vaciamiento del estómago y moderan la subida de glucosa.</li>
+    <li><strong>Enfriado:</strong> el arroz o la papa cocidos y enfriados forman algo de almidón resistente, con un efecto modesto.</li>
+    <li><strong>Orden de los alimentos:</strong> algunos estudios pequeños sugieren que comer primero verduras y proteína, y al final el carbohidrato, reduce la subida de glucosa después de comer.</li>
+</ul>
+
+<h2 id="limitaciones">Limitaciones del índice glucémico</h2>
+<p>Conviene usarlo con criterio, porque tiene límites importantes:</p>
+<ul>
+    <li><strong>Variabilidad individual:</strong> la respuesta al mismo alimento cambia entre personas e incluso en la misma persona en distintos días.</li>
+    <li><strong>Se mide con alimentos aislados:</strong> casi nunca comemos un alimento solo; en una comida mixta el resultado cambia.</li>
+    <li><strong>No mide la calidad nutricional:</strong> algunos productos con grasa o azúcar añadido tienen IG bajo y no son buena opción, como ciertas galletas o el chocolate con leche.</li>
+    <li><strong>La calidad global de la dieta pesa más:</strong> en la revisión de Reynolds (2019), la evidencia a favor de la fibra y los granos enteros fue más consistente que la del índice glucémico o la carga glucémica.</li>
+</ul>
+<p>El consenso de nutrición de la ADA (Evert, 2019) concluye que sustituir alimentos de carga glucémica alta por otros de carga baja puede mejorar modestamente el control de la glucosa, pero no lo plantea como una regla aislada sino dentro de un patrón de alimentación de calidad.</p>
+
+<h2 id="en-la-practica">Cómo usar el índice glucémico en la práctica</h2>
+<h3>Si tienes diabetes</h3>
+<p>El IG ayuda a elegir entre opciones de carbohidratos, pero lo primero es la cantidad total por comida, que tu plan debe definir según tu tratamiento. Combina siempre el carbohidrato con verduras y proteína. Para seguimiento de tu control, revisa nuestra guía sobre la <a href="/blog/hemoglobina-glucosilada/">hemoglobina glucosilada y sus valores</a>. Si usas insulina u otros medicamentos, cualquier cambio en la alimentación se coordina con tu médico.</p>
+<h3>Si tienes prediabetes o resistencia a la insulina</h3>
+<p>Priorizar carbohidratos de IG bajo y ricos en fibra, junto con actividad física, ayuda a mantener la glucosa más estable. Conoce el plan completo en nuestra guía de <a href="/blog/prediabetes/">prediabetes: qué es y cómo revertirla</a>.</p>
+<h3>Para la saciedad</h3>
+<p>Los alimentos de IG bajo y ricos en fibra suelen dar más saciedad, lo que puede ayudar a controlar el apetito. No es una herramienta para bajar de peso por sí sola, pero facilita armar comidas más completas.</p>
+<p>Para estrategias concretas del día a día, consulta nuestra guía para <a href="/nutricion-metabolica/bajar-glucosa/">bajar la glucosa con alimentación</a>.</p>
+
+<h2 id="plato">Ejemplo de plato con índice glucémico bajo</h2>
+<p>Un plato equilibrado reduce la carga glucémica de toda la comida, aunque incluya algún alimento de IG medio o alto:</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-indice-glucemico/plato.webp" srcset="/assets/img/blog/post-indice-glucemico/plato-w480.webp 480w, /assets/img/blog/post-indice-glucemico/plato-w960.webp 960w, /assets/img/blog/post-indice-glucemico/plato.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQBACdASogABYAPu1kpk2ppaMiMBgMATAdiWoAygAQ76TQIByTaUJ5QtVVH6wX2AD+8dClZwKNwZnQbIo6xYwrzpSxc2r4xyzm4w6E4P/R/PX+Mac70pzAhwLNTcoPes/8VfbANqRV37pMI59STEOha4ex6rcB+RELNbAA);background-size:cover;background-position:center" alt="Plato con lentejas, arroz integral, ensalada, aguacate y pescado">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Combinar fibra, proteína y grasa saludable baja la respuesta glucémica.</figcaption>
+</figure>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Parte del plato</th><th style="padding: 1rem; text-align: left;">Ejemplo</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Mitad: verduras</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Ensalada de nopales con jitomate, cebolla y cilantro, más calabacitas asadas</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Un cuarto: proteína</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pechuga de pollo a la plancha o filete de pescado</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Un cuarto: carbohidrato de calidad</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza de frijoles de la olla y 1 a 2 tortillas de maíz</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Grasa saludable</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">¼ de aguacate</td></tr>
+<tr><td style="padding: 1rem;"><strong>Bebida</strong></td><td style="padding: 1rem;">Agua simple o agua de jamaica sin azúcar</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="highlight-box">
+    <p>🥗 <strong>Tip práctico:</strong> si vas a comer arroz blanco o papa, acompáñalos con frijoles, verduras y proteína, y empieza el plato por la ensalada.</p>
+</div>
+
+<div class="cta-banner">
+    <h3>¿Quieres aprender a elegir tus carbohidratos?</h3>
+    <p>Diseñamos un plan de alimentación con tus alimentos de siempre para mantener tu glucosa estable, coordinado con tu médico. Consulta presencial en Del Valle, CDMX, o videoconsulta.</p>
+    <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+</div>
+
+<h2>Servicios y lecturas relacionados</h2>
+<ul>
+    <li><a href="/nutricion-metabolica/bajar-glucosa/">Cómo bajar la glucosa con alimentación</a>.</li>
+    <li><a href="/blog/prediabetes/">Prediabetes: valores y plan de alimentación</a>.</li>
+    <li><a href="/blog/alimentos-ricos-en-fibra/">Alimentos ricos en fibra</a>.</li>
+    <li><a href="/blog/guias-nutricionales/dieta-diabetes/">Dieta para diabéticos con menú semanal</a>.</li>
+</ul>
+
+<h2 id="referencias">Referencias</h2>
+<ol style="padding-left: 1.2rem; line-height: 1.7;">
+    <li>Atkinson FS, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=International%20tables%20of%20glycemic%20index%20and%20glycemic%20load%20values%202021%3A%20a%20systematic%20review." target="_blank" rel="noopener noreferrer">International tables of glycemic index and glycemic load values 2021: a systematic review.</a> Am J Clin Nutr. 2021.</li>
+    <li>Jenkins DJ, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Glycemic%20index%3A%20overview%20of%20implications%20in%20health%20and%20disease." target="_blank" rel="noopener noreferrer">Glycemic index: overview of implications in health and disease.</a> Am J Clin Nutr. 2002.</li>
+    <li>Reynolds A, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Carbohydrate%20quality%20and%20human%20health%3A%20a%20series%20of%20systematic%20reviews%20and%20meta-analyses." target="_blank" rel="noopener noreferrer">Carbohydrate quality and human health: a series of systematic reviews and meta-analyses.</a> Lancet. 2019.</li>
+    <li>Evert AB, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Nutrition%20Therapy%20for%20Adults%20With%20Diabetes%20or%20Prediabetes%3A%20A%20Consensus%20Report." target="_blank" rel="noopener noreferrer">Nutrition Therapy for Adults With Diabetes or Prediabetes: A Consensus Report.</a> Diabetes Care. 2019.</li>
+</ol>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+    <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico o nutriólogo. Los valores de índice glucémico son aproximados y varían entre personas y preparaciones. Si tienes diabetes, no modifiques tu tratamiento ni tus medicamentos sin indicación de tu médico tratante.</p>
+</div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué es el índice glucémico?</p>
+                        <p>Es una escala de 0 a 100 que indica qué tan rápido sube la glucosa después de comer un alimento con carbohidratos, comparado con la glucosa pura. Bajo es 55 o menos, medio 56 a 69 y alto 70 o más.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué diferencia hay entre índice glucémico y carga glucémica?</p>
+                        <p>El índice glucémico mide la velocidad con que sube la glucosa; la carga glucémica también considera cuántos carbohidratos tiene la porción. La carga glucémica refleja mejor lo que pasa en una comida real.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué son los carbohidratos complejos?</p>
+                        <p>Son cadenas largas de glucosa, como el almidón y la fibra. Están en leguminosas, maíz, avena, arroz, papa y verduras. No todos tienen índice glucémico bajo: el pan blanco y la papa lo tienen alto.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La tortilla de maíz tiene índice glucémico alto?</p>
+                        <p>Su índice glucémico es aproximadamente bajo a medio, alrededor de 45 a 55 según la preparación. En porción moderada y acompañada de verduras, proteína y frijoles puede formar parte de una alimentación equilibrada.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué frutas tienen índice glucémico bajo?</p>
+                        <p>La manzana, la naranja, la pera y las fresas suelen tener índice glucémico bajo. El plátano muy maduro y la sandía son más altos, aunque la sandía tiene carga glucémica baja por porción.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Una dieta de índice glucémico bajo sirve para la diabetes?</p>
+                        <p>Puede ayudar a mejorar modestamente el control de la glucosa, sobre todo como parte de un patrón de alimentación de calidad con fibra, verduras y proteína. La cantidad total de carbohidratos también importa.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cómo puedo bajar el índice glucémico de mis comidas?</p>
+                        <p>Combina los carbohidratos con verduras, proteína y grasa saludable, prefiere alimentos enteros y poco procesados, evita cocinar de más la pasta y el arroz, y empieza la comida por la ensalada.</p>
+                    </div>
+
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica para elegir carbohidratos y controlar la glucosa. Consulta presencial en Del Valle
+                            o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/dieta-diabetes/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-06/hero.webp" srcset="/assets/img/blog/post-06/hero-w480.webp 480w, /assets/img/blog/post-06/hero-w960.webp 960w, /assets/img/blog/post-06/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Dieta para diabéticos</h3>
+                            <p>Guía práctica con lista de alimentos y menú de 7 días.</p>
+                            <a href="/blog/guias-nutricionales/dieta-diabetes/" class="btn-text" aria-label="Leer: Dieta para diabéticos">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/resistencia-a-la-insulina/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-resistencia-insulina/hero.webp" srcset="/assets/img/blog/post-resistencia-insulina/hero-w480.webp 480w, /assets/img/blog/post-resistencia-insulina/hero-w960.webp 960w, /assets/img/blog/post-resistencia-insulina/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Resistencia a la insulina</h3>
+                            <p>Qué es, señales como la acantosis, diagnóstico y qué comer para mejorarla.</p>
+                            <a href="/blog/resistencia-a-la-insulina/" class="btn-text" aria-label="Leer: Resistencia a la insulina">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/glucosa-alta-sintomas/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-glucosa-sintomas/hero.webp" srcset="/assets/img/blog/post-glucosa-sintomas/hero-w480.webp 480w, /assets/img/blog/post-glucosa-sintomas/hero-w960.webp 960w, /assets/img/blog/post-glucosa-sintomas/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Glucosa alta: síntomas y valores</h3>
+                            <p>Señales de la hiperglucemia, valores normales y cuándo es urgencia.</p>
+                            <a href="/blog/glucosa-alta-sintomas/" class="btn-text" aria-label="Leer: Glucosa alta: síntomas y valores">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

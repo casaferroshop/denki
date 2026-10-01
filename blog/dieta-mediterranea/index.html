@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Dieta mediterránea: beneficios y menú mexicano | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Qué es la dieta mediterránea, qué dice la evidencia (PREDIMED), cómo adaptarla con comida mexicana, lista del súper y un menú de 7 días fácil de seguir.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Dieta mediterránea: beneficios y menú mexicano | Clínica Denki">
+    <meta property="og:description" content="Qué es la dieta mediterránea, qué dice la evidencia (PREDIMED), cómo adaptarla con comida mexicana, lista del súper y un menú de 7 días fácil de seguir.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/dieta-mediterranea/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-mediterranea/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dieta mediterránea: beneficios y menú mexicano | Clínica Denki">
+    <meta name="twitter:description" content="Qué es la dieta mediterránea, qué dice la evidencia (PREDIMED), cómo adaptarla con comida mexicana, lista del súper y un menú de 7 días fácil de seguir.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-mediterranea/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/dieta-mediterranea/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Dieta mediterránea: qué es, beneficios y menú mexicano de 7 días",
+  "url": "https://www.clinicadenki.mx/blog/dieta-mediterranea/",
+  "image": "https://www.clinicadenki.mx/assets/img/blog/post-mediterranea/hero.webp",
+  "datePublished": "2026-10-02",
+  "dateModified": "2026-10-02",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Lucy Anita Camberos Luna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clínica Denki",
+    "url": "https://www.clinicadenki.mx/"
+  },
+  "description": "Guía clínica de la dieta mediterránea: qué es, grupos de alimentos y frecuencias, beneficios con evidencia (PREDIMED y revisiones), adaptación a la cocina mexicana, lista del súper y menú de 7 días.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.clinicadenki.mx/blog/dieta-mediterranea/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.clinicadenki.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.clinicadenki.mx/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dieta mediterránea",
+      "item": "https://www.clinicadenki.mx/blog/dieta-mediterranea/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es la dieta mediterránea en pocas palabras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es un patrón de alimentación basado en verduras, frutas, leguminosas, cereales integrales, nueces y aceite de oliva como grasa principal, con pescado frecuente, lácteos moderados y poca carne roja, embutidos y azúcar. No es una dieta restrictiva ni de conteo de calorías."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Para qué sirve la dieta mediterránea?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es uno de los patrones con más evidencia para la salud cardiovascular. En el ensayo PREDIMED, personas de alto riesgo tuvieron menos infartos, eventos vasculares cerebrales y muertes cardiovasculares. También se asocia con menor riesgo de diabetes tipo 2 y otras enfermedades crónicas, aunque gran parte de esa evidencia es observacional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede seguir la dieta mediterránea en México?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Lo importante es el patrón, no los ingredientes importados. Frijol, lenteja, nopal, quelites, jitomate, aguacate, pescado, tortilla de maíz y fruta de temporada encajan muy bien. Si el aceite de oliva no te alcanza, el aceite de canola es una alternativa razonable para cocinar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La dieta mediterránea sirve para bajar de peso?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puede ayudar porque es rica en fibra y alimentos poco procesados, que dan saciedad. Pero no es una dieta para adelgazar por sí misma: el aceite, las nueces y el pan tienen muchas calorías. Si tu objetivo es perder peso, las porciones se ajustan de forma individual."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es obligatorio tomar vino en la dieta mediterránea?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. El vino no es un requisito y las guías no recomiendan empezar a beber para cuidar el corazón. Si no tomas alcohol, no hay razón para empezar; si tomas, conviene que sea poco, y evitarlo si tu médico así lo indica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto aceite de oliva se usa en la dieta mediterránea?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Se usa como grasa principal para cocinar y aderezar, en lugar de manteca, mantequilla o margarina. La cantidad exacta depende de tus necesidades de energía; en el estudio PREDIMED se indicó un consumo generoso, pero en consulta se ajusta a tu peso y tus objetivos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La dieta mediterránea es buena para personas con diabetes o hígado graso?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suele ser una buena base porque prioriza fibra, grasas insaturadas y alimentos poco procesados. En diabetes hay que cuidar la porción de cereales, fruta y pan; en hígado graso, evitar el alcohol y los azúcares. El plan se ajusta con tu médico y tu nutriólogo."
+      }
+    }
+  ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Cardiovascular</span>
+                    <h1>Dieta mediterránea: qué es, beneficios y menú mexicano de 7 días</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 12 min de lectura</span>
+                        <span>📅 Actualizado: Oct 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-mediterranea/hero.webp" srcset="/assets/img/blog/post-mediterranea/hero-w480.webp 480w, /assets/img/blog/post-mediterranea/hero-w960.webp 960w, /assets/img/blog/post-mediterranea/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAAAQBgCdASogACAAPu1krVAppSQisBgIATAdiUAX7WzmjelIrV5SlDN68XjPoh9bzu7pCTOsBwv8AUAA/vzZlaOhtR3swdcsQrtsb1uTRcMUc7IA1DbkJlofIksbZL3FfrkD+4g09UX3nX1WcXMuifS3DVxRG7/04Dq/pHbevrkGlrUjQQZ8oQkOiBX94OZwCgEadb+YJATFNezANEJru24s2hzx1VtZ00j1jLMhwAHtj50inAkOOtL5Mmymt5pRNRCNWZ9NyoQ9nL3zP0h2mUZgsXS3gcyKpAgj4JkVl6sBGDBSwcvv4cs6R0fsmU7INbr9m8qiWMAAAA==);background-size:cover;background-position:center" alt="Dieta mediterránea con ingredientes mexicanos: verduras, leguminosas, pescado y aceite de oliva - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+<p class="lead" style="border: none; padding: 0;">La <strong>dieta mediterránea</strong> es un patrón de alimentación tradicional de los países que rodean el mar Mediterráneo, basado en verduras, frutas, leguminosas, cereales integrales, nueces y aceite de oliva, con pescado frecuente y poca carne roja, embutidos y azúcar. Más que una "dieta" con reglas estrictas, es una forma de comer que se sostiene en el tiempo.</p>
+
+<p>Es uno de los patrones con más respaldo científico para cuidar el corazón: en el ensayo PREDIMED redujo los eventos cardiovasculares en personas de alto riesgo. Y lo mejor es que no necesitas productos importados para seguirla. En esta guía te explicamos qué incluye, qué dice la evidencia, cómo adaptarla a la cocina mexicana y te compartimos una lista del súper y un menú de 7 días.</p>
+
+<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — octubre 2026.</p>
+
+<div class="post-toc">
+    <h4>Contenido de este artículo</h4>
+    <ul>
+        <li><a href="#que-es">Qué es la dieta mediterránea</a></li>
+        <li><a href="#piramide">Grupos de alimentos y frecuencias</a></li>
+        <li><a href="#beneficios">Beneficios con evidencia</a></li>
+        <li><a href="#mexico">Cómo adaptarla a México</a></li>
+        <li><a href="#super">Lista del súper</a></li>
+        <li><a href="#menu">Menú de 7 días</a></li>
+        <li><a href="#errores">Errores comunes</a></li>
+        <li><a href="#para-quien">Para quién conviene</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+    </ul>
+</div>
+
+<h2 id="que-es">¿Qué es la dieta mediterránea?</h2>
+<p>El término describe la forma en que se comía tradicionalmente en regiones de Grecia, el sur de Italia y España a mediados del siglo XX. Los investigadores notaron que en esas poblaciones había menos enfermedad coronaria que en otros países industrializados, y desde entonces el patrón se ha estudiado durante décadas.</p>
+<p>Conviene entenderla como un <strong>patrón</strong> y no como una lista de alimentos permitidos y prohibidos. Sus rasgos principales son:</p>
+<ul>
+    <li><strong>Base vegetal abundante:</strong> verduras, frutas, leguminosas, cereales de preferencia integrales, nueces y semillas todos los días.</li>
+    <li><strong>Aceite de oliva como grasa principal</strong> para cocinar y aderezar, en lugar de manteca, mantequilla o margarina.</li>
+    <li><strong>Pescado y mariscos</strong> varias veces por semana; aves, huevo y lácteos (sobre todo yogur y queso) en cantidades moderadas.</li>
+    <li><strong>Poca carne roja y muy pocos embutidos,</strong> dulces y bebidas azucaradas.</li>
+    <li><strong>Comida casera, compartida y sin prisa,</strong> con actividad física diaria. Este componente de estilo de vida también forma parte del patrón.</li>
+</ul>
+<p>No exige contar calorías ni eliminar grupos de alimentos. Por eso muchas personas la encuentran más fácil de mantener que las dietas restrictivas.</p>
+
+<h2 id="piramide">Pirámide de la dieta mediterránea: grupos y frecuencias</h2>
+<p>La pirámide mediterránea organiza los alimentos según la frecuencia con la que se recomiendan. La siguiente tabla es orientativa para un adulto sano; las porciones exactas dependen de tu edad, actividad física y condición de salud.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-mediterranea/piramide.webp" srcset="/assets/img/blog/post-mediterranea/piramide-w480.webp 480w, /assets/img/blog/post-mediterranea/piramide-w960.webp 960w, /assets/img/blog/post-mediterranea/piramide.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADwBACdASogABYAPuVipE2pJaOiMAwBIByJbAC+aOZDA1+nLGM6wX0mSiIZikdlI4AA/vNx+3RHMYx9fZvaeoewEaDPLEODkSqH4OZBwk6I3zgTzkeDs3U7Xw1v+boM5SSXxP1YRrvXpb9ke8ldMGAIxPyAQNHgk9oLnMnUCPvUWplIl/KcRMTEDAQm67ggF+nhwfUuJRhPjjcEJmRF1ywA);background-size:cover;background-position:center" alt="Pirámide de alimentos mediterráneos formada con alimentos reales">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Verduras, frutas, integrales, leguminosas y aceite de oliva son la base.</figcaption>
+</figure>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Grupo de alimentos</th><th style="padding: 1rem; text-align: left;">Frecuencia orientativa</th><th style="padding: 1rem; text-align: left;">Ejemplos</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Verduras</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En cada comida principal</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Jitomate, calabacita, espinaca, nopal, brócoli, pimiento, cebolla</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Frutas</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Diario, de preferencia como postre</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Naranja, guayaba, manzana, papaya, uvas, fresas</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Cereales</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Diario, de preferencia integrales</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Avena, pan integral, arroz integral, pasta, tortilla de maíz</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Aceite de oliva</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Diario, como grasa principal</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Para cocinar, aderezar ensaladas y verduras</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Nueces, semillas y aceitunas</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Diario, en porción pequeña</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Nuez, almendra, cacahuate natural, pepitas</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Lácteos</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Diario, en cantidad moderada</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur natural, queso fresco o panela, leche</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Leguminosas</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Varias veces por semana</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Frijol, lenteja, garbanzo, haba</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Pescado y mariscos</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2 o más veces por semana</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sardina, atún, salmón, mojarra, huachinango</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Aves y huevo</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Varias veces por semana, moderado</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pollo sin piel, pavo, huevo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Carne roja</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Ocasional</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Res o cerdo en cortes magros</td></tr>
+<tr><td style="padding: 1rem;"><strong>Embutidos y dulces</strong></td><td style="padding: 1rem;">Poco frecuente</td><td style="padding: 1rem;">Jamón, chorizo, pan dulce, postres</td></tr>
+</tbody>
+</table>
+</div>
+<div class="highlight-box">
+    <p>💡 <strong>Idea clave:</strong> la base de la pirámide son los alimentos vegetales y el aceite de oliva; la carne roja, los embutidos y los dulces quedan en la punta, como consumo ocasional.</p>
+</div>
+
+<h2 id="beneficios">Beneficios de la dieta mediterránea: qué dice la evidencia</h2>
+<h3>Salud cardiovascular: el estudio PREDIMED</h3>
+<p>El ensayo <strong>PREDIMED</strong>, realizado en España con miles de adultos mayores de 55 años con alto riesgo cardiovascular pero sin enfermedad cardiaca previa, comparó tres grupos: dieta mediterránea complementada con aceite de oliva extra virgen, dieta mediterránea complementada con nueces y una dieta control con consejo para reducir la grasa. Los dos grupos mediterráneos tuvieron alrededor de <strong>30 % menos eventos cardiovasculares mayores</strong> (infarto, evento vascular cerebral o muerte de causa cardiovascular).</p>
+<p>Un detalle de transparencia: la publicación original de 2013 se retiró y se volvió a publicar en 2018 (Estruch, 2018) porque en algunos centros la asignación de los participantes no fue completamente aleatoria. El reanálisis, que tomó en cuenta esos problemas, mantuvo un beneficio similar.</p>
+<h3>Otras enfermedades crónicas</h3>
+<p>Una revisión paraguas que reunió metaanálisis de estudios observacionales y ensayos clínicos (Dinu, 2018) encontró que una mayor adherencia a la dieta mediterránea se asocia con menor mortalidad general y menor riesgo de enfermedad cardiovascular, infarto, diabetes tipo 2, algunos tipos de cáncer y enfermedades neurodegenerativas.</p>
+<p>Aquí hay que ser prudentes: <strong>la mayor parte de esa evidencia es observacional</strong>. Muestra asociaciones, no prueba que la dieta por sí sola cause esos beneficios, porque quienes comen así suelen tener también otros hábitos saludables. Los propios autores señalan que la evidencia más sólida es la cardiovascular.</p>
+<h3>Lo que dicen las guías</h3>
+<p>Las guías europeas de dislipidemias (Mach, 2020) y la guía estadounidense de prevención primaria (Arnett, 2019) recomiendan patrones de alimentación de este tipo: ricos en verduras, frutas, leguminosas, nueces, cereales integrales y pescado, con grasas insaturadas en lugar de saturadas y menos sodio, carnes procesadas, azúcares y harinas refinadas. Si buscas el panorama completo de prevención, revisa nuestra página de <a href="/nutricion-cardiovascular/">nutrición cardiovascular</a>.</p>
+
+<h2 id="mexico">Cómo adaptar la dieta mediterránea a México</h2>
+<p>La cocina mexicana tradicional comparte muchos principios con la mediterránea: leguminosas diarias, maíz, verduras, chiles, hierbas y fruta. El reto no es importar ingredientes, sino <strong>recuperar lo tradicional y reducir lo ultraprocesado</strong>. Estas equivalencias te ayudan a armar un patrón mediterráneo con lo que encuentras en el mercado:</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-mediterranea/mexico.webp" srcset="/assets/img/blog/post-mediterranea/mexico-w480.webp 480w, /assets/img/blog/post-mediterranea/mexico-w960.webp 960w, /assets/img/blog/post-mediterranea/mexico.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAwBQCdASogABYAPu1sq1EppaOiqAqpMB2JZAALAAFrhIgPMLdtTarLPq89fpNr3nveAAD+84LNco23DLTR1+sRvLVr4xIHELx+vWI5BiLC42W50qC4Lhny6POJFrsOD8P2XKyRqwpXgxbQTzItwWKOrgJpvynLFMd2j/hj/kQB8gBWCKPpRlfAVjIYKdoiNZ23opS2ukR9ZLBvFLDk5KDyJg0AAA==);background-size:cover;background-position:center" alt="Mesa con ensalada de nopal, frijol, pescado, tortillas y aguacate">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Frijol, nopal, pescado y tortilla de maíz encajan en el patrón.</figcaption>
+</figure>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Elemento mediterráneo</th><th style="padding: 1rem; text-align: left;">Equivalente en México</th><th style="padding: 1rem; text-align: left;">Comentario</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Aceite de oliva extra virgen</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Aceite de oliva o de canola; aguacate</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">El de canola es más accesible para cocinar; el aguacate aporta grasa insaturada</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Garbanzo y lenteja</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Frijol, lenteja, haba, garbanzo</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Frijol de la olla, no refrito con manteca</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Verduras de huerta</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Nopal, quelites, calabacita, chayote, jitomate, ejotes</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Mercado o tianguis, de temporada</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Pescado azul</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sardina, atún, macarela, salmón, trucha</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">La sardina en lata es económica y práctica</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Pan integral y cereales</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tortilla de maíz nixtamalizado, avena, arroz integral</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tortilla en porción moderada</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Frutos secos</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Cacahuate natural, pepitas, nuez, almendra</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sin sal ni recubrimientos</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Salsas y sofritos caseros</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Salsa verde o roja molcajeteada, pico de gallo</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sin salsas embotelladas con mucho sodio</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Fruta como postre</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Guayaba, papaya, mandarina, mango, tuna</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Entera, mejor que en jugo</td></tr>
+<tr><td style="padding: 1rem;"><strong>Yogur y queso</strong></td><td style="padding: 1rem;">Yogur natural, queso fresco o panela</td><td style="padding: 1rem;">Sin azúcar añadida, en porción moderada</td></tr>
+</tbody>
+</table>
+</div>
+<p>Algunos platillos mexicanos que ya son muy "mediterráneos": pescado a la veracruzana, ensalada de nopales, sopa de lentejas, frijoles de la olla con verduras, caldo de pollo con verduras, tacos de pescado con repollo y tostadas horneadas de atún con aguacate.</p>
+
+<h2 id="super">Lista del súper para la dieta mediterránea</h2>
+<p>Una lista base para una semana:</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-mediterranea/super.webp" srcset="/assets/img/blog/post-mediterranea/super-w480.webp 480w, /assets/img/blog/post-mediterranea/super-w960.webp 960w, /assets/img/blog/post-mediterranea/super.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABwBQCdASogABYAPuFYpk2opSOiN/qoARAcCWIAuDAh31VUPrt+pqxu24e1dqIrNsIBL5ggAP7zcneTSjRpt7ejn/3QZrxKFhsrYZ7Ke7kXYfXJVvMygyv5M7Vz8Y7nHha8y+sQ9IVWkR8/HBA4atzy+j0C4nUiAcm41/BDzew8tlv6mGI045zmolj8dAID6Y3x7aMQx+MGLWW1pPNFPcIavkUNMKsKgmonXgAA);background-size:cover;background-position:center" alt="Mujer con canasta de verduras frente al puesto de pescado del mercado">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Una lista del súper sencilla facilita seguirla.</figcaption>
+</figure>
+<ul>
+    <li><strong>Verduras:</strong> jitomate, cebolla, ajo, calabacita, nopales, espinaca, brócoli, zanahoria, pepino, lechuga, chile poblano, ejotes.</li>
+    <li><strong>Frutas:</strong> guayaba, manzana, naranja, papaya, plátano, fresas o la fruta de temporada.</li>
+    <li><strong>Leguminosas:</strong> frijol, lenteja, garbanzo, haba seca.</li>
+    <li><strong>Cereales:</strong> tortilla de maíz, avena en hojuela, arroz integral, pan integral.</li>
+    <li><strong>Proteínas:</strong> pescado fresco o congelado, sardina y atún en agua, huevo, pollo.</li>
+    <li><strong>Lácteos:</strong> yogur natural, queso fresco o panela.</li>
+    <li><strong>Grasas:</strong> aceite de oliva o de canola, aguacate, cacahuate natural, nueces, pepitas.</li>
+    <li><strong>Sabor:</strong> limón, cilantro, perejil, orégano, comino, chiles secos.</li>
+</ul>
+
+<h2 id="menu">Menú de 7 días de dieta mediterránea con comida mexicana</h2>
+<p>Ejemplo orientativo para un adulto sin otras enfermedades. Puedes agregar una colación de fruta, yogur natural o un puñito de nueces según tu hambre y actividad; las porciones se ajustan de forma individual.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Día</th><th style="padding: 1rem; text-align: left;">Desayuno</th><th style="padding: 1rem; text-align: left;">Comida</th><th style="padding: 1rem; text-align: left;">Cena</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Lunes</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Avena con leche, manzana y nuez</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sopa de lentejas; pescado a la veracruzana; ensalada verde con aceite de oliva</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tostadas horneadas de atún con aguacate y jitomate</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Martes</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Huevos a la mexicana con nopales y 2 tortillas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pollo al ajillo con verduras asadas; arroz integral</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur natural con fresas y pepitas</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Miércoles</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pan integral con aguacate, jitomate y queso panela</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Frijoles de la olla con calabacita; sardinas en salsa de jitomate; tortillas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Crema de verduras sin crema; quesadilla de queso fresco</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Jueves</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Licuado de leche con plátano y avena</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Ensalada de garbanzo con pepino, jitomate y aceite de oliva; pollo a la plancha</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tacos de pescado con repollo y pico de gallo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Viernes</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur natural con papaya y nuez</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Caldo de pescado con verduras; arroz integral; ensalada</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Omelette de espinaca con pan integral</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Sábado</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Chilaquiles horneados con salsa verde, huevo y frijoles</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pasta integral con verduras salteadas y atún</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Ensalada de nopales con queso fresco; tortilla</td></tr>
+<tr><td style="padding: 1rem;"><strong>Domingo</strong></td><td style="padding: 1rem;">Molletes con pan integral, frijoles y pico de gallo</td><td style="padding: 1rem;">Pollo en salsa de jitomate y chile; verduras al vapor; tortillas</td><td style="padding: 1rem;">Fruta picada con yogur y almendras</td></tr>
+</tbody>
+</table>
+</div>
+<div class="highlight-box">
+    <p>🥗 <strong>Tip práctico:</strong> si vas a empezar por un solo cambio, sustituye la manteca o la mantequilla por aceite de oliva o canola y agrega una porción de leguminosas al día.</p>
+</div>
+
+<h2 id="errores">Errores comunes al seguir la dieta mediterránea</h2>
+<h3>Pensar que el pan, la pasta y el vino son "libres"</h3>
+<p>El patrón incluye cereales, pero de preferencia integrales y en porciones razonables. El pan blanco y la pasta en exceso no son el corazón de la dieta. En cuanto al vino, no es obligatorio: si no bebes, no hay razón para empezar, y las guías no recomiendan el alcohol para proteger el corazón.</p>
+<h3>Olvidar las porciones del aceite y las nueces</h3>
+<p>Son grasas saludables, pero muy concentradas en energía. Una cucharada de aceite o un puñito de nueces es una porción, no un frasco. Si tu objetivo es bajar de peso, este punto marca la diferencia.</p>
+<h3>Quedarse con los "productos mediterráneos" y no con el patrón</h3>
+<p>Agregar aceite de oliva a una alimentación basada en refrescos, pan dulce y embutidos no la vuelve mediterránea. El beneficio viene del conjunto: más vegetales, leguminosas y pescado, y menos ultraprocesados.</p>
+
+<h2 id="para-quien">¿Para quién conviene la dieta mediterránea?</h2>
+<p>Es una base adecuada para la mayoría de los adultos. Destaca especialmente en:</p>
+<ul>
+    <li><strong>Riesgo cardiovascular, colesterol o triglicéridos altos:</strong> es el escenario con mejor evidencia. Si te detectaron el LDL elevado, revisa nuestra página sobre <a href="/nutricion-cardiovascular/colesterol-alto/">colesterol alto y su manejo nutricional</a>.</li>
+    <li><strong>Diabetes tipo 2 o prediabetes:</strong> encaja bien, cuidando la porción de cereales, pan y fruta.</li>
+    <li><strong>Hígado graso:</strong> las guías de hígado graso la consideran un patrón adecuado; en nuestra <a href="/blog/dieta-higado-graso/">guía de dieta para hígado graso</a> encontrarás un menú específico.</li>
+    <li><strong>Presión arterial alta:</strong> combina bien con el patrón DASH, diseñado para la presión. Te lo explicamos en nuestra guía de la <a href="/blog/dieta-dash/">dieta DASH</a>.</li>
+    <li><strong>Memoria y cognición:</strong> la dieta MIND combina elementos mediterráneos y DASH; la evidencia en cognición es mayormente observacional y los ensayos han dado resultados mixtos. Lo revisamos en <a href="/blog/alimentos-para-la-memoria/">alimentos para la memoria</a>.</li>
+</ul>
+<p>Si tienes enfermedad renal, tomas anticoagulantes, vives con varias enfermedades o eres adulto mayor con poco apetito, conviene adaptarla con un profesional. Y nunca sustituye los medicamentos que te indicó tu médico.</p>
+
+<div class="cta-banner">
+    <h3>¿Quieres llevar la dieta mediterránea a tu día a día?</h3>
+    <p>Diseñamos un plan mediterráneo con comida mexicana, ajustado a tus estudios y coordinado con tu médico. Consulta presencial en Del Valle, CDMX, o videoconsulta.</p>
+    <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+    <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+</div>
+
+<h2 id="referencias">Referencias</h2>
+<ol style="padding-left: 1.2rem; line-height: 1.7;">
+    <li>Estruch R, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Primary%20Prevention%20of%20Cardiovascular%20Disease%20with%20a%20Mediterranean%20Diet%20Supplemented%20with%20Extra-Virgin%20Olive%20Oil%20or%20Nuts." target="_blank" rel="noopener noreferrer">Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or Nuts.</a> N Engl J Med. 2018.</li>
+    <li>Dinu M, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Mediterranean%20diet%20and%20multiple%20health%20outcomes%3A%20an%20umbrella%20review%20of%20meta-analyses%20of%20observational%20studies%20and%20randomised%20trials." target="_blank" rel="noopener noreferrer">Mediterranean diet and multiple health outcomes: an umbrella review of meta-analyses of observational studies and randomised trials.</a> Eur J Clin Nutr. 2018.</li>
+    <li>Mach F, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=2019%20ESC%2FEAS%20Guidelines%20for%20the%20management%20of%20dyslipidaemias%3A%20lipid%20modification%20to%20reduce%20cardiovascular%20risk." target="_blank" rel="noopener noreferrer">2019 ESC/EAS Guidelines for the management of dyslipidaemias: lipid modification to reduce cardiovascular risk.</a> Eur Heart J. 2020.</li>
+    <li>Arnett DK, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=2019%20ACC%2FAHA%20Guideline%20on%20the%20Primary%20Prevention%20of%20Cardiovascular%20Disease." target="_blank" rel="noopener noreferrer">2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease.</a> Circulation. 2019.</li>
+</ol>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+    <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico o nutriólogo. Si tienes una enfermedad cardiovascular, diabetes, enfermedad renal u otra condición, adapta cualquier cambio de alimentación con tu equipo de salud. No suspendas ni ajustes medicamentos sin indicación de tu médico tratante.</p>
+</div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué es la dieta mediterránea en pocas palabras?</p>
+                        <p>Es un patrón de alimentación basado en verduras, frutas, leguminosas, cereales integrales, nueces y aceite de oliva como grasa principal, con pescado frecuente, lácteos moderados y poca carne roja, embutidos y azúcar. No es una dieta restrictiva ni de conteo de calorías.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Para qué sirve la dieta mediterránea?</p>
+                        <p>Es uno de los patrones con más evidencia para la salud cardiovascular. En el ensayo PREDIMED, personas de alto riesgo tuvieron menos infartos, eventos vasculares cerebrales y muertes cardiovasculares. También se asocia con menor riesgo de diabetes tipo 2 y otras enfermedades crónicas, aunque gran parte de esa evidencia es observacional.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Se puede seguir la dieta mediterránea en México?</p>
+                        <p>Sí. Lo importante es el patrón, no los ingredientes importados. Frijol, lenteja, nopal, quelites, jitomate, aguacate, pescado, tortilla de maíz y fruta de temporada encajan muy bien. Si el aceite de oliva no te alcanza, el aceite de canola es una alternativa razonable para cocinar.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La dieta mediterránea sirve para bajar de peso?</p>
+                        <p>Puede ayudar porque es rica en fibra y alimentos poco procesados, que dan saciedad. Pero no es una dieta para adelgazar por sí misma: el aceite, las nueces y el pan tienen muchas calorías. Si tu objetivo es perder peso, las porciones se ajustan de forma individual.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Es obligatorio tomar vino en la dieta mediterránea?</p>
+                        <p>No. El vino no es un requisito y las guías no recomiendan empezar a beber para cuidar el corazón. Si no tomas alcohol, no hay razón para empezar; si tomas, conviene que sea poco, y evitarlo si tu médico así lo indica.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuánto aceite de oliva se usa en la dieta mediterránea?</p>
+                        <p>Se usa como grasa principal para cocinar y aderezar, en lugar de manteca, mantequilla o margarina. La cantidad exacta depende de tus necesidades de energía; en el estudio PREDIMED se indicó un consumo generoso, pero en consulta se ajusta a tu peso y tus objetivos.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La dieta mediterránea es buena para personas con diabetes o hígado graso?</p>
+                        <p>Suele ser una buena base porque prioriza fibra, grasas insaturadas y alimentos poco procesados. En diabetes hay que cuidar la porción de cereales, fruta y pan; en hígado graso, evitar el alcohol y los azúcares. El plan se ajusta con tu médico y tu nutriólogo.</p>
+                    </div>
+
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica cardiovascular con un plan mediterráneo adaptado a la comida mexicana. Consulta presencial en Del Valle
+                            o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/alimentos-bajan-colesterol/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-02/hero.webp" srcset="/assets/img/blog/post-02/hero-w480.webp 480w, /assets/img/blog/post-02/hero-w960.webp 960w, /assets/img/blog/post-02/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Cardiovascular</span>
+                            <h3>Alimentos que bajan el colesterol</h3>
+                            <p>Los alimentos con mejor evidencia para bajar el LDL y cómo comerlos.</p>
+                            <a href="/blog/guias-nutricionales/alimentos-bajan-colesterol/" class="btn-text" aria-label="Leer: Alimentos que bajan el colesterol">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/dieta-higado-graso/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-higado-graso/hero.webp" srcset="/assets/img/blog/post-higado-graso/hero-w480.webp 480w, /assets/img/blog/post-higado-graso/hero-w960.webp 960w, /assets/img/blog/post-higado-graso/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Dieta para hígado graso</h3>
+                            <p>Qué comer, qué limitar y un menú mexicano para cuidar tu hígado.</p>
+                            <a href="/blog/dieta-higado-graso/" class="btn-text" aria-label="Leer: Dieta para hígado graso">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/alimentos-para-la-memoria/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-memoria/hero.webp" srcset="/assets/img/blog/post-memoria/hero-w480.webp 480w, /assets/img/blog/post-memoria/hero-w960.webp 960w, /assets/img/blog/post-memoria/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Alimentos para la memoria</h3>
+                            <p>Qué dice la ciencia sobre la dieta y la salud cognitiva, incluida la dieta MIND.</p>
+                            <a href="/blog/alimentos-para-la-memoria/" class="btn-text" aria-label="Leer: Alimentos para la memoria">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

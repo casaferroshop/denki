@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Alimentos ricos en hierro y cómo absorberlo | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Lista de alimentos ricos en hierro accesibles en México, cuánto necesitas según tu edad, cómo absorberlo mejor y qué hacer si te dijeron que tienes anemia.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Alimentos ricos en hierro y cómo absorberlo | Clínica Denki">
+    <meta property="og:description" content="Lista de alimentos ricos en hierro accesibles en México, cuánto necesitas según tu edad, cómo absorberlo mejor y qué hacer si te dijeron que tienes anemia.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/alimentos-ricos-en-hierro/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-hierro/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alimentos ricos en hierro y cómo absorberlo | Clínica Denki">
+    <meta name="twitter:description" content="Lista de alimentos ricos en hierro accesibles en México, cuánto necesitas según tu edad, cómo absorberlo mejor y qué hacer si te dijeron que tienes anemia.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-hierro/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/alimentos-ricos-en-hierro/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Alimentos ricos en hierro: lista, absorción y anemia",
+  "url": "https://www.clinicadenki.mx/blog/alimentos-ricos-en-hierro/",
+  "image": "https://www.clinicadenki.mx/assets/img/blog/post-hierro/hero.webp",
+  "datePublished": "2026-10-02",
+  "dateModified": "2026-10-02",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Lucy Anita Camberos Luna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clínica Denki",
+    "url": "https://www.clinicadenki.mx/"
+  },
+  "description": "Guía clínica de alimentos ricos en hierro: hierro hemo y no hemo, ingesta recomendada por edad y sexo, tabla de alimentos mexicanos, cómo mejorar la absorción, grupos de riesgo, anemia ferropénica y uso responsable de suplementos.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.clinicadenki.mx/blog/alimentos-ricos-en-hierro/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.clinicadenki.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.clinicadenki.mx/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Alimentos ricos en hierro",
+      "item": "https://www.clinicadenki.mx/blog/alimentos-ricos-en-hierro/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuál es el alimento con más hierro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entre los alimentos comunes, el hígado de pollo y el de res están entre los que más aportan, y su hierro hemo se absorbe bien. Les siguen carne de res, sardina, lenteja, tofu, pepitas y cereales fortificados."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto hierro necesito al día?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Según el IOM, los hombres adultos y las mujeres mayores de 50 años necesitan 8 mg al día; las mujeres de 19 a 50 años, 18 mg; y en el embarazo, 27 mg. Las personas vegetarianas requieren más."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La espinaca tiene mucho hierro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contiene hierro, pero también oxalatos que reducen mucho su absorción. Es una buena verdura, pero no conviene depender de ella como fuente principal de hierro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El café quita el hierro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El café y el té reducen la absorción del hierro no hemo si se toman con la comida. No tienes que dejarlos: basta con tomarlos una o dos horas antes o después de comer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Con qué combinar los frijoles para absorber más hierro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Con alimentos ricos en vitamina C, como salsa de jitomate, chile, limón o una guayaba, y si es posible con un poco de carne, pollo o pescado en la misma comida."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo tomar hierro si me siento cansado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No sin estudios. El cansancio tiene muchas causas y el hierro innecesario puede dar molestias o acumularse. Primero el médico confirma la deficiencia y busca su causa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede corregir la anemia solo con alimentación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Una alimentación rica en hierro ayuda a prevenir la deficiencia, pero cuando ya hay anemia suele necesitarse un suplemento indicado por el médico, además de tratar la causa que la provocó."
+      }
+    }
+  ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Nutrientes</span>
+                    <h1>Alimentos ricos en hierro: lista, absorción y anemia</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 11 min de lectura</span>
+                        <span>📅 Actualizado: Oct 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-hierro/hero.webp" srcset="/assets/img/blog/post-hierro/hero-w480.webp 480w, /assets/img/blog/post-hierro/hero-w960.webp 960w, /assets/img/blog/post-hierro/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAADwBQCdASogACAAPu1urlKppiQiqAgBMB2JQBibCtom6nnqDxuiNXXskaj2ookZwpm6buj94pz6gAD++yxIHs21YIWBZvviQMRXqhHtl78ALKnD1O6XXIGAvA+VAd39eiZW6AufyJ3nQuRjaZ34TETUsCUHAFllJN4QXJeLrw3+HRvtdphAI9Ko1fvLVYJ0nP0KYZm079iD28bD44TwuB1mrCBHkHlZvaF3EV8Dlk38B2aR6v8zHWq9i0iQlhdheYbHAYpdlOr0tEzQ3RdJulxFIy6f33Svqz6o1/vpywe1ClnM8iHjxGgA);background-size:cover;background-position:center" alt="Alimentos ricos en hierro: hígado, carne de res, frijol, lenteja, espinaca y amaranto - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+<p class="lead" style="border: none; padding: 0;">Los <strong>alimentos ricos en hierro</strong> más útiles son el hígado, la carne de res, la sardina y otros productos de origen animal, porque aportan hierro "hemo", que el cuerpo absorbe con más facilidad. Frijol, lenteja, garbanzo, amaranto, espinaca, pepitas y cereales fortificados también aportan hierro, pero de tipo "no hemo": para aprovecharlo conviene acompañarlos con vitamina C y separar el café o el té de las comidas.</p>
+
+<p>El hierro es indispensable para transportar oxígeno en la sangre, y su deficiencia es la causa más frecuente de anemia en el mundo. En esta guía te explicamos cuánto necesitas según tu edad y sexo, qué alimentos de la mesa mexicana lo aportan, cómo absorberlo mejor, quién tiene más riesgo de deficiencia y por qué, si ya te diagnosticaron anemia, lo más importante es buscar la causa con tu médico.</p>
+
+<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — octubre 2026.</p>
+
+<div class="post-toc">
+    <h4>Contenido de este artículo</h4>
+    <ul>
+        <li><a href="#para-que-sirve">Para qué sirve el hierro</a></li>
+        <li><a href="#hemo-no-hemo">Hierro hemo y no hemo</a></li>
+        <li><a href="#cuanto">Cuánto hierro necesitas al día</a></li>
+        <li><a href="#tabla">Tabla de alimentos ricos en hierro</a></li>
+        <li><a href="#absorcion">Cómo absorber mejor el hierro</a></li>
+        <li><a href="#riesgo">Quién tiene más riesgo de deficiencia</a></li>
+        <li><a href="#senales">Señales de deficiencia y anemia ferropénica</a></li>
+        <li><a href="#suplementos">Suplementos de hierro: cuándo sí</a></li>
+        <li><a href="#menu">Menú de un día rico en hierro</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+    </ul>
+</div>
+
+<h2 id="para-que-sirve">¿Para qué sirve el hierro?</h2>
+<p>La mayor parte del hierro del cuerpo forma parte de la <strong>hemoglobina</strong>, la proteína de los glóbulos rojos que lleva oxígeno de los pulmones a todos los tejidos. También está en la mioglobina del músculo y participa en la producción de energía, en el funcionamiento del sistema inmune y en el desarrollo del cerebro durante el embarazo y la infancia.</p>
+<p>El cuerpo casi no puede desechar el hierro que sobra; por eso regula con cuidado cuánto absorbe en el intestino. Cuando las reservas bajan, absorbe más; cuando están llenas, absorbe menos.</p>
+
+<h2 id="hemo-no-hemo">Hierro hemo y no hemo: la diferencia que más importa</h2>
+<p>En los alimentos hay dos formas de hierro, y la diferencia práctica está en cuánto aprovechas:</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-hierro/hemo.webp" srcset="/assets/img/blog/post-hierro/hemo-w480.webp 480w, /assets/img/blog/post-hierro/hemo-w960.webp 960w, /assets/img/blog/post-hierro/hemo.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASogABYAPu1kqU2ppaQiMAgBMB2JYgAIEAPZBDpccXVZE5z0OVf74EQ9m9AA/vHFa1r9N+5OV2G4ipoOyYCCbCVKsj7yF7ViFYB74lpkaOqFi3L1pLeYe8TT2uF+F7np30rUcPzaTtiuU3YIjHwbfy4UbDjfyXjiu/BC/vG5Ny33hYJ70ku0nwqRFxgcsCEqkp2uk9qT7FGjucwPj5kU37qHKwRSfAFQAAA=);background-size:cover;background-position:center" alt="Carne, hígado y sardina frente a frijol, lenteja, espinaca y amaranto">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">El hierro hemo se absorbe mejor que el de origen vegetal.</figcaption>
+</figure>
+<ul>
+    <li><strong>Hierro hemo:</strong> está en carnes, vísceras, pescados y mariscos. Se absorbe bien (aproximadamente entre 15 y 35%) y casi no le afectan los demás alimentos de la comida.</li>
+    <li><strong>Hierro no hemo:</strong> está en leguminosas, verduras de hoja, semillas, cereales y alimentos fortificados, y también en parte de la carne. Su absorción es menor y muy variable: depende de lo que comas junto con él y de tus reservas.</li>
+</ul>
+<p>Como explican Hurrell y Egli (2010), la biodisponibilidad del hierro de una dieta mixta con carne es claramente mayor que la de una dieta vegetariana. Esto no significa que una alimentación vegetariana no pueda cubrir el hierro, sino que requiere más planeación.</p>
+
+<h2 id="cuanto">¿Cuánto hierro necesitas al día?</h2>
+<p>Estas son las ingestas diarias recomendadas del Instituto de Medicina de EE. UU. (IOM), los valores de referencia que analizan Hurrell y Egli (2010):</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Grupo</th><th style="padding: 1rem; text-align: left;">Hierro recomendado al día</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Niños de 1 a 3 años</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">7 mg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Niños de 4 a 8 años</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">10 mg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Niños y niñas de 9 a 13 años</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">8 mg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Adolescentes de 14 a 18 años</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">11 mg (hombres) · 15 mg (mujeres)</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hombres de 19 años en adelante</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">8 mg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Mujeres de 19 a 50 años</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">18 mg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Mujeres de 51 años en adelante</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">8 mg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Embarazo</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">27 mg</td></tr>
+<tr><td style="padding: 1rem;">Lactancia (19 años o más)</td><td style="padding: 1rem;">9 mg</td></tr>
+</tbody>
+</table>
+</div>
+<p>Las mujeres en edad reproductiva necesitan más del doble que los hombres por las pérdidas de la menstruación. En personas vegetarianas, el IOM estima que el requerimiento es alrededor de 1.8 veces mayor por la menor absorción del hierro vegetal.</p>
+
+<h2 id="tabla">Tabla de alimentos ricos en hierro (accesibles en México)</h2>
+<p>Valores aproximados por porción habitual, con base en tablas estándar de composición de alimentos. El contenido real varía según la marca, el corte y la forma de preparación.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Alimento</th><th style="padding: 1rem; text-align: left;">Porción</th><th style="padding: 1rem; text-align: left;">Hierro aprox.</th><th style="padding: 1rem; text-align: left;">Tipo</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hígado de pollo cocido</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">10 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hígado de res cocido</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">5-6 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Lentejas cocidas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">3.3 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">No hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Espinaca cocida</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">3 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">No hemo (poco absorbible)</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tofu firme</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">3 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">No hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pepitas (semillas de calabaza)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">30 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2.5 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">No hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sardina en lata</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 lata (90 g escurrida)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2-2.5 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Carne de res magra cocida</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2-2.5 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Garbanzos cocidos</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2.4 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">No hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Amaranto cocido</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2.5 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">No hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Frijoles negros cocidos</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1.8 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">No hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Avena cocida</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 taza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">No hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Huevo</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 pieza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">0.9 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">No hemo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pechuga de pollo cocida</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">90 g</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 mg</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hemo</td></tr>
+<tr><td style="padding: 1rem;">Cereal de caja fortificado</td><td style="padding: 1rem;">1 porción</td><td style="padding: 1rem;">Variable: revisa la etiqueta</td><td style="padding: 1rem;">No hemo</td></tr>
+</tbody>
+</table>
+</div>
+<p>Dos aclaraciones útiles. La espinaca tiene fama de ser "la" fuente de hierro, pero contiene oxalatos que reducen mucho su absorción: es una buena verdura, no la principal fuente de hierro. Y el hígado es muy rico en hierro, pero también en vitamina A; en el embarazo su consumo frecuente se debe comentar con el médico.</p>
+
+<div class="highlight-box">
+    <p>💡 <strong>Idea clave:</strong> no solo importa cuánto hierro tiene un alimento, sino cuánto logras absorber de él.</p>
+</div>
+
+<h2 id="absorcion">Cómo absorber mejor el hierro de los alimentos</h2>
+<p>Según la revisión de Hurrell y Egli (2010), estos factores cambian de forma importante cuánto hierro no hemo aprovechas:</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-hierro/absorber.webp" srcset="/assets/img/blog/post-hierro/absorber-w480.webp 480w, /assets/img/blog/post-hierro/absorber-w960.webp 960w, /assets/img/blog/post-hierro/absorber.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADwBACdASogABYAPu1ep06ppKMiMBgMATAdiWoAAC50ovb23i8wy0LKO+4viig44+AA/vNupSd+P4nlxrPC0W9HeahCLDESbPdQ3gRgUsjeCmQCVMDDecfIHRwBZtiHRyl6UJ63x9eOvnpbpg3w8n5+8eKYlLraCV7V1g7o98/jOhVcrXEekAzx+T4AAA==);background-size:cover;background-position:center" alt="Plato de lentejas con jugo de naranja y limón, café aparte">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">La vitamina C mejora la absorción; el café y el té la reducen.</figcaption>
+</figure>
+<h3>Lo que ayuda</h3>
+<ul>
+    <li><strong>Vitamina C en la misma comida:</strong> guayaba, naranja, mandarina, kiwi, fresas, jitomate, pimiento, chile o unas gotas de limón. Un plato de lentejas con agua de limón sin azúcar, o frijoles con salsa de jitomate y una guayaba de postre, es una combinación práctica.</li>
+    <li><strong>Un poco de carne, pescado o pollo:</strong> además de aportar hierro hemo, mejoran la absorción del hierro vegetal de la misma comida.</li>
+    <li><strong>Remojar y cocer bien las leguminosas:</strong> reduce parte de los fitatos, compuestos que dificultan la absorción.</li>
+</ul>
+<h3>Lo que interfiere</h3>
+<ul>
+    <li><strong>Café y té (incluido el té verde):</strong> sus polifenoles reducen la absorción del hierro no hemo. Si los tomas, procura hacerlo una o dos horas antes o después de las comidas principales.</li>
+    <li><strong>Calcio en grandes cantidades:</strong> leche, queso o suplementos de calcio junto con la comida más rica en hierro. No tienes que dejarlos; solo conviene no concentrarlos en la misma comida si tienes deficiencia.</li>
+    <li><strong>Fitatos y fibra en exceso:</strong> salvado y cereales integrales en grandes cantidades.</li>
+</ul>
+
+<h2 id="riesgo">¿Quién tiene más riesgo de deficiencia de hierro?</h2>
+<ul>
+    <li><strong>Mujeres con menstruaciones abundantes</strong> y mujeres embarazadas.</li>
+    <li><strong>Bebés, niños pequeños y adolescentes,</strong> por el crecimiento rápido.</li>
+    <li><strong>Personas vegetarianas o veganas</strong> sin una dieta bien planeada.</li>
+    <li><strong>Personas con pérdidas de sangre digestivas,</strong> a veces invisibles (úlceras, pólipos, hemorroides, tumores).</li>
+    <li><strong>Problemas de absorción:</strong> enfermedad celiaca, infección por <em>Helicobacter pylori</em>, gastritis atrófica, cirugía bariátrica o uso prolongado de medicamentos que reducen el ácido del estómago.</li>
+    <li><strong>Donadores frecuentes de sangre.</strong></li>
+    <li><strong>Personas con cáncer o enfermedades crónicas inflamatorias,</strong> en las que la anemia suele tener varias causas al mismo tiempo. Si es tu caso, nuestra área de <a href="/nutricion-oncologica/">nutrición oncológica</a> trabaja la anemia y la alimentación durante el tratamiento.</li>
+    <li><strong>Adultos mayores</strong> con poco apetito, problemas dentales o varias enfermedades; conoce cómo abordamos la <a href="/nutricion-geriatrica/adulto-mayor/">nutrición en el adulto mayor</a>.</li>
+</ul>
+
+<h2 id="senales">Señales de deficiencia de hierro y anemia ferropénica</h2>
+<p>La deficiencia de hierro avanza por etapas: primero se agotan las reservas y, si continúa, se produce menos hemoglobina y aparece la <strong>anemia ferropénica</strong>. Algunas señales posibles son:</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-hierro/senales.webp" srcset="/assets/img/blog/post-hierro/senales-w480.webp 480w, /assets/img/blog/post-hierro/senales-w960.webp 960w, /assets/img/blog/post-hierro/senales.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAACwBACdASogABYAPuFeqE2opSQiMAwBEBwJQBe6BDvuabOKyM/4PhJ8iGX0j/wAAP7za6dVoBnZGwZgGpxOckHRKiRHPpf3uJBGJZ1uXhyQIwnOGAD1xJGJ9R6iNxEoZzO4+ITIRmz3ZPuSt/ycxSoE+rSy+aRRyqGZtcTEGqIqryr6vu0WH0cvNvh0AAAA);background-size:cover;background-position:center" alt="Mujer joven cansada apoyando la cabeza en su escritorio">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Cansancio y palidez pueden ser señales de deficiencia de hierro.</figcaption>
+</figure>
+<ul>
+    <li>Cansancio, debilidad y menor tolerancia al ejercicio.</li>
+    <li>Palidez de la piel o del interior de los párpados.</li>
+    <li>Falta de aire o palpitaciones al hacer esfuerzos.</li>
+    <li>Uñas frágiles, caída del cabello, dolor de cabeza.</li>
+    <li>Antojo de hielo, tierra u otras sustancias no alimentarias (pica) y síndrome de piernas inquietas.</li>
+</ul>
+<p>Estas señales son poco específicas y pueden deberse a muchas otras causas, así que no sirven para autodiagnosticarse. El diagnóstico se confirma con estudios de laboratorio que indica el médico, como biometría hemática y ferritina, que refleja las reservas de hierro. Camaschella (2015) señala que la ferritina puede aparecer "normal" cuando hay inflamación, por eso la interpretación debe hacerla un profesional.</p>
+<h3>Por qué hay que buscar la causa</h3>
+<p>La anemia ferropénica es un hallazgo, no un diagnóstico final. Camaschella (2015) subraya que siempre debe investigarse su origen: en hombres y en mujeres después de la menopausia, la causa más importante a descartar es una pérdida de sangre por el tubo digestivo, que puede corresponder a una úlcera, a pólipos o a un tumor de colon. Tratar solo con hierro sin estudiar la causa puede retrasar un diagnóstico importante. Si tu médico te pidió estudios adicionales, hazlos aunque te sientas mejor.</p>
+
+<h2 id="suplementos">Suplementos de hierro: cuándo sí y riesgos del exceso</h2>
+<p>Cuando ya hay deficiencia o anemia, la alimentación por sí sola suele ser lenta para recuperar las reservas, y el médico puede indicar hierro por vía oral o, en algunos casos (intolerancia, mala absorción, pérdidas continuas), por vena. La dosis, la forma y la duración las define el médico, y se vigila con estudios de control.</p>
+<p>Tomar hierro "por si acaso" no es buena idea:</p>
+<ul>
+    <li><strong>Efectos digestivos:</strong> náusea, dolor abdominal, estreñimiento y heces oscuras son frecuentes con los suplementos orales.</li>
+    <li><strong>Sobrecarga:</strong> en personas con hemocromatosis u otras condiciones, el hierro extra se acumula y daña hígado, corazón y páncreas.</li>
+    <li><strong>Intoxicación en niños:</strong> los suplementos de hierro de los adultos pueden ser muy peligrosos para un niño; guárdalos fuera de su alcance.</li>
+    <li><strong>Interacciones:</strong> el hierro puede reducir la absorción de algunos medicamentos (como la levotiroxina o ciertos antibióticos) y viceversa. Pregunta a tu médico cómo separarlos.</li>
+</ul>
+
+<h2 id="menu">Menú de un día rico en hierro</h2>
+<p>Ejemplo orientativo para una mujer adulta (meta: 18 mg). Las cantidades son aproximadas; tu plan puede ser distinto según tu caso.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Tiempo</th><th style="padding: 1rem; text-align: left;">Ejemplo</th><th style="padding: 1rem; text-align: left;">Hierro aprox.</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Desayuno</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2 huevos a la mexicana con ½ taza de frijoles negros, 2 tortillas de maíz y 1 guayaba</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">4 mg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colación</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">30 g de pepitas y 1 naranja</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2.5 mg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Comida</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sopa de lentejas (½ taza), 90 g de bistec de res en salsa de jitomate, ½ taza de espinaca cocida y agua de limón sin azúcar</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">8.5 mg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colación</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Jícama y pepino con limón y chile</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">0.5 mg</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Cena</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2 tostadas horneadas de sardina con jitomate, cebolla y aguacate</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2.5 mg</td></tr>
+<tr><td style="padding: 1rem;"><strong>Total</strong></td><td style="padding: 1rem;">Café o té, mejor lejos de las comidas</td><td style="padding: 1rem;">Aprox. 18 mg</td></tr>
+</tbody>
+</table>
+</div>
+<div class="highlight-box">
+    <p>🥗 <strong>Tip práctico:</strong> una vez por semana puedes sustituir la carne por 90 g de hígado encebollado; aporta varias veces más hierro que el bistec.</p>
+</div>
+
+<h2 id="relacionados">Lecturas y servicios relacionados</h2>
+<ul>
+    <li><a href="/blog/vitamina-b12-alimentos/">Vitamina B12: alimentos y quién necesita más</a>.</li>
+    <li><a href="/nutricion-oncologica/">Nutrición oncológica y manejo de la anemia en cáncer</a>.</li>
+    <li><a href="/nutricion-geriatrica/adulto-mayor/">Nutrición en el adulto mayor</a>.</li>
+    <li><a href="/blog/alimentos-ricos-en-calcio/">Alimentos ricos en calcio</a>.</li>
+</ul>
+
+<div class="cta-banner">
+    <h3>¿Te dijeron que tienes anemia o hierro bajo?</h3>
+    <p>Revisamos tus estudios y tu alimentación para diseñar un plan realista, coordinado con tu médico. Consulta presencial en Del Valle, CDMX, o videoconsulta para toda la República.</p>
+    <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+    <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+</div>
+
+<h2 id="referencias">Referencias</h2>
+<ol style="padding-left: 1.2rem; line-height: 1.7;">
+    <li>Camaschella C. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Iron-deficiency%20anemia." target="_blank" rel="noopener noreferrer">Iron-deficiency anemia.</a> N Engl J Med. 2015.</li>
+    <li>Hurrell R, Egli I. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Iron%20bioavailability%20and%20dietary%20reference%20values." target="_blank" rel="noopener noreferrer">Iron bioavailability and dietary reference values.</a> Am J Clin Nutr. 2010.</li>
+    <li>Volkert D, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ESPEN%20guideline%20on%20clinical%20nutrition%20and%20hydration%20in%20geriatrics." target="_blank" rel="noopener noreferrer">ESPEN guideline on clinical nutrition and hydration in geriatrics.</a> Clin Nutr. 2019.</li>
+    <li>Muscaritoli M, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ESPEN%20practical%20guideline%3A%20Clinical%20Nutrition%20in%20cancer." target="_blank" rel="noopener noreferrer">ESPEN practical guideline: Clinical Nutrition in cancer.</a> Clin Nutr. 2021.</li>
+</ol>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+    <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico. La deficiencia de hierro y la anemia se diagnostican con estudios de laboratorio, y su causa debe investigarse. No inicies suplementos de hierro ni ajustes medicamentos sin indicación de tu médico tratante.</p>
+</div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuál es el alimento con más hierro?</p>
+                        <p>Entre los alimentos comunes, el hígado de pollo y el de res están entre los que más aportan, y su hierro hemo se absorbe bien. Les siguen carne de res, sardina, lenteja, tofu, pepitas y cereales fortificados.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuánto hierro necesito al día?</p>
+                        <p>Según el IOM, los hombres adultos y las mujeres mayores de 50 años necesitan 8 mg al día; las mujeres de 19 a 50 años, 18 mg; y en el embarazo, 27 mg. Las personas vegetarianas requieren más.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La espinaca tiene mucho hierro?</p>
+                        <p>Contiene hierro, pero también oxalatos que reducen mucho su absorción. Es una buena verdura, pero no conviene depender de ella como fuente principal de hierro.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿El café quita el hierro?</p>
+                        <p>El café y el té reducen la absorción del hierro no hemo si se toman con la comida. No tienes que dejarlos: basta con tomarlos una o dos horas antes o después de comer.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Con qué combinar los frijoles para absorber más hierro?</p>
+                        <p>Con alimentos ricos en vitamina C, como salsa de jitomate, chile, limón o una guayaba, y si es posible con un poco de carne, pollo o pescado en la misma comida.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Puedo tomar hierro si me siento cansado?</p>
+                        <p>No sin estudios. El cansancio tiene muchas causas y el hierro innecesario puede dar molestias o acumularse. Primero el médico confirma la deficiencia y busca su causa.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Se puede corregir la anemia solo con alimentación?</p>
+                        <p>Una alimentación rica en hierro ayuda a prevenir la deficiencia, pero cuando ya hay anemia suele necesitarse un suplemento indicado por el médico, además de tratar la causa que la provocó.</p>
+                    </div>
+
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica para anemia, deficiencias y estado nutricional. Consulta presencial en Del Valle
+                            o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/caquexia/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-caquexia/hero.webp" srcset="/assets/img/blog/post-caquexia/hero-w480.webp 480w, /assets/img/blog/post-caquexia/hero-w960.webp 960w, /assets/img/blog/post-caquexia/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Oncología</span>
+                            <h3>Caquexia: qué es y cómo se trata</h3>
+                            <p>Pérdida de peso y músculo en cáncer y otras enfermedades: diagnóstico y nutrición.</p>
+                            <a href="/blog/caquexia/" class="btn-text" aria-label="Leer: Caquexia: qué es y cómo se trata">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/como-prevenir-sarcopenia/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-04/hero.webp" srcset="/assets/img/blog/post-04/hero-w480.webp 480w, /assets/img/blog/post-04/hero-w960.webp 960w, /assets/img/blog/post-04/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Geriátrica</span>
+                            <h3>Cómo prevenir la sarcopenia</h3>
+                            <p>10 hábitos y un menú para conservar músculo y fuerza con la edad.</p>
+                            <a href="/blog/guias-nutricionales/como-prevenir-sarcopenia/" class="btn-text" aria-label="Leer: Cómo prevenir la sarcopenia">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/alimentos-fermentados/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-fermentados/hero.webp" srcset="/assets/img/blog/post-fermentados/hero-w480.webp 480w, /assets/img/blog/post-fermentados/hero-w960.webp 960w, /assets/img/blog/post-fermentados/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Digestiva</span>
+                            <h3>Alimentos fermentados y prebióticos</h3>
+                            <p>Qué son, cuáles hay en México y cómo incluirlos en tu dieta.</p>
+                            <a href="/blog/alimentos-fermentados/" class="btn-text" aria-label="Leer: Alimentos fermentados y prebióticos">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Hemoglobina glucosilada: valores, cómo bajarla | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Qué mide la hemoglobina glucosilada (HbA1c), valores normales, prediabetes y diabetes, su equivalencia en glucosa promedio y cómo bajarla con alimentación.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Hemoglobina glucosilada: valores, cómo bajarla | Clínica Denki">
+    <meta property="og:description" content="Qué mide la hemoglobina glucosilada (HbA1c), valores normales, prediabetes y diabetes, su equivalencia en glucosa promedio y cómo bajarla con alimentación.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/hemoglobina-glucosilada/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-hba1c/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hemoglobina glucosilada: valores, cómo bajarla | Clínica Denki">
+    <meta name="twitter:description" content="Qué mide la hemoglobina glucosilada (HbA1c), valores normales, prediabetes y diabetes, su equivalencia en glucosa promedio y cómo bajarla con alimentación.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-hba1c/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/hemoglobina-glucosilada/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hemoglobina glucosilada (HbA1c): qué es, valores y cómo bajarla",
+  "url": "https://www.clinicadenki.mx/blog/hemoglobina-glucosilada/",
+  "image": "https://www.clinicadenki.mx/assets/img/blog/post-hba1c/hero.webp",
+  "datePublished": "2026-10-02",
+  "dateModified": "2026-10-02",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Lucy Anita Camberos Luna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clínica Denki",
+    "url": "https://www.clinicadenki.mx/"
+  },
+  "description": "Guía clínica sobre la hemoglobina glucosilada (HbA1c): qué mide, valores de referencia según la ADA 2025, equivalencia con la glucosa promedio estimada, factores que alteran el resultado y cómo bajarla con alimentación y hábitos.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.clinicadenki.mx/blog/hemoglobina-glucosilada/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.clinicadenki.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.clinicadenki.mx/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hemoglobina glucosilada",
+      "item": "https://www.clinicadenki.mx/blog/hemoglobina-glucosilada/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es la hemoglobina glucosilada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es un análisis de sangre que mide el porcentaje de hemoglobina unida a glucosa. Refleja el promedio de tu glucosa de los últimos 2 a 3 meses y no requiere ayuno."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es el valor normal de la hemoglobina glucosilada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Según la ADA 2025, menos de 5.7% es normal, de 5.7 a 6.4% corresponde a prediabetes y 6.5% o más es compatible con diabetes, confirmado con un segundo estudio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué glucosa promedio equivale a una HbA1c de 7%?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alrededor de 154 mg/dL, según la fórmula del estudio ADAG. Cada punto de HbA1c equivale aproximadamente a 29 mg/dL de glucosa promedio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay que ir en ayunas para la hemoglobina glucosilada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No es necesario. A diferencia de la glucosa en ayuno, la HbA1c se puede tomar a cualquier hora, aunque si te piden otros estudios en el mismo análisis quizá sí debas ayunar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En cuánto tiempo baja la hemoglobina glucosilada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Como refleja unos 3 meses, los cambios se ven mejor en el siguiente estudio, alrededor de 3 meses después. Antes notarás la mejoría en tu glucosa diaria."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué puede alterar el resultado de la HbA1c?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La anemia, el embarazo, algunas hemoglobinopatías, la enfermedad renal crónica, sangrados recientes y transfusiones. En esos casos tu médico puede preferir otros estudios."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede bajar la hemoglobina glucosilada sin medicamentos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En prediabetes y en algunas personas con diabetes, la alimentación, la actividad física y la pérdida moderada de peso la mejoran. Si tienes tratamiento, no lo suspendas: decide cualquier cambio con tu médico."
+      }
+    }
+  ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Metabólica</span>
+                    <h1>Hemoglobina glucosilada (HbA1c): qué es, valores y cómo bajarla</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 11 min de lectura</span>
+                        <span>📅 Actualizado: Oct 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-hba1c/hero.webp" srcset="/assets/img/blog/post-hba1c/hero-w480.webp 480w, /assets/img/blog/post-hba1c/hero-w960.webp 960w, /assets/img/blog/post-hba1c/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABQBQCdASogACAAPu1wslKppiSiqAgBMB2JZAC7ITYBhIAPdeJi6h72FfgopFcaGn7w9MAA/vN81rcZy5CbDW4+zbxYLCkrsJS5mXP+47gyssGksVZtUItURbX5ZVa0bgCZBnrSHp/P6ai1my8KgMevBMFjS5z2ga/506Gvi7D3crvrhxBbgn++x4gmy4B1pj4o7GAQjb/suYAyvOJ4JK8bF8YffchN2Q5ckIS2ZLGWP8wBPkAAAA==);background-size:cover;background-position:center" alt="Hemoglobina glucosilada (HbA1c): análisis de sangre y control de la glucosa - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+<p class="lead" style="border: none; padding: 0;">La <strong>hemoglobina glucosilada</strong> (HbA1c o A1C) es un análisis de sangre que muestra el promedio de tu glucosa de los últimos 2 a 3 meses. Un resultado menor de 5.7% se considera normal, de 5.7 a 6.4% corresponde a prediabetes y de 6.5% o más es compatible con diabetes, según la Asociación Americana de Diabetes (ADA 2025). A diferencia de la glucosa en ayuno, no cambia por lo que comiste ayer.</p>
+
+<p>Si tu resultado salió alto, hay buenas noticias: la HbA1c responde a cambios sostenidos en la alimentación, la actividad física y el descanso, coordinados con tu médico. En esta guía te explicamos qué mide, cómo leer tu resultado, qué puede alterarlo y qué hacer para bajarla.</p>
+
+<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — octubre 2026.</p>
+
+<div class="post-toc">
+    <h4>Contenido de este artículo</h4>
+    <ul>
+        <li><a href="#que-es">Qué es la hemoglobina glucosilada</a></li>
+        <li><a href="#valores">Valores normales, prediabetes y diabetes</a></li>
+        <li><a href="#glucosa-promedio">Equivalencia con la glucosa promedio</a></li>
+        <li><a href="#cada-cuanto">Cada cuánto medirla</a></li>
+        <li><a href="#factores">Factores que alteran el resultado</a></li>
+        <li><a href="#como-bajarla">Cómo bajar la hemoglobina glucosilada</a></li>
+        <li><a href="#que-esperar">Qué esperar y en cuánto tiempo</a></li>
+        <li><a href="#cuando-consultar">Cuándo consultar</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+    </ul>
+</div>
+
+<h2 id="que-es">¿Qué es la hemoglobina glucosilada y qué mide?</h2>
+<p>La hemoglobina es la proteína de los glóbulos rojos que transporta oxígeno. Cuando hay glucosa en la sangre, una parte se une a la hemoglobina de forma estable; a esa hemoglobina "con azúcar" se le llama glucosilada. Cuanto más alta ha estado tu glucosa, mayor es el porcentaje de hemoglobina glucosilada.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-hba1c/que-es.webp" srcset="/assets/img/blog/post-hba1c/que-es-w480.webp 480w, /assets/img/blog/post-hba1c/que-es-w960.webp 960w, /assets/img/blog/post-hba1c/que-es.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAQBQCdASogABYAPu1qq08ppiOiMBgIATAdiWYArhwQ8PEM53Xc/bHjCq1jPPHsrAOAAP7zfbTMCiuf925naRdTuwPldoQJAeakWwpbkskEGh70m3OYPSHBg3VsOD/uWhPqDrs2EcvUYwwaZFCcPqOs2joweTYi1YZbb8Lem0KUVVSQh5ZUoLN4YH4EjI7PyxzviF4sbq6nYALBlAA=);background-size:cover;background-position:center" alt="Ilustración de glóbulos rojos con glucosa adherida">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">La HbA1c refleja el promedio de glucosa de los últimos 2 a 3 meses.</figcaption>
+</figure>
+<p>Los glóbulos rojos viven alrededor de 120 días, por eso la HbA1c refleja el promedio de aproximadamente los últimos 2 a 3 meses, con más peso de las semanas recientes. Es como una "fotografía de larga exposición" de tu glucosa, mientras que la glucosa en ayuno o la de un glucómetro son una foto instantánea.</p>
+<p>Ventajas frente a otros estudios:</p>
+<ul>
+    <li><strong>No requiere ayuno</strong> y se puede tomar a cualquier hora del día.</li>
+    <li><strong>Varía poco de un día a otro</strong>: una cena abundante o una noche de mal sueño no la modifican de forma importante.</li>
+    <li><strong>Se relaciona con el riesgo de complicaciones</strong> de la diabetes en ojos, riñones y nervios, razón por la que el Comité Internacional de Expertos (2009) recomendó usarla también para diagnóstico.</li>
+</ul>
+<p>Su limitación principal es que es un promedio: dos personas con la misma HbA1c pueden tener patrones muy distintos, una con glucosa estable y otra con subidas y bajadas importantes. Por eso no sustituye al monitoreo de glucosa cuando el médico lo indica.</p>
+
+<h2 id="valores">Valores de la hemoglobina glucosilada: normal, prediabetes y diabetes</h2>
+<p>Los Estándares de Atención de la ADA 2025 establecen estos puntos de corte para adultos, siempre que el análisis se haga en un laboratorio con un método certificado y estandarizado:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Resultado de HbA1c</th><th style="padding: 1rem; text-align: left;">Interpretación</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Menor de 5.7%</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Normal</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>5.7% a 6.4%</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Prediabetes: mayor riesgo de desarrollar diabetes tipo 2</td></tr>
+<tr><td style="padding: 1rem;"><strong>6.5% o más</strong></td><td style="padding: 1rem;">Compatible con diabetes; el médico la confirma con un segundo estudio, salvo que haya síntomas claros de glucosa alta</td></tr>
+</tbody>
+</table>
+</div>
+<p>Un solo resultado alterado no basta para diagnosticar. La ADA recomienda confirmar con una segunda prueba (otra HbA1c o una glucosa en ayuno o curva de tolerancia). Si tu resultado está entre 5.7 y 6.4%, te recomendamos leer nuestra guía sobre <a href="/blog/prediabetes/">qué es la prediabetes y cómo revertirla</a>.</p>
+<h3>¿Y si ya tienes diabetes? Metas individualizadas</h3>
+<p>En personas con diabetes, la HbA1c se usa para dar seguimiento al control. La meta no es igual para todos: en muchos adultos se busca menos de 7%, mientras que en adultos mayores, personas con otras enfermedades o con riesgo de hipoglucemias suele ser más flexible. <strong>Tu meta la define tu médico</strong> según tu edad, tu tratamiento y tu historia clínica. Si necesitas acompañamiento nutricional, conoce nuestro servicio de <a href="/nutricion-metabolica/diabetes/">nutrición para diabetes en CDMX</a>.</p>
+
+<div class="highlight-box">
+    <p>💡 <strong>Idea clave:</strong> la HbA1c no es una calificación de "bien" o "mal"; es un dato para tomar decisiones con tu médico y tu nutriólogo.</p>
+</div>
+
+<h2 id="glucosa-promedio">Tabla de equivalencia: hemoglobina glucosilada y glucosa promedio</h2>
+<p>El estudio ADAG (Nathan, 2008) relacionó la HbA1c con la glucosa promedio medida durante varios meses y obtuvo una fórmula para traducir el porcentaje a mg/dL, conocida como glucosa promedio estimada (eAG). Así puedes comparar tu HbA1c con los números que ves en tu glucómetro:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">HbA1c</th><th style="padding: 1rem; text-align: left;">Glucosa promedio estimada (aprox.)</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">5%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">97 mg/dL</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">6%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">126 mg/dL</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">7%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">154 mg/dL</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">8%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">183 mg/dL</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">9%</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">212 mg/dL</td></tr>
+<tr><td style="padding: 1rem;">10%</td><td style="padding: 1rem;">240 mg/dL</td></tr>
+</tbody>
+</table>
+</div>
+<p>Cada punto de HbA1c equivale aproximadamente a 29 mg/dL de glucosa promedio. Es una estimación: en algunas personas la relación real varía, por eso tu médico interpreta la cifra junto con tus registros de glucosa.</p>
+
+<h2 id="cada-cuanto">¿Cada cuánto hay que medir la hemoglobina glucosilada?</h2>
+<p>La frecuencia depende de tu situación. Como guía general, basada en los Estándares de la ADA 2025:</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-hba1c/laboratorio.webp" srcset="/assets/img/blog/post-hba1c/laboratorio-w480.webp 480w, /assets/img/blog/post-hba1c/laboratorio-w960.webp 960w, /assets/img/blog/post-hba1c/laboratorio.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABQBQCdASogABYAPu1mqk8ppaOiMBgIATAdiUAYG4aOBa0rea3mI8kwZnxAnG/leluvcgAA/vYHxvRB2KN2q714ekPYhl9/Furpd6Tf2Adz50r3QIVtHT9oZiKunTokpuz3J92L4tzTEe1RJoPW/kC7jjMdX+vQRa8v1t9WZdotfxoBcGlDhbfYTGV2F8Nmfs77M3zXdROL7/R5cXaDsCqOSlcNAAAA);background-size:cover;background-position:center" alt="Toma de muestra de sangre para hemoglobina glucosilada">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Se mide con un análisis de sangre que no requiere ayuno.</figcaption>
+</figure>
+<ul>
+    <li><strong>Sin diabetes ni prediabetes:</strong> la ADA recomienda iniciar la detección a partir de los 35 años, o antes si hay sobrepeso y otros factores de riesgo; si el resultado es normal, repetir al menos cada 3 años.</li>
+    <li><strong>Con prediabetes:</strong> revisar al menos una vez al año.</li>
+    <li><strong>Con diabetes:</strong> habitualmente cada 3 a 6 meses, según el control y los cambios de tratamiento que indique tu médico.</li>
+</ul>
+<p>Como refleja unos 3 meses, medirla cada mes no aporta información útil: los cambios recientes todavía no se reflejan por completo.</p>
+
+<h2 id="factores">Factores que pueden alterar la hemoglobina glucosilada</h2>
+<p>Como la HbA1c depende de los glóbulos rojos, todo lo que cambie su vida media o el tipo de hemoglobina puede dar un resultado que no coincide con la glucosa real. La ADA 2025 señala estas situaciones:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Situación</th><th style="padding: 1rem; text-align: left;">Qué puede pasar</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Anemia por deficiencia de hierro</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Puede elevar la HbA1c sin que la glucosa haya subido</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Anemias hemolíticas, sangrado reciente</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Los glóbulos rojos viven menos y la HbA1c puede salir más baja</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Embarazo</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Cambia el recambio de glóbulos rojos; la HbA1c suele ser menor y no se usa sola para diagnosticar diabetes gestacional</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Hemoglobinopatías</strong> (como rasgo falciforme)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Algunos métodos de laboratorio dan resultados poco confiables</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Enfermedad renal crónica o diálisis</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">La relación entre HbA1c y glucosa es menos precisa</td></tr>
+<tr><td style="padding: 1rem;"><strong>Transfusiones recientes</strong></td><td style="padding: 1rem;">Mezclan glóbulos rojos de otra persona y alteran el promedio</td></tr>
+</tbody>
+</table>
+</div>
+<p>Si tienes alguna de estas condiciones, o si tu HbA1c no coincide con tus mediciones de glucosa, coméntalo con tu médico. Puede preferir otros estudios, como la glucosa en ayuno, la curva de tolerancia o el monitoreo continuo.</p>
+
+<h2 id="como-bajarla">¿Cómo bajar la hemoglobina glucosilada?</h2>
+<p>La HbA1c baja cuando tu glucosa se mantiene más estable durante semanas. El consenso de nutrición de la ADA (Evert, 2019) reporta que la terapia nutricional individualizada puede reducirla de forma significativa en personas con diabetes tipo 2, en algunos estudios entre 0.3 y 2 puntos porcentuales. No hay una dieta única: importa la calidad del patrón y que puedas mantenerlo.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-hba1c/bajar.webp" srcset="/assets/img/blog/post-hba1c/bajar-w480.webp 480w, /assets/img/blog/post-hba1c/bajar-w960.webp 960w, /assets/img/blog/post-hba1c/bajar.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABwBQCdASogABYAPu1uq1EppiOiqAqpMB2JQBb3AiOO/dXZpn5uiiVFRamLx4taOvP6wX4sAP7xz4rFPjpW3rlEdtg6DPttwN//cB0/5lrkU/lNDuzOBRX2D0Bbh9+wBLu4gXps6a3SAXuHATP8DP+pY2y+7drgNo2qdHwes+cdR8fDi18MjvfGkP/PfWmCP9BriU+QCMBX4f+X2+9Yd+s7Cz7lyqFDyuGRmatwn8AaJbPRlCRAAA==);background-size:cover;background-position:center" alt="Pareja preparando un plato con verduras, frijol y pescado">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Alimentación, actividad física y adherencia al tratamiento la bajan con el tiempo.</figcaption>
+</figure>
+<h3>1. Cuida la calidad y la porción de los carbohidratos</h3>
+<p>No se trata de dejar la tortilla, sino de elegir mejor y medir. Prioriza leguminosas (frijol, lenteja, garbanzo), tortilla de maíz en porción moderada, avena en hojuela, verduras y fruta entera. Limita bebidas azucaradas, pan dulce, harinas refinadas y jugos. Entender el <a href="/blog/indice-glucemico/">índice glucémico de los alimentos</a> te ayuda a elegir opciones que suben menos la glucosa.</p>
+<h3>2. Arma platos con fibra y proteína</h3>
+<p>Una mitad del plato con verduras, un cuarto con proteína (huevo, pollo, pescado, queso fresco o leguminosas) y un cuarto con carbohidratos de calidad. La fibra y la proteína hacen más lenta la absorción de la glucosa y aumentan la saciedad.</p>
+<h3>3. Muévete todos los días</h3>
+<p>La postura de la ADA sobre actividad física (Colberg, 2016) recomienda al menos 150 minutos por semana de actividad aeróbica moderada, más 2 o 3 sesiones de fuerza, e interrumpir el tiempo sentado. Una caminata de 10 a 15 minutos después de comer es un buen punto de partida.</p>
+<h3>4. Si tienes sobrepeso, una pérdida moderada ayuda</h3>
+<p>Perder entre 5 y 7% del peso mejora la glucosa en muchas personas. No hace falta llegar a un peso "ideal".</p>
+<h3>5. Duerme bien y sigue tu tratamiento</h3>
+<p>El sueño insuficiente y el estrés crónico elevan la glucosa. Y si tomas medicamentos, la alimentación los complementa, no los reemplaza: nunca los suspendas ni ajustes por tu cuenta.</p>
+<p>Para estrategias prácticas del día a día, revisa nuestra guía para <a href="/nutricion-metabolica/bajar-glucosa/">bajar la glucosa con alimentación</a>.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">En lugar de…</th><th style="padding: 1rem; text-align: left;">Prueba…</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Refresco o agua de sabor</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Agua simple, agua mineral o agua de jamaica sin azúcar</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pan dulce en el desayuno</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Avena en hojuela con canela y fruta entera</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Arroz blanco en plato grande</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">½ taza de arroz con frijoles y verduras</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Jugo de naranja</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Una naranja entera</td></tr>
+<tr><td style="padding: 1rem;">Antojitos fritos</td><td style="padding: 1rem;">Tostadas horneadas con pollo, lechuga y salsa</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="que-esperar">¿En cuánto tiempo baja la hemoglobina glucosilada?</h2>
+<p>Como refleja unos 3 meses, los cambios que hagas hoy se ven mejor en el siguiente estudio, alrededor de 3 meses después. En las primeras semanas notarás antes la mejoría en tu glucosa en ayuno o en tu glucómetro.</p>
+<p>La magnitud del cambio depende de qué tan alta estaba, del tipo de diabetes, del tratamiento y de la constancia. Una bajada gradual y sostenida es más valiosa que un cambio brusco que no se mantiene.</p>
+
+<div class="highlight-box">
+    <p>🥗 <strong>Tip práctico:</strong> anota tu HbA1c de cada estudio en una libreta o en tu celular. Ver la tendencia a lo largo del año motiva más que un resultado aislado.</p>
+</div>
+
+<h2 id="cuando-consultar">¿Cuándo consultar al médico o al nutriólogo?</h2>
+<p>Acude a valoración médica si tu HbA1c está en 5.7% o más, si no coincide con tus mediciones de glucosa o si tienes síntomas como sed intensa, orinar mucho o pérdida de peso sin explicación. Conoce más en nuestra guía de <a href="/blog/glucosa-alta-sintomas/">síntomas de glucosa alta</a>.</p>
+<p>El médico confirma el diagnóstico y define el tratamiento; el nutriólogo clínico traduce esas metas en un plan de alimentación realista para ti.</p>
+
+<div class="cta-banner">
+    <h3>¿Tu hemoglobina glucosilada salió alta?</h3>
+    <p>Revisamos tus estudios y tus hábitos para diseñar un plan de alimentación coordinado con tu médico. Consulta presencial en Del Valle, CDMX, o videoconsulta.</p>
+    <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+</div>
+
+<h2>Servicios y lecturas relacionados</h2>
+<ul>
+    <li><a href="/nutricion-metabolica/diabetes/">Nutrición para diabetes en CDMX</a>.</li>
+    <li><a href="/nutricion-metabolica/bajar-glucosa/">Cómo bajar la glucosa con alimentación</a>.</li>
+    <li><a href="/blog/prediabetes/">Prediabetes: valores y qué hacer</a>.</li>
+    <li><a href="/blog/resistencia-a-la-insulina/">Resistencia a la insulina: señales y tratamiento</a>.</li>
+</ul>
+
+<h2 id="referencias">Referencias</h2>
+<ol style="padding-left: 1.2rem; line-height: 1.7;">
+    <li>American Diabetes Association Professional Practice Committee. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=2.%20Diagnosis%20and%20Classification%20of%20Diabetes%3A%20Standards%20of%20Care%20in%20Diabetes-2025." target="_blank" rel="noopener noreferrer">2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes-2025.</a> Diabetes Care. 2025.</li>
+    <li>International Expert Committee. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=International%20Expert%20Committee%20report%20on%20the%20role%20of%20the%20A1C%20assay%20in%20the%20diagnosis%20of%20diabetes." target="_blank" rel="noopener noreferrer">International Expert Committee report on the role of the A1C assay in the diagnosis of diabetes.</a> Diabetes Care. 2009.</li>
+    <li>Nathan DM, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Translating%20the%20A1C%20assay%20into%20estimated%20average%20glucose%20values." target="_blank" rel="noopener noreferrer">Translating the A1C assay into estimated average glucose values.</a> Diabetes Care. 2008.</li>
+    <li>Evert AB, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Nutrition%20Therapy%20for%20Adults%20With%20Diabetes%20or%20Prediabetes%3A%20A%20Consensus%20Report." target="_blank" rel="noopener noreferrer">Nutrition Therapy for Adults With Diabetes or Prediabetes: A Consensus Report.</a> Diabetes Care. 2019.</li>
+    <li>Colberg SR, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Physical%20Activity%2FExercise%20and%20Diabetes%3A%20A%20Position%20Statement%20of%20the%20American%20Diabetes%20Association." target="_blank" rel="noopener noreferrer">Physical Activity/Exercise and Diabetes: A Position Statement of the American Diabetes Association.</a> Diabetes Care. 2016.</li>
+</ol>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+    <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico. El diagnóstico de prediabetes o diabetes y las metas de HbA1c los establece un médico con estudios de laboratorio. No inicies, suspendas ni ajustes medicamentos sin indicación de tu médico tratante.</p>
+</div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué es la hemoglobina glucosilada?</p>
+                        <p>Es un análisis de sangre que mide el porcentaje de hemoglobina unida a glucosa. Refleja el promedio de tu glucosa de los últimos 2 a 3 meses y no requiere ayuno.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuál es el valor normal de la hemoglobina glucosilada?</p>
+                        <p>Según la ADA 2025, menos de 5.7% es normal, de 5.7 a 6.4% corresponde a prediabetes y 6.5% o más es compatible con diabetes, confirmado con un segundo estudio.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué glucosa promedio equivale a una HbA1c de 7%?</p>
+                        <p>Alrededor de 154 mg/dL, según la fórmula del estudio ADAG. Cada punto de HbA1c equivale aproximadamente a 29 mg/dL de glucosa promedio.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Hay que ir en ayunas para la hemoglobina glucosilada?</p>
+                        <p>No es necesario. A diferencia de la glucosa en ayuno, la HbA1c se puede tomar a cualquier hora, aunque si te piden otros estudios en el mismo análisis quizá sí debas ayunar.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿En cuánto tiempo baja la hemoglobina glucosilada?</p>
+                        <p>Como refleja unos 3 meses, los cambios se ven mejor en el siguiente estudio, alrededor de 3 meses después. Antes notarás la mejoría en tu glucosa diaria.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué puede alterar el resultado de la HbA1c?</p>
+                        <p>La anemia, el embarazo, algunas hemoglobinopatías, la enfermedad renal crónica, sangrados recientes y transfusiones. En esos casos tu médico puede preferir otros estudios.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Se puede bajar la hemoglobina glucosilada sin medicamentos?</p>
+                        <p>En prediabetes y en algunas personas con diabetes, la alimentación, la actividad física y la pérdida moderada de peso la mejoran. Si tienes tratamiento, no lo suspendas: decide cualquier cambio con tu médico.</p>
+                    </div>
+
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica para controlar la glucosa y la hemoglobina glucosilada. Consulta presencial en Del Valle
+                            o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/glucosa-alta-sintomas/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-glucosa-sintomas/hero.webp" srcset="/assets/img/blog/post-glucosa-sintomas/hero-w480.webp 480w, /assets/img/blog/post-glucosa-sintomas/hero-w960.webp 960w, /assets/img/blog/post-glucosa-sintomas/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Glucosa alta: síntomas y valores</h3>
+                            <p>Señales de la hiperglucemia, valores normales y cuándo es urgencia.</p>
+                            <a href="/blog/glucosa-alta-sintomas/" class="btn-text" aria-label="Leer: Glucosa alta: síntomas y valores">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/resistencia-a-la-insulina/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-resistencia-insulina/hero.webp" srcset="/assets/img/blog/post-resistencia-insulina/hero-w480.webp 480w, /assets/img/blog/post-resistencia-insulina/hero-w960.webp 960w, /assets/img/blog/post-resistencia-insulina/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Resistencia a la insulina</h3>
+                            <p>Qué es, señales como la acantosis, diagnóstico y qué comer para mejorarla.</p>
+                            <a href="/blog/resistencia-a-la-insulina/" class="btn-text" aria-label="Leer: Resistencia a la insulina">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/dieta-diabetes/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-06/hero.webp" srcset="/assets/img/blog/post-06/hero-w480.webp 480w, /assets/img/blog/post-06/hero-w960.webp 960w, /assets/img/blog/post-06/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Dieta para diabéticos</h3>
+                            <p>Guía práctica con lista de alimentos y menú de 7 días.</p>
+                            <a href="/blog/guias-nutricionales/dieta-diabetes/" class="btn-text" aria-label="Leer: Dieta para diabéticos">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Dieta antiinflamatoria: alimentos y evidencia | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Qué es una dieta antiinflamatoria, qué alimentos tienen mejor respaldo científico, qué limitar, mitos frecuentes y un menú de un día con comida mexicana.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Dieta antiinflamatoria: alimentos y evidencia | Clínica Denki">
+    <meta property="og:description" content="Qué es una dieta antiinflamatoria, qué alimentos tienen mejor respaldo científico, qué limitar, mitos frecuentes y un menú de un día con comida mexicana.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/dieta-antiinflamatoria/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-antiinflamatoria/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dieta antiinflamatoria: alimentos y evidencia | Clínica Denki">
+    <meta name="twitter:description" content="Qué es una dieta antiinflamatoria, qué alimentos tienen mejor respaldo científico, qué limitar, mitos frecuentes y un menú de un día con comida mexicana.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-antiinflamatoria/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/dieta-antiinflamatoria/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Dieta antiinflamatoria: alimentos antiinflamatorios y qué dice la ciencia",
+  "url": "https://www.clinicadenki.mx/blog/dieta-antiinflamatoria/",
+  "image": "https://www.clinicadenki.mx/assets/img/blog/post-antiinflamatoria/hero.webp",
+  "datePublished": "2026-10-02",
+  "dateModified": "2026-10-02",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Lucy Anita Camberos Luna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clínica Denki",
+    "url": "https://www.clinicadenki.mx/"
+  },
+  "description": "Guía honesta sobre la dieta antiinflamatoria: inflamación aguda vs crónica de bajo grado, índice inflamatorio de la dieta, qué dice la evidencia, alimentos antiinflamatorios con mejor respaldo, qué limitar, mitos y menú de un día.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.clinicadenki.mx/blog/dieta-antiinflamatoria/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.clinicadenki.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.clinicadenki.mx/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dieta antiinflamatoria",
+      "item": "https://www.clinicadenki.mx/blog/dieta-antiinflamatoria/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es una dieta antiinflamatoria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es un patrón de alimentación que se asocia con menores marcadores de inflamación crónica de bajo grado: abundante en verduras, frutas, leguminosas, cereales integrales, nueces, pescado y aceite de oliva, y bajo en ultraprocesados, azúcares, carnes procesadas y alcohol. No es una dieta con reglas oficiales ni un tratamiento por sí misma."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son los alimentos antiinflamatorios con más evidencia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los que forman parte de patrones como la dieta mediterránea: verduras de hoja, frutos rojos, pescado graso, aceite de oliva, nueces, leguminosas y cereales integrales. Los alimentos fermentados como el yogur natural también muestran resultados prometedores. Funcionan como conjunto, no de forma aislada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La cúrcuma y el jengibre desinflaman?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En el laboratorio tienen compuestos con actividad antiinflamatoria, pero en personas los resultados son modestos y variables, y la cúrcuma se absorbe poco. Puedes usarlas como especias, pero no sustituyen tratamientos médicos. Los suplementos concentrados pueden interactuar con medicamentos como los anticoagulantes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En cuánto tiempo hace efecto una dieta antiinflamatoria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de la persona y del marcador que se mida. En algunos estudios se han visto cambios en semanas, pero el objetivo real es un patrón sostenido durante años. No esperes un efecto inmediato ni lo uses como sustituto de tu tratamiento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Debo dejar el gluten y los lácteos para desinflamarme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, si no tienes un diagnóstico que lo justifique, como enfermedad celíaca, alergia o intolerancia confirmada. Eliminarlos sin necesidad puede quitar fibra, calcio y proteína de tu alimentación sin un beneficio demostrado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Las dietas detox reducen la inflamación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hay evidencia de que jugos, ayunos detox o productos “depurativos” reduzcan la inflamación. El hígado y los riñones se encargan de eliminar desechos. Lo que tiene respaldo es un patrón de alimentación de calidad sostenido en el tiempo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La dieta antiinflamatoria sirve para la artritis o enfermedades autoinmunes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puede ser un buen complemento, porque mejora la calidad de la alimentación y la salud cardiovascular, pero no sustituye el tratamiento del reumatólogo u otro especialista. Cualquier cambio importante conviene planearlo con tu equipo de salud."
+      }
+    }
+  ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Bienestar</span>
+                    <h1>Dieta antiinflamatoria: alimentos antiinflamatorios y qué dice la ciencia</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 10 min de lectura</span>
+                        <span>📅 Actualizado: Oct 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-antiinflamatoria/hero.webp" srcset="/assets/img/blog/post-antiinflamatoria/hero-w480.webp 480w, /assets/img/blog/post-antiinflamatoria/hero-w960.webp 960w, /assets/img/blog/post-antiinflamatoria/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRvgAAABXRUJQVlA4IOwAAAAQBgCdASogACAAPuVipU2pJaOiMAwBIByJZAC7GaoIb2Ge5zakbKICY6KIRURV7i2EloRk9dYAt4AA/v4xnQF40uaoHPXLQlh3IaZ2Yz0Zp+uqOoPNZGIJV1+NSkoHxug/QL2vI/Y+Isb43ZgMct128TDAF9f837Mnjl8t25D7y8WzNpppK7+qDiaugCHHdZz7gEX6pFwGy7sLHVF2WyKT5uDZDX89FxxJ2N/22JpAGWs2+f7bZvQZe9ij8icRc3d+ADu0HpW9Z+fGTtMYDXi/3Wn1l7wg67Vin7hSmfjN8an6ayI37ME9YOgAAA==);background-size:cover;background-position:center" alt="Dieta antiinflamatoria: verduras de hoja, frutos rojos, pescado, nueces y aceite de oliva - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+<p class="lead" style="border: none; padding: 0;">Una <strong>dieta antiinflamatoria</strong> es un patrón de alimentación que se asocia con menores marcadores de inflamación crónica de bajo grado: rico en verduras, frutas, leguminosas, cereales integrales, nueces, pescado y aceite de oliva, y bajo en ultraprocesados, azúcares, carnes procesadas y alcohol. No "desinflama" de forma mágica ni sustituye un tratamiento, pero sí es una base razonable para cuidar tu salud a largo plazo.</p>
+
+<p>En esta guía te explicamos, sin exageraciones, qué significa "antiinflamatorio" en nutrición, qué dice la evidencia y qué no, cuáles son los <strong>alimentos antiinflamatorios</strong> con mejor respaldo, qué conviene limitar y cómo se ve un día de comida con ingredientes mexicanos.</p>
+
+<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — octubre 2026.</p>
+
+<div class="post-toc">
+    <h4>Contenido de este artículo</h4>
+    <ul>
+        <li><a href="#inflamacion">Inflamación aguda vs crónica</a></li>
+        <li><a href="#que-significa">Qué significa antiinflamatorio en nutrición</a></li>
+        <li><a href="#evidencia">Qué dice la evidencia y qué no</a></li>
+        <li><a href="#alimentos">Alimentos antiinflamatorios</a></li>
+        <li><a href="#limitar">Qué limitar</a></li>
+        <li><a href="#menu">Menú de un día</a></li>
+        <li><a href="#mitos">Mitos frecuentes</a></li>
+        <li><a href="#cuando-consultar">Cuándo consultar</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+    </ul>
+</div>
+
+<h2 id="inflamacion">Inflamación aguda vs inflamación crónica de bajo grado</h2>
+<p>La inflamación no es mala por sí misma. La <strong>inflamación aguda</strong> es la respuesta normal del cuerpo ante una herida o una infección: aparece rápido, cumple su función de defensa y reparación, y se apaga. Sin ella no podríamos sanar.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-antiinflamatoria/inflamacion.webp" srcset="/assets/img/blog/post-antiinflamatoria/inflamacion-w480.webp 480w, /assets/img/blog/post-antiinflamatoria/inflamacion-w960.webp 960w, /assets/img/blog/post-antiinflamatoria/inflamacion.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQBACdASogABYAPu1mqE2ppaOiMAgBMB2JYgDE2CG7p5tbMm3kePGt589fJBogAAD+83IpY6VVYK4g2Q066Bx2a0izgQ2t7k8QzR5BNtUjinJ0vg12sMX154vZw4KAPbDXGul6VKJHq5R1BLgGszapdEhpTCny7ee5oQAA);background-size:cover;background-position:center" alt="Ilustración de una silueta humana con zonas cálidas que se vuelven hojas verdes">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">La inflamación crónica de bajo grado es silenciosa y persistente.</figcaption>
+</figure>
+<p>El problema es la <strong>inflamación crónica de bajo grado</strong>: una activación leve pero persistente del sistema inmunitario que no da síntomas evidentes y que se detecta, por ejemplo, con marcadores en sangre como la proteína C reactiva. Se asocia con obesidad abdominal, resistencia a la insulina, diabetes tipo 2, hígado graso, enfermedad cardiovascular y con el envejecimiento.</p>
+<p>A ese proceso relacionado con la edad se le llama <em>inflammaging</em>. Una revisión de Calder y colaboradores (2017) describe cómo la inflamación de bajo grado aumenta con los años, cómo contribuye a enfermedades crónicas y cómo la alimentación, el peso corporal, la actividad física y la microbiota intestinal pueden modularla.</p>
+<div class="highlight-box">
+    <p>💡 <strong>Idea clave:</strong> cuando hablamos de dieta antiinflamatoria nos referimos a la inflamación crónica de bajo grado, no a un golpe, una lesión o una infección, que requieren valoración médica.</p>
+</div>
+
+<h2 id="que-significa">¿Qué significa "antiinflamatorio" en nutrición?</h2>
+<p>En nutrición, "antiinflamatorio" no significa que un alimento actúe como un medicamento. Significa que ciertos <strong>patrones de alimentación</strong> se asocian, en estudios poblacionales y en algunos ensayos, con niveles más bajos de marcadores inflamatorios.</p>
+<p>Para medirlo, los investigadores crearon el <strong>índice inflamatorio de la dieta</strong> (Shivappa, 2014). Revisaron una gran cantidad de estudios sobre el efecto de nutrientes y alimentos en marcadores como la proteína C reactiva y la interleucina 6, y asignaron a cada componente de la dieta un puntaje proinflamatorio o antiinflamatorio. En general:</p>
+<ul>
+    <li><strong>Suman hacia lo antiinflamatorio:</strong> fibra, omega-3, polifenoles, flavonoides, vitaminas y minerales de verduras y frutas, especias.</li>
+    <li><strong>Suman hacia lo proinflamatorio:</strong> exceso de grasas saturadas y trans, azúcares, harinas refinadas y exceso de energía.</li>
+</ul>
+<p>El índice es una herramienta de investigación, no un examen para hacerte en consulta. Su valor está en mostrar que el efecto viene del conjunto de la dieta.</p>
+
+<h2 id="evidencia">Qué dice la evidencia y qué no</h2>
+<h3>Lo que sí tiene respaldo</h3>
+<p>La evidencia más sólida no es para un alimento aislado, sino para <strong>patrones completos</strong>. La dieta mediterránea es el ejemplo más estudiado: en el ensayo PREDIMED (Estruch, 2018) redujo los eventos cardiovasculares en personas de alto riesgo, y una revisión paraguas (Dinu, 2018) la asocia con menor riesgo de varias enfermedades crónicas, aunque gran parte de esos datos es observacional. Te la explicamos a detalle en nuestra guía de la <a href="/blog/dieta-mediterranea/">dieta mediterránea con menú mexicano</a>.</p>
+<p>Otro estudio interesante es el de Wastyk y colaboradores (2021): en 36 adultos sanos, una dieta con más alimentos fermentados durante 10 semanas aumentó la diversidad de la microbiota y disminuyó varios marcadores inflamatorios en sangre. Es un estudio pequeño y corto, pero apoya la relación entre microbiota, alimentación e inflamación.</p>
+<h3>Lo que no está demostrado</h3>
+<ul>
+    <li><strong>Que un alimento aislado "desinflame":</strong> la cúrcuma, el jengibre o el té verde contienen compuestos con actividad antiinflamatoria en el laboratorio, pero en personas los resultados son modestos y variables. La curcumina, además, se absorbe poco.</li>
+    <li><strong>Que la dieta sustituya un tratamiento:</strong> en artritis, enfermedades autoinmunes o enfermedad inflamatoria intestinal, la alimentación es un complemento del tratamiento médico, no un reemplazo.</li>
+    <li><strong>Que bajar un marcador signifique curar una enfermedad:</strong> los cambios en marcadores suelen ser modestos y no siempre se traducen en beneficios clínicos.</li>
+</ul>
+
+<h2 id="alimentos">Alimentos antiinflamatorios con mejor respaldo</h2>
+<p>Estos alimentos aparecen una y otra vez en los patrones asociados con menos inflamación. Su efecto se suma cuando forman parte de tu alimentación diaria:</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-antiinflamatoria/alimentos.webp" srcset="/assets/img/blog/post-antiinflamatoria/alimentos-w480.webp 480w, /assets/img/blog/post-antiinflamatoria/alimentos-w960.webp 960w, /assets/img/blog/post-antiinflamatoria/alimentos.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABwBQCdASogABYAPu1kqE2ppaOiMAgBMB2JbAC1CP9DgCaP90+8X3Itq3z3Mxgu4SpuHbkQAP7zb+ACPx5e02twBGSiqFeSqgN/yOlpAHH5VWbxPJ+4Jsgv/bt8Vzr9hJ02cGFyxvbMReYQGXLSSnhYjvyrCyQMirRrRQ9npOKoWzB4croTxAiUge7W1CawM8Ci4+qZMo/MdF9jgRGu8r9/4jJoVZYG/VwLHA6sSEbgplvO5gAAAA==);background-size:cover;background-position:center" alt="Verduras de hoja, frutos rojos, salmón, aceite de oliva, nueces y cúrcuma">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Verduras, frutos rojos, pescado y aceite de oliva, entre los de mejor respaldo.</figcaption>
+</figure>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Alimento</th><th style="padding: 1rem; text-align: left;">Qué aporta</th><th style="padding: 1rem; text-align: left;">Cómo incluirlo</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Verduras de hoja (espinaca, quelites, acelga, lechuga)</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fibra, folato, polifenoles y magnesio</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En cada comida: ensaladas, guisados, omelettes</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Frutos rojos (fresa, zarzamora, frambuesa, arándano)</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Polifenoles como antocianinas, vitamina C y fibra</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Con yogur, avena o como colación; congelados también sirven</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Pescado graso (sardina, salmón, macarela, atún)</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Ácidos grasos omega-3 (EPA y DHA)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2 veces por semana; la sardina en lata es económica</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Aceite de oliva extra virgen</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Grasa monoinsaturada y polifenoles</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Como grasa principal para aderezar y cocinar</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Nueces, almendras, pepitas y chía</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Grasas insaturadas, fibra y, en nuez y chía, omega-3 de origen vegetal</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Un puñito al día, sin sal</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Leguminosas (frijol, lenteja, garbanzo, haba)</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fibra, proteína vegetal y polifenoles</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Varias veces por semana; frijoles de la olla</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Cereales integrales (avena, tortilla de maíz, arroz integral)</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fibra que alimenta a la microbiota</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">En lugar de harinas refinadas</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Alimentos fermentados (yogur natural, kéfir, jocoque)</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Microorganismos vivos y compuestos de la fermentación</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Una porción diaria, sin azúcar añadida</td></tr>
+<tr><td style="padding: 1rem;"><strong>Especias y hierbas (cúrcuma, jengibre, ajo, canela, orégano)</strong></td><td style="padding: 1rem;">Polifenoles y otros compuestos bioactivos</td><td style="padding: 1rem;">Como sazonador en tus guisos, no como sustituto de tratamientos</td></tr>
+</tbody>
+</table>
+</div>
+<p>Si quieres profundizar en los fermentados y en la fibra que alimenta a tus bacterias intestinales, revisa nuestras guías de <a href="/blog/alimentos-fermentados/">alimentos fermentados y prebióticos</a> y de <a href="/blog/guias-nutricionales/alimentos-microbiota-saludable/">alimentos para una microbiota saludable</a>.</p>
+
+<h2 id="limitar">Qué limitar en una dieta antiinflamatoria</h2>
+<ul>
+    <li><strong>Ultraprocesados:</strong> botanas empaquetadas, galletas, cereales azucarados, comida rápida y congelados listos para calentar.</li>
+    <li><strong>Azúcares añadidos y bebidas azucaradas:</strong> refresco, jugos, aguas de sabor, pan dulce.</li>
+    <li><strong>Harinas refinadas</strong> en exceso: pan blanco, pastas y harinas de trigo refinadas.</li>
+    <li><strong>Carnes procesadas:</strong> jamón, salchicha, chorizo, tocino.</li>
+    <li><strong>Alcohol:</strong> mientras menos, mejor; si no bebes, no hay razón para empezar.</li>
+    <li><strong>Grasas trans:</strong> presentes en algunos productos de panadería industrial, frituras y margarinas sólidas; revisa la etiqueta.</li>
+</ul>
+<p>Limitar no significa prohibir para siempre. Lo que marca la diferencia es lo que comes la mayor parte del tiempo.</p>
+<figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+  <img src="/assets/img/blog/post-antiinflamatoria/limitar.webp" srcset="/assets/img/blog/post-antiinflamatoria/limitar-w480.webp 480w, /assets/img/blog/post-antiinflamatoria/limitar-w960.webp 960w, /assets/img/blog/post-antiinflamatoria/limitar.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAACwBACdASogABYAPu1qrFCppaQiqAqpMB2JQArOoXohHj4NuB2ft/8ib9Otb/AAAP74rhVjTLhq5slzoLg8VE1YCCC3itqDj0zGHxBBugwB0YAI9738JT30w/QdlgmkARE2ekNSt+GGbnO0mhms2LQaiKQ9YIAuI+809785TZyg+d9tRAtH39dI/0NIdaXCyXUbc/1+9apZVbhXpoU8GMAA);background-size:cover;background-position:center" alt="Embutidos, pan dulce, refresco y frituras">
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Ultraprocesados, azúcares y carnes procesadas favorecen la inflamación.</figcaption>
+</figure>
+
+<h2 id="menu">Menú de un día de dieta antiinflamatoria</h2>
+<p>Ejemplo orientativo para un adulto sin otras enfermedades; las porciones dependen de tu caso.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Tiempo</th><th style="padding: 1rem; text-align: left;">Ejemplo</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Desayuno</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Avena cocida con leche o bebida vegetal sin azúcar, frutos rojos, nuez y canela; café o té sin azúcar</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colación</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur natural con 1 cucharada de semillas de chía</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Comida</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Sopa de lentejas con verduras; sardinas en salsa de jitomate; ensalada de espinaca con aceite de oliva y limón; 2 tortillas de maíz</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colación</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 manzana o 1 guayaba con un puñito de almendras</td></tr>
+<tr><td style="padding: 1rem;"><strong>Cena</strong></td><td style="padding: 1rem;">Tacos de pescado con repollo, aguacate y salsa verde casera; agua natural o de jamaica sin azúcar</td></tr>
+</tbody>
+</table>
+</div>
+<div class="highlight-box">
+    <p>🥗 <strong>Tip práctico:</strong> en lugar de buscar un "superalimento", intenta que la mitad de tu plato sean verduras en la comida y la cena. Es uno de los cambios con más impacto.</p>
+</div>
+
+<h2 id="mitos">Mitos frecuentes sobre la dieta antiinflamatoria</h2>
+<h3>"Las dietas detox desinflaman"</h3>
+<p>No hay evidencia de que jugos, ayunos "depurativos" o tés detox reduzcan la inflamación. El hígado y los riñones ya se encargan de eliminar desechos. Algunas de estas dietas, además, son muy bajas en proteína y pueden hacerte perder masa muscular.</p>
+<h3>"Hay que eliminar el gluten y los lácteos"</h3>
+<p>Solo si tienes un diagnóstico que lo justifique: enfermedad celíaca, alergia o intolerancia confirmada. Sin diagnóstico, eliminarlos no ha demostrado reducir la inflamación y puede restar fibra, calcio y proteína. Los lácteos fermentados como el yogur natural, de hecho, forman parte de varios patrones saludables.</p>
+<h3>"Un suplemento de cúrcuma sustituye a mi tratamiento"</h3>
+<p>No. Los suplementos concentrados pueden interactuar con medicamentos, como los anticoagulantes, y no hay evidencia de que reemplacen un tratamiento médico. Consulta con tu médico antes de tomarlos.</p>
+<h3>"La inflamación se nota en el abdomen inflamado"</h3>
+<p>La distensión abdominal o los gases no son lo mismo que la inflamación crónica de bajo grado. Pueden tener otras causas, como intolerancias o trastornos digestivos, y conviene revisarlas con un profesional.</p>
+
+<h2 id="cuando-consultar">¿Cuándo consultar al médico o al nutriólogo?</h2>
+<p>Conviene acudir a valoración si tienes una enfermedad inflamatoria o autoinmune, si tus estudios muestran marcadores inflamatorios, glucosa o lípidos alterados, o si llevas tiempo con molestias digestivas. La alimentación también influye en el estado de ánimo a través del eje intestino-cerebro; si te interesa ese tema, conoce nuestro enfoque de <a href="/nutricion-salud-mental/">nutrición y salud mental</a>.</p>
+
+<div class="cta-banner">
+    <h3>¿Quieres un plan antiinflamatorio realista y basado en evidencia?</h3>
+    <p>Diseñamos un plan de alimentación adaptado a tus estudios, tu diagnóstico y tus gustos, coordinado con tu médico. Consulta presencial en Del Valle, CDMX, o videoconsulta.</p>
+    <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+    <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+</div>
+
+<h2 id="referencias">Referencias</h2>
+<ol style="padding-left: 1.2rem; line-height: 1.7;">
+    <li>Shivappa N, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Designing%20and%20developing%20a%20literature-derived%2C%20population-based%20dietary%20inflammatory%20index." target="_blank" rel="noopener noreferrer">Designing and developing a literature-derived, population-based dietary inflammatory index.</a> Public Health Nutr. 2014.</li>
+    <li>Calder PC, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Health%20relevance%20of%20the%20modification%20of%20low%20grade%20inflammation%20in%20ageing%20%28inflammageing%29%20and%20the%20role%20of%20nutrition." target="_blank" rel="noopener noreferrer">Health relevance of the modification of low grade inflammation in ageing (inflammageing) and the role of nutrition.</a> Ageing Res Rev. 2017.</li>
+    <li>Estruch R, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Primary%20Prevention%20of%20Cardiovascular%20Disease%20with%20a%20Mediterranean%20Diet%20Supplemented%20with%20Extra-Virgin%20Olive%20Oil%20or%20Nuts." target="_blank" rel="noopener noreferrer">Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or Nuts.</a> N Engl J Med. 2018.</li>
+    <li>Dinu M, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Mediterranean%20diet%20and%20multiple%20health%20outcomes%3A%20an%20umbrella%20review%20of%20meta-analyses%20of%20observational%20studies%20and%20randomised%20trials." target="_blank" rel="noopener noreferrer">Mediterranean diet and multiple health outcomes: an umbrella review of meta-analyses of observational studies and randomised trials.</a> Eur J Clin Nutr. 2018.</li>
+    <li>Wastyk HC, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Gut-microbiota-targeted%20diets%20modulate%20human%20immune%20status." target="_blank" rel="noopener noreferrer">Gut-microbiota-targeted diets modulate human immune status.</a> Cell. 2021.</li>
+</ol>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+    <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico. La alimentación es un complemento, no un sustituto, del tratamiento de enfermedades inflamatorias o autoinmunes. No inicies suplementos ni suspendas o ajustes medicamentos sin indicación de tu médico tratante.</p>
+</div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué es una dieta antiinflamatoria?</p>
+                        <p>Es un patrón de alimentación que se asocia con menores marcadores de inflamación crónica de bajo grado: abundante en verduras, frutas, leguminosas, cereales integrales, nueces, pescado y aceite de oliva, y bajo en ultraprocesados, azúcares, carnes procesadas y alcohol. No es una dieta con reglas oficiales ni un tratamiento por sí misma.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuáles son los alimentos antiinflamatorios con más evidencia?</p>
+                        <p>Los que forman parte de patrones como la dieta mediterránea: verduras de hoja, frutos rojos, pescado graso, aceite de oliva, nueces, leguminosas y cereales integrales. Los alimentos fermentados como el yogur natural también muestran resultados prometedores. Funcionan como conjunto, no de forma aislada.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La cúrcuma y el jengibre desinflaman?</p>
+                        <p>En el laboratorio tienen compuestos con actividad antiinflamatoria, pero en personas los resultados son modestos y variables, y la cúrcuma se absorbe poco. Puedes usarlas como especias, pero no sustituyen tratamientos médicos. Los suplementos concentrados pueden interactuar con medicamentos como los anticoagulantes.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿En cuánto tiempo hace efecto una dieta antiinflamatoria?</p>
+                        <p>Depende de la persona y del marcador que se mida. En algunos estudios se han visto cambios en semanas, pero el objetivo real es un patrón sostenido durante años. No esperes un efecto inmediato ni lo uses como sustituto de tu tratamiento.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Debo dejar el gluten y los lácteos para desinflamarme?</p>
+                        <p>No, si no tienes un diagnóstico que lo justifique, como enfermedad celíaca, alergia o intolerancia confirmada. Eliminarlos sin necesidad puede quitar fibra, calcio y proteína de tu alimentación sin un beneficio demostrado.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Las dietas detox reducen la inflamación?</p>
+                        <p>No hay evidencia de que jugos, ayunos detox o productos “depurativos” reduzcan la inflamación. El hígado y los riñones se encargan de eliminar desechos. Lo que tiene respaldo es un patrón de alimentación de calidad sostenido en el tiempo.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La dieta antiinflamatoria sirve para la artritis o enfermedades autoinmunes?</p>
+                        <p>Puede ser un buen complemento, porque mejora la calidad de la alimentación y la salud cardiovascular, pero no sustituye el tratamiento del reumatólogo u otro especialista. Cualquier cambio importante conviene planearlo con tu equipo de salud.</p>
+                    </div>
+
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica basada en evidencia para un patrón de alimentación antiinflamatorio. Consulta presencial en Del Valle
+                            o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/alimentos-fermentados/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-fermentados/hero.webp" srcset="/assets/img/blog/post-fermentados/hero-w480.webp 480w, /assets/img/blog/post-fermentados/hero-w960.webp 960w, /assets/img/blog/post-fermentados/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Digestiva</span>
+                            <h3>Alimentos fermentados y prebióticos</h3>
+                            <p>Qué son, cuáles elegir y cómo incluirlos en tu alimentación.</p>
+                            <a href="/blog/alimentos-fermentados/" class="btn-text" aria-label="Leer: Alimentos fermentados y prebióticos">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/alimentos-microbiota-saludable/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-03/hero.webp" srcset="/assets/img/blog/post-03/hero-w480.webp 480w, /assets/img/blog/post-03/hero-w960.webp 960w, /assets/img/blog/post-03/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Digestiva</span>
+                            <h3>Microbiota intestinal</h3>
+                            <p>Qué es y cómo cuidarla con tu alimentación.</p>
+                            <a href="/blog/guias-nutricionales/alimentos-microbiota-saludable/" class="btn-text" aria-label="Leer: Microbiota intestinal">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/alimentos-para-la-memoria/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-memoria/hero.webp" srcset="/assets/img/blog/post-memoria/hero-w480.webp 480w, /assets/img/blog/post-memoria/hero-w960.webp 960w, /assets/img/blog/post-memoria/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Neurología</span>
+                            <h3>Alimentos para la memoria</h3>
+                            <p>Qué dice la ciencia sobre la dieta y la salud cognitiva.</p>
+                            <a href="/blog/alimentos-para-la-memoria/" class="btn-text" aria-label="Leer: Alimentos para la memoria">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
