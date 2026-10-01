@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Resistencia a la insulina: síntomas y dieta | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Qué es la resistencia a la insulina, sus señales (como la acantosis), cómo se diagnostica y qué comer para mejorarla. Guía clínica con menú mexicano.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Resistencia a la insulina: síntomas y dieta | Clínica Denki">
+    <meta property="og:description" content="Qué es la resistencia a la insulina, sus señales (como la acantosis), cómo se diagnostica y qué comer para mejorarla. Guía clínica con menú mexicano.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/resistencia-a-la-insulina/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-resistencia-insulina/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Resistencia a la insulina: síntomas y dieta | Clínica Denki">
+    <meta name="twitter:description" content="Qué es la resistencia a la insulina, sus señales (como la acantosis), cómo se diagnostica y qué comer para mejorarla. Guía clínica con menú mexicano.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-resistencia-insulina/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/resistencia-a-la-insulina/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Resistencia a la insulina: qué es, síntomas y cómo tratarla",
+  "url": "https://www.clinicadenki.mx/blog/resistencia-a-la-insulina/",
+  "image": "https://www.clinicadenki.mx/assets/img/blog/post-resistencia-insulina/hero.webp",
+  "datePublished": "2026-10-01",
+  "dateModified": "2026-10-01",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Lucy Anita Camberos Luna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clínica Denki",
+    "url": "https://www.clinicadenki.mx/"
+  },
+  "description": "Guía clínica sobre la resistencia a la insulina: qué es, causas, señales como la acantosis nigricans, diagnóstico (glucosa, HbA1c, HOMA-IR y sus limitaciones) y tratamiento con alimentación, actividad física y sueño.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.clinicadenki.mx/blog/resistencia-a-la-insulina/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.clinicadenki.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.clinicadenki.mx/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Resistencia a la insulina",
+      "item": "https://www.clinicadenki.mx/blog/resistencia-a-la-insulina/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿La resistencia a la insulina es lo mismo que la diabetes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Significa que tus células responden menos a la insulina. Al principio el páncreas compensa y la glucosa sigue normal; si deja de alcanzar, aparecen la prediabetes y después la diabetes tipo 2."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son los síntomas de la resistencia a la insulina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Con frecuencia no da síntomas. Pueden acompañarla manchas oscuras en cuello o axilas (acantosis nigricans), acrocordones, grasa abdominal y somnolencia después de comer. Ninguna señal confirma el diagnóstico por sí sola."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué estudio confirma la resistencia a la insulina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hay un solo estudio estandarizado. El médico valora glucosa e insulina en ayuno, HOMA-IR, curva de tolerancia, HbA1c y lípidos, junto con tu historia clínica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La resistencia a la insulina se puede revertir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En muchas personas mejora de forma importante con pérdida de peso moderada, actividad física, mejor alimentación y buen descanso. Más que curarla, se trata de mejorarla y mantener esos hábitos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tengo que dejar de comer tortilla, fruta o carbohidratos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Cambian la calidad y la porción: tortilla de maíz moderada, leguminosas, avena, verduras y fruta entera. Conviene limitar bebidas azucaradas, pan dulce y harinas refinadas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué ejercicio es mejor para la resistencia a la insulina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La combinación de ejercicio aeróbico (caminar rápido, nadar, bicicleta) con ejercicio de fuerza dos o tres veces por semana. Ambos mejoran la respuesta del músculo a la insulina."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Sirven los suplementos para la resistencia a la insulina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ninguno sustituye a la alimentación, la actividad física y el sueño. La evidencia de canela, berberina o vinagre es limitada, y algunos interactúan con medicamentos. Consulta a tu médico."
+      }
+    }
+  ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Metabólica</span>
+                    <h1>Resistencia a la insulina: qué es, síntomas y cómo tratarla</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 12 min de lectura</span>
+                        <span>📅 Actualizado: Oct 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-resistencia-insulina/hero.webp" srcset="/assets/img/blog/post-resistencia-insulina/hero-w480.webp 480w, /assets/img/blog/post-resistencia-insulina/hero-w960.webp 960w, /assets/img/blog/post-resistencia-insulina/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRvYAAABXRUJQVlA4IOoAAAAQBgCdASogACAAPu1urlKppiQiqAgBMB2JYgC+Ta7EIk0/1hfbf/PBxrYpDbXi216iH0N/DCu/PwAA/vssmQsq55W161tRmwS09U9zYJ7nOz9N1RADHiluDukV4hzh3EShhQqZW+yDcJC5cTqRnJY5GrQHtWDPxto0PkAdKZq7alZLa8YvuYUn+0zQfZFdNatiXE2njPa8NxeijNte6wvD6rfdDQ0Kc768sbup9SerKpqk+g+0FLNO8nT8kC0oYH1eO61AaVitGrtBqtcKWHRxFC7aho52RvzpuuASs1/sR8eVp32u22TUqAA=);background-size:cover;background-position:center" alt="Resistencia a la insulina: alimentación y control metabólico - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+<p class="lead" style="border: none; padding: 0;">La <strong>resistencia a la insulina</strong> es una condición en la que las células de tus músculos, hígado y tejido graso responden menos a la insulina, la hormona que ayuda a que la glucosa entre a las células. Para compensar, el páncreas produce más insulina. Durante años la glucosa puede verse normal, pero ese esfuerzo extra se relaciona con prediabetes, diabetes tipo 2, hígado graso y síndrome de ovario poliquístico.</p>
+
+<p>La buena noticia es que responde bien a cambios concretos: pérdida de peso moderada, actividad física, más fibra y proteína, y mejor descanso. Aquí te explicamos qué es, qué señales vigilar, cómo se diagnostica y qué comer, con alimentos de la mesa mexicana.</p>
+
+<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644). Revisado clínicamente — octubre 2026.</p>
+
+<div class="post-toc">
+    <h4>Contenido de este artículo</h4>
+    <ul>
+        <li><a href="#que-es">Qué es la resistencia a la insulina</a></li>
+        <li><a href="#causas">Causas y factores de riesgo</a></li>
+        <li><a href="#sintomas">Síntomas y señales</a></li>
+        <li><a href="#diagnostico">Cómo se diagnostica</a></li>
+        <li><a href="#relacion">Relación con prediabetes, diabetes, hígado graso y SOP</a></li>
+        <li><a href="#tratamiento">Tratamiento: qué funciona</a></li>
+        <li><a href="#alimentos">Qué comer y qué limitar</a></li>
+        <li><a href="#menu">Menú de un día</a></li>
+        <li><a href="#mitos">Mitos frecuentes</a></li>
+        <li><a href="#cuando-consultar">Cuándo consultar</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+    </ul>
+</div>
+
+<h2 id="que-es">¿Qué es la resistencia a la insulina?</h2>
+<p>Cuando comes, los carbohidratos se convierten en glucosa y el páncreas libera insulina, que funciona como una "llave": indica al músculo, al hígado y al tejido graso que tomen esa glucosa, y al hígado que deje de producir la suya. Con resistencia a la insulina, esa señal pierde fuerza: el músculo capta menos glucosa y el hígado sigue liberándola. Para compensar, el páncreas fabrica cada vez más insulina, por eso al inicio la glucosa puede ser normal y la insulina estar elevada.</p>
+                    <figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+                        <img src="/assets/img/blog/post-resistencia-insulina/que-es.webp" srcset="/assets/img/blog/post-resistencia-insulina/que-es-w480.webp 480w, /assets/img/blog/post-resistencia-insulina/que-es-w960.webp 960w, /assets/img/blog/post-resistencia-insulina/que-es.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADwBACdASogABUAPu1mp02ppaMiMBgMATAdiUAXyQaN/j4HewP5p3V9Q64yAevy6AAA/vYCWtfbH0TBrrGGoCOozBv9+PmHcYSBxfYZ8muQIHLDH2gIHEW2ZhfbOQ5lzifsoky4OobOqxfjXvtAwL/wYf4bqGbeUCj9zrDjP+daq8MyEP2/VX6F3deWJGc/L7BlxwbIcSAAAA==);background-size:cover;background-position:center" alt="Ilustración de una llave y un candado botánicos junto a un tazón de avena">
+                        <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">La insulina funciona como una llave: con resistencia, las células responden menos.</figcaption>
+                    </figure>
+<p>Ese equilibrio puede sostenerse años. Cuando el páncreas ya no alcanza a compensar, la glucosa empieza a subir, primero después de comer y luego en ayuno: es el camino más frecuente hacia la prediabetes y la diabetes tipo 2.</p>
+
+<div class="highlight-box">
+    <p>💡 <strong>Idea clave:</strong> cuanto antes se detecta, más margen hay para mejorarla.</p>
+</div>
+
+<h2 id="causas">¿Por qué se produce? Causas y factores de riesgo</h2>
+<p>Casi nunca hay una sola causa. Lo habitual es que se sumen varios factores, algunos modificables y otros no:</p>
+<ul>
+    <li><strong>Exceso de grasa abdominal:</strong> la grasa alrededor de los órganos se asocia de forma estrecha con la resistencia a la insulina, incluso con un peso total "normal".</li>
+    <li><strong>Sedentarismo:</strong> el músculo en movimiento es uno de los principales consumidores de glucosa; muchas horas sentado reducen su respuesta a la insulina.</li>
+    <li><strong>Genética y antecedentes familiares:</strong> tener padres o hermanos con diabetes tipo 2 aumenta el riesgo.</li>
+    <li><strong>Sueño insuficiente:</strong> dormir poco y el estrés crónico empeoran la sensibilidad a la insulina.</li>
+    <li><strong>Síndrome de ovario poliquístico (SOP):</strong> la resistencia a la insulina es frecuente en mujeres con SOP, aun sin sobrepeso.</li>
+    <li><strong>Hígado graso:</strong> la grasa acumulada en el hígado y la resistencia a la insulina se retroalimentan entre sí.</li>
+    <li><strong>Algunos medicamentos:</strong> como los corticoides o ciertos antipsicóticos. Nunca los suspendas por tu cuenta; coméntalo con tu médico.</li>
+    <li><strong>Exceso de azúcares y harinas refinadas,</strong> en especial las bebidas azucaradas.</li>
+</ul>
+
+<h2 id="sintomas">Síntomas y señales de la resistencia a la insulina</h2>
+<p>Lo más importante que debes saber es que <strong>muchas veces no da ningún síntoma</strong>. Se descubre en estudios de rutina o cuando ya hay prediabetes. Aun así, hay algunas señales en el cuerpo que pueden hacer sospecharla:</p>
+                    <figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+                        <img src="/assets/img/blog/post-resistencia-insulina/senales.webp" srcset="/assets/img/blog/post-resistencia-insulina/senales-w480.webp 480w, /assets/img/blog/post-resistencia-insulina/senales-w960.webp 960w, /assets/img/blog/post-resistencia-insulina/senales.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAQBQCdASogABUAPu1ip04ppaMiMBgMATAdiUAYUAIbpWp6+hIZwU42KLNxOVzqOodAAP7t6qu6mPvlq5a4HmJRk+EdYFqOFKgOzTyneRvrQWbcoweLtPSXTMFwccQCBE4FhnKJFEaIL/i5N22Me1Vy5ABA11yq7dp2guO1ZEoh0sym/oXnYRKHIhVe5YDQn1gBKk0seAA=);background-size:cover;background-position:center" alt="Hombre midiendo su cintura con una cinta métrica">
+                        <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Una cintura amplia es una de las señales más frecuentes.</figcaption>
+                    </figure>
+<ul>
+    <li><strong>Acantosis nigricans:</strong> manchas oscuras y aterciopeladas en nuca, cuello, axilas o pliegues. Es una de las señales más características.</li>
+    <li><strong>Acrocordones:</strong> pequeñas verrugas blandas de piel en cuello o axilas.</li>
+    <li><strong>Cintura amplia</strong> por grasa abdominal.</li>
+    <li><strong>Cansancio o somnolencia después de comer,</strong> una señal poco específica que puede tener otras causas.</li>
+    <li><strong>En mujeres:</strong> ciclos menstruales irregulares, acné o exceso de vello, que pueden relacionarse con SOP.</li>
+</ul>
+<p>Ninguna señal confirma ni descarta el diagnóstico. Si además tienes sed intensa, orinas mucho o bajas de peso sin explicación, tu glucosa podría estar alta: revisa nuestra guía sobre <a href="/blog/glucosa-alta-sintomas/">síntomas de glucosa alta</a> y acude con tu médico.</p>
+
+<h2 id="diagnostico">¿Cómo se diagnostica la resistencia a la insulina?</h2>
+<p>Aquí conviene ser honestos: <strong>no existe un único estudio estandarizado</strong> que se use en la práctica diaria para diagnosticar la resistencia a la insulina. El método de referencia (el "clamp" euglucémico) se reserva para investigación. En consulta, el médico integra varios datos con tu historia clínica:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Estudio</th><th style="padding: 1rem; text-align: left;">Qué aporta</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Glucosa en ayuno</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">70-99 mg/dL normal; 100-125 mg/dL prediabetes (ADA 2025). Puede ser normal aunque exista resistencia a la insulina.</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Insulina en ayuno</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Un valor alto sugiere que el páncreas está compensando. No hay un punto de corte universal.</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Índice HOMA-IR</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Estimación que combina glucosa e insulina en ayuno. Orientativo; sus valores de referencia varían según población y laboratorio.</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Curva de tolerancia a la glucosa</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">140-199 mg/dL a las 2 horas corresponde a prediabetes.</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Hemoglobina glucosilada (HbA1c)</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Promedio de 2-3 meses: 5.7-6.4% prediabetes; 6.5% o más sugiere diabetes.</td></tr>
+<tr><td style="padding: 1rem;"><strong>Triglicéridos y HDL</strong></td><td style="padding: 1rem;">Triglicéridos altos con HDL bajo es un patrón frecuente que apoya la sospecha.</td></tr>
+</tbody>
+</table>
+</div>
+<p>El índice <strong>HOMA-IR</strong> (Matthews, 1985) es una forma sencilla de estimar la resistencia a la insulina, pero tiene limitaciones: la medición de insulina varía entre laboratorios, no hay un punto de corte único para todas las poblaciones y un resultado puede cambiar de un día a otro. No conviene sacar conclusiones de un número aislado: <strong>la interpretación la hace tu médico</strong>.</p>
+
+<h2 id="relacion">Resistencia a la insulina, prediabetes, diabetes, hígado graso y SOP</h2>
+<h3>Prediabetes y diabetes tipo 2</h3>
+<p>La resistencia a la insulina suele ser el primer eslabón: cuando el páncreas ya no compensa, aparece la prediabetes y, más adelante, la diabetes tipo 2. Si ya tienes diagnóstico, conoce nuestro servicio de <a href="/nutricion-metabolica/diabetes/">nutrición para diabetes en CDMX</a>.</p>
+<h3>Hígado graso (MASLD)</h3>
+<p>El hígado graso asociado a disfunción metabólica y la resistencia a la insulina se retroalimentan: el exceso de insulina favorece que el hígado almacene grasa, y esa grasa empeora la respuesta a la insulina. Si te detectaron grasa en el hígado, revisa nuestra <a href="/blog/dieta-higado-graso/">guía de dieta para hígado graso</a>.</p>
+<h3>Síndrome de ovario poliquístico</h3>
+<p>En muchas mujeres con SOP, la insulina elevada favorece la producción de andrógenos en el ovario. Mejorar la sensibilidad a la insulina forma parte del tratamiento, coordinado con ginecología o endocrinología.</p>
+
+<h2 id="tratamiento">Tratamiento de la resistencia a la insulina: qué funciona</h2>
+<p>Los pilares son los cambios de estilo de vida que han demostrado prevenir o retrasar la diabetes tipo 2 y que recomiendan los Estándares de Atención de la ADA 2025.</p>
+<h3>1. Una pérdida de peso modesta, si tienes sobrepeso</h3>
+<p>No hace falta llegar a un peso "ideal". En el Diabetes Prevention Program (Knowler, 2002), personas con prediabetes que perdieron alrededor de 7% de su peso con alimentación y 150 minutos semanales de actividad redujeron en 58% la aparición de diabetes tipo 2. Para alguien de 80 kg, 5-7% equivale a unos 4 a 6 kg.</p>
+<h3>2. Un patrón de alimentación, no una dieta de moda</h3>
+<p>El consenso de nutrición de la ADA (Evert, 2019) concluye que no existe un único reparto ideal de carbohidratos, proteínas y grasas para todos. Lo que más pesa es la calidad del patrón completo:</p>
+<ul>
+    <li><strong>Carbohidratos de calidad y fibra:</strong> leguminosas, tortilla de maíz, avena, verduras y fruta entera en lugar de harinas refinadas. Reynolds (2019) asocia más fibra y granos enteros con menor riesgo de diabetes tipo 2.</li>
+    <li><strong>Proteína en cada comida:</strong> huevo, pescado, pollo, queso fresco o leguminosas, para más saciedad.</li>
+    <li><strong>Grasas insaturadas:</strong> aguacate, aceite de oliva, nueces y semillas en lugar de frituras y manteca.</li>
+    <li><strong>Evitar bebidas azucaradas:</strong> refresco, jugos y aguas de sabor.</li>
+</ul>
+<p>Para estrategias prácticas del día a día, como el orden de los alimentos o caminar después de comer, consulta nuestra guía para <a href="/nutricion-metabolica/bajar-glucosa/">bajar la glucosa con alimentación</a>.</p>
+<h3>3. Actividad física aeróbica y de fuerza</h3>
+<p>La postura de la ADA sobre actividad física (Colberg, 2016) recomienda en adultos al menos 150 minutos por semana de actividad aeróbica de intensidad moderada a vigorosa, repartidos en la mayoría de los días, más 2 o 3 sesiones semanales de ejercicio de fuerza en días no consecutivos. También sugiere interrumpir el tiempo sentado cada 30 minutos. El músculo entrenado capta mejor la glucosa.</p>
+<h3>4. Sueño y manejo del estrés</h3>
+<p>Dormir poco empeora la sensibilidad a la insulina y aumenta el apetito por lo dulce. Un horario regular de sueño es parte del tratamiento.</p>
+<h3>¿Y los medicamentos?</h3>
+<p>En algunos casos el médico indica un medicamento según tu perfil de riesgo. Esa decisión le corresponde a él; nunca inicies, suspendas ni ajustes medicamentos por tu cuenta.</p>
+
+<h2 id="alimentos">Qué comer si tienes resistencia a la insulina</h2>
+<p>No hay alimentos prohibidos para siempre, pero sí unos que conviene priorizar y otros que es mejor limitar:</p>
+                    <figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+                        <img src="/assets/img/blog/post-resistencia-insulina/que-comer.webp" srcset="/assets/img/blog/post-resistencia-insulina/que-comer-w480.webp 480w, /assets/img/blog/post-resistencia-insulina/que-comer-w960.webp 960w, /assets/img/blog/post-resistencia-insulina/que-comer.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAACQBACdASogABUAPu1or1CppaQiqAqpMB2JYgAAJKU3Aqs0vv021AOUIZPHKdAA/vOCzgoX3OwpbgVqu1WC/GQGfbi71VvKuNwYjWwCJIiLQhDflDExXNMR45LNqL2G2x+tQRgD3VHMVcmlAFBt3I/7X8eBzljcs1wkG5T1qzCnzujKnB4OnjdxNKuiXgbpfOBM5gAA);background-size:cover;background-position:center" alt="Plato con pollo, frijol, ensalada de nopal, aguacate y tortillas">
+                        <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Proteína, fibra y carbohidratos de calidad en cada comida.</figcaption>
+                    </figure>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Qué priorizar</th><th style="padding: 1rem; text-align: left;">Qué limitar</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Verduras en cada comida: nopal, calabacita, chayote, espinaca, brócoli</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Refresco, jugos (incluso naturales) y aguas de sabor</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Frijoles, lentejas, garbanzos y habas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pan dulce, galletas y cereales azucarados</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tortilla de maíz en porción moderada, avena, arroz integral en ½ taza</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Bolillo, pan blanco, pasta y arroz blanco en porciones grandes</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fruta entera: guayaba, manzana, pera, papaya, fresas</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Fruta en jugo, en almíbar o deshidratada con azúcar</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Huevo, pescado, pollo, queso fresco o panela, yogur natural</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Embutidos frecuentes: jamón, salchicha, chorizo</td></tr>
+<tr><td style="padding: 1rem;">Aguacate, aceite de oliva, nueces, almendras, semillas de calabaza</td><td style="padding: 1rem;">Antojitos fritos, manteca y botanas empaquetadas</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="menu">Menú de un día para la resistencia a la insulina</h2>
+<p>Ejemplo orientativo para un adulto sin otras enfermedades; las porciones dependen de tu caso.</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Tiempo</th><th style="padding: 1rem; text-align: left;">Ejemplo</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Desayuno</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">2 huevos a la mexicana con nopales, 2 tortillas de maíz, ½ taza de frijoles de la olla y café sin azúcar</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colación</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">1 guayaba o 1 manzana con un puñito de almendras</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Comida</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Caldo de verduras; pollo o pescado a la plancha; ½ taza de arroz integral; ensalada grande con aguacate</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Colación</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Yogur natural sin azúcar con canela y 1 cucharada de semillas de calabaza</td></tr>
+<tr><td style="padding: 1rem;"><strong>Cena</strong></td><td style="padding: 1rem;">2 tostadas horneadas con tinga de pollo o atún, lechuga, jitomate y salsa; agua simple</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="highlight-box">
+    <p>🥗 <strong>Tip práctico:</strong> si empiezas por un solo cambio, que sea sustituir refresco, jugo o agua de sabor por agua simple.</p>
+</div>
+
+<h2 id="mitos">Mitos frecuentes sobre la resistencia a la insulina</h2>
+<h3>"Necesito una dieta especial anti-resistencia a la insulina"</h3>
+<p>No existe una dieta "anti-resistencia" con alimentos mágicos. Lo que tiene respaldo es un patrón de alimentación de calidad que puedas mantener a largo plazo.</p>
+<h3>"Un suplemento puede corregirla"</h3>
+<p>Canela, berberina, vinagre o tés se promocionan como soluciones, pero la evidencia es limitada o inconsistente y algunos interactúan con medicamentos. Coméntalo con tu médico.</p>
+<h3>"Tengo que eliminar toda la fruta"</h3>
+<p>La fruta entera aporta fibra, vitaminas y agua. En porciones moderadas forma parte de una alimentación adecuada; lo que conviene limitar son los jugos y la fruta en almíbar.</p>
+
+<h2 id="cuando-consultar">¿Cuándo consultar al médico o al nutriólogo?</h2>
+<p>Conviene acudir a valoración si:</p>
+<ul>
+    <li>Notas manchas oscuras en cuello o axilas.</li>
+    <li>Tienes antecedentes familiares de diabetes, SOP o tuviste diabetes gestacional.</li>
+    <li>Tus estudios muestran glucosa, HbA1c o triglicéridos altos, o hígado graso.</li>
+</ul>
+<p>El médico confirma el diagnóstico; el nutriólogo clínico lo traduce en un plan concreto.</p>
+
+<div class="cta-banner">
+    <h3>¿Te dijeron que tienes resistencia a la insulina?</h3>
+    <p>Revisamos tus estudios y hábitos para diseñar un plan realista, coordinado con tu médico. Consulta presencial en Del Valle, CDMX, o videoconsulta.</p>
+    <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+</div>
+
+<h2>Servicios y lecturas relacionados</h2>
+<ul>
+    <li><a href="/nutricion-metabolica/">Nutrición metabólica en Clínica Denki</a>.</li>
+    <li><a href="/nutricion-metabolica/bajar-glucosa/">Cómo bajar la glucosa con alimentación</a>.</li>
+    <li><a href="/nutricion-metabolica/diabetes/">Nutrición para diabetes en CDMX</a>.</li>
+    <li><a href="/blog/guias-nutricionales/dieta-diabetes/">Dieta para diabéticos con menú semanal</a>.</li>
+</ul>
+
+<h2 id="referencias">Referencias</h2>
+<ol style="padding-left: 1.2rem; line-height: 1.7;">
+    <li>American Diabetes Association Professional Practice Committee. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=3.%20Prevention%20or%20Delay%20of%20Diabetes%20and%20Associated%20Comorbidities%3A%20Standards%20of%20Care%20in%20Diabetes-2025." target="_blank" rel="noopener noreferrer">3. Prevention or Delay of Diabetes and Associated Comorbidities: Standards of Care in Diabetes-2025.</a> Diabetes Care. 2025.</li>
+    <li>Knowler WC, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Reduction%20in%20the%20incidence%20of%20type%202%20diabetes%20with%20lifestyle%20intervention%20or%20metformin." target="_blank" rel="noopener noreferrer">Reduction in the incidence of type 2 diabetes with lifestyle intervention or metformin.</a> N Engl J Med. 2002.</li>
+    <li>Evert AB, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Nutrition%20Therapy%20for%20Adults%20With%20Diabetes%20or%20Prediabetes%3A%20A%20Consensus%20Report." target="_blank" rel="noopener noreferrer">Nutrition Therapy for Adults With Diabetes or Prediabetes: A Consensus Report.</a> Diabetes Care. 2019.</li>
+    <li>Matthews DR, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Homeostasis%20model%20assessment%3A%20insulin%20resistance%20and%20beta-cell%20function%20from%20fasting%20plasma%20glucose%20and%20insulin%20concentrations%20in%20man." target="_blank" rel="noopener noreferrer">Homeostasis model assessment: insulin resistance and beta-cell function from fasting plasma glucose and insulin concentrations in man.</a> Diabetologia. 1985.</li>
+    <li>Colberg SR, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Physical%20Activity%2FExercise%20and%20Diabetes%3A%20A%20Position%20Statement%20of%20the%20American%20Diabetes%20Association." target="_blank" rel="noopener noreferrer">Physical Activity/Exercise and Diabetes: A Position Statement of the American Diabetes Association.</a> Diabetes Care. 2016.</li>
+    <li>Reynolds A, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Carbohydrate%20quality%20and%20human%20health%3A%20a%20series%20of%20systematic%20reviews%20and%20meta-analyses." target="_blank" rel="noopener noreferrer">Carbohydrate quality and human health: a series of systematic reviews and meta-analyses.</a> Lancet. 2019.</li>
+</ol>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+    <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu médico. El diagnóstico de resistencia a la insulina, prediabetes o diabetes lo establece un médico con estudios de laboratorio. No inicies, suspendas ni ajustes medicamentos sin indicación de tu médico tratante.</p>
+</div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La resistencia a la insulina es lo mismo que la diabetes?</p>
+                        <p>No. Significa que tus células responden menos a la insulina. Al principio el páncreas compensa y la glucosa sigue normal; si deja de alcanzar, aparecen la prediabetes y después la diabetes tipo 2.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuáles son los síntomas de la resistencia a la insulina?</p>
+                        <p>Con frecuencia no da síntomas. Pueden acompañarla manchas oscuras en cuello o axilas (acantosis nigricans), acrocordones, grasa abdominal y somnolencia después de comer. Ninguna señal confirma el diagnóstico por sí sola.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué estudio confirma la resistencia a la insulina?</p>
+                        <p>No hay un solo estudio estandarizado. El médico valora glucosa e insulina en ayuno, HOMA-IR, curva de tolerancia, HbA1c y lípidos, junto con tu historia clínica.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La resistencia a la insulina se puede revertir?</p>
+                        <p>En muchas personas mejora de forma importante con pérdida de peso moderada, actividad física, mejor alimentación y buen descanso. Más que curarla, se trata de mejorarla y mantener esos hábitos.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Tengo que dejar de comer tortilla, fruta o carbohidratos?</p>
+                        <p>No. Cambian la calidad y la porción: tortilla de maíz moderada, leguminosas, avena, verduras y fruta entera. Conviene limitar bebidas azucaradas, pan dulce y harinas refinadas.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué ejercicio es mejor para la resistencia a la insulina?</p>
+                        <p>La combinación de ejercicio aeróbico (caminar rápido, nadar, bicicleta) con ejercicio de fuerza dos o tres veces por semana. Ambos mejoran la respuesta del músculo a la insulina.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Sirven los suplementos para la resistencia a la insulina?</p>
+                        <p>Ninguno sustituye a la alimentación, la actividad física y el sueño. La evidencia de canela, berberina o vinagre es limitada, y algunos interactúan con medicamentos. Consulta a tu médico.</p>
+                    </div>
+
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición clínica para resistencia a la insulina y salud metabólica. Consulta presencial en Del Valle
+                            o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/glucosa-alta-sintomas/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-glucosa-sintomas/hero.webp" srcset="/assets/img/blog/post-glucosa-sintomas/hero-w480.webp 480w, /assets/img/blog/post-glucosa-sintomas/hero-w960.webp 960w, /assets/img/blog/post-glucosa-sintomas/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Glucosa alta: síntomas y valores</h3>
+                            <p>Señales de la hiperglucemia, valores normales y cuándo es urgencia.</p>
+                            <a href="/blog/glucosa-alta-sintomas/" class="btn-text" aria-label="Leer: Glucosa alta: síntomas y valores">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/dieta-higado-graso/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-higado-graso/hero.webp" srcset="/assets/img/blog/post-higado-graso/hero-w480.webp 480w, /assets/img/blog/post-higado-graso/hero-w960.webp 960w, /assets/img/blog/post-higado-graso/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Dieta para hígado graso</h3>
+                            <p>Qué comer, qué limitar y un menú mexicano para cuidar tu hígado.</p>
+                            <a href="/blog/dieta-higado-graso/" class="btn-text" aria-label="Leer: Dieta para hígado graso">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/dieta-diabetes/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-06/hero.webp" srcset="/assets/img/blog/post-06/hero-w480.webp 480w, /assets/img/blog/post-06/hero-w960.webp 960w, /assets/img/blog/post-06/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Metabólica</span>
+                            <h3>Dieta para diabéticos</h3>
+                            <p>Guía práctica con lista de alimentos y menú de 7 días.</p>
+                            <a href="/blog/guias-nutricionales/dieta-diabetes/" class="btn-text" aria-label="Leer: Dieta para diabéticos">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

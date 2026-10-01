@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXCSFJJKHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXCSFJJKHV');
+
+      document.addEventListener('click', function (e) {
+        if (!e.target || typeof e.target.closest !== 'function') return;
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        var url = a.href;
+        var eventName = null;
+        if (a.protocol === 'tel:') {
+          eventName = 'phone_click';
+        } else if (url.includes('wa.me') || url.includes('whatsapp.com')) {
+          eventName = 'whatsapp_click';
+        } else if (url.includes('doctoralia')) {
+          eventName = 'doctoralia_click';
+        }
+        if (!eventName) return;
+
+        gtag('event', eventName, { link_url: url });
+      });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Caquexia: qué es, síntomas y tratamiento | Clínica Denki</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Caquexia: qué es, en qué enfermedades aparece, sus etapas y síntomas, y cómo se trata con nutrición clínica en cáncer. Guía basada en ESPEN y ASCO.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Caquexia: qué es, síntomas y tratamiento | Clínica Denki">
+    <meta property="og:description" content="Caquexia: qué es, en qué enfermedades aparece, sus etapas y síntomas, y cómo se trata con nutrición clínica en cáncer. Guía basada en ESPEN y ASCO.">
+    <meta property="og:url" content="https://www.clinicadenki.mx/blog/caquexia/">
+    <meta property="og:image" content="https://www.clinicadenki.mx/assets/img/blog/post-caquexia/hero.webp">
+    <meta property="og:site_name" content="Clínica Denki">
+    <meta property="og:locale" content="es_MX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Caquexia: qué es, síntomas y tratamiento | Clínica Denki">
+    <meta name="twitter:description" content="Caquexia: qué es, en qué enfermedades aparece, sus etapas y síntomas, y cómo se trata con nutrición clínica en cáncer. Guía basada en ESPEN y ASCO.">
+    <meta name="twitter:image" content="https://www.clinicadenki.mx/assets/img/blog/post-caquexia/hero.webp">
+    <link rel="canonical" href="https://www.clinicadenki.mx/blog/caquexia/">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<!-- Schema JSON-LD: BlogPosting -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Caquexia: qué es, síntomas y tratamiento nutricional",
+  "url": "https://www.clinicadenki.mx/blog/caquexia/",
+  "image": "https://www.clinicadenki.mx/assets/img/blog/post-caquexia/hero.webp",
+  "datePublished": "2026-10-01",
+  "dateModified": "2026-10-01",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Lucy Anita Camberos Luna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clínica Denki",
+    "url": "https://www.clinicadenki.mx/"
+  },
+  "description": "Qué es la caquexia según el consenso internacional, en qué enfermedades aparece, cómo se diferencia de la desnutrición y la sarcopenia, sus etapas y cómo se trata con nutrición clínica.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.clinicadenki.mx/blog/caquexia/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.clinicadenki.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.clinicadenki.mx/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Caquexia",
+      "item": "https://www.clinicadenki.mx/blog/caquexia/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es la caquexia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es un síndrome en el que se pierde músculo de forma continua, con o sin pérdida de grasa, por efecto de una enfermedad como el cáncer. No se revierte del todo solo con alimentación convencional y requiere un abordaje médico y nutricional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La caquexia es lo mismo que la desnutrición?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. En la desnutrición simple el problema principal es comer o absorber menos de lo necesario. En la caquexia, además, la enfermedad y la inflamación alteran el metabolismo y el músculo se pierde aunque la persona coma."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son los síntomas de la caquexia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pérdida de peso sin buscarla, ropa floja, brazos y piernas más delgados, debilidad, cansancio, falta de apetito y saciedad temprana. Cualquier pérdida de peso involuntaria durante una enfermedad merece valoración."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La caquexia se puede revertir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No suele revertirse por completo solo con comer más. Detectarla temprano y tratarla de forma multimodal, con nutrición, actividad física, control de síntomas y tratamiento médico, puede ayudar a frenar la pérdida de músculo y a mejorar la calidad de vida."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué debe comer una persona con caquexia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Comidas pequeñas y frecuentes, densas en energía y proteína: huevo, frijoles, pollo, pescado bien cocido, lácteos pasteurizados, aguacate, crema de cacahuate y licuados enriquecidos. El plan se ajusta a los síntomas y a la indicación médica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánta proteína necesita un paciente con cáncer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Las guías ESPEN recomiendan más de 1 g de proteína por kilo de peso al día y, si es posible, hasta 1.5 g/kg/día. La meta se individualiza, por ejemplo si hay enfermedad renal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay medicamentos para la caquexia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Existen medicamentos que pueden mejorar el apetito por un tiempo, pero tienen efectos secundarios y no están indicados para todos. Los decide y prescribe el oncólogo; la nutrición clínica acompaña ese tratamiento."
+      }
+    }
+  ]
+}
+    </script>
+    <script src="/assets/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <!-- denki:static-header:start -->
+<header id="main-header">
+    <nav class="container">
+        <a href="/" class="logo">
+            <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="150px" width="150" height="48" loading="eager" decoding="async" alt="Clínica Denki Logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-menu">
+                        <li class="has-dropdown">
+                <a href="/nutricion-metabolica/">Metabólica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-metabolica/diabetes/">Diabetes</a></li>
+                    <li><a href="/nutricion-metabolica/bajar-glucosa/">Bajar Glucosa</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-cardiovascular/">Cardiovascular</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-cardiovascular/colesterol-alto/">Colesterol Alto</a></li>
+                    <li><a href="/nutricion-cardiovascular/trigliceridos-altos/">Triglicéridos Altos</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-neurologica/">Neurológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-neurologica/alzheimer/">Alzheimer</a></li>
+                    <li><a href="/nutricion-neurologica/parkinson/">Parkinson</a></li>
+                    <li><a href="/nutricion-neurologica/infarto-cerebral/">Infarto Cerebral</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-oncologica/">Oncológica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-oncologica/cancer/">Cáncer & Quimio</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-geriatrica/">Geriátrica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-geriatrica/adulto-mayor/">Adulto Mayor</a></li>
+                    <li><a href="/nutricion-geriatrica/sarcopenia/">Sarcopenia</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/nutricion-clinica/">Clínica</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+                    <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/nutricion-salud-mental/">Salud Mental</a>
+            </li>
+            <li>
+                <a href="/nutricion-clinica/hospitalaria/">Hospitalaria</a>
+            </li>
+
+            <!-- Ubicaciones: Desktop Only -->
+            <li class="has-dropdown d-none-mobile">
+                <a href="/ubicaciones/cdmx/">Ubicaciones</a>
+                <ul class="dropdown-menu" id="menu-ubicaciones">            <li>
+                <a href="/ubicaciones/cdmx/">CDMX</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/benito-juarez/">Benito Juárez</a>
+            </li>
+            <li>
+                <a href="/ubicaciones/roma-condesa/">Roma-Condesa</a>
+            </li></ul>
+            </li>
+
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+        </ul>
+
+        <!-- Action Buttons (always visible) -->
+        <div class="nav-actions">
+            <a href="https://wa.me/525550150285" class="btn btn-primary btn-sm">Agendar</a>
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Fullscreen Overlay Menu -->
+<div id="mobile-menu" class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+        <button id="mobile-menu-close" class="close-btn" aria-label="Cerrar menú">&times;</button>
+        <ul class="mobile-nav-links">
+            <li class="mobile-section-title"><strong>Especialidades</strong></li>
+            <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+            <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+            <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+            <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+            <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+            <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+            <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Hospitalaria</strong></li>
+            <li><a href="/nutricion-clinica/disfagia/">Disfagia</a></li>
+            <li><a href="/nutricion-clinica/enteral-sonda/">Nutrición Enteral</a></li><li><a href="/nutricion-clinica/hospitalaria/">Nutrición Hospitalaria</a></li>
+            <li><hr></li>
+            <li class="mobile-section-title"><strong>Ubicaciones</strong></li>
+            <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+            <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+            <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li>
+            <li><hr></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/pages/nosotros/">Nosotros</a></li>
+            <li style="margin-top: 1.5rem;"><a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="display: inline-block; padding: 1rem 2rem;">WhatsApp: (55) 5015 0285</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- denki:static-header:end -->
+
+    <main class="page-blog">
+        <div class="container">
+            <!-- Premium Hero Section -->
+            <section class="post-hero-grid reveal">
+                <div class="post-title-area">
+                    <span class="card-tag">Oncología</span>
+                    <h1>Caquexia: qué es, síntomas y tratamiento nutricional</h1>
+                    <div class="post-meta-premium">
+                        <span>⏱ 12 min de lectura</span>
+                        <span>📅 Actualizado: Oct 2026</span>
+                    </div>
+                    <div class="post-cta-group">
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Doctoralia</a>
+                    </div>
+                </div>
+                <div class="post-hero-image-wrapper">
+                    <img src="/assets/img/blog/post-caquexia/hero.webp" srcset="/assets/img/blog/post-caquexia/hero-w480.webp 480w, /assets/img/blog/post-caquexia/hero-w960.webp 960w, /assets/img/blog/post-caquexia/hero.webp 1024w" sizes="100vw" width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" style="background-image:url(data:image/webp;base64,UklGRtwAAABXRUJQVlA4INAAAACQBQCdASogACAAPu1qqVAppiOiqA1RMB2JQBWACLuW/LaqaD6mgBRQus7ns7n43RmbTO7tAAD++hjhkDFJPHyQs/oJa/0mopyyI9hdGMx0/EQ873MwwLFJW5YBFPXW0WXPkmHEjVlkNg+hZbusTC02OGFe8LPbQNQAZajxib49PxD2+e3+j6/TT+F7iD1M3ughG1R7wOtlLG4/BDRsdR2zpL9IFYXNnN1Kz/r5mN/pNxr82X44LhSPx2b3gnDL0YT9gk3Qkl6INoI0fhxEwAAA);background-size:cover;background-position:center" alt="Plato con comidas pequeñas ricas en proteína para una persona con caquexia - Clínica Denki">
+                </div>
+            </section>
+
+            <!-- Content + Sidebar Grid -->
+            <div class="post-content-columns">
+                <article class="post-body-text reveal">
+                    <p class="lead" style="border: none; padding: 0;">La <strong>caquexia</strong> es un síndrome en el que
+                        el cuerpo pierde músculo de forma continua, con o sin pérdida de grasa, como consecuencia de una
+                        enfermedad, sobre todo el cáncer. Su rasgo más importante es que <strong>no se revierte del todo solo
+                        con alimentación convencional</strong>: la enfermedad cambia el metabolismo y el músculo se sigue
+                        perdiendo aunque la persona intente comer más.</p>
+
+                    <p>Si tú o un familiar están bajando de peso durante un tratamiento oncológico, aquí entenderás cómo
+                        se diferencia de la desnutrición y la sarcopenia, sus etapas y señales, y qué se puede hacer desde la
+                        nutrición clínica junto con el equipo médico. Detectarla a tiempo sí cambia las cosas.</p>
+
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Por <strong>Dra. Lucy Anita Camberos Luna</strong>, nutrióloga clínica (PhD, UNAM; cédulas 10424574 y 11050644).
+                        Revisado clínicamente — octubre 2026.
+                    </p>
+
+                    <div class="post-toc">
+                        <h4>Contenido de este artículo</h4>
+                        <ul>
+                            <li><a href="#que-es">Qué es la caquexia</a></li>
+                            <li><a href="#enfermedades">En qué enfermedades aparece</a></li>
+                            <li><a href="#diferencias">Caquexia, desnutrición, sarcopenia y anorexia</a></li>
+                            <li><a href="#etapas">Etapas y criterios diagnósticos</a></li>
+                            <li><a href="#sintomas">Síntomas y señales de alerta</a></li>
+                            <li><a href="#por-que-importa">Por qué importa tratarla a tiempo</a></li>
+                            <li><a href="#tratamiento">Tratamiento de la caquexia</a></li>
+                            <li><a href="#comidas">Ideas de comidas con alimentos mexicanos</a></li>
+                            <li><a href="#que-no-hacer">Qué no hacer</a></li>
+                            <li><a href="#medicamentos">Medicamentos para el apetito</a></li>
+                            <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="que-es">¿Qué es la caquexia?</h2>
+                    <p>En 2011, un grupo internacional de expertos publicó el consenso que hoy se usa para definirla: la
+                        caquexia por cáncer es un <strong>síndrome multifactorial</strong> caracterizado por una pérdida
+                        continua de masa muscular esquelética, con o sin pérdida de masa grasa, que no puede revertirse por
+                        completo con el soporte nutricional convencional y que lleva a un deterioro funcional progresivo.</p>
+                    <figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+                        <img src="/assets/img/blog/post-caquexia/que-es.webp" srcset="/assets/img/blog/post-caquexia/que-es-w480.webp 480w, /assets/img/blog/post-caquexia/que-es-w960.webp 960w, /assets/img/blog/post-caquexia/que-es.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABwBACdASogABUAPu1qsFCppaSiqAqpMB2JQBmDhp30imcI9bGZTtIKEUTcpgD+9wghnZir0CWEXxH8auQgBzbICSuC9CqcfbB11FHkQr2KNp/KkPyw96EB34/9hBNuNj0koFAY4A2vrgjAfhWIcPMeQeD/cz7cuT/yAoRYrVNRlCb+3M/wAA==);background-size:cover;background-position:center" alt="Hombre mayor delgado junto a la ventana acompañado de su esposa">
+                        <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">La caquexia implica pérdida de músculo que no se revierte solo comiendo más.</figcaption>
+                    </figure>
+                    <p>"Multifactorial" significa que intervienen varias cosas a la vez: se come menos (falta de apetito,
+                        náusea, cambios de sabor) y, además, la enfermedad genera <strong>inflamación</strong> que acelera la
+                        degradación del músculo. El resultado no se explica solo por "comer poco".</p>
+                    <div class="highlight-box">
+                        <p>💡 <strong>Idea clave:</strong> la caquexia no es falta de voluntad ni descuido de la familia. Es
+                            un proceso biológico de la enfermedad, y por eso se trata con un plan clínico, no con regaños a
+                            la hora de comer.</p>
+                    </div>
+
+                    <h2 id="enfermedades">¿En qué enfermedades aparece la caquexia?</h2>
+                    <p>La más conocida es la <strong>caquexia oncológica</strong>. Es especialmente frecuente en los
+                        cánceres de páncreas, estómago, pulmón y cabeza y cuello, y en etapas avanzadas. Pero no es exclusiva
+                        del cáncer; también aparece en:</p>
+                    <ul>
+                        <li><strong>Insuficiencia cardiaca</strong> avanzada (caquexia cardiaca).</li>
+                        <li><strong>Enfermedad pulmonar obstructiva crónica (EPOC)</strong>.</li>
+                        <li><strong>Enfermedad renal crónica</strong>, sobre todo en etapas avanzadas.</li>
+                        <li><strong>VIH</strong>, en especial cuando la infección no está controlada.</li>
+                    </ul>
+                    <p>El fondo es el mismo: una enfermedad que inflama y cambia el metabolismo. Aquí nos centramos en el
+                        cáncer, área en la que la Dra. Lucy Camberos tiene experiencia especial.</p>
+
+                    <h2 id="diferencias">Diferencia entre caquexia, desnutrición, sarcopenia y anorexia</h2>
+                    <p>Son términos que se usan como sinónimos, pero no lo son. Pueden coexistir en la misma persona, y
+                        distinguirlos ayuda a elegir el tratamiento correcto.</p>
+                    <div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;"></th><th style="padding: 1rem; text-align: left;">Qué es</th><th style="padding: 1rem; text-align: left;">Qué la causa</th><th style="padding: 1rem; text-align: left;">¿Se corrige solo comiendo más?</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Caquexia</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pérdida continua de músculo, con o sin pérdida de grasa, ligada a una enfermedad</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Inflamación y cambios metabólicos de la enfermedad, casi siempre con menor apetito</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">No del todo: necesita abordaje multimodal y tratamiento de la causa</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Desnutrición</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Estado en el que el cuerpo recibe o aprovecha menos nutrientes de los que necesita (criterios GLIM)</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Comer poco, absorber mal o necesitar más</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Si la causa es solo comer poco, suele mejorar al cubrir los requerimientos</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Sarcopenia</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pérdida de fuerza, cantidad y calidad del músculo</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Envejecimiento, inactividad, enfermedades crónicas o poca proteína; puede existir con peso normal</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Requiere proteína suficiente y, sobre todo, ejercicio de fuerza</td></tr>
+<tr><td style="padding: 1rem;"><strong>Anorexia (falta de apetito)</strong></td><td style="padding: 1rem;">Disminución del apetito como síntoma; no es la anorexia nerviosa</td><td style="padding: 1rem;">Enfermedad, tratamientos, náusea, dolor, cambios del gusto</td><td style="padding: 1rem;">Mejora al tratar la causa; si persiste, lleva a desnutrición</td></tr>
+</tbody>
+</table>
+</div>
+                    <p>Una misma persona con cáncer puede tener caquexia, desnutrición según GLIM y
+                        <a href="/nutricion-geriatrica/sarcopenia/">sarcopenia</a>. Por eso no basta con la báscula: medimos
+                        composición corporal y fuerza.</p>
+
+                    <h2 id="etapas">Etapas de la caquexia y criterios diagnósticos</h2>
+                    <p>El consenso de Fearon la describe como un continuo de tres etapas.</p>
+                    <div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Etapa</th><th style="padding: 1rem; text-align: left;">Qué la caracteriza (consenso Fearon 2011)</th><th style="padding: 1rem; text-align: left;">Objetivo nutricional</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Precaquexia</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pérdida de peso de 5% o menos, con falta de apetito y cambios metabólicos</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Detectar y actuar pronto: es la etapa con más margen para frenar la pérdida</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);"><strong>Caquexia</strong></td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Pérdida de peso mayor de 5% en 6 meses, o mayor de 2% si el IMC es menor de 20 o si ya hay sarcopenia; suele haber menor ingesta e inflamación</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Cubrir energía y proteína, controlar síntomas, mantener la actividad física y la funcionalidad</td></tr>
+<tr><td style="padding: 1rem;"><strong>Caquexia refractaria</strong></td><td style="padding: 1rem;">Enfermedad avanzada que ya no responde al tratamiento oncológico, con deterioro marcado del estado general</td><td style="padding: 1rem;">Confort, alivio de síntomas y calidad de vida; comer por placer y sin presiones</td></tr>
+</tbody>
+</table>
+</div>
+                    <p>Los criterios diagnósticos son sencillos de aplicar y se basan en la pérdida de peso
+                        <strong>involuntaria</strong>, es decir, la que no se buscó con dieta:</p>
+                    <ul>
+                        <li>Pérdida de peso <strong>mayor de 5% en los últimos 6 meses</strong>, o</li>
+                        <li>pérdida <strong>mayor de 2%</strong> en una persona con <strong>IMC menor de 20</strong>, o</li>
+                        <li>pérdida <strong>mayor de 2%</strong> en una persona que ya tiene <strong>sarcopenia</strong>
+                            (masa muscular baja).</li>
+                    </ul>
+                    <p>Un ejemplo para dimensionarlo: en alguien que pesaba 70 kg, perder más de 3.5 kg en seis meses sin
+                        buscarlo ya cumple el primer criterio. Conviene anotar el peso habitual y pesarse con regularidad.</p>
+
+                    <h2 id="sintomas">Síntomas y señales de la caquexia</h2>
+                    <p>Las primeras señales suelen notarse en la ropa y en la energía del día a día:</p>
+                    <ul>
+                        <li><strong>Pérdida de peso sin buscarla</strong>: ropa o cinturón más flojos.</li>
+                        <li><strong>Brazos, piernas y sienes más delgados</strong>, por pérdida de músculo.</li>
+                        <li><strong>Debilidad y cansancio</strong>: cuesta subir escaleras, cargar el mandado o levantarse de
+                            la silla.</li>
+                        <li><strong>Falta de apetito</strong> y <strong>saciedad temprana</strong>: sentirse lleno con pocos
+                            bocados.</li>
+                        <li>Cambios en el sabor de los alimentos, náusea o rechazo a la carne.</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p>⚠️ <strong>Cuándo consultar pronto:</strong> si notas una pérdida de peso involuntaria, si se come
+                            menos de la mitad de lo habitual durante más de una semana o si la debilidad avanza rápido,
+                            coméntalo con tu oncólogo y pide una valoración nutricional. No esperes a la siguiente cita de
+                            control.</p>
+                    </div>
+
+                    <h2 id="por-que-importa">Por qué importa: tratamiento y calidad de vida</h2>
+                    <p>La caquexia no es solo un cambio en la báscula. La pérdida de músculo se asocia con <strong>menor
+                        tolerancia a la quimioterapia y la radioterapia</strong>, más efectos secundarios, más riesgo de
+                        retrasos o reducciones de dosis, recuperación más lenta tras una cirugía y mayor fatiga. También
+                        afecta la autonomía y el ánimo.</p>
+                    <p>Por eso las guías de la Sociedad Europea de Nutrición Clínica y Metabolismo (ESPEN) recomiendan
+                        <strong>evaluar el estado nutricional desde el diagnóstico</strong> y repetir la evaluación de forma
+                        periódica, en lugar de esperar a que la pérdida de peso sea evidente.</p>
+
+                    <h2 id="tratamiento">Tratamiento de la caquexia: abordaje multimodal</h2>
+                    <p>No existe una sola medida que la resuelva. Las guías recomiendan un <strong>abordaje
+                        multimodal</strong>, coordinado por el equipo de salud:</p>
+                    <figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+                        <img src="/assets/img/blog/post-caquexia/multimodal.webp" srcset="/assets/img/blog/post-caquexia/multimodal-w480.webp 480w, /assets/img/blog/post-caquexia/multimodal-w960.webp 960w, /assets/img/blog/post-caquexia/multimodal.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAADwBACdASogABUAPu1gp02ppSOiMAgBMB2JQBfnBDvs+v5jZFHgXcxRIFpZ5fk8VWgA/vHJSN5+YpMrLQZKeMHkXeCvqc2W/DJWX2ZskQD5JXlW1NU9tlVqrWUxNE5hydgUFLo4/MSQO5xXVSiOj8e08J0xcpeMuB3ntZvj89idx2ei/Urh39XhLPTCAjOkUJuoFEHuWRDQhx7G5c47el4RGGkiEdbcI4pUAAAA);background-size:cover;background-position:center" alt="Nutrióloga y médico conversando con un paciente y su hija">
+                        <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">El tratamiento combina nutrición, actividad física y manejo médico.</figcaption>
+                    </figure>
+                    <ul>
+                        <li><strong>Detección temprana:</strong> tamizaje nutricional desde el diagnóstico y en cada etapa
+                            del tratamiento.</li>
+                        <li><strong>Nutrición:</strong> cubrir energía y proteína con un plan adaptado a los síntomas.</li>
+                        <li><strong>Actividad física:</strong> ejercicio de fuerza y de resistencia adaptado a la condición de
+                            cada persona, para dar al músculo la señal de mantenerse.</li>
+                        <li><strong>Manejo de síntomas:</strong> controlar náusea, dolor, estreñimiento o tristeza que
+                            impiden comer.</li>
+                        <li><strong>Tratamiento médico:</strong> el control de la enfermedad y, cuando el oncólogo lo
+                            considera, medicamentos de apoyo.</li>
+                    </ul>
+
+                    <h3>Energía y proteína: cuánto se necesita</h3>
+                    <p>Las guías ESPEN (Arends 2017 y su versión práctica, Muscaritoli 2021) dan referencias generales
+                        para personas con cáncer:</p>
+                    <ul>
+                        <li><strong>Proteína:</strong> más de 1 g por kilo de peso al día y, si es posible, hasta
+                            1.5 g/kg/día.</li>
+                        <li><strong>Energía:</strong> como referencia, alrededor de 25 a 30 kcal por kilo de peso al día,
+                            que se ajusta según la actividad, el peso y la evolución.</li>
+                    </ul>
+                    <p>Son puntos de partida: en enfermedad renal, diabetes u obesidad la meta se calcula de forma
+                        individual.</p>
+
+                    <h3>Suplementos nutricionales orales</h3>
+                    <p>Cuando con la comida no se alcanza la meta pese a los ajustes, los <strong>suplementos nutricionales
+                        orales</strong> (fórmulas completas en bebida o polvo) son una herramienta útil. Se eligen según los
+                        síntomas, la glucosa y la función renal, y se toman a sorbos entre comidas. Si aun así la ingesta sigue siendo insuficiente y el intestino funciona, el
+                        equipo puede valorar la <a href="/nutricion-clinica/enteral-sonda/">nutrición enteral por sonda</a>,
+                        siempre según los objetivos de cada etapa.</p>
+
+                    <h3>Omega-3: qué dice la evidencia</h3>
+                    <p>Los ácidos grasos omega-3 (EPA y DHA del aceite de pescado) se han estudiado por su posible efecto
+                        antiinflamatorio. ESPEN sugiere considerarlos en algunas personas con cáncer avanzado en quimioterapia
+                        y riesgo de perder peso, pero con una <strong>recomendación débil y evidencia limitada</strong>. La
+                        guía de ASCO de 2020 consideró que la evidencia no es suficiente para recomendarlos de rutina. En
+                        resumen: pueden tener un lugar, pero <strong>solo con indicación profesional</strong> y revisando
+                        posibles interacciones.</p>
+
+                    <h3>Síntomas que impiden comer</h3>
+                    <p>Muchas veces el obstáculo no es el plan, sino un síntoma. Atenderlo es parte del tratamiento:</p>
+                    <ul>
+                        <li><strong>Náusea:</strong> alimentos fríos, porciones pequeñas y avisar al equipo, porque se puede
+                            prevenir con medicamento.</li>
+                        <li><strong>Saciedad temprana:</strong> cinco o seis tiempos de comida pequeños, líquidos entre comidas
+                            y no durante, y priorizar primero la proteína del plato.</li>
+                        <li><strong>Disgeusia (sabor metálico):</strong> cubiertos de plástico y marinar con hierbas o limón
+                            si no hay llagas.</li>
+                        <li><strong>Mucositis (llagas en la boca):</strong> texturas suaves, tibias y húmedas; sin picante ni
+                            cítricos.</li>
+                    </ul>
+                    <p>Encontrarás más estrategias por síntoma y la lista de alimentos a evitar durante el tratamiento en
+                        nuestra guía de <a href="/blog/guias-nutricionales/alimentos-prohibidos-quimioterapia/">alimentos
+                        prohibidos en quimioterapia</a>.</p>
+
+                    <h2 id="comidas">Ideas de comidas densas en energía y proteína</h2>
+                    <p>El objetivo es que cada bocado cuente. Si hay neutropenia u otra indicación del oncólogo, usa
+                        siempre lácteos pasteurizados, huevo y carnes bien cocidos.</p>
+                    <figure class="denki-figure reveal" style="margin: 2rem auto; max-width: 860px;">
+                        <img src="/assets/img/blog/post-caquexia/comidas.webp" srcset="/assets/img/blog/post-caquexia/comidas-w480.webp 480w, /assets/img/blog/post-caquexia/comidas-w960.webp 960w, /assets/img/blog/post-caquexia/comidas.webp 1024w" sizes="(min-width: 900px) 760px, 100vw" width="1024" height="688" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-soft); background-image:url(data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAACQBACdASogABUAPu1grFAppSQisBgIATAdiWoACBAB8uSOBOlcaf97VQ4wwUAA/vIyjZJBf/C9KKafRSLQSwqsR6nl9UW1J78BBzIuqvWMaBQA4a60F4vWASt9sSc6X73u4JBL9szJ+js1hPK2BQu4GhkNOaha9757OQ3qTZli7snSKEXyYQi5Ls9D9fBYDjeAAA==);background-size:cover;background-position:center" alt="Licuado de plátano y avena, huevo con aguacate, sopa crema y arroz con leche">
+                        <figcaption style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">Porciones pequeñas y frecuentes, ricas en energía y proteína.</figcaption>
+                    </figure>
+                    <div class="table-container" style="overflow-x: auto; margin: 2rem 0;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-pure); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+<thead style="background: var(--primary-soft);"><tr><th style="padding: 1rem; text-align: left;">Idea de comida o colación</th><th style="padding: 1rem; text-align: left;">Por qué ayuda</th><th style="padding: 1rem; text-align: left;">Cómo enriquecerla</th></tr></thead>
+<tbody>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Licuado de leche con avena, plátano y crema de cacahuate</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Mucha energía y proteína en poco volumen; se toma a sorbos</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Agregar una cucharada de leche en polvo o yogur natural</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Huevo revuelto con frijoles y aguacate</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Proteína completa, grasa saludable y textura suave</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Cocinar con un poco de aceite de oliva o añadir queso pasteurizado</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Caldo de pollo con arroz, pollo deshebrado y aguacate</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Hidrata, es familiar y fácil de tolerar</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Servir más pollo y menos caldo; añadir garbanzo o huevo</td></tr>
+<tr><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Atole de avena o arroz preparado con leche</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Tibio, suave y reconfortante en las tardes</td><td style="padding: 1rem; border-bottom: 1px solid var(--primary-soft);">Preparar con leche en lugar de agua y añadir leche en polvo</td></tr>
+<tr><td style="padding: 1rem;">Yogur natural o tipo griego con fruta y granola</td><td style="padding: 1rem;">Frío, útil cuando hay náusea; aporta proteína</td><td style="padding: 1rem;">Elegir versiones sin azúcar añadido y sumar nueces picadas si se toleran</td></tr>
+</tbody>
+</table>
+</div>
+                    <div class="highlight-box">
+                        <p>🥗 <strong>Truco práctico:</strong> en lugar de servir un plato grande que desanima, ofrece
+                            porciones pequeñas cada 2 a 3 horas y aprovecha el momento del día en que la persona se siente
+                            mejor, que muchas veces es el desayuno.</p>
+                    </div>
+
+                    <h2 id="que-no-hacer">Qué NO hacer si hay caquexia</h2>
+                    <p>Hay consejos muy difundidos que, en esta situación, hacen más daño que bien:</p>
+                    <ul>
+                        <li><strong>Dietas restrictivas "anticáncer":</strong> eliminar grupos completos (carbohidratos,
+                            carnes, lácteos) reduce todavía más la ingesta. ESPEN recomienda no indicar dietas que restrinjan
+                            la energía en personas con cáncer o en riesgo de desnutrición.</li>
+                        <li><strong>Ayunos</strong> por cuenta propia durante el tratamiento.</li>
+                        <li><strong>"Matar de hambre al tumor":</strong> dejar de comer no frena el cáncer; el cuerpo toma la
+                            energía de su propio músculo y la caquexia avanza.</li>
+                        <li><strong>Presionar u obligar a comer:</strong> genera tensión y rechazo; funciona mejor ofrecer, no
+                            exigir.</li>
+                    </ul>
+
+                    <h2 id="medicamentos">Medicamentos para el apetito: los decide el oncólogo</h2>
+                    <p>Existen medicamentos que pueden mejorar el apetito o el peso por un tiempo, como algunos derivados de
+                        la progesterona o los corticoides. La guía de ASCO (Roeland 2020) indica que el médico puede ofrecer
+                        un <strong>ensayo de corta duración</strong> en personas seleccionadas, sopesando sus efectos
+                        secundarios. Ninguno se debe tomar por cuenta propia: <strong>la decisión y la prescripción
+                        corresponden al oncólogo</strong>. Desde la nutrición acompañamos ese tratamiento.</p>
+
+                    <h2 id="denki">Cómo trabajamos la caquexia en Clínica Denki</h2>
+                    <p>En consulta seguimos un método ordenado y siempre <strong>coordinado con tu equipo
+                        oncológico</strong>:</p>
+                    <ul>
+                        <li><strong>Valoración completa:</strong> historial de peso, porcentaje de pérdida, composición
+                            corporal, fuerza de prensión, ingesta real y síntomas.</li>
+                        <li><strong>Plan por etapas:</strong> metas de energía y proteína, ideas de comidas según síntomas y
+                            uso de suplementos cuando hace falta.</li>
+                        <li><strong>Comunicación con el oncólogo:</strong> compartimos hallazgos para que las decisiones se
+                            tomen en conjunto.</li>
+                    </ul>
+                    <p>Conoce el servicio de <a href="/nutricion-oncologica/cancer/">nutrición durante quimioterapia
+                        y radioterapia</a> o la guía general de <a href="/nutricion-oncologica/">nutrición
+                        oncológica en Clínica Denki</a>.</p>
+
+                    <div class="cta-banner">
+                        <h3>¿Tú o tu familiar están perdiendo peso durante el tratamiento?</h3>
+                        <p>Una valoración nutricional temprana ayuda a proteger el músculo y la tolerancia al tratamiento. Consulta presencial en CDMX o videoconsulta para toda la República.</p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary">Hablar por WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Agendar en Doctoralia</a>
+                    </div>
+
+                    <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué es la caquexia?</p>
+                        <p>Es un síndrome en el que se pierde músculo de forma continua, con o sin pérdida de grasa, por efecto de una enfermedad como el cáncer. No se revierte del todo solo con alimentación convencional y requiere un abordaje médico y nutricional.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La caquexia es lo mismo que la desnutrición?</p>
+                        <p>No. En la desnutrición simple el problema principal es comer o absorber menos de lo necesario. En la caquexia, además, la enfermedad y la inflamación alteran el metabolismo y el músculo se pierde aunque la persona coma.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuáles son los síntomas de la caquexia?</p>
+                        <p>Pérdida de peso sin buscarla, ropa floja, brazos y piernas más delgados, debilidad, cansancio, falta de apetito y saciedad temprana. Cualquier pérdida de peso involuntaria durante una enfermedad merece valoración.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿La caquexia se puede revertir?</p>
+                        <p>No suele revertirse por completo solo con comer más. Detectarla temprano y tratarla de forma multimodal, con nutrición, actividad física, control de síntomas y tratamiento médico, puede ayudar a frenar la pérdida de músculo y a mejorar la calidad de vida.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Qué debe comer una persona con caquexia?</p>
+                        <p>Comidas pequeñas y frecuentes, densas en energía y proteína: huevo, frijoles, pollo, pescado bien cocido, lácteos pasteurizados, aguacate, crema de cacahuate y licuados enriquecidos. El plan se ajusta a los síntomas y a la indicación médica.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Cuánta proteína necesita un paciente con cáncer?</p>
+                        <p>Las guías ESPEN recomiendan más de 1 g de proteína por kilo de peso al día y, si es posible, hasta 1.5 g/kg/día. La meta se individualiza, por ejemplo si hay enfermedad renal.</p>
+                    </div>
+                    <div class="faq-card"
+                        style="background: var(--bg-page); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem;">
+                        <p style="font-weight: 700; color: var(--primary-dark);">¿Hay medicamentos para la caquexia?</p>
+                        <p>Existen medicamentos que pueden mejorar el apetito por un tiempo, pero tienen efectos secundarios y no están indicados para todos. Los decide y prescribe el oncólogo; la nutrición clínica acompaña ese tratamiento.</p>
+                    </div>
+
+                    <h2 id="referencias">Referencias</h2>
+                    <ol style="font-size: 0.9rem;">
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Definition%20and%20classification%20of%20cancer%20cachexia%3A%20an%20international%20consensus" target="_blank" rel="noopener noreferrer">Fearon K, et al. Definition and classification of cancer cachexia: an international consensus. Lancet Oncol. 2011.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ESPEN%20guidelines%20on%20nutrition%20in%20cancer%20patients" target="_blank" rel="noopener noreferrer">Arends J, et al. ESPEN guidelines on nutrition in cancer patients. Clin Nutr. 2017.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ESPEN%20practical%20guideline%3A%20Clinical%20Nutrition%20in%20cancer" target="_blank" rel="noopener noreferrer">Muscaritoli M, et al. ESPEN practical guideline: Clinical Nutrition in cancer. Clin Nutr. 2021.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Management%20of%20Cancer%20Cachexia%3A%20ASCO%20Guideline" target="_blank" rel="noopener noreferrer">Roeland EJ, et al. Management of Cancer Cachexia: ASCO Guideline. J Clin Oncol. 2020.</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=GLIM%20criteria%20for%20the%20diagnosis%20of%20malnutrition%20-%20A%20consensus%20report%20from%20the%20global%20clinical%20nutrition%20community" target="_blank" rel="noopener noreferrer">Cederholm T, et al. GLIM criteria for the diagnosis of malnutrition - A consensus report from the global clinical nutrition community. Clin Nutr. 2019.</a></li>
+                    </ol>
+
+                    <div class="highlight-box" style="margin-top: 2rem;">
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Este artículo tiene fines informativos y educativos y no sustituye la valoración de tu oncólogo ni de tu médico tratante. No inicies, suspendas ni modifiques medicamentos o suplementos sin supervisión profesional. Las cantidades mencionadas son referencias generales que se individualizan.</p>
+                    </div>
+                </article>
+
+                <aside class="post-sidebar reveal">
+                    <div class="sidebar-card-premium">
+                        <h4>Agendar con Especialista</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                            Nutrición oncológica para prevenir y tratar la pérdida de peso y músculo. Consulta presencial en Del Valle o en línea para toda la República.
+                        </p>
+                        <a href="https://wa.me/525550150285" class="btn btn-primary"
+                            style="width: 100%; margin-bottom: 1rem;">WhatsApp</a>
+                        <a href="https://www.doctoralia.com.mx/lucy-camberos-luna/nutriologo-clinico/benito-juarez"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">Doctoralia</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--primary-soft);">
+                            <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary);">PhD. Lucy Camberos
+                                Luna</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Nutrióloga Clínica Especializada
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <section class="related-posts section blog-grid" aria-labelledby="related-posts-heading">
+            <div class="container">
+                <div class="header-group reveal">
+                    <h2 id="related-posts-heading">Blogs relacionados</h2>
+                    <p class="tagline">Más artículos del blog sobre temas afines a esta lectura.</p>
+                </div>
+                <div class="related-posts-grid">
+                    <div class="grid grid-3">
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/alimentos-prohibidos-quimioterapia/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/cancer/hero-oncologia.webp" srcset="/assets/img/cancer/hero-oncologia-w480.webp 480w, /assets/img/cancer/hero-oncologia-w960.webp 960w, /assets/img/cancer/hero-oncologia.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Oncología</span>
+                            <h3>Alimentos prohibidos en quimioterapia</h3>
+                            <p>Qué evitar, qué sí comer y cómo manejar los síntomas del tratamiento.</p>
+                            <a href="/blog/guias-nutricionales/alimentos-prohibidos-quimioterapia/" class="btn-text" aria-label="Leer: Alimentos prohibidos en quimioterapia">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/como-prevenir-sarcopenia/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-04/hero.webp" srcset="/assets/img/blog/post-04/hero-w480.webp 480w, /assets/img/blog/post-04/hero-w960.webp 960w, /assets/img/blog/post-04/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Geriátrica</span>
+                            <h3>Cómo prevenir la sarcopenia</h3>
+                            <p>Proteína, ejercicio de fuerza y hábitos para conservar el músculo.</p>
+                            <a href="/blog/guias-nutricionales/como-prevenir-sarcopenia/" class="btn-text" aria-label="Leer: Cómo prevenir la sarcopenia">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <div class="card-image">
+                            <a href="/blog/guias-nutricionales/alimentacion-disfagia/" aria-hidden="true" tabindex="-1">
+                                <img src="/assets/img/blog/post-05/hero.webp" srcset="/assets/img/blog/post-05/hero-w480.webp 480w, /assets/img/blog/post-05/hero-w960.webp 960w, /assets/img/blog/post-05/hero.webp 1024w" sizes="(min-width: 900px) 33vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Clínica</span>
+                            <h3>Alimentación segura para disfagia</h3>
+                            <p>Texturas y consejos cuando tragar se vuelve difícil.</p>
+                            <a href="/blog/guias-nutricionales/alimentacion-disfagia/" class="btn-text" aria-label="Leer: Alimentación segura para disfagia">Leer más →</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- denki:static-footer:start -->
+<footer>
+    <div class="container">
+        <div class="f-grid">
+            <div class="f-info">
+                <a href="/" class="logo" style="margin-bottom: 1.5rem; display: block;">
+                    <img src="/assets/img/logo-mobile-w480.webp" srcset="/assets/img/logo-mobile-w480.webp 480w, /assets/img/logo-mobile-w960.webp 960w" sizes="120px" width="120" height="39" loading="lazy" decoding="async" style="height: 40px" alt="Clínica Denki Logo">
+                </a>
+                <p style="color: #99aab5; line-height: 1.7;">Nutrición clínica de alta especialidad basada en evidencia científica. PhD Lucy Anita Camberos Luna.</p>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #99aab5; font-size: 0.9rem;">📍 Pilares 405, Entrada por Casa Ferro, Del Valle Centro, CDMX</p>
+                    <p style="color: #99aab5; font-size: 0.9rem;">📞 <a href="tel:+525550150285" style="color: inherit;">(55) 5015 0285</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="f-title">Especialidades</h2>
+                <ul class="f-links">
+                    <li><a href="/nutricion-metabolica/">Nutrición Metabólica</a></li>
+                    <li><a href="/nutricion-cardiovascular/">Nutrición Cardiovascular</a></li>
+                    <li><a href="/nutricion-neurologica/">Nutrición Neurológica</a></li>
+                    <li><a href="/nutricion-oncologica/">Nutrición Oncológica</a></li>
+                    <li><a href="/nutricion-geriatrica/">Nutrición Geriátrica</a></li>
+                    <li><a href="/nutricion-clinica/">Nutrición Clínica</a></li>
+                    <li><a href="/nutricion-salud-mental/">Nutrición Salud Mental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Ubicaciones</h2>
+                <ul class="f-links">
+                    <li><a href="/ubicaciones/cdmx/">CDMX</a></li>
+                    <li><a href="/ubicaciones/benito-juarez/">Benito Juárez</a></li>
+                    <li><a href="/ubicaciones/roma-condesa/">Roma-Condesa</a></li></ul>
+                <h2 class="f-title" style="margin-top: 2rem;">Recursos</h2>
+                <ul class="f-links">
+                    <li><a href="/blog/">Blog de Nutrición</a></li>
+                    <li><a href="/pages/nosotros/">Nosotros</a></li>
+                    <li><a href="/pages/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="f-title">Legal</h2>
+                <ul class="f-links">
+                    <li><a href="/pages/aviso-de-privacidad/">Aviso de Privacidad</a></li>
+                    <li><a href="/pages/politica-de-cookies/">Política de Cookies</a></li>
+                    <li><a href="/pages/aviso-medico/">Aviso Médico</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/525550150285" class="btn btn-whatsapp" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            &copy; 2026 Clínica Denki. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- denki:static-footer:end -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
